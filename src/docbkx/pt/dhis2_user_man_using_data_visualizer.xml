@@ -183,15 +183,15 @@
   </section>
   <section id="dvInterpretations">
     <title>Compartilha de interpretações</title>
-    <para>Para certos recursos relacionados com a análise no DHIS, como tabelas dinâmicas, gráficos e mapas, é possível compartilhar uma interpretação dos dados. Uma interpretação é simplesmente um link para o recurso relevante juntamente com um texto que exprime algumas dicas sobre os dados. Se quiser compartilhar uma interpretação de gráficos, precisa primeiro salvar o gráfico, que deseja compartilhar, como favorito. Em seguida, sem fazer quaisquer alterações ao gráfico, clique no botão &quot;Compartilhar&quot; na barra de ferramentas. Uma janela se abrirá e é onde escreve a interpretação. Quando estiver pronto, clique no botão Compartilhar no canto inferior direito da janela. A janela será fechada automaticamente e se a interpretação foi compartilhada com êxito, encontrará uma notificação na barra de ferramentas inferior.</para>
+    <para>Para certos recursos relacionados com a análise no IROAD, como tabelas dinâmicas, gráficos e mapas, é possível compartilhar uma interpretação dos dados. Uma interpretação é simplesmente um link para o recurso relevante juntamente com um texto que exprime algumas dicas sobre os dados. Se quiser compartilhar uma interpretação de gráficos, precisa primeiro salvar o gráfico, que deseja compartilhar, como favorito. Em seguida, sem fazer quaisquer alterações ao gráfico, clique no botão &quot;Compartilhar&quot; na barra de ferramentas. Uma janela se abrirá e é onde escreve a interpretação. Quando estiver pronto, clique no botão Compartilhar no canto inferior direito da janela. A janela será fechada automaticamente e se a interpretação foi compartilhada com êxito, encontrará uma notificação na barra de ferramentas inferior.</para>
   </section>
   <section id="dvEmbed">
     <title>Incorporar gráficos em qualquer página web</title>
-    <para>Certos recursos relacionados com análise no DHIS, como tabelas dinâmicas, gráficos e mapas, pode ser incorporados em qualquer página web usando um plugin. Se tiver criado um gráfico no visualizador de dados, terá a configuração do plugin para este gráfico clicando no botão &quot;Compartilhar&quot; na barra de ferramentas e, em seguida, &quot;Incorporar como plug-in&quot;. Vai encontrar mais informações sobre os plugins no capítulo dedicado ao api web..</para>
+    <para>Certos recursos relacionados com análise no IROAD, como tabelas dinâmicas, gráficos e mapas, pode ser incorporados em qualquer página web usando um plugin. Se tiver criado um gráfico no visualizador de dados, terá a configuração do plugin para este gráfico clicando no botão &quot;Compartilhar&quot; na barra de ferramentas e, em seguida, &quot;Incorporar como plug-in&quot;. Vai encontrar mais informações sobre os plugins no capítulo dedicado ao api web..</para>
   </section>
   <section>
     <title>Integração da análise</title>
-    <para>Os aplicativos de análise em DHIS 2 são completamente integrados, assim pode facilmente passar de uma tabela dinâmica, gráfico e mapa de visualização de dados. Logo ao criar um gráfico que pode clicar, por exemplo, &quot;Mapa&quot; no canto superior direito e selecione &quot;Abrir esta tabela como mapa&quot;.</para>
+    <para>Os aplicativos de análise em IROAD 2 são completamente integrados, assim pode facilmente passar de uma tabela dinâmica, gráfico e mapa de visualização de dados. Logo ao criar um gráfico que pode clicar, por exemplo, &quot;Mapa&quot; no canto superior direito e selecione &quot;Abrir esta tabela como mapa&quot;.</para>
     <screenshot>
       <screeninfo>Analysis integration</screeninfo>
       <mediaobject>
@@ -203,6 +203,6 @@
   </section>
   <section>
     <title>Saída do módulo visualizador de dados</title>
-    <para>Se quiser sair do módulo e voltar para a página inicial DHIS pode clicar no botão &quot;Home&quot; para o lado direito do menu superior central.</para>
+    <para>Se quiser sair do módulo e voltar para a página inicial IROAD pode clicar no botão &quot;Home&quot; para o lado direito do menu superior central.</para>
   </section>
 </chapter>

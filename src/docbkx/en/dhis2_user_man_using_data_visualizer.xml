@@ -234,7 +234,7 @@
   </section>
   <section id="dvInterpretations">
     <title>Sharing interpretations</title>
-    <para>For certain analysis-related resources in DHIS, like pivot tables, charts and maps, one can
+    <para>For certain analysis-related resources in IROAD, like pivot tables, charts and maps, one can
       share a data interpretation. An interpretation is simply a link to the relevant resource
       together with a text expressing some insight about the data. If you want to share a chart
       interpretation you need to first save the chart you want to share as a favorite. Then, without
@@ -246,11 +246,11 @@
   </section>
   <section id="dvEmbed">
     <title>Embed charts in any web page</title>
-    <para>Certain analysis-related resources in DHIS, like pivot tables, charts and maps, can be embeded in any web page by using a plugin. If you have created a chart in the Data Visualizer you will get the plugin configuration for this chart by clicking the &quot;Share&quot; button the toolbar and then &quot;Embed as plugin&quot;. You will find more information about the plugins in the web api chapter.</para>
+    <para>Certain analysis-related resources in IROAD, like pivot tables, charts and maps, can be embeded in any web page by using a plugin. If you have created a chart in the Data Visualizer you will get the plugin configuration for this chart by clicking the &quot;Share&quot; button the toolbar and then &quot;Embed as plugin&quot;. You will find more information about the plugins in the web api chapter.</para>
   </section>
   <section>
     <title>Analysis integration</title>
-    <para>The analysis apps in DHIS 2 are completely integrated, so you can easily switch
+    <para>The analysis apps in IROAD 2 are completely integrated, so you can easily switch
    between pivot table, chart and map visualization of your data. When you have made a chart
    you can click e.g. &quot;Map&quot; in the top right corner and then select &quot;Open this table as map&quot;.</para>
     <screenshot>
@@ -264,6 +264,6 @@
   </section>
   <section>
     <title>Exiting the data visualizer module</title>
-    <para>If you want to exit the module and go back to the DHIS start page you can click on the &quot;Home&quot; button to the right side of the top centre menu.</para>
+    <para>If you want to exit the module and go back to the IROAD start page you can click on the &quot;Home&quot; button to the right side of the top centre menu.</para>
   </section>
 </chapter>

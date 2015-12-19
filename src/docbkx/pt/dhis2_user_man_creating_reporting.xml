@@ -6,17 +6,17 @@
     <title>Fonte de dados para relatórios</title>
     <section>
       <title>Tipos de dados e agregações</title>
-      <para>No quadro maior de sua terminologia todos os dados DHIS são geralmente chamados de agregados como eles são agregados (por exemplo, resumos mensais) de registros médicos ou algum tipo de registros de serviços relatados a partir dos centros de saúde. Agregação dentro dhis no entanto, que é o tema aqui, está preocupado com a forma como os dados brutos capturados em DHIS (através de entrada de dados ou de importação) são mais agregadas ao longo do tempo (por exemplo, de mensal para valores trimestrais) ou para cima na hierarquia organizacional (por exemplo, da instalação de para valores distritais). 
+      <para>No quadro maior de sua terminologia todos os dados IROAD são geralmente chamados de agregados como eles são agregados (por exemplo, resumos mensais) de registros médicos ou algum tipo de registros de serviços relatados a partir dos centros de saúde. Agregação dentro dhis no entanto, que é o tema aqui, está preocupado com a forma como os dados brutos capturados em IROAD (através de entrada de dados ou de importação) são mais agregadas ao longo do tempo (por exemplo, de mensal para valores trimestrais) ou para cima na hierarquia organizacional (por exemplo, da instalação de para valores distritais).
 </para>
       <section>
         <title>Terminologia</title>
         <itemizedlist>
           <listitem>
-            <para><emphasis>Dados brutos</emphasis> refers refere-se a dados que são registrados no DHIS 2, quer através de entrada de dados ou importação de dados, e não foi manipulado pelo processo de agregação DHIS. Todos estes dados são armazenados na tabela (ou objeto de Java, se você preferir) chamou DataValue.
+            <para><emphasis>Dados brutos</emphasis> refers refere-se a dados que são registrados no IROAD 2, quer através de entrada de dados ou importação de dados, e não foi manipulado pelo processo de agregação IROAD. Todos estes dados são armazenados na tabela (ou objeto de Java, se você preferir) chamou DataValue.
  </para>
           </listitem>
           <listitem>
-            <para><emphasis>Dados agregados</emphasis> refere-se aos dados que foram agregadas pela DHIS 2, o que significa que já não é dados em bruto, mas algum tipo de agregados de dados brutos.</para>
+            <para><emphasis>Dados agregados</emphasis> refere-se aos dados que foram agregadas pela IROAD 2, o que significa que já não é dados em bruto, mas algum tipo de agregados de dados brutos.</para>
           </listitem>
           <listitem>
             <para><emphasis>Valores de indicadores</emphasis> também pode ser entendida como os dados agregados, mas estes são especiais da maneira que eles são calculados com base em fórmulas definidas pelo usuário (fator * numerador / denominador). Valores dos indicadores são, portanto, processado dados e não os dados brutos, e estão localizados no aggregatedindicatorvalue mesa / object. Os indicadores são calculados a qualquer nível da hierarquia organizacional e estes cálculos são em seguida, com base nos valores de dados agregados disponíveis em cada nível. Um atributo de nível na tabela aggregateddatavalue refere-se ao nível organizacional da OrgUnit o valor foi calculado para.
@@ -32,7 +32,7 @@
         <title>Regras básicas de agregação</title>
         <section>
           <title>O que é agregado</title>
-          <para>Os dados (RAW) podem ser registrados em qualquer nível organizacional, por exemplo, no hospital nacional no nível 2, uma unidade de saúde no nível 5, ou em uma APS maior no nível 4. Isso varia formulário país para país, mas DHIS é flexível ao permitir a entrada de dados ou dados de importação a ter lugar em qualquer nível. Isso significa que orgunits que se têm filhos podem registar dados, às vezes os mesmos elementos de dados como seus filhos unidades. A regra básica de agregação em DHIS 2 é que  <emphasis role="italic">todos os dados brutos são agregadas</emphasis>, ou seja, os dados registrados em uma instalação no nível 5 é adicionado aos dados registrados para um APS no nível 4</para>
+          <para>Os dados (RAW) podem ser registrados em qualquer nível organizacional, por exemplo, no hospital nacional no nível 2, uma unidade de saúde no nível 5, ou em uma APS maior no nível 4. Isso varia formulário país para país, mas IROAD é flexível ao permitir a entrada de dados ou dados de importação a ter lugar em qualquer nível. Isso significa que orgunits que se têm filhos podem registar dados, às vezes os mesmos elementos de dados como seus filhos unidades. A regra básica de agregação em IROAD 2 é que  <emphasis role="italic">todos os dados brutos são agregadas</emphasis>, ou seja, os dados registrados em uma instalação no nível 5 é adicionado aos dados registrados para um APS no nível 4</para>
           <para>
 Cabe ao usuário / administrador do sistema / designer para se certificar de que haja duplicação de entrada de dados está ocorrendo e que, por exemplo dados inseridos no nível 4 não são sobre os mesmos serviços / visitas que são relatados por crianças OrgUnit no nível 5. Observe que, em alguns casos, você quer ter a duplicação de dados no sistema, mas de uma forma controlada. Por exemplo quando você tem duas fontes diferentes de dados para estimativas de população, tanto ao nível 5 de captação dos dados populacionais e outra fonte de dados para o nível 4 da população com base em dados do censo (porque soma de nível 5 bacias nem sempre é o mesmo que os dados do censo nível 4). Depois, você pode especificar o uso de configurações avançadas de agregação (ver mais abaixo) que o sistema deve eg Não adicione nível 5 dados de população para os dados de população nível 4, e que o nível 3,2,1 agregados de dados populacionais são apenas com base no nível 4 de dados e não inclui o nível 5 data4.</para>
         </section>
@@ -49,7 +49,7 @@ Ao longo da dimensão temporal existem várias possibilidades, as duas formas ma
         <title>Dimensões de agregação</title>
         <section>
           <title>Níveis e unidades organizacionais</title>
-          <para>Unidades organizacionais são usados ​​para representar o &apos;onde&apos; dimensão associada a valores de dados. Em DHIS 2 , as unidades organizacionais são organizadas em uma hierarquia , o que normalmente corresponde à natureza hierárquica da organização ou país. Níveis de unidades organizacionais correspondem aos diferentes níveis dentro da hierarquia. Por exemplo, um país pode ser organizada em províncias, distritos , em seguida , em seguida, instalações e, em seguida, sub-centros . Esta hierarquia organizacional teria cinco níveis. Dentro de cada nível , um número de unidades organizacionais existiria . Durante o processo de agregação, os dados são agregados a partir dos níveis mais baixos de unidade organizacional para níveis mais elevados. Dependendo do operador de agregação , os dados podem ser &quot; resumido &quot; ou &quot; média &quot; dentro de um determinado nível de unidade organizacional , para obter o total acumulado para todas as unidades organizacionais que estão contidos dentro de um nível de unidade organizacional de nível superior. Por exemplo , se houver dez distritos contidos em uma província e o operador de agregação para um dado elemento de dados tem sido definida como &quot;soma&quot; , o total acumulado para a província seria calculada como a soma dos valores individuais das dez zonas contida naquela província.</para>
+          <para>Unidades organizacionais são usados ​​para representar o &apos;onde&apos; dimensão associada a valores de dados. Em IROAD 2 , as unidades organizacionais são organizadas em uma hierarquia , o que normalmente corresponde à natureza hierárquica da organização ou país. Níveis de unidades organizacionais correspondem aos diferentes níveis dentro da hierarquia. Por exemplo, um país pode ser organizada em províncias, distritos , em seguida , em seguida, instalações e, em seguida, sub-centros . Esta hierarquia organizacional teria cinco níveis. Dentro de cada nível , um número de unidades organizacionais existiria . Durante o processo de agregação, os dados são agregados a partir dos níveis mais baixos de unidade organizacional para níveis mais elevados. Dependendo do operador de agregação , os dados podem ser &quot; resumido &quot; ou &quot; média &quot; dentro de um determinado nível de unidade organizacional , para obter o total acumulado para todas as unidades organizacionais que estão contidos dentro de um nível de unidade organizacional de nível superior. Por exemplo , se houver dez distritos contidos em uma província e o operador de agregação para um dado elemento de dados tem sido definida como &quot;soma&quot; , o total acumulado para a província seria calculada como a soma dos valores individuais das dez zonas contida naquela província.</para>
         </section>
         <section>
           <title>Período</title>
@@ -94,10 +94,10 @@ Ao longo da dimensão temporal existem várias possibilidades, as duas formas ma
     </section>
     <section>
       <title>Data mart</title>
-      <para>O objetivo do data mart é fornecer dados pré- processados ​​para ferramentas de análise de dados e apresentação de relatórios externos. O mercado de dados consiste em duas tabelas , aggregateddatavalues ​​aggregatedindicatorvalues ​​e no banco de dados DHIS 2 . Os valores na data mart são versões agregadas dos dados brutos encontrados na tabela de datavalue , bem como valores dos indicadores calculados. A agregação pode ocorrer ao longo do tempo (por exemplo, a partir de dados mensais para valores trimestrais agregadas ) , ou ao longo dos níveis de hierarquia unidade organizacional (por exemplo, a partir de dados Phu para totais distritais agregados ) . A data mart pode armazenar todos os tipos de tais valores agregados. A data mart é , como tal, apenas processados ​​&apos;copiar&apos; dos valores de dados e pode ser esvaziados e regeneradas , a qualquer momento , e as tabelas são lidas apenas as tabelas . Os metadados nas duas tabelas de data mart são referenciados por identificadores internos, como dataelementid , organisationunitid que consulte as tabelas como dataelement e organisationunit , consulte &quot; Como fazer uso do data mart em ferramentas externas para saber mais sobre este. </para>
+      <para>O objetivo do data mart é fornecer dados pré- processados ​​para ferramentas de análise de dados e apresentação de relatórios externos. O mercado de dados consiste em duas tabelas , aggregateddatavalues ​​aggregatedindicatorvalues ​​e no banco de dados IROAD 2 . Os valores na data mart são versões agregadas dos dados brutos encontrados na tabela de datavalue , bem como valores dos indicadores calculados. A agregação pode ocorrer ao longo do tempo (por exemplo, a partir de dados mensais para valores trimestrais agregadas ) , ou ao longo dos níveis de hierarquia unidade organizacional (por exemplo, a partir de dados Phu para totais distritais agregados ) . A data mart pode armazenar todos os tipos de tais valores agregados. A data mart é , como tal, apenas processados ​​&apos;copiar&apos; dos valores de dados e pode ser esvaziados e regeneradas , a qualquer momento , e as tabelas são lidas apenas as tabelas . Os metadados nas duas tabelas de data mart são referenciados por identificadores internos, como dataelementid , organisationunitid que consulte as tabelas como dataelement e organisationunit , consulte &quot; Como fazer uso do data mart em ferramentas externas para saber mais sobre este. </para>
       <section>
         <title>O processo de exportação data mart </title>
-        <para>O DHIS2 Data Mart trata da agregação de dados através de múltiplas dimensões (hierarquia unidade de organização, OrgUnit hierarquia do grupo, tempo, etc) e pode ser controlado através desta interface. Selecione os níveis de organização da unidade, que deve ser agregados, a data de data de início e fim, e pressione &quot;Iniciar exportação&quot;. O processo de data mart será executado em segundo plano, e um relatório completo do processo de exportação será atualizado regularmente, de modo que você possa determinar o estado do processo. Veja a seção &quot;Programação&quot; no módulo de administração de dados para obter informações sobre como este processo pode ser acionado para executar automaticamente..</para>
+        <para>O IROAD2 Data Mart trata da agregação de dados através de múltiplas dimensões (hierarquia unidade de organização, OrgUnit hierarquia do grupo, tempo, etc) e pode ser controlado através desta interface. Selecione os níveis de organização da unidade, que deve ser agregados, a data de data de início e fim, e pressione &quot;Iniciar exportação&quot;. O processo de data mart será executado em segundo plano, e um relatório completo do processo de exportação será atualizado regularmente, de modo que você possa determinar o estado do processo. Veja a seção &quot;Programação&quot; no módulo de administração de dados para obter informações sobre como este processo pode ser acionado para executar automaticamente..</para>
         <screenshot>
           <mediaobject>
             <imageobject>
@@ -293,7 +293,7 @@ macho + &lt;1, macho +&gt; 1, Feminino + &lt;1, fêmea +&gt; 1, masculino, femin
     </section>
     <section>
       <title>Tabela de relatórios - melhores prácticas</title>
-      <para>Para fazer as tabelas do relatório reutilizáveis ​​ao longo do tempo e em todo orgunits eles podem ter parâmetros. São permitidos quatro tipos de parâmetros; OrgUnit, OrgUnit pai (para a listagem de orgunits em uma área), grand OrgUnit pai e mês de relatórios. Como uma nota lateral, pode-se mencionar que estamos olhando para expandir este inclua dados trimestre e do ano, ou para fazer esse parâmetro período mais genérico em relação ao tipo de período de alguma maneira. A habilidade de usar período como parâmetro faz tabela de relatório reutilizáveis ​​ao longo do tempo e, como tal, se encaixa muito bem com o relatório precisa, tais como relatórios mensais, trimestrais ou anuais. Quando um relatório é executado pelo usuário em DHIS 2, o usuário deve especificar os valores para as tabelas do relatório que são vinculados ao relatório. Primeira mesa o relatório é regenerados (excluída e recriada com dados atualizados), e depois o relatório é executado (no fundo, em Jasper mecanismo de relatório).
+      <para>Para fazer as tabelas do relatório reutilizáveis ​​ao longo do tempo e em todo orgunits eles podem ter parâmetros. São permitidos quatro tipos de parâmetros; OrgUnit, OrgUnit pai (para a listagem de orgunits em uma área), grand OrgUnit pai e mês de relatórios. Como uma nota lateral, pode-se mencionar que estamos olhando para expandir este inclua dados trimestre e do ano, ou para fazer esse parâmetro período mais genérico em relação ao tipo de período de alguma maneira. A habilidade de usar período como parâmetro faz tabela de relatório reutilizáveis ​​ao longo do tempo e, como tal, se encaixa muito bem com o relatório precisa, tais como relatórios mensais, trimestrais ou anuais. Quando um relatório é executado pelo usuário em IROAD 2, o usuário deve especificar os valores para as tabelas do relatório que são vinculados ao relatório. Primeira mesa o relatório é regenerados (excluída e recriada com dados atualizados), e depois o relatório é executado (no fundo, em Jasper mecanismo de relatório).
 
 </para>
       <para>Tabelas de relatório pode consistir em valores relacionados com elementos de dados, indicadores ou integridade de dados, que está relacionada à integridade de relatórios em orgunits para um determinado mês. Integralidade relatórios serão abordados em uma seção separada.</para>
@@ -301,7 +301,7 @@ macho + &lt;1, macho +&gt; 1, Feminino + &lt;1, fêmea +&gt; 1, masculino, femin
       <para><emphasis role="bold">Usar períodos relativos</emphasis></para>
       <para>A seleção período é mais avançado , pois ele pode , além de períodos específicos , como Jan-09 , Q1 -08 de 2007, contêm também o que é chamado de períodos relativos. Como o relatório normalmente é executado rotineiramente ao longo do tempo de um período específico, como Jan-09 não é muito útil em um relatório. Em vez disso, se você deseja criar um relatório mensal , você deve usar o período relativo chamado Relatório mês . Então você também deve incluir uma notificação Mês como um de seus parâmetros de relatório para que o sistema sabe o que é exatamente o mês do relatório sobre o tempo de geração de relatórios. Há muitos outros períodos relativos disponíveis , e todos eles se relacionam com o parâmetro de relatório Relatórios mês . Por exemplo o período relativo chamado Até agora este ano refere-se ao valor acumulado para o ano incl. Mês Reporting. Se você quiser um relatório de tendência com vários períodos em vez de um período agregado , por exemplo, você pode selecionar &quot; meses do ano &quot;, o que lhe daria valores para cada mês até agora no ano. Você pode fazer um relatório semelhante com trimestres. A idéia é apoiar o maior número de tipos de relatórios genéricos quanto possível usando períodos relativos, por isso, se você tem outras necessidades de relatórios, por favor sugerir novos períodos relativos na lista de discussão, e eles podem ser adicionados às opções de tabela relatório</para>
       <para><emphasis role="bold">Dimensões Cross-tabbing</emphasis></para>
-      <para>Tabulação cruzada é uma funcionalidade muito poderosa na estrutura do relatório, como a tabela de dados DHIS 2 típico com referências à época, elemento de dados / indicador e OrgUnit torna a concepção mais avançada relatório muito difícil, pois você não pode colocar por exemplo, indicadores específicos, períodos ou orgunits em colunas específicas. Por exemplo por cross- tabulação na dimensão indicador em uma tabela relatório indicador de que você vai obter os nomes de indicadores sobre os cabeçalhos de coluna em seu relatório , além de uma coluna referenciando OrgUnit , e outra coluna período de referência. Com esse design da tabela você pode arrastar e soltar nomes de indicadores para colunas específicas ou posições de gráfico no software iReport . Da mesma forma que você pode atravessar guia sobre orgunits ou períodos para fazer seus nomes especificamente disponível para relatar design. Por exemplo por cross- tabulação em períodos e selecionando &apos; mês Relatórios &apos; os dois períodos relativos e &quot; Este ano &quot; , você pode criar relatórios com tanto no último mês eo valor anual acumulativa para determinado mês como eles estarão disponíveis como cabeçalhos de coluna em sua tabela de relatório. Também é possível combinar duas dimensões em corte transversal, de tabulação , p.ex. período e indicador , o que torna possível , por exemplo, olhar para três indicadores selecionados por dois períodos relativos específicos. Isto e.g. torná-lo possível fazer um relatório de tabela ou gráfico baseado com BCG , DPT3 e cobertura de sarampo , tanto para o mês passado ea cobertura acumulado até agora no ano. 
+      <para>Tabulação cruzada é uma funcionalidade muito poderosa na estrutura do relatório, como a tabela de dados IROAD 2 típico com referências à época, elemento de dados / indicador e OrgUnit torna a concepção mais avançada relatório muito difícil, pois você não pode colocar por exemplo, indicadores específicos, períodos ou orgunits em colunas específicas. Por exemplo por cross- tabulação na dimensão indicador em uma tabela relatório indicador de que você vai obter os nomes de indicadores sobre os cabeçalhos de coluna em seu relatório , além de uma coluna referenciando OrgUnit , e outra coluna período de referência. Com esse design da tabela você pode arrastar e soltar nomes de indicadores para colunas específicas ou posições de gráfico no software iReport . Da mesma forma que você pode atravessar guia sobre orgunits ou períodos para fazer seus nomes especificamente disponível para relatar design. Por exemplo por cross- tabulação em períodos e selecionando &apos; mês Relatórios &apos; os dois períodos relativos e &quot; Este ano &quot; , você pode criar relatórios com tanto no último mês eo valor anual acumulativa para determinado mês como eles estarão disponíveis como cabeçalhos de coluna em sua tabela de relatório. Também é possível combinar duas dimensões em corte transversal, de tabulação , p.ex. período e indicador , o que torna possível , por exemplo, olhar para três indicadores selecionados por dois períodos relativos específicos. Isto e.g. torná-lo possível fazer um relatório de tabela ou gráfico baseado com BCG , DPT3 e cobertura de sarampo , tanto para o mês passado ea cobertura acumulado até agora no ano.
 
 </para>
       <para>Ao todo, combinando a funcionalidade de tabulação cruzada, os períodos relativos e parâmetros da tabela relatório, você deve ter uma ferramenta para apoiar a maioria dos cenários de relatório. Se não, ficaríamos muito felizes em receber sugestões para novas melhorias para relatar tabelas. Como já mencionado, nós começamos a olhar para os parâmetros mais refinadas para a dimensão período como o &quot;mês do relatório &apos;não cobre o suficiente, ou pelo menos não é intuitivo o suficiente, quando se trata de ex relatórios trimestrais.
@@ -311,7 +311,7 @@ macho + &lt;1, macho +&gt; 1, Feminino + &lt;1, fêmea +&gt; 1, masculino, femin
   <section>
     <title>Report table outcome</title>
     <para>
-Quando a tabela de relatório é executado, o sistema irá calcular os valores especificados para os elementos indicadores / dados / conjuntos de dados, orgunits e períodos. Os dados serão apresentados em DHIS 2 em um layout de tabela. Os cabeçalhos de coluna corresponderá à dimensão cross-tab que você selecionou. Uma tabela de exemplo relatório mostrando cobertura ANC para um distrito na Gâmbia, é mostrada abaixo. Aqui, o indicador e os períodos são cruzadas com abas, como pode ser visto a partir dos cabeçalhos das colunas.
+Quando a tabela de relatório é executado, o sistema irá calcular os valores especificados para os elementos indicadores / dados / conjuntos de dados, orgunits e períodos. Os dados serão apresentados em IROAD 2 em um layout de tabela. Os cabeçalhos de coluna corresponderá à dimensão cross-tab que você selecionou. Uma tabela de exemplo relatório mostrando cobertura ANC para um distrito na Gâmbia, é mostrada abaixo. Aqui, o indicador e os períodos são cruzadas com abas, como pode ser visto a partir dos cabeçalhos das colunas.
 </para>
     <screenshot>
       <screeninfo>Example report table</screeninfo>
@@ -345,7 +345,7 @@ Acima da mesa há seis botões, cinco botões de download e um botão Voltar. Ao
       <listitem>
         <para><emphasis role="italic">Baixar como PDF:</emphasis></para>
         <para>Download de um arquivo PDF gerado. Os dados serão apresentados em um layout semelhante ao do
- tabela gerada já está exibindo no DHIS 2.</para>
+ tabela gerada já está exibindo no IROAD 2.</para>
       </listitem>
       <listitem>
         <para><emphasis role="italic">Baixar como Reelatório:</emphasis></para>
@@ -363,14 +363,14 @@ layout, esse arquivo também apresenta um gráfico, mostrando os dados agregados
     <section>
       <title>O que é um relatório padrão?</title>
       <para>Um relatório padrão é um relatório projetado manualmente que apresenta dados de uma manualmente
- layout especificado. Os relatórios padrão poderá basear-se em tabelas de relatório ou consultas SQL. Ambas as abordagens são descritas nas seções seguintes. A principal vantagem do uso de tabelas de relatório é o da simplicidade - sem habilidades especiais de desenvolvimento são necessários. Nos casos em que você tem necessidades especiais ou que precisam utilizar peças adicionais do banco de dados DHIS, além da data mart, você pode querer usar um relatório padrão SQL baseado. Em qualquer caso, você será capaz de utilizar os parâmetros do relatório, a fim de criar relatórios dinâmicos. O seguinte guia irá usar a abordagem de tabela de relatório, enquanto a abordagem SQL é coberto no final.</para>
+ layout especificado. Os relatórios padrão poderá basear-se em tabelas de relatório ou consultas SQL. Ambas as abordagens são descritas nas seções seguintes. A principal vantagem do uso de tabelas de relatório é o da simplicidade - sem habilidades especiais de desenvolvimento são necessários. Nos casos em que você tem necessidades especiais ou que precisam utilizar peças adicionais do banco de dados IROAD, além da data mart, você pode querer usar um relatório padrão SQL baseado. Em qualquer caso, você será capaz de utilizar os parâmetros do relatório, a fim de criar relatórios dinâmicos. O seguinte guia irá usar a abordagem de tabela de relatório, enquanto a abordagem SQL é coberto no final.</para>
     </section>
     <section>
       <title>Projectando um relatório padrão no iReport</title>
-      <para>Jasper iReport Designer é uma ferramenta para a criação de relatórios que podem ser usados ​​como Relatórios padrão em DHIS 2. A ferramenta permite a criação de modelos de relatórios padrão que podem ser facilmente exportados do DHIS 2 com dados atualizados. O processo de criação de relatórios envolve quatro etapas principais:</para>
+      <para>Jasper iReport Designer é uma ferramenta para a criação de relatórios que podem ser usados ​​como Relatórios padrão em IROAD 2. A ferramenta permite a criação de modelos de relatórios padrão que podem ser facilmente exportados do IROAD 2 com dados atualizados. O processo de criação de relatórios envolve quatro etapas principais:</para>
       <orderedlist>
         <listitem>
-          <para>A tabela do relatório deve ser criado em DHIS 2 com os indicadores / dados / elementos conjuntos de dados a serem utilizados no relatório..</para>
+          <para>A tabela do relatório deve ser criado em IROAD 2 com os indicadores / dados / elementos conjuntos de dados a serem utilizados no relatório..</para>
         </listitem>
         <listitem>
           <para>Você tem que correr mesa o relatório e fazer o download do arquivo de projeto (Clique no botão &quot;Descarregar como JRXML&quot; botão).</para>
@@ -379,10 +379,10 @@ layout, esse arquivo também apresenta um gráfico, mostrando os dados agregados
           <para>Abra o arquivo baixado. Jrxml usando o software livre Jasper iReport Designer para editar o layout do relatório.</para>
         </listitem>
         <listitem>
-          <para>O relatório editado pode então ser carregado para DHIS 2 para ser utilizado como um padrão de relatório.</para>
+          <para>O relatório editado pode então ser carregado para IROAD 2 para ser utilizado como um padrão de relatório.</para>
         </listitem>
       </orderedlist>
-      <para>Se você quer visualizar o relatório durante o projeto no iReport, você realmente tem que fazer upload de seu arquivo para DHIS 2 para ver como fica..</para>
+      <para>Se você quer visualizar o relatório durante o projeto no iReport, você realmente tem que fazer upload de seu arquivo para IROAD 2 para ver como fica..</para>
       <para>Estas quatro etapas será descrever em detalhes nas próximas seções. Em geral, quando você está fazendo relatórios padrão, você deve ter uma idéia clara de como se deve olhar antes mesmo de fazer a tabela do relatório, como a forma como a tabela que o relatório é criado, tem implicações na forma como o relatório pode ser formatado em iReport. Por exemplo, quais as dimensões de referência cruzada são selecionadas na tabela de relatório tem consequências para o que estão disponíveis para o relatório padrão tabelas de referência cruzada, e tem consequências para quais tipos de gráficos que você pode fazer.</para>
       <section>
         <title>Baixar e abrir o ficheiro de desenho</title>
@@ -530,7 +530,7 @@ layout, esse arquivo também apresenta um gráfico, mostrando os dados agregados
             </mediaobject>
           </screenshot>
           <para>Os campos de texto podem representar números ou texto, de modo que eles podem ser usados ​​tanto para
-&#160; mostrando, por exemplo, nomes de distrito ou para valores numéricos. Portanto, é importante a classe Expression, visto nas propriedades do campo de texto corresponde à expressão campo de texto. Para os campos de texto padrão no arquivo. Jrxml baixado de DHIS 2 este não é um problema, mas é importante quando fazer novos campos de texto. Os dois mais
+&#160; mostrando, por exemplo, nomes de distrito ou para valores numéricos. Portanto, é importante a classe Expression, visto nas propriedades do campo de texto corresponde à expressão campo de texto. Para os campos de texto padrão no arquivo. Jrxml baixado de IROAD 2 este não é um problema, mas é importante quando fazer novos campos de texto. Os dois mais
 importantes aulas de expressão são java.lang.Double para números e javaa.lang.String para o texto..</para>
           <para/>
           <section>
@@ -566,7 +566,7 @@ importantes aulas de expressão são java.lang.Double para números e javaa.lang
       </section>
       <section>
         <title>Filtrar as linhas da tabela</title>
-        <para>Na tabela padrão exportado de DHIS 2, há algumas linhas que talvez seja melhor deixar de fora da mesa, e alguns que seria preferível ter no final. Por exemplo, ao fazer uma tabela com base em uma tabela de relatório com a «organização unidade dos pais» parâmetro, a tabela padrão pode ter uma linha com o nível nacional em algum lugar entre todas as regiões. No iReport, isso pode ser alterado para que o «pai unidade de organização» aparece na parte inferior da tabela. Isto envolve dois passos que serão explicadas abaixo. Note que isso não vai funcionar onde há apenas uma unidade da organização, e, portanto, é mais útil quando se utiliza o «pai unidade de organização» ou «grande unidade organização-mãe» parâmetros na tabela do relatório.</para>
+        <para>Na tabela padrão exportado de IROAD 2, há algumas linhas que talvez seja melhor deixar de fora da mesa, e alguns que seria preferível ter no final. Por exemplo, ao fazer uma tabela com base em uma tabela de relatório com a «organização unidade dos pais» parâmetro, a tabela padrão pode ter uma linha com o nível nacional em algum lugar entre todas as regiões. No iReport, isso pode ser alterado para que o «pai unidade de organização» aparece na parte inferior da tabela. Isto envolve dois passos que serão explicadas abaixo. Note que isso não vai funcionar onde há apenas uma unidade da organização, e, portanto, é mais útil quando se utiliza o «pai unidade de organização» ou «grande unidade organização-mãe» parâmetros na tabela do relatório.</para>
         <section>
           <title>Esconder os «parâmetros das unidades organizacionais» da tabela</title>
           <para>Excluímos o &quot;parâmetro unidade de organização&quot; da tabela usando um
@@ -669,7 +669,7 @@ importantes aulas de expressão são java.lang.Double para números e javaa.lang
       </section>
       <section>
         <title>Mudar o nome de idicadores/nomes de elementos de dados</title>
-        <para>Por padrão, os relatórios dos DHIS 2 usa os nomes curtos para os indicadores e elementos de dados em relatórios e gráficos. Em alguns casos, estes nem sempre são muito significativos para terceiros, mas com algum trabalho que pode ser dada nomes personalizados através iReport. Isto é útil, por exemplo, se você está fazendo um relatório com indicadores como linhas e períodos como coluna, ou para gráficos com indicadores.. </para>
+        <para>Por padrão, os relatórios dos IROAD 2 usa os nomes curtos para os indicadores e elementos de dados em relatórios e gráficos. Em alguns casos, estes nem sempre são muito significativos para terceiros, mas com algum trabalho que pode ser dada nomes personalizados através iReport. Isto é útil, por exemplo, se você está fazendo um relatório com indicadores como linhas e períodos como coluna, ou para gráficos com indicadores.. </para>
         <screenshot>
           <screeninfo>Shortnames - before and after</screeninfo>
           <mediaobject>
@@ -753,7 +753,7 @@ Desativar tradução instantâneaSobre o Google TradutorCelularPrivacidadeAjudaE
       <section>
         <title>Groups of tables</title>
         <para>Há casos em que ele pode ser útil ter várias tabelas em um relatório. Isto pode ser feito usando Grupos de relatórios. Utilizando esta funcionalidade, pode-se por exemplo, criar um relatório de tabela para cada indicador, ou uma tabela de cada unidade de organização. A seguir, vamos percorrer os passos necessários para fazer um relatório com três indicadores, cada um representado em uma tabela. É importante que a tabela de relatório não de referência cruzada em indicadores quando queremos fazer grupos de tabelas com base em indicadores</para>
-        <para>No nosso exemplo, o arquivo. Jrxml baixado de DHIS 2, por padrão, tem uma coluna para a unidade de organização e por indicadores (assumindo que escolhemos períodos como a única dimensão de referência cruzada). Começamos removendo a coluna indicador, uma vez que isto não é necessário, no nosso caso, e realinhar os outros campos para caber o relatório.</para>
+        <para>No nosso exemplo, o arquivo. Jrxml baixado de IROAD 2, por padrão, tem uma coluna para a unidade de organização e por indicadores (assumindo que escolhemos períodos como a única dimensão de referência cruzada). Começamos removendo a coluna indicador, uma vez que isto não é necessário, no nosso caso, e realinhar os outros campos para caber o relatório.</para>
         <screenshot>
           <screeninfo>Delete column</screeninfo>
           <mediaobject>
@@ -841,7 +841,7 @@ Desativar tradução instantâneaSobre o Google TradutorCelularPrivacidadeAjudaE
       </section>
       <section>
         <title>Charts</title>
-        <para>Por padrão, um gráfico 3D bar está incluído no arquivo. Jrxml que é baixado da DHIS
+        <para>Por padrão, um gráfico 3D bar está incluído no arquivo. Jrxml que é baixado da IROAD
  2. Isso é definido de modo que somente os dados da «unidade de organização parâmetro» (muitas vezes o
  pai ou pai grande) é usado. Normalmente, esta é uma boa solução. Uma vez que é a
  padrão, vamos começar por olhar para os gráficos de barras, antes de olhar para gráficos de linha.</para>
@@ -855,7 +855,7 @@ Desativar tradução instantâneaSobre o Google TradutorCelularPrivacidadeAjudaE
               </imageobject>
             </mediaobject>
           </screenshot>
-          <para>Os gráficos de barras são o tipo de gráfico padrão em DHIS 2. Nesta seção, vamos olhar para
+          <para>Os gráficos de barras são o tipo de gráfico padrão em IROAD 2. Nesta seção, vamos olhar para
  como fazer a gráficos de barras como o descrito acima, comparando o valor de um indicador na
  vários distritos. Para editar o gráfico padrão no iReport, clique direito sobre ela e escolha
 Os dados de gráficos.</para>
@@ -1148,8 +1148,8 @@ Os dados de gráficos.</para>
           </mediaobject>
         </screenshot>
         </section>-->      <section>
-        <title>Adding the Report to DHIS 2</title>
-        <para>We can now switch to DHIS 2 and import our report. Go to the Report Module in DHIS 2, and select &quot;Standard Report&quot;. In the &quot;Standard Report&quot; screen, click &quot;Add new&quot;, or edit an existing one.</para>
+        <title>Adding the Report to IROAD 2</title>
+        <para>We can now switch to IROAD 2 and import our report. Go to the Report Module in IROAD 2, and select &quot;Standard Report&quot;. In the &quot;Standard Report&quot; screen, click &quot;Add new&quot;, or edit an existing one.</para>
         <para>In the following screen, there are several actions we need to take. First, enter a name for the new &quot;Standard Report&quot;. Second, for design, click &quot;Choose File&quot; and find the .jrxml-file you have edited in iReport. Then we select the report table that we used as a basis for the report in iReport. Click add, and it should move to the &quot;Selected report tables&quot; area. Finally, click save. 
 </para>
         <screenshot>
@@ -1160,7 +1160,7 @@ Os dados de gráficos.</para>
             </imageobject>
           </mediaobject>
         </screenshot>
-        <para>The report is now available as a &quot;Standard Report&quot; in DHIS 2:</para>
+        <para>The report is now available as a &quot;Standard Report&quot; in IROAD 2:</para>
         <screenshot>
           <screeninfo>The report is available as a Standard Report</screeninfo>
           <mediaobject>
@@ -1174,13 +1174,13 @@ Os dados de gráficos.</para>
         <title>Some final guidelines</title>
         <itemizedlist>
           <listitem>
-            <para>Use the same version of iReport and DHIS 2&apos;s version of Jasper reports. See the About page in DHIS 2 for the Jasper version in use.</para>
+            <para>Use the same version of iReport and IROAD 2&apos;s version of Jasper reports. See the About page in IROAD 2 for the Jasper version in use.</para>
           </listitem>
           <listitem>
             <para>Use report tables with cross tab dimensions  as your data source for your report designs. This will make it a lot easier to design reports where you need to put specific indicators, periods, or orgunits on columns.</para>
           </listitem>
           <listitem>
-            <para>Learn from others, there are many DHIS 2 report designs for Jasper  on  launchpad, see http://bazaar.launchpad.net/~DHIS 2-devs-core/DHIS 2/trunk/files/head:/resources/</para>
+            <para>Learn from others, there are many IROAD 2 report designs for Jasper  on  launchpad, see http://bazaar.launchpad.net/~IROAD 2-devs-core/IROAD 2/trunk/files/head:/resources/</para>
           </listitem>
         </itemizedlist>
       </section>
@@ -1188,13 +1188,13 @@ Os dados de gráficos.</para>
     <section>
       <title>Designing SQL based standard reports</title>
       <para>A standard report might be based on SQL queries. This is useful when you need to access
-        multiple tables in the DHIS database and do custom selects and joins. </para>
+        multiple tables in the IROAD database and do custom selects and joins. </para>
       <para>- This step is optional, but handy when you need to debug your reports and when you have
         direct access to the database you want to use. Click on the &quot;report datasources&quot; button,
         &quot;New&quot;, &quot;Database JDBC connection&quot; and click &quot;next&quot;. In this window you can give you
         connection a name and select the JDBC driver. PostgreSQL and MySQL should come included in
         your iReport. Then enter the JDBC connection URL, username and password. The last three
-        refers to your database and can be retrieved from your DHIS configuration file
+        refers to your database and can be retrieved from your IROAD configuration file
         (hibernate.properties). Click &quot;save&quot;. You have now connected iReport to your
         database.</para>
       <para>- Go to standard reports and click &quot;add new&quot;, then &quot;get report template&quot;. Open this
@@ -1254,7 +1254,7 @@ and ous.$P!{organisationunit_level_column}=$P!{organisationunits}
 order by district.name, chiefdom.name, ou.name;
 </screen>
       <para>Notice how all parameters are used in the query, along with SQL joins of resource tables
-        in the DHIS database.</para>
+        in the IROAD database.</para>
       <para>- Finally, back in the add new report screen, we click on &quot;Use JDBC data source&quot;. This
         enables you to select any relative period and report parameters for your report. Relative
         periods are relative to today&apos;s date. Report parameters will cause a prompt during report
@@ -1271,7 +1271,7 @@ order by district.name, chiefdom.name, ou.name;
         standard reports is that it allows for maximum flexibility. Using HTML you can design
         exactly the report you want, positioning tables, logos and values on the page according to
         your design needs. You can write and save your standard report design in a regular text
-        file. To upload your HTML based standard report to DHIS 2 do the following:</para>
+        file. To upload your HTML based standard report to IROAD 2 do the following:</para>
       <itemizedlist>
         <listitem>
           <para>Navigate to standard reports and click &quot;Add new&quot;.</para>
@@ -1326,7 +1326,7 @@ $( document ).ready( function() {
 &lt;div&gt;BGG coverage: &lt;span id=&quot;bcg&quot;&gt;&lt;/span&gt;&lt;/div&gt;
 &lt;div&gt;FIC coverage: &lt;span id=&quot;fic&quot;&gt;&lt;/span&gt;&lt;/div&gt;</screen>
       <para>A few other tips: To include graphics you can convert an image to SVG and embed that SVG
-        content directly in the report - DHIS 2 is based on HTML 5 where SVG tags are valid markup.
+        content directly in the report - IROAD 2 is based on HTML 5 where SVG tags are valid markup.
         To include charts and maps in your report you can use the charts and maps resources in the
         Web API. You can use the full capability of the Web API from JavaScript in your report - it
         may be useful to read through the Web API chapter to get an overview of all available

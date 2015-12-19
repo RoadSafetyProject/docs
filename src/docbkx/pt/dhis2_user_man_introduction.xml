@@ -1,16 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!-- This document was created with Syntext Serna Free. --><!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN" "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd" []>
 <chapter>
-  <title>O que é DHIS 2?</title>
+  <title>O que é IROAD 2?</title>
   <highlights>
     <para>Depois de ler este capítulo, você será capaz de entender:</para>
     <itemizedlist>
       <listitem>
-        <para>O que é DHIS 2 e para que serve com respeito à
+        <para>O que é IROAD 2 e para que serve com respeito à
  sistemas de informação sanitária (SIS)?</para>
       </listitem>
       <listitem>
-        <para>Quais são as principais considerações tecnológicas quando se trata de implantar DHIS 2, e quais são as opções são para estender DHIS 2 com novos módulos?</para>
+        <para>Quais são as principais considerações tecnológicas quando se trata de implantar IROAD 2, e quais são as opções são para estender IROAD 2 com novos módulos?</para>
       </listitem>
       <listitem>
         <para>Qual é a diferença entre o paciente com base e agregar dados?</para>
@@ -21,16 +21,16 @@
     </itemizedlist>
   </highlights>
   <section id="mod1_1">
-    <title>Visão Geral do DHIS 2</title>
-    <para>DHIS 2 é uma ferramenta para a coleta, validação, análise e apresentação de dados estatísticos agregados, sob medida (mas não limitado) para actividades de gestão integrada de informação em saúde. É um instrumento genérico ao invés de um aplicativo de banco de dados pré-configurado, com um modelo de meta-dados aberta e uma interface de usuário flexível, que permite ao usuário projetar o conteúdo de um sistema de informação específico, sem a necessidade de programação. DHIS2 e para cima é um pacote modular de software web-based construído com frameworks Java de código livre e aberto.</para>
-    <para>DHIS2 é um software de código aberto lançado sob a licença BSD e pode ser usado sem nenhum custo. Ele roda em qualquer plataforma com um Java Runtime Environment (JRE 6 ou superior) instalado. </para>
-    <para>DHIS 2 é desenvolvido pelo Programa de Sistemas de Informação em Saúde (HISP) como um processo aberto e distribuído globalmente com os desenvolvedores atualmente na Índia, Vietnã, Tanzânia, Irlanda e Noruega. O desenvolvimento é coordenado pela Universidade de Oslo, com o apoio do núcleo de NORAD.</para>
-    <para>A documentação fornecida com isto, tentará fornecer uma visão abrangente da aplicação. Dada a natureza abstrata da aplicação, este manual não irá servir como um guia completo passo-a-passo de como usar o aplicativo em cada circunstância, mas procurará fornecer ilustrações e exemplos de como DHIS2 pode ser implementado em uma variedade de situações por meio de exemplos generalizados.</para>
-    <para>Antes de implementar DHIS 2 em uma nova configuração, é altamente recomendável a leitura do DHIS 2 Guia de implementação (um manual separado do presente), também disponível no DHIS2 principal <ulink url="http://dhis2.org/documentation/">website</ulink>.</para>
+    <title>Visão Geral do IROAD 2</title>
+    <para>IROAD 2 é uma ferramenta para a coleta, validação, análise e apresentação de dados estatísticos agregados, sob medida (mas não limitado) para actividades de gestão integrada de informação em saúde. É um instrumento genérico ao invés de um aplicativo de banco de dados pré-configurado, com um modelo de meta-dados aberta e uma interface de usuário flexível, que permite ao usuário projetar o conteúdo de um sistema de informação específico, sem a necessidade de programação. IROAD2 e para cima é um pacote modular de software web-based construído com frameworks Java de código livre e aberto.</para>
+    <para>IROAD2 é um software de código aberto lançado sob a licença BSD e pode ser usado sem nenhum custo. Ele roda em qualquer plataforma com um Java Runtime Environment (JRE 6 ou superior) instalado. </para>
+    <para>IROAD 2 é desenvolvido pelo Programa de Sistemas de Informação em Saúde (HISP) como um processo aberto e distribuído globalmente com os desenvolvedores atualmente na Índia, Vietnã, Tanzânia, Irlanda e Noruega. O desenvolvimento é coordenado pela Universidade de Oslo, com o apoio do núcleo de NORAD.</para>
+    <para>A documentação fornecida com isto, tentará fornecer uma visão abrangente da aplicação. Dada a natureza abstrata da aplicação, este manual não irá servir como um guia completo passo-a-passo de como usar o aplicativo em cada circunstância, mas procurará fornecer ilustrações e exemplos de como IROAD2 pode ser implementado em uma variedade de situações por meio de exemplos generalizados.</para>
+    <para>Antes de implementar IROAD 2 em uma nova configuração, é altamente recomendável a leitura do IROAD 2 Guia de implementação (um manual separado do presente), também disponível no IROAD2 principal <ulink url="http://dhis2.org/documentation/">website</ulink>.</para>
   </section>
   <section>
-    <title>Principais características e finalidade de DHIS 2</title>
-    <para>As principais características e efeitos de DHIS 2 pode ser resumido como se segue:</para>
+    <title>Principais características e finalidade de IROAD 2</title>
+    <para>As principais características e efeitos de IROAD 2 pode ser resumido como se segue:</para>
     <itemizedlist>
       <listitem>
         <para>Fornecer uma solução abrangente HIS com base em dados
@@ -38,7 +38,7 @@
  personalizado para as diferentes necessidades dos sistemas de saúde - e apoia a ideia de um HIS integrada a todos os níveis da hierarquia de saúde.</para>
       </listitem>
       <listitem>
-        <para>Personalização e adaptação local, através da interface de usuário. Não é necessário programação para começar a usar DHIS 2 em uma nova configuração (país, região, bairro, etc.).</para>
+        <para>Personalização e adaptação local, através da interface de usuário. Não é necessário programação para começar a usar IROAD 2 em uma nova configuração (país, região, bairro, etc.).</para>
       </listitem>
       <listitem>
         <para>Fornecer ferramentas de entrada de dados, que pode ser tanto na forma
@@ -79,18 +79,18 @@
         <para>Funcionalidades de exportação e importação de dados e metadados, suporte a sincronização de instalações off-line, bem como a interoperabilidade com outras aplicações.</para>
       </listitem>
       <listitem>
-        <para>Integração com outros sistemas de software - usando o DHIS 2 Web-API eo Integration Engine.</para>
+        <para>Integração com outros sistemas de software - usando o IROAD 2 Web-API eo Integration Engine.</para>
       </listitem>
       <listitem>
         <para>Outros módulos podem ser
- desenvolvido e integrado conforme as necessidades do usuário, como parte da interface do usuário DHIS 2 portal ou uma aplicação externa mais fracamente acoplado interagindo através do DHIS 2 Web-API.</para>
+ desenvolvido e integrado conforme as necessidades do usuário, como parte da interface do usuário IROAD 2 portal ou uma aplicação externa mais fracamente acoplado interagindo através do IROAD 2 Web-API.</para>
       </listitem>
     </itemizedlist>
-    <para>Em resumo, DHIS2 fornece uma solução global para a solução SUA
+    <para>Em resumo, IROAD2 fornece uma solução global para a solução SUA
  relatórios e análise necessidades dos usuários de informação em saúde em qualquer nível.</para>
   </section>
   <section>
-    <title>Uso de DHIS 2 em HIS: coleta de dados, processamento, interpretação e análise.</title>
+    <title>Uso de IROAD 2 em HIS: coleta de dados, processamento, interpretação e análise.</title>
     <para>O contexto mais amplo da HIS pode ser exaustivamente descrita através
  o ciclo de informação apresentada na figura 1.1 abaixo. As informações
  ciclo pictoricamente retrata os diferentes componentes, etapas e processos
@@ -104,7 +104,7 @@
         </imageobject>
       </mediaobject>
     </figure>
-    <para>DHIS 2 suporta as diferentes facetas do ciclo da informação
+    <para>IROAD 2 suporta as diferentes facetas do ciclo da informação
  incluindo:<itemizedlist>
         <listitem>
           <para>Coleta de dados.</para>
@@ -132,41 +132,41 @@
         </listitem>
       </itemizedlist>
   </para>
-    <para>Como primeiro passo, DHIS 2 serve como uma coleta de dados, gravação e
+    <para>Como primeiro passo, IROAD 2 serve como uma coleta de dados, gravação e
 &#160;&#160;&#160;&#160;&#160;&#160; ferramenta de compilação, e todos os dados (seja em número ou forma de texto) pode ser
 &#160;&#160;&#160;&#160;&#160;&#160; entrou nela. A entrada de dados pode ser feita em listas de elementos de dados ou em
 &#160;&#160;&#160;&#160;&#160;&#160; usuário personalizada formas que podem ser desenvolvidos para imitar as formas de papel base, a fim de facilitar o processo de entrada de dados definida.</para>
-    <para>Como próximo passo, DHIS 2 pode ser utilizado para aumentar a qualidade dos dados.
+    <para>Como próximo passo, IROAD 2 pode ser utilizado para aumentar a qualidade dos dados.
  Em primeiro lugar, no ponto de entrada de dados, uma verificação pode ser feita para ver se os dados
  cai dentro de níveis aceitáveis ​​faixa de valores mínimo e máximo para
  qualquer elemento de dados particular. Esta verificação, por exemplo, pode ajudar a
  identificar erros de digitação no momento da entrada de dados. Além disso, o usuário pode
- definir várias regras de validação e DHIS 2 pode executar os dados através do
+ definir várias regras de validação e IROAD 2 pode executar os dados através do
 &#160;&#160;&#160;&#160;&#160;&#160; regras de validação para identificar violações. Estes tipos de verificações de ajudar a garantir que os dados inseridos no sistema é de boa qualidade, desde o início, e pode ser melhorado pelas pessoas que estão mais familiarizados com ele. </para>
-    <para>Quando os dados foram inseridos e verificado, DHIS 2 pode ajudar a fazer
+    <para>Quando os dados foram inseridos e verificado, IROAD 2 pode ajudar a fazer
  diferentes tipos de relatórios. O primeiro tipo são os relatórios de rotina que
  podem ser pré-definidos, de forma que todos os relatórios que precisam ser rotina
- gerado pode ser feito em um clique de um botão. Além disso, DHIS 2 pode ajudar
+ gerado pode ser feito em um clique de um botão. Além disso, IROAD 2 pode ajudar
  na geração de relatórios analíticos por meio de comparações de para
  indicadores de exemplo em toda a instalações ou ao longo do tempo. Gráficos, mapas, relatórios
- e perfis de saúde estão entre as saídas que DHIS 2 pode produzir, e
+ e perfis de saúde estão entre as saídas que IROAD 2 pode produzir, e
  estes devem rotineiramente ser produzido, analisado e influenciado por saúde
  gerentes.</para>
   </section>
   <section>
     <title>Technical background</title>
     <section>
-      <title>DHIS como plataforma</title>
-      <para>DHIS pode ser percebido como uma plataforma sobre a vários níveis. Primeiro, o banco de dados de aplicativo foi projetado de baixo para cima, com flexibilidade em mente. As estruturas de dados, tais como elementos de dados, unidades organizacionais, formas e funções de usuário pode ser definido completamente livremente através da interface de usuário do aplicativo. Isto faz com que seja possível para o sistema a ser adaptado a uma variedade de contextos de localidade e casos de uso. Vimos que DHIS suporta a maioria dos principais requisitos para a captura de dados de rotina e análise emergente em implementações país. Ele também torna possível para DHIS para servir como sistema de gestão para domínios como a logística, laboratórios e finanças.</para>
-      <para>Em segundo lugar, devido ao design modular do DHIS ele pode ser estendido com módulos de software adicionais. Estes módulos de software podem viver lado a lado com os módulos principais de DHIS e pode ser integrado ao portal DHIS e sistema de menu. Este é um recurso poderoso, uma vez que torna possível estender o sistema com funcionalidade extra quando necessário, tipicamente por país exigências específicas como apontado anteriormente.</para>
-      <para>A desvantagem da extensibilidade módulo de software é que ele coloca várias limitações no processo de desenvolvimento. Os promotores que criam a funcionalidade extra estão limitados à tecnologia DHIS em termos de estruturas de linguagem de programação e de software, para além dos factores que limitam a criação de módulos pela solução de portal DHIS. Além disso, esses módulos devem ser incluídos no software DHIS quando o software é construído e implantado no servidor web, não dinamicamente durante a execução. </para>
-      <para>Para superar essas limitações e conseguir um acoplamento frouxo entre a camada de serviço DHIS e artefatos de software adicionais, a equipe de desenvolvimento DHIS decidiu criar uma Web API. Esta API Web está em conformidade com as regras do estilo arquitetônico REST. Isto implica que:</para>
+      <title>IROAD como plataforma</title>
+      <para>IROAD pode ser percebido como uma plataforma sobre a vários níveis. Primeiro, o banco de dados de aplicativo foi projetado de baixo para cima, com flexibilidade em mente. As estruturas de dados, tais como elementos de dados, unidades organizacionais, formas e funções de usuário pode ser definido completamente livremente através da interface de usuário do aplicativo. Isto faz com que seja possível para o sistema a ser adaptado a uma variedade de contextos de localidade e casos de uso. Vimos que IROAD suporta a maioria dos principais requisitos para a captura de dados de rotina e análise emergente em implementações país. Ele também torna possível para IROAD para servir como sistema de gestão para domínios como a logística, laboratórios e finanças.</para>
+      <para>Em segundo lugar, devido ao design modular do IROAD ele pode ser estendido com módulos de software adicionais. Estes módulos de software podem viver lado a lado com os módulos principais de IROAD e pode ser integrado ao portal IROAD e sistema de menu. Este é um recurso poderoso, uma vez que torna possível estender o sistema com funcionalidade extra quando necessário, tipicamente por país exigências específicas como apontado anteriormente.</para>
+      <para>A desvantagem da extensibilidade módulo de software é que ele coloca várias limitações no processo de desenvolvimento. Os promotores que criam a funcionalidade extra estão limitados à tecnologia IROAD em termos de estruturas de linguagem de programação e de software, para além dos factores que limitam a criação de módulos pela solução de portal IROAD. Além disso, esses módulos devem ser incluídos no software IROAD quando o software é construído e implantado no servidor web, não dinamicamente durante a execução. </para>
+      <para>Para superar essas limitações e conseguir um acoplamento frouxo entre a camada de serviço IROAD e artefatos de software adicionais, a equipe de desenvolvimento IROAD decidiu criar uma Web API. Esta API Web está em conformidade com as regras do estilo arquitetônico REST. Isto implica que:</para>
       <itemizedlist>
         <listitem>
-          <para>A API de Web fornece uma interface navegável e legível por máquina para o modelo completo de dados DHIS. Por exemplo, pode-se acessar a lista completa de elementos de dados, em seguida, navegue usando o link fornecido para um elemento de interesse particular de dados, em seguida, navegue usando o link fornecido para a lista das formas que esse elemento de dados faz parte. Por exemplo clientes só vão fazer transições de estado usando os hyperlinks que são dinamicamente incorporadas nas respostas</para>
+          <para>A API de Web fornece uma interface navegável e legível por máquina para o modelo completo de dados IROAD. Por exemplo, pode-se acessar a lista completa de elementos de dados, em seguida, navegue usando o link fornecido para um elemento de interesse particular de dados, em seguida, navegue usando o link fornecido para a lista das formas que esse elemento de dados faz parte. Por exemplo clientes só vão fazer transições de estado usando os hyperlinks que são dinamicamente incorporadas nas respostas</para>
         </listitem>
         <listitem>
-          <para>Os dados são acessados ​​através de uma interface uniforme (URLs) usando um protocolo bem conhecido. Não há formatos de transporte extravagantes ou protocolos envolvidos - apenas o bem-testadas, o protocolo HTTP bem compreendido que é o principal bloco de construção da Web hoje. Isto implica que desenvolvedores de terceiros possam desenvolver software usando o modelo e os dados dados DHIS sem conhecer a tecnologia específica DHIS ou cumprir as restrições de design dhis. </para>
+          <para>Os dados são acessados ​​através de uma interface uniforme (URLs) usando um protocolo bem conhecido. Não há formatos de transporte extravagantes ou protocolos envolvidos - apenas o bem-testadas, o protocolo HTTP bem compreendido que é o principal bloco de construção da Web hoje. Isto implica que desenvolvedores de terceiros possam desenvolver software usando o modelo e os dados dados IROAD sem conhecer a tecnologia específica IROAD ou cumprir as restrições de design dhis. </para>
         </listitem>
         <listitem>
           <para>Todos os dados, incluindo os meta-dados, relatórios, mapas e gráficos, conhecidos como recursos na terminologia REST, pode ser recuperada na maioria dos formatos de representação popular da Web de hoje, tais como HTML, XML, JSON, PDF e PNG. Estes formatos são suportados em aplicações e linguagens de programação e dá aos desenvolvedores de terceiros uma grande variedade de opções de implementação.</para>
@@ -178,20 +178,20 @@
       <title>Compreender plataforma independence</title>
       <para>Todos os computadores têm um sistema operacional (OS) para gerenciá-lo ea
  programas de executá-lo. O sistema operacional serve como camada intermediária entre o
- aplicação de software, tais como DHIS 2, e o hardware, tal como o
- CPU e RAM. DHIS 2 funciona com o Java Virtual Machine, e, portanto, pode ser executado em qualquer sistema operacional que suporte Java. plataforma
+ aplicação de software, tais como IROAD 2, e o hardware, tal como o
+ CPU e RAM. IROAD 2 funciona com o Java Virtual Machine, e, portanto, pode ser executado em qualquer sistema operacional que suporte Java. plataforma
  independência implica que o software pode ser executado em qualquer sistema operacional -
- Windows, Linux, Macintosh, etc DHIS 2 é independente de plataforma, e é
+ Windows, Linux, Macintosh, etc IROAD 2 é independente de plataforma, e é
  extremamente útil no âmbito da saúde pública, em que vários sistemas operativos poderão ser utilizados.</para>
-      <para>Além disso, DHIS 2 também é independente de plataforma, quando se trata do Sistema de Gerenciamento de Banco de Dados (SGBD). DHIS 2 usa a estrutura de abstração de banco de dados Hibernate e é compatível com qualquer SGBD suportados pelo Hibernate, como PostgreSQL, MySQL, H2, MS SQL Server, Oracle e muitos mais. O PostgreSQL é o DBMS recomendados para DHIS 2.</para>
-      <para>Por último, e talvez mais importante, uma vez que DHIS2 é um aplicativo baseado em navegador, o
- único requisito real para interagir com o sistema é com um navegador da web. DHIS2 suporta mais
+      <para>Além disso, IROAD 2 também é independente de plataforma, quando se trata do Sistema de Gerenciamento de Banco de Dados (SGBD). IROAD 2 usa a estrutura de abstração de banco de dados Hibernate e é compatível com qualquer SGBD suportados pelo Hibernate, como PostgreSQL, MySQL, H2, MS SQL Server, Oracle e muitos mais. O PostgreSQL é o DBMS recomendados para IROAD 2.</para>
+      <para>Por último, e talvez mais importante, uma vez que IROAD2 é um aplicativo baseado em navegador, o
+ único requisito real para interagir com o sistema é com um navegador da web. IROAD2 suporta mais
  navegadores, embora atualmente seja o Google Chrome, Mozilla Firefox ou Opera são
  recomendado.</para>
     </section>
     <section>
       <title>Estratégias de implantação - online vs desligada</title>
-      <para>DHIS 2 é um aplicativo de rede habilitado e pode ser acessado através da Internet, uma intranet local e como um sistema instalado localmente. As alternativas de implantação para DHIS 2 são neste capítulo definido como i) a implantação desligada ii) implantação on-line e iii) implantação híbrida. O significado e as diferenças serão discutidas nas seções seguintes.</para>
+      <para>IROAD 2 é um aplicativo de rede habilitado e pode ser acessado através da Internet, uma intranet local e como um sistema instalado localmente. As alternativas de implantação para IROAD 2 são neste capítulo definido como i) a implantação desligada ii) implantação on-line e iii) implantação híbrida. O significado e as diferenças serão discutidas nas seções seguintes.</para>
       <section>
         <title>implantação offline</title>
         <para>Uma implantação desligada implica que várias instâncias independentes off-line são instalados para os usuários finais, geralmente a nível distrital. O sistema é mantido principalmente pelos agentes de saúde aos usuários finais / distritais que insere os dados e gerar relatórios do sistema rodando em seu servidor local. O sistema também tipicamente ser mantido por uma equipe de super-usuário nacional, que fazem visitas regulares às implantações de distrito. Os dados são movidos para cima na hierarquia pelos utilizadores finais que produzem arquivos de troca de dados que são enviados eletronicamente por e-mail ou fisicamente por correio ou pessoal de viagem. (Note-se que a breve conectividade com a Internet necessária para o envio de e-mails não se qualifica para ser definido como online). Este estilo de implantação tem a vantagem óbvia de que ele funciona quando a conectividade de Internet adequada não está disponível. Por outro lado, há desafios significativos com este estilo que são descritos na seção seguinte.</para>
@@ -229,7 +229,7 @@
           </listitem>
         </itemizedlist>
         <para>Esta abordagem pode ser problemático nos casos em que a conectividade à Internet é volátil ou
- ausente em longos períodos de tempo. DHIS2 porém tem certas características que exige
+ ausente em longos períodos de tempo. IROAD2 porém tem certas características que exige
  Conectividade de Internet a estar disponíveis apenas parte do tempo para que o sistema funcione
  adequadamente, tais como entrada de dados offline ea ferramenta MyDatamart apresentado em um separado
  capítulo deste guia, que atender ao fluxo de informações em situações em Internet
@@ -251,7 +251,7 @@
       </section>
       <section>
         <title>Servidor de hospedagem</title>
-        <para>A abordagem de implantação em linha levanta a questão de onde e como hospedar o servidor que irá executar o aplicativo DHIS 2. Normalmente existem várias opções:</para>
+        <para>A abordagem de implantação em linha levanta a questão de onde e como hospedar o servidor que irá executar o aplicativo IROAD 2. Normalmente existem várias opções:</para>
         <orderedlist>
           <listitem>
             <para>Hospedagem interna dentro do Ministério da Saúde</para>
@@ -318,7 +318,7 @@
  Tuberculose, ou outras doenças. Normalmente, os dados de rotina que a saúde
  instalação lida com é este tipo de estatísticas agregadas, e é usado
  para a geração de relatórios de rotina e indicadores, e, mais importante, o planejamento estratégico dentro do sistema de saúde. Os dados agregados não pode fornecer o tipo de informação detalhada que os dados de nível de paciente pode, mas é fundamental para o planejamento e orientação do desempenho dos sistemas de saúde. </para>
-    <para>Entre os dois que você tem dados de caso com base em dados anônimos, ou &quot;paciente&quot;. Muitos detalhes podem ser coletadas sobre um evento específico da saúde, sem necessariamente ter que identificar o paciente envolveu. Hospitalar ou ambulatorial visitas, um novo caso de cólera, uma morte materna, etc, são casos de uso comuns, onde a gente gostaria de cobrar muito mais detalhes que apenas adicionando para a contagem total de casos, ou visitas. Estes dados são muitas vezes colocados na linha de listagem tipo de formas, ou formas de auditoria mais detalhadas. Em é diferente de dados agregados, no sentido de que ele contém muitos detalhes sobre um evento específico, ao passo que os dados agregados contaria quantos eventos de um determinado tipo, por exemplo, quantas consultas ambulatoriais com diagnóstico principal &quot;Malária&quot;, ou quantas mortes maternas em que o falecido não compareceu ANC, ou quantos focos de cólera para as crianças menores de 5 anos. Em DHIS 2 esses dados são coletados por meio de programas do tipo único evento sem registro.</para>
+    <para>Entre os dois que você tem dados de caso com base em dados anônimos, ou &quot;paciente&quot;. Muitos detalhes podem ser coletadas sobre um evento específico da saúde, sem necessariamente ter que identificar o paciente envolveu. Hospitalar ou ambulatorial visitas, um novo caso de cólera, uma morte materna, etc, são casos de uso comuns, onde a gente gostaria de cobrar muito mais detalhes que apenas adicionando para a contagem total de casos, ou visitas. Estes dados são muitas vezes colocados na linha de listagem tipo de formas, ou formas de auditoria mais detalhadas. Em é diferente de dados agregados, no sentido de que ele contém muitos detalhes sobre um evento específico, ao passo que os dados agregados contaria quantos eventos de um determinado tipo, por exemplo, quantas consultas ambulatoriais com diagnóstico principal &quot;Malária&quot;, ou quantas mortes maternas em que o falecido não compareceu ANC, ou quantos focos de cólera para as crianças menores de 5 anos. Em IROAD 2 esses dados são coletados por meio de programas do tipo único evento sem registro.</para>
     <para>Dados do paciente é altamente confidencial e, portanto, deve ser
  protegidos de modo que ninguém além de médicos pode obtê-lo. Quando em papel,
  ele deve ser devidamente armazenados em um local seguro. Para computadores, paciente
@@ -365,7 +365,7 @@
  obrigações contratuais e alto custo</para>
       </listitem>
       <listitem>
-        <para>Aplicações de software livre como DHIS 2 normalmente são suportados por uma
+        <para>Aplicações de software livre como IROAD 2 normalmente são suportados por uma
  rede global de desenvolvedores, e, assim, ter acesso a ponta
  conhecimentos de investigação e desenvolvimento.</para>
       </listitem>

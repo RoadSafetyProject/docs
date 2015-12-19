@@ -2,14 +2,14 @@
 <!-- This document was created with Syntext Serna Free. --><!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN" "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd" []>
 <chapter>
   <title>Instalação</title>
-  <para>O capítulo de instalação fornece informações sobre como instalar DHIS 2 em vários contextos, incluindo servidor online central, desligada da rede local, aplicação autônoma e um pacote independente chamado DHIS 2 Live.</para>
-  <para>DHIS 2 funciona em todas as plataformas para as quais não existe um Java Runtime Environment (versão 6 ou superior, 7 é recomendado), que inclui os sistemas operacionais mais populares, como Windows, Linux e Mac. DHIS 2 também funciona em muitos sistemas de banco de dados relacionais, como o PostgreSQL, MySQL, H2 e Derby. DHIS 2 é empacotado como um arquivo da Web padrão Java (WAR-file) e, portanto, funciona em todos os recipientes Servlet, como o Tomcat e Jetty..</para>
-  <para>A equipe DHIS 2 recomenda Ubuntu 12.04 LTS sistema operacional, sistema de banco de dados PostgreSQL e Tomcat Servlet container do ambiente preferido para instalações de servidor. Os quadros mencionados podem ser considerados como líderes de mercado dentro de seu domínio e é fortemente campo testado ao longo de muitos anos.</para>
+  <para>O capítulo de instalação fornece informações sobre como instalar IROAD 2 em vários contextos, incluindo servidor online central, desligada da rede local, aplicação autônoma e um pacote independente chamado IROAD 2 Live.</para>
+  <para>IROAD 2 funciona em todas as plataformas para as quais não existe um Java Runtime Environment (versão 6 ou superior, 7 é recomendado), que inclui os sistemas operacionais mais populares, como Windows, Linux e Mac. IROAD 2 também funciona em muitos sistemas de banco de dados relacionais, como o PostgreSQL, MySQL, H2 e Derby. IROAD 2 é empacotado como um arquivo da Web padrão Java (WAR-file) e, portanto, funciona em todos os recipientes Servlet, como o Tomcat e Jetty..</para>
+  <para>A equipe IROAD 2 recomenda Ubuntu 12.04 LTS sistema operacional, sistema de banco de dados PostgreSQL e Tomcat Servlet container do ambiente preferido para instalações de servidor. Os quadros mencionados podem ser considerados como líderes de mercado dentro de seu domínio e é fortemente campo testado ao longo de muitos anos.</para>
   <para>Este capítulo fornece um guia para a criação da tecnologia de pilha acima. Deve, contudo, ser lido como um guia para se levantar e correr e não como uma documentação exaustiva para o ambiente mencionado. Referimo-nos à documentação oficial do Ubuntu, PostgreSQL e Tomcat para a leitura em profundidade.</para>
   <section>
     <title>Especificações do servidor</title>
-    <para>DHIS 2 é um aplicativo de banco de dados intensivo e requer que o servidor tem um
-quantidade adequada de RAM, número de núcleos de CPU e um disco rápido. Estas recomendações devem ser consideradas como medidas exatas regras-de-polegar e não. DHIS duas escalas linearmente sobre a quantidade de memória RAM e número de núcleos de CPU então quanto mais você puder pagar, melhor a aplicação irá executar.</para>
+    <para>IROAD 2 é um aplicativo de banco de dados intensivo e requer que o servidor tem um
+quantidade adequada de RAM, número de núcleos de CPU e um disco rápido. Estas recomendações devem ser consideradas como medidas exatas regras-de-polegar e não. IROAD duas escalas linearmente sobre a quantidade de memória RAM e número de núcleos de CPU então quanto mais você puder pagar, melhor a aplicação irá executar.</para>
     <itemizedlist>
       <listitem>
         <para>RAM: memória Pelo menos 1 GB por 1 milhão de registros de dados capturados por mês ou por 1000 usuários simultâneos. Pelo menos 4 GB para um pequeno exemplo, 12 GB para uma instância médio.</para>
@@ -24,13 +24,13 @@ quantidade adequada de RAM, número de núcleos de CPU e um disco rápido. Estas
   </section>
   <section>
     <title>Configuração do servidor</title>
-    <para>Esta seção descreve como configurar uma instância do servidor de DHIS 2 no Ubuntu 12.04 64 bits com o PostgreSQL como o sistema de banco de dados e Tomcat como container Servlet. Este guia não pretende ser um guia passo-a-passo, por si só, mas sim para servir como uma referência à forma como DHIS2 pode ser implantado em um servidor. Há muitas estratégias possíveis de implantação, que serão diferentes, dependendo do sistema operacional e banco de dados que você está usando, e outros fatores. O termo <emphasis role="italic">invocar</emphasis> refere-se a execução de um determinado comando em um terminal. </para>
+    <para>Esta seção descreve como configurar uma instância do servidor de IROAD 2 no Ubuntu 12.04 64 bits com o PostgreSQL como o sistema de banco de dados e Tomcat como container Servlet. Este guia não pretende ser um guia passo-a-passo, por si só, mas sim para servir como uma referência à forma como IROAD2 pode ser implantado em um servidor. Há muitas estratégias possíveis de implantação, que serão diferentes, dependendo do sistema operacional e banco de dados que você está usando, e outros fatores. O termo <emphasis role="italic">invocar</emphasis> refere-se a execução de um determinado comando em um terminal. </para>
     <para>Para um servidor nacional a configuração recomendada é um processador quad-core de 2 GHz ou superior e 12 Gb de RAM ou superior. Note-se que um sistema operacional de 64 bits é necessário para utilizar mais do que 4 GB de RAM, o Ubuntu 12.04 edição de 64 bits é, portanto, recomendado.</para>
     <para>ara este guia vamos supor que 8 Gb RAM é alocada para PostgreSQL e 8 GB de RAM é alocada para Tomcat / JVM, e que um sistema operacional de 64 bits é usado. <emphasis role="italic">Se você estiver executando uma configuração diferente ajuste os valores sugeridos de acordo!</emphasis> Recomendamos que a memória disponível é dividida mais ou menos igualmente entre o banco de dados e o JVM. Lembre-se de deixar um pouco da memória física para o sistema operacional para o desempenho de suas tarefas, por exemplo, em torno de 2 GB. Os passos marcados como
         <emphasis role="italic">opcional</emphasis>, como a etapa de ajuste de desempenho, pode ser feito em uma fase posterior.</para>
     <section>
-      <title>Criando um usuário para executar DHIS2</title>
-      <para>Deve - se  criar um usuário dedicado para a execução de DHIS - não é recomendado executar como o usuário root. Criar um novo usuário chamado dhis invocando <code>useradd -d /home/dhis -m dhis -s /bin/bash</code> Em seguida, fazer o usuário capaz de executar operações temporariamente como usuário root, invocando <code>usermod -G sudo dhis</code>. Em seguida, invocar <code>passwd dhis</code> para definir a senha de sua conta. Certifique-se de configurar uma senha forte com pelo menos 15 caracteres aleatórios. Você pode querer desabilitar o login remoto para a conta root para melhorar a segurança, invocando <code>sudo passwd -l root</code></para>
+      <title>Criando um usuário para executar IROAD2</title>
+      <para>Deve - se  criar um usuário dedicado para a execução de IROAD - não é recomendado executar como o usuário root. Criar um novo usuário chamado dhis invocando <code>useradd -d /home/dhis -m dhis -s /bin/bash</code> Em seguida, fazer o usuário capaz de executar operações temporariamente como usuário root, invocando <code>usermod -G sudo dhis</code>. Em seguida, invocar <code>passwd dhis</code> para definir a senha de sua conta. Certifique-se de configurar uma senha forte com pelo menos 15 caracteres aleatórios. Você pode querer desabilitar o login remoto para a conta root para melhorar a segurança, invocando <code>sudo passwd -l root</code></para>
     </section>
     <section>
       <title>Afinação do kernel do sistema operacional</title>
@@ -42,7 +42,7 @@ net.core.wmem_max = 8388608</screen>
     <section>
       <title>Definir o tempo de servidor</title>
       <para>embre-se de definir a data do servidor corretamente de acordo com o fuso horário do que a parte principal dos usuários do sistema estão localizados. Isso vai afetar, por exemplo, quando as tarefas agendadas são executadas. Por exemplo, com o tempo de jogo às 22:45 h, 17 de Outubro de 2012, invocar <command>sudo date 101722452012</command>.</para>
-      <para>Pode ser necessário reconfigurar a zona de tempo do servidor para coincidir com a zona de tempo do local, que o servidor DHIS2 vai cobrir. Se você estiver usando um servidor virtual privado, o fuso horário padrão pode não corresponder com o fuso horário da sua localização DHIS2. Você pode facilmente reconfigurar o fuso horário, invocando <command>sudo dpkg-reconfigure tzdata</command> e seguir as instruções. </para>
+      <para>Pode ser necessário reconfigurar a zona de tempo do servidor para coincidir com a zona de tempo do local, que o servidor IROAD2 vai cobrir. Se você estiver usando um servidor virtual privado, o fuso horário padrão pode não corresponder com o fuso horário da sua localização IROAD2. Você pode facilmente reconfigurar o fuso horário, invocando <command>sudo dpkg-reconfigure tzdata</command> e seguir as instruções. </para>
       <para>É fácil manter o seu servidor muito precisos usando o pacote NTP. Você pode instalá-lo, basta invocar <command>sudo apt-get install ntp</command>. NTP irá sincronizar automaticamente o horário do servidor em uma base regular.</para>
     </section>
     <section>
@@ -63,24 +63,24 @@ sudo apt-get update</screen>
       <para><screen>shared_buffers = 3200MB</screen></para>
       <para>Determina a quantidade de memória deve ser alocado exclusivamente para PostgreSQL cache. Esta configuração controla o tamanho da memória compartilhada do kernel que deve ser reservada para PostgreSQL. Deve ser ajustado para cerca de 40% do total de memória dedicada para o PostgreSQL.</para>
       <para><screen>work_mem = 20MB</screen></para>
-      <para>Determina a quantidade de memória usada para operações de classificação e hash internos. Esta definição é por conexão, por consulta para uma grande quantidade de memória pode ser consumida se levantar esta muito alto. Definir esse valor corretamente é essencial para DHIS 2 desempenho de agregação.</para>
+      <para>Determina a quantidade de memória usada para operações de classificação e hash internos. Esta definição é por conexão, por consulta para uma grande quantidade de memória pode ser consumida se levantar esta muito alto. Definir esse valor corretamente é essencial para IROAD 2 desempenho de agregação.</para>
       <para><screen>maintenance_work_mem = 512MB</screen></para>
       <para>Determina a quantidade de memória PostgreSQL pode usar para operações de manutenção, como a criação de índices, correndo vácuo, adição de chaves estrangeiras. Incresing este valor pode melhorar o desempenho de criação de índice durante os processos de geração de análises.</para>
       <para><screen>effective_cache_size = 8000MB</screen></para>
       <para>Uma estimativa da quantidade de memória disponível para o cache de disco pelo sistema operacional (e não uma atribuição) e é usada pelo PostgreSQL para determinar se um plano de consulta vai caber na memória ou não. Defini-lo para um valor maior do que o que está realmente disponível irá resultar em um desempenho ruim. Este valor deve ser inclusivo da definição shared_buffers. PostgreSQL tem duas camadas de cache: A primeira camada utiliza a memória partilhada kernel e é controlado pela configuração shared_buffers. Delegados do PostgreSQL a segunda camada para o cache de disco do sistema operacional e do tamanho da memória disponível pode ser dado com a definição effective_cache_size.</para>
       <para><screen>checkpoint_segments = 32</screen></para>
-      <para>PostgreSQL escreve novas operações em um arquivo de log chamado segmentos do WAL que são 16MB de tamanho. Quando um número de segmentos foram escritos um posto de controle ocorre. Definir este número para um valor maior, assim, melhorar o desempenho de sistemas de gravação pesado como DHIS 2.</para>
+      <para>PostgreSQL escreve novas operações em um arquivo de log chamado segmentos do WAL que são 16MB de tamanho. Quando um número de segmentos foram escritos um posto de controle ocorre. Definir este número para um valor maior, assim, melhorar o desempenho de sistemas de gravação pesado como IROAD 2.</para>
       <para><screen>checkpoint_completion_target = 0.8</screen></para>
       <para>Determina a porcentagem de conclusão segmento antes de um posto de controle ocorre. Configurando-o para um valor alto, assim, espalhar as gravações para fora e reduzir a sobrecarga média gravação.</para>
       <para><screen>wal_buffers = 16MB</screen></para>
       <para>Define a memória usada para o buffer durante o processo de gravação WAL. Aumentar este valor pode melhorar o rendimento em sistemas de gravação pesada.</para>
       <para><screen>synchronous_commit = off</screen></para>
-      <para>Especifica se transação for confirmada vai esperar por WAL registros a serem gravados no disco antes de retornar para o cliente ou não. Configurando-o para fora irá melhorar consideravelmente o desempenho. Implica também que há um ligeiro atraso entre a transação é relatado sucesso para o cliente e ele realmente ser seguro, mas o estado do banco de dados não pode ser corrompido e esta é uma boa alternativa para o uso intensivo de desempenho e escrever-pesados ​​sistemas como DHIS 2.</para>
+      <para>Especifica se transação for confirmada vai esperar por WAL registros a serem gravados no disco antes de retornar para o cliente ou não. Configurando-o para fora irá melhorar consideravelmente o desempenho. Implica também que há um ligeiro atraso entre a transação é relatado sucesso para o cliente e ele realmente ser seguro, mas o estado do banco de dados não pode ser corrompido e esta é uma boa alternativa para o uso intensivo de desempenho e escrever-pesados ​​sistemas como IROAD 2.</para>
       <para><screen>wal_writer_delay = 10000ms</screen></para>
       <para>Especifica o intervalo entre as operações de gravação do WAL. Configurando-o para um valor alto irá melhorar o desempenho em sistemas de gravação pesada desde potencialmente muitas operações de escrita pode ser executado dentro de uma única descarga para o disco.</para>
       <para>Reinicie o PostgreSQL, invocando <code>sudo /etc/init.d/postgresql restart</code></para>
       <para><emphasis role="bold">Defina a configuração de banco de dados</emphasis></para>
-      <para>As informações de conexão do banco de dados é fornecido para DHIS 2 através de um arquivo de configuração chamado <emphasis role="italic">hibernate.properties</emphasis>. Crie este arquivo e salve-o em um local conveniente. Um arquivo correspondente para a configuração acima tem as seguintes propriedades: </para>
+      <para>As informações de conexão do banco de dados é fornecido para IROAD 2 através de um arquivo de configuração chamado <emphasis role="italic">hibernate.properties</emphasis>. Crie este arquivo e salve-o em um local conveniente. Um arquivo correspondente para a configuração acima tem as seguintes propriedades: </para>
       <para><screen>hibernate.dialect = org.hibernate.dialect.PostgreSQLDialect
 hibernate.connection.driver_class = org.postgresql.Driver
 hibernate.connection.url = jdbc:postgresql:dhis2
@@ -97,17 +97,17 @@ hibernate.hbm2ddl.auto = update</screen></para>
       <screen>java -version</screen>
     </section>
     <section>
-      <title>Instalar Tomcat e DHIS2</title>
+      <title>Instalar Tomcat e IROAD2</title>
       <para>Para instalar o servlet container Tomcat vamos utilizar o pacote do usuário Tomcat invocando:</para>
       <screen>sudo apt-get install tomcat7-user</screen>
       <para>Este pacote permite facilmente criar uma nova instância do Tomcat. A instância será criada no diretório atual. Um local adequado é o diretório home do usuário dhis:</para>
       <screen>tomcat7-instance-create tomcat-dhis</screen>
       <para>Isto irá criar uma instância em um diretório chamado <emphasis role="italic">tomcat-dhis</emphasis>. Note-se que o pacote tomcat7 pelo usuário permite a criação de qualquer número de instâncias se dhis que é desejada.</para>
-      <para>Em seguida edite o arquivo <emphasis role="italic">tomcat-dhis/bin/setenv.sh</emphasis> e adicione as linhas abaixo. A primeira linha irá definir a localização do seu Java Runtime Environment, o segundo vai dedicar memória para o Tomcat eo terceiro irá definir o local para onde DHIS 2 irá procurar o arquivo de configuração <emphasis role="italic">hibernate.properties</emphasis> . Por favor verifique se o caminho dos binários do Java estão corretas, já que podem variar de sistema para sistema, por exemplo, em sistemas AMD que você pode ver <emphasis role="italic">/java-7-openjdk-amd64</emphasis> Observe que você deve ajustar esta ao seu ambiente:</para>
+      <para>Em seguida edite o arquivo <emphasis role="italic">tomcat-dhis/bin/setenv.sh</emphasis> e adicione as linhas abaixo. A primeira linha irá definir a localização do seu Java Runtime Environment, o segundo vai dedicar memória para o Tomcat eo terceiro irá definir o local para onde IROAD 2 irá procurar o arquivo de configuração <emphasis role="italic">hibernate.properties</emphasis> . Por favor verifique se o caminho dos binários do Java estão corretas, já que podem variar de sistema para sistema, por exemplo, em sistemas AMD que você pode ver <emphasis role="italic">/java-7-openjdk-amd64</emphasis> Observe que você deve ajustar esta ao seu ambiente:</para>
       <para><screen>export JAVA_HOME=&apos;/usr/lib/jvm/java-7-openjdk&apos;
 export JAVA_OPTS=&apos;-Xmx7500m -Xms4000m -XX:MaxPermSize=500m -XX:PermSize=300m&apos;
-export DHIS2_HOME=&apos;/home/dhis/config&apos;</screen></para>
-      <para>O arquivo de configuração do Tomcat está localizado na <emphasis role="italic">tomcat-dhis/conf/server.xml</emphasis>. o elemento que define a ligação DHIS
+export IROAD2_HOME=&apos;/home/dhis/config&apos;</screen></para>
+      <para>O arquivo de configuração do Tomcat está localizado na <emphasis role="italic">tomcat-dhis/conf/server.xml</emphasis>. o elemento que define a ligação IROAD
 é o elemento <emphasis role="italic">Connector</emphasis> na porta 8080. Você pode alterar o número da porta no elemento conector a uma porta desejada, se necessário. Se for necessária a codificação UTF-8 de dados pedido, certifique-se de que o atributo <emphasis role="italic">URIEncoding</emphasis>
 está definido como <emphasis role="italic">UTF-8</emphasis>.</para>
       <screen>&lt;Connector port=&quot;8080&quot; protocol=&quot;HTTP/1.1&quot;
@@ -117,9 +117,9 @@ está definido como <emphasis role="italic">UTF-8</emphasis>.</para>
       <para>Para monitorar o comportamento do Tomcat,  o log é a principal fonte de informação. o log  pode ser facilmente visualizado com o comando <command>tail -f tomcat-dhis/logs/catalina.out</command></para>
     </section>
     <section>
-      <title>Executando o DHIS2</title>
+      <title>Executando o IROAD2</title>
       <para>Faça o executável do script de inicialização, invocando <code>chmod 755 tomcat-dhis/bin/*</code>
-DHIS 2 pode agora ser iniciado invocando <code>tomcat-dhis/bin/startup.sh</code> O log pode ser monitorado, invocando <code>tail -f tomcat-dhis/logs/catalina.out</code> DHIS 2 pode ser interrompido, invocando <code>tomcat-dhis/bin/shutdown.sh</code> Assumindo que o arquivo WAR é chamado ROOT.war, Agora você pode acessar a instância em DHIS <emphasis role="italic">http://localhost:8080</emphasis>.</para>
+IROAD 2 pode agora ser iniciado invocando <code>tomcat-dhis/bin/startup.sh</code> O log pode ser monitorado, invocando <code>tail -f tomcat-dhis/logs/catalina.out</code> IROAD 2 pode ser interrompido, invocando <code>tomcat-dhis/bin/shutdown.sh</code> Assumindo que o arquivo WAR é chamado ROOT.war, Agora você pode acessar a instância em IROAD <emphasis role="italic">http://localhost:8080</emphasis>.</para>
     </section>
   </section>
   <section>
@@ -127,10 +127,10 @@ DHIS 2 pode agora ser iniciado invocando <code>tomcat-dhis/bin/startup.sh</code>
     <para>Um proxy reverso é um servidor proxy que atua em nome de um servidor. Usando um proxy reverso em combinação com um servlet container é opcional, mas tem muitas vantagens:</para>
     <itemizedlist>
       <listitem>
-        <para>Os pedidos podem ser mapeados e repassado para vários containers servlet - isso melhora a flexibilidade e torna-o mais fácil de executar várias instâncias do DHIS no mesmo servidor. Também torna possível alterar a configuração do servidor interno, sem afetar os clientes.</para>
+        <para>Os pedidos podem ser mapeados e repassado para vários containers servlet - isso melhora a flexibilidade e torna-o mais fácil de executar várias instâncias do IROAD no mesmo servidor. Também torna possível alterar a configuração do servidor interno, sem afetar os clientes.</para>
       </listitem>
       <listitem>
-        <para>A aplicação DHIS pode ser executado como um usuário não-root em uma porta diferente de 80, que reduz as conseqüências de seqüestro de sessão.</para>
+        <para>A aplicação IROAD pode ser executado como um usuário não-root em uma porta diferente de 80, que reduz as conseqüências de seqüestro de sessão.</para>
       </listitem>
       <listitem>
         <para>O proxy reverso pode atuar como um servidor SSL único e ser configurado para inspecionar solicitações de conteúdo malicioso, solicitações e respostas registrar e fornecer mensagens de erro não-sensíveis que vão melhorar a segurança.</para>
@@ -174,7 +174,7 @@ sudo /etc/init.d/nginx stop</screen></para>
     }
   }
 }</screen></para>
-      <para>Agora você pode acessar a sua instância de  DHIS em <emphasis role="italic">http://localhost</emphasis>. Uma vez que o proxy reverso, foi criado, podemos melhorar a segurança, tornando Tomcat só escutar as conexões locais. Em <emphasis role="italic">/conf/server.xml</emphasis> Você pode adicionar o atributo  <emphasis role="italic">address</emphasis>
+      <para>Agora você pode acessar a sua instância de  IROAD em <emphasis role="italic">http://localhost</emphasis>. Uma vez que o proxy reverso, foi criado, podemos melhorar a segurança, tornando Tomcat só escutar as conexões locais. Em <emphasis role="italic">/conf/server.xml</emphasis> Você pode adicionar o atributo  <emphasis role="italic">address</emphasis>
 com o valor <emphasis role="italic">localhost</emphasis> ao elemento Connector
 para HTTP 1.1 como:</para>
       <para><screen>&lt;Connector address=&quot;localhost&quot; protocol=&quot;HTTP/1.1&quot; ... &gt;</screen></para>
@@ -184,13 +184,13 @@ para HTTP 1.1 como:</para>
     </section>
     <section>
       <title>Activando o SSL no nginx</title>
-      <para>A fim de melhorar a segurança, recomenda-se configurar o servidor que executa a DHIS
+      <para>A fim de melhorar a segurança, recomenda-se configurar o servidor que executa a IROAD
 &#160; comunicar com os clientes através de uma conexão criptografada e identificar-se a clientes que usam um certificado confiável. Isto pode ser conseguido através de SSL, que é um protocolo de comunicação criptográfico rodando sobre TCP / IP. Primeiro, instale a biblioteca <emphasis role="italic">openssl</emphasis> necessária:</para>
       <screen>sudo apt-get install openssl</screen>
       <para>Para configurar o nginx para usar SSL, precisa de um certificado SSL adequada de um provedor de SSL. O custo de um certificado varia muito, dependendo da força de criptografia. Um certificado acessível a partir de <ulink url="http://www.rapidsslonline.com">Rapid SSL Online</ulink> deve servir a maioria dos propósitos. Para gerar o CSR (pedido de certificado de assinatura), você pode chamar o comando abaixo. Quando for solicitado para o <emphasis role="italic">Common Name</emphasis>, digite o nome de domínio totalmente qualificado para o site que você está protegendo.</para>
       <screen>openssl req -new -newkey rsa:2048 -nodes -keyout server.key -out server.csr</screen>
       <para>Quando você recebeu seus arquivos de certificado (. pem ou. crt) você terá que colocá-lo em conjunto com o arquivo server.key gerado em um local que é acessível por nginx. Um bom local para isso pode ser o mesmo diretório onde o arquivo está localizado nginx.conf.</para>
-      <para>Abaixo está um bloco de servidor nginx onde os arquivos de certificado são nomeados server.crt e server.key. Desde conexões SSL geralmente ocorrem na porta 443 (HTTPS) passamos pedidos em que a porta (443) para a instância em execução em DHIS <emphasis role="italic">http://localhost:8080</emphasis> TO primeiro bloco do servidor irá reescrever todos os pedidos de conexão para a porta 80 e forçar o uso de HTTPS / SSL. Isso também é necessário porque DHIS está usando um monte de redirecionamentos internamente que devem ser repassados ​​para usar HTTPS. Lembre-se de substituir <emphasis role="italic">&lt;server-ip&gt;</emphasis> com o IP do seu servidor. Estes blocos devem substituir a da seção anterior</para>
+      <para>Abaixo está um bloco de servidor nginx onde os arquivos de certificado são nomeados server.crt e server.key. Desde conexões SSL geralmente ocorrem na porta 443 (HTTPS) passamos pedidos em que a porta (443) para a instância em execução em IROAD <emphasis role="italic">http://localhost:8080</emphasis> TO primeiro bloco do servidor irá reescrever todos os pedidos de conexão para a porta 80 e forçar o uso de HTTPS / SSL. Isso também é necessário porque IROAD está usando um monte de redirecionamentos internamente que devem ser repassados ​​para usar HTTPS. Lembre-se de substituir <emphasis role="italic">&lt;server-ip&gt;</emphasis> com o IP do seu servidor. Estes blocos devem substituir a da seção anterior</para>
       <screen>http {
   gzip on; # Enables compression
 
@@ -354,9 +354,9 @@ sudo /usr/sbin/update-rc.d -f tomcat defaults 81</screen>
       <title>Configuração de proxy reverso básico com Apache</title>
       <para>O servidor Apache HTTP é o mais comum</para>
       <important>
-        <para>Usando nginx é a opção preferida como proxy reverso com DHIS2 e você não deve tentar instalar o nginx e Apache no mesmo servidor. Se você instalou o nginx por favor ignore esta seção.</para>
+        <para>Usando nginx é a opção preferida como proxy reverso com IROAD2 e você não deve tentar instalar o nginx e Apache no mesmo servidor. Se você instalou o nginx por favor ignore esta seção.</para>
       </important>
-      <para>O servidor Apache HTTP é o servidor HTTP mais utilizado atualmente. Depdenign em sua natureza exata de implantação, você pode precisar usar o Apache como um proxy reverso para seu servidor DHIS2. Nesta seção, vamos descrever como implementar uma configuração de proxy reverso simples com Apache. </para>
+      <para>O servidor Apache HTTP é o servidor HTTP mais utilizado atualmente. Depdenign em sua natureza exata de implantação, você pode precisar usar o Apache como um proxy reverso para seu servidor IROAD2. Nesta seção, vamos descrever como implementar uma configuração de proxy reverso simples com Apache. </para>
       <para>Primeiro precisamos instalar alguns programas alguns módulos necessários para o Apache e permitir que os módulos.</para>
       <para><screen>sudo apt-get install apache2 libapache2-mod-proxy-html libapache2-mod-jk
 a2enmod proxy proxy_ajp proxy_connect</screen></para>
@@ -375,12 +375,12 @@ ProxyPassReverse /dhis  ajp://localhost:8009/dhis
 &lt;/Location&gt;     
 &lt;/IfModule&gt;
 </screen></para>
-      <para>Agora você pode reiniciar o Tomcat eo servidor Apache HTTPD e sua instância DHIS 2 deve estar disponível em  http://<emphasis>myserver</emphasis>/dhis onde <emphasis>myserver</emphasis> é o nome do seu servidor. </para>
+      <para>Agora você pode reiniciar o Tomcat eo servidor Apache HTTPD e sua instância IROAD 2 deve estar disponível em  http://<emphasis>myserver</emphasis>/dhis onde <emphasis>myserver</emphasis> é o nome do seu servidor. </para>
     </section>
     <section>
       <title>Balanceamento de carga básico com o Apache e o Tomcat</title>
       <para>O balanceamento de carga pode ser empregado para distribuir mais uniformemente a carga do sistema em várias instâncias do Tomcat em situações em que a carga do usuário é muito alta para ser tratado por uma única instância do servidor. Neste exemplo, vamos criar uma arquitetura de balanceamento de carga simples usando &quot;sessões pegajosas&quot; para distribuir os usuários através de duas instâncias do Tomcat. </para>
-      <para>Em primeiro lugar, precisamos de pelo menos duas instâncias do Tomcat executando DHIS2, que são conectados ao mesmo banco de dados. Existem várias arquiteturas, como executar os servidores de aplicação (Tomcat) em máquinas separadas (virtuais) conectados a um único servidor de banco de dados, ou talvez executar várias instâncias do Tomcat e um banco de dados em uma única máquina de alta capacidade em situações com I / O é não é um problema, mas quando o uso da CPU de uma única instância Tomcat limita o desempenho geral do sistema. Neste cenário, vamos configurar conectar duas instâncias do Tomcat em execução na mesma máquina para um único banco de dados através de um proxy reverso com balanceamento de carga. Apache vai cuidar dos detalhes de determinar qual instância Tomcat um determinado cliente é a interface com o </para>
+      <para>Em primeiro lugar, precisamos de pelo menos duas instâncias do Tomcat executando IROAD2, que são conectados ao mesmo banco de dados. Existem várias arquiteturas, como executar os servidores de aplicação (Tomcat) em máquinas separadas (virtuais) conectados a um único servidor de banco de dados, ou talvez executar várias instâncias do Tomcat e um banco de dados em uma única máquina de alta capacidade em situações com I / O é não é um problema, mas quando o uso da CPU de uma única instância Tomcat limita o desempenho geral do sistema. Neste cenário, vamos configurar conectar duas instâncias do Tomcat em execução na mesma máquina para um único banco de dados através de um proxy reverso com balanceamento de carga. Apache vai cuidar dos detalhes de determinar qual instância Tomcat um determinado cliente é a interface com o </para>
       <para>O primeiro passo é configurar nossas instâncias de Tomcat. As seções anteriores detalhou como isso deve ser feito. É importante ressaltar que as duas instâncias do Tomcat deve ser configurado para usar o mesmo servidor de banco de dados. Algumas modificações precisam ser feitas para o arquivo server.xml de cada instância de Tomcat, que será usado para identificar exclusivamente cada instância. Duas cópias do Tomcat deve ser extraído para um diretório de sua escolha. Modifique o arquivo server.xml para que as seguintes linhas são únicos para cada instância.</para>
       <para><screen>&lt;Server port=&quot;<emphasis>800<emphasis>5</emphasis></emphasis>&quot; shutdown=&quot;SHUTDOWN&quot;&gt;
 ...
@@ -388,7 +388,7 @@ ProxyPassReverse /dhis  ajp://localhost:8009/dhis
 ...
 
 &lt;Engine name=&quot;Catalina&quot; defaultHost=&quot;localhost&quot; jvmRoute=&quot;<emphasis>jvm1</emphasis>&quot;&gt;</screen></para>
-      <para>Os parâmetros importantes aqui são a porta do servidor, a porta do conector AJP, e o identificador <parameter>jvmRoute</parameter>. O  identificador <parameter>jvmRoute</parameter> será anexado ao JSESSIONID para que o Apache vai saber qual instância Tomcat uma sessão especial deve ser encaminhado para. Os parâmetros devem ser exclusivos para cada instância do Tomcat. Depois de configurar o Tomcat, configuração DHIS2 de acordo com os procedimentos normais detalhados em outras secções.</para>
+      <para>Os parâmetros importantes aqui são a porta do servidor, a porta do conector AJP, e o identificador <parameter>jvmRoute</parameter>. O  identificador <parameter>jvmRoute</parameter> será anexado ao JSESSIONID para que o Apache vai saber qual instância Tomcat uma sessão especial deve ser encaminhado para. Os parâmetros devem ser exclusivos para cada instância do Tomcat. Depois de configurar o Tomcat, configuração IROAD2 de acordo com os procedimentos normais detalhados em outras secções.</para>
       <para>Em seguida, vamos configurar o servidor Apache HTTP para realizar o balanceamento de carga. Solicitações de entrada do cliente serão atribuídas a um dos casos, com uma sessão pegajosa.  Alterar o arquivo  <filename>/etc/apache2/apache2.conf </filename> (ou outro arquivo apropriado dependendo da configuração exata) para definir um balanceador de carga de proxy e proxy e inverter caminho proxy. Note-se que os números de porta e parâmetros <parameter>route</parameter> devem corresponder à porta do Tomcat e parâmetros  <parameter>jvmRoute</parameter> que foram definidos no início da configuração do Tomcat.</para>
       <screen>&lt;Proxy balancer://dhiscluster&gt;
 Order Allow,Deny
@@ -442,22 +442,22 @@ XXX.XX.XXX.XXX foo.mydomain.org</screen></para>
     </section>
   </section>
   <section>
-    <title>DHIS 2 Live setup</title>
-    <para>O pacote DHIS 2 Live é extremamente conveniente para instalar e executar. Destina-se a manifestações, para os usuários que querem explorar o sistema e para as pequenas, instalações off-line normalmente em distritos ou instalações. Exige apenas um Java Runtime Environment e roda em todos os navegadores, exceto o Internet Explorer 7 e inferior.</para>
-    <para>Para instalar, inicie baixando DHIS 2 Live em <emphasis role="italic">http://dhis2.org</emphasis> ae extraia o arquivo para qualquer local. No Windows, clique no arquivo executável. Após o processo de inicialização o seu navegador padrão será automticamente redirecciondo para <emphasis role="italic">http://localhost:8082</emphasis> onde a aplicação está acessível. Um menu do tabuleiro do sistema é acessível na maioria dos sistemas operacionais onde você pode iniciar e parar o servidor e iniciar novos sesssions navegador. Por favor, note que se você tiver o servidor que executa, não há necessidade de iniciá-lo novamente, basta abrir o aplicativo a partir do menu do tabuleiro.</para>
-    <para>DHIS 2 Live está sendo executado em um contêiner de servlet Jetty embutido e um banco de dados H2 embutido. No entanto, pode ser facilmente configurado para rodar em outros sistemas de banco de dados como PostgreSQL. Por favor, leia a seção acima sobre as instalações de servidor para obter uma explicação sobre a configuração do banco de dados. O arquivo de configuração<emphasis role="italic">hibernate.properties</emphasis> está localizado na pasta  <emphasis role="italic">conf</emphasis> . Lembre-se de reiniciar o pacote Live para que as alterações tenham efeito. A porta do servidor é 8082 por padrão. Isto pode ser alterado, modificando o valor no arquivo de configuração <emphasis role="italic"> jetty.port</emphasis> localizado no diretório <emphasis role="italic">conf</emphasis>.</para>
+    <title>IROAD 2 Live setup</title>
+    <para>O pacote IROAD 2 Live é extremamente conveniente para instalar e executar. Destina-se a manifestações, para os usuários que querem explorar o sistema e para as pequenas, instalações off-line normalmente em distritos ou instalações. Exige apenas um Java Runtime Environment e roda em todos os navegadores, exceto o Internet Explorer 7 e inferior.</para>
+    <para>Para instalar, inicie baixando IROAD 2 Live em <emphasis role="italic">http://dhis2.org</emphasis> ae extraia o arquivo para qualquer local. No Windows, clique no arquivo executável. Após o processo de inicialização o seu navegador padrão será automticamente redirecciondo para <emphasis role="italic">http://localhost:8082</emphasis> onde a aplicação está acessível. Um menu do tabuleiro do sistema é acessível na maioria dos sistemas operacionais onde você pode iniciar e parar o servidor e iniciar novos sesssions navegador. Por favor, note que se você tiver o servidor que executa, não há necessidade de iniciá-lo novamente, basta abrir o aplicativo a partir do menu do tabuleiro.</para>
+    <para>IROAD 2 Live está sendo executado em um contêiner de servlet Jetty embutido e um banco de dados H2 embutido. No entanto, pode ser facilmente configurado para rodar em outros sistemas de banco de dados como PostgreSQL. Por favor, leia a seção acima sobre as instalações de servidor para obter uma explicação sobre a configuração do banco de dados. O arquivo de configuração<emphasis role="italic">hibernate.properties</emphasis> está localizado na pasta  <emphasis role="italic">conf</emphasis> . Lembre-se de reiniciar o pacote Live para que as alterações tenham efeito. A porta do servidor é 8082 por padrão. Isto pode ser alterado, modificando o valor no arquivo de configuração <emphasis role="italic"> jetty.port</emphasis> localizado no diretório <emphasis role="italic">conf</emphasis>.</para>
   </section>
   <section>
     <title>Backup</title>
     <para>Fazer backups de banco de dados para sistemas de informação automatizados na produção é uma necessidade absoluta, e pode ter consequências desagradáveis ​​se for ignorado. Backups tem dois propósitos principais: O principal é a recuperação de dados em caso de dados é perdido, o objetivo secundário é o arquivamento de dados para um período histórico de tempo.</para>
-    <para>Backup deve ser central em um plano de recuperação de desastres. Mesmo que tal plano deve abranger temas adicionais, o banco de dados é o componente-chave a considerar uma vez que este é o lugar onde todos os dados utilizados na aplicação DHIS 2 é armazenado. A maioria das outras partes da infra-estrutura de TI em torno da aplicação pode ser restaurado com base em componentes padrão.</para>
+    <para>Backup deve ser central em um plano de recuperação de desastres. Mesmo que tal plano deve abranger temas adicionais, o banco de dados é o componente-chave a considerar uma vez que este é o lugar onde todos os dados utilizados na aplicação IROAD 2 é armazenado. A maioria das outras partes da infra-estrutura de TI em torno da aplicação pode ser restaurado com base em componentes padrão.</para>
     <para>Há, naturalmente, muitas maneiras de configurar o backup, no entanto o seguinte descreve uma configuração em que o banco de dados é copiado para um arquivo de despejo e salvos no sistema de arquivos. Este pode ser considerado um backup  <emphasis role="italic">completo</emphasis> .  O backup é feito com um <emphasis role="italic">cron job</emphasis>, que é um programador com base no tempo em sistemas operacionais Unix / Linux.</para>
     <remark>Você pode baixar os dois arquivos em http://dhis2.com/download/pg_backup.zip</remark>
     <para>O cron job é configurado com dois arquivos. O primeiro é um  <emphasis role="italic">script</emphasis> que realiza a tarefa real de backup de banco de dados. Ele usa um programa PostgreSQL chamado <emphasis role="italic">pg_dump</emphasis>  para criar a cópia de dados. O segundo é um arquivo crontab que executa o script de backup todos os dias às 23:00 h. Note-se que este script faz o backup do arquivo de banco de dados para o disco local. É altamente recomendável para armazenar uma cópia do backup em um local fora do servidor onde a aplicação está hospedada. Isto pode ser alcançado com a ferramenta <emphasis role="italic">scp</emphasis>.Certifique-se de que você definiu a data do sistema correctamente em seu servidor.</para>
   </section>
   <section>
     <title>Trabalhando com o banco de dados PostgreSQL</title>
-    <para>Operações comuns na gestão de uma instância DHIS praticam dumping e restaurar bancos de dados. Para fazer um dump (cópia) do seu banco de dados, assumindo a configuração da seção de instalação, você pode invocar o seguinte: </para>
+    <para>Operações comuns na gestão de uma instância IROAD praticam dumping e restaurar bancos de dados. Para fazer um dump (cópia) do seu banco de dados, assumindo a configuração da seção de instalação, você pode invocar o seguinte: </para>
     <screen>pg_dump dhis2 -U dhis -f dhis2.sql</screen>
     <para>O primeiro argumento (dhis2) refere-se ao nome do banco de dados. O segundo argumento (dhis) refere-se que o usuário do banco de dados. O último argumento (dhis2.sql) é o nome da cópia do arquivo. Se você deseja compactar a cópia do arquivo imediatamente você pode fazer:</para>
     <screen>pg_dump dhis2 -U dhis | gzip &gt; dhis2.sql.gz</screen>
@@ -487,7 +487,7 @@ XXX.XX.XXX.XXX foo.mydomain.org</screen></para>
         <para>Selecione uma das AMIs para o seu servidor. Usando um dos Amazon AMIs Básico (32 ou 64 bits) é recomendada, mas você pode usar qualquer AMI é o mais apropriado.</para>
       </listitem>
       <listitem>
-        <para>Em seguida, você terá de escolher o tamanho do seu exemplo. O tamanho do exemplo escolhido dependerá do número de utilizadores antecipados. Selecionando o tamanho da &quot;Micro&quot;, irá permitir-lhe testar DHIS 2 no ambiente AWS por um período de um ano, sem nenhum custo, se você usar uma das &quot;camadas grátis elegíveis&quot; AMIs. </para>
+        <para>Em seguida, você terá de escolher o tamanho do seu exemplo. O tamanho do exemplo escolhido dependerá do número de utilizadores antecipados. Selecionando o tamanho da &quot;Micro&quot;, irá permitir-lhe testar IROAD 2 no ambiente AWS por um período de um ano, sem nenhum custo, se você usar uma das &quot;camadas grátis elegíveis&quot; AMIs. </para>
         <screenshot>
           <mediaobject>
             <imageobject>
@@ -513,7 +513,7 @@ XXX.XX.XXX.XXX foo.mydomain.org</screen></para>
         </screenshot>
       </listitem>
       <listitem>
-        <para>Você terá que atribuir um grupo de segurança para a instância. Grupos de segurança pode ser utilizado para expor certos serviços (SSH, HTTP, Tomcat, etc) para os grupos de segurança Internet.With, você pode controlar quais portas estarão abertas a intervalos de rede específicos. Para DHIS 2, que normalmente precisam de pelo menos a porta 22 (SSH) ea porta 80 (HTTP) aberto à internet ou intervalos de endereços específicos. </para>
+        <para>Você terá que atribuir um grupo de segurança para a instância. Grupos de segurança pode ser utilizado para expor certos serviços (SSH, HTTP, Tomcat, etc) para os grupos de segurança Internet.With, você pode controlar quais portas estarão abertas a intervalos de rede específicos. Para IROAD 2, que normalmente precisam de pelo menos a porta 22 (SSH) ea porta 80 (HTTP) aberto à internet ou intervalos de endereços específicos. </para>
         <screenshot>
           <mediaobject>
             <imageobject>

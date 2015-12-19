@@ -3,9 +3,9 @@
 <chapter>
   <title>Saisie de données</title>
   <section id="dataEntry">
-    <title>Saisie des données avec DHIS 2</title>
-    <para>Pour accéder à la page de saisie de données, vous devez cliquer sur l'onglet services du menu principal.  Un menu déroulant s’affiche avec la liste des services fournis par DHIS 2. Cliquez sur l’élément <guibutton>saisie de données</guibutton>.</para>
-    <para>Le module de saisie de données est l'endroit où les données peuvent être manuellement enregistrées dans la base de données de DHIS 2. Les données sont enregistrées pour une unité d'organisation, une période, et un ensemble d'éléments de données (jeu de données) à la fois. Un ensemble de données correspond souvent à un outil de collecte de données basé sur le papier (formulaire papier par exemple).</para>
+    <title>Saisie des données avec IROAD 2</title>
+    <para>Pour accéder à la page de saisie de données, vous devez cliquer sur l'onglet services du menu principal.  Un menu déroulant s’affiche avec la liste des services fournis par IROAD 2. Cliquez sur l’élément <guibutton>saisie de données</guibutton>.</para>
+    <para>Le module de saisie de données est l'endroit où les données peuvent être manuellement enregistrées dans la base de données de IROAD 2. Les données sont enregistrées pour une unité d'organisation, une période, et un ensemble d'éléments de données (jeu de données) à la fois. Un ensemble de données correspond souvent à un outil de collecte de données basé sur le papier (formulaire papier par exemple).</para>
     <section>
       <title>Sélection du formulaire de saisie de données</title>
       <para>Pour commencer à saisir des données, il faut au préalable accéder au bon formulaire en suivant notamment les étapes suivantes :</para>

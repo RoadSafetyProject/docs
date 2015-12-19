@@ -2,7 +2,7 @@
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN" "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd"[]>
 <chapter>
   <title>Aperçu des outils d’analyse de données</title>
-  <para>Ce chapitre offre une vue d'ensemble des outils disponibles pour l'analyse des données fournies par DHIS 2 avec une description de l'objet et des avantages de chacun. Si vous cherchez un guide détaillé sur la façon d'utiliser chaque outil, nous vous recommandons de poursuivre la lecture du manuel de l'utilisateur à la fin de ce chapitre. La liste suivante présente les différents outils disponibles dans DHIS 2 :</para>
+  <para>Ce chapitre offre une vue d'ensemble des outils disponibles pour l'analyse des données fournies par IROAD 2 avec une description de l'objet et des avantages de chacun. Si vous cherchez un guide détaillé sur la façon d'utiliser chaque outil, nous vous recommandons de poursuivre la lecture du manuel de l'utilisateur à la fin de ce chapitre. La liste suivante présente les différents outils disponibles dans IROAD 2 :</para>
   <orderedlist inheritnum="ignore" continuation="restarts">
     <listitem>
       <para>Les rapports standards</para>
@@ -40,7 +40,7 @@
     <para>La section suivante donne une description de chaque outil.</para>
     <section>
       <title>Les rapports standards</title>
-      <para>Les rapports standards sont des rapports ayant un design prédéfini. Cela signifie que ces rapports sont facilement accessibles en quelques clics et peuvent être utilisés par les utilisateurs de tout niveau d'expérience. Le rapport peut contenir des statistiques sous forme de tableaux et graphiques, et peut être adaptée pour répondre à la plupart des exigences. La solution de rapport dans DHIS 2 est basée sur JasperReports et les rapports sont le plus souvent conçus avec le concepteur de rapport iReport. Même si le design du rapport est fixé, les données peuvent être chargées dynamiquement dans le rapport en sélectionnant une unité d'organisation de la hiérarchie et en variant les périodes.</para>
+      <para>Les rapports standards sont des rapports ayant un design prédéfini. Cela signifie que ces rapports sont facilement accessibles en quelques clics et peuvent être utilisés par les utilisateurs de tout niveau d'expérience. Le rapport peut contenir des statistiques sous forme de tableaux et graphiques, et peut être adaptée pour répondre à la plupart des exigences. La solution de rapport dans IROAD 2 est basée sur JasperReports et les rapports sont le plus souvent conçus avec le concepteur de rapport iReport. Même si le design du rapport est fixé, les données peuvent être chargées dynamiquement dans le rapport en sélectionnant une unité d'organisation de la hiérarchie et en variant les périodes.</para>
     </section>
     <section>
       <title>Les rapports d'ensemble de données</title>
@@ -76,7 +76,7 @@
     </section>
     <section>
       <title>My Datamart et les tableaux croisés dynamiques Excel</title>
-      <para>Le but de l'outil My Datamart est de fournir aux utilisateurs un accès complet à des données agrégées, même sur des connexions Internet qui ne sont pas fiables. Cet outil est constitué d'une application client légère installée sur l'ordinateur de l'utilisateur. Il se connecte sur un serveur central en ligne qui exécute une instance DHIS 2, télécharge les données agrégées, et les stocke dans une base de données sur l'ordinateur local. Cette base de données peut être utilisée pour connecter des outils tiers comme les tableaux croisés dynamiques Excel, qui sont un outil puissant pour l'analyse des données et leur visualisation. Cette solution implique que de courtes périodes de connectivité Internet soient établies pour synchroniser la base de données cliente avec le serveur central en ligne, après quoi les données seront disponibles indépendamment de la connexion. Veuillez lire le chapitre consacré à cet outil pour plus d'informations à ce sujet.</para>
+      <para>Le but de l'outil My Datamart est de fournir aux utilisateurs un accès complet à des données agrégées, même sur des connexions Internet qui ne sont pas fiables. Cet outil est constitué d'une application client légère installée sur l'ordinateur de l'utilisateur. Il se connecte sur un serveur central en ligne qui exécute une instance IROAD 2, télécharge les données agrégées, et les stocke dans une base de données sur l'ordinateur local. Cette base de données peut être utilisée pour connecter des outils tiers comme les tableaux croisés dynamiques Excel, qui sont un outil puissant pour l'analyse des données et leur visualisation. Cette solution implique que de courtes périodes de connectivité Internet soient établies pour synchroniser la base de données cliente avec le serveur central en ligne, après quoi les données seront disponibles indépendamment de la connexion. Veuillez lire le chapitre consacré à cet outil pour plus d'informations à ce sujet.</para>
     </section>
   </section>
 </chapter>

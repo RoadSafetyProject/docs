@@ -6,7 +6,7 @@
   <para>A packaged app is an <ulink
       url="https://developer.mozilla.org/en-US/docs/Open_Web_apps_and_Web_standards">Open Web
       App</ulink> that has all of its resources (HTML, CSS, JavaScript, app manifest, and so on)
-    contained in a zip file. It can be uploaded to a DHIS 2 installation directly through the user
+    contained in a zip file. It can be uploaded to a IROAD 2 installation directly through the user
     interface at runtime. A packaged app is a ZIP file with an <ulink
       url="http://www.w3.org/2008/webapps/manifest/">app manifest</ulink> in its root directory. The
     manifest must be named <filename>manifest.webapp</filename>. A throrough description of apps can
@@ -14,18 +14,18 @@
     >here</ulink>.</para>
   <section>
     <title>Purpose of packaged Apps</title>
-    <para>The purpose of packaged apps is to extend the web interface of DHIS 2, without the need to
-      modify the source code of DHIS 2 itself. A system deployment will often have custom and unique
+    <para>The purpose of packaged apps is to extend the web interface of IROAD 2, without the need to
+      modify the source code of IROAD 2 itself. A system deployment will often have custom and unique
       requirements. The apps provide a convenient extension point to the user interface. Through
-      apps, you can complement and customize the DHIS 2 core functionality with custom solutions in
+      apps, you can complement and customize the IROAD 2 core functionality with custom solutions in
       a loosely coupled and clean manner.</para>
-    <para>Apps do not have permissions to interact directly with DHIS 2 Java API. Instead, apps are
-      expected to use functionality and interact with the DHIS 2 services and data by utilizing the
-      DHIS 2 Web API.</para>
+    <para>Apps do not have permissions to interact directly with IROAD 2 Java API. Instead, apps are
+      expected to use functionality and interact with the IROAD 2 services and data by utilizing the
+      IROAD 2 Web API.</para>
   </section>
   <section>
     <title>Creating Apps</title>
-    <para>DHIS 2 apps are constructed with HTML, JavaScript and CSS files, similar to any other web
+    <para>IROAD 2 apps are constructed with HTML, JavaScript and CSS files, similar to any other web
       application. Apps also need a special file called <emphasis role="italic"
         >manifest.webapp</emphasis> which describes the contents of the app. This file should be in
       the format specified by the <ulink url="http://www.w3.org/2008/webapps/manifest/">W3C Manifest
@@ -57,11 +57,11 @@
     <para>The <emphasis role="italic">manifest.webapp</emphasis> file must be located at the root of
       the project. Among the properties, the <emphasis role="italic">icons→48</emphasis>
       property is used for the icon that is displayed on the list of apps that are installed on a
-      DHIS 2 instance. The <emphasis role="italic">activities</emphasis> property is an
+      IROAD 2 instance. The <emphasis role="italic">activities</emphasis> property is an
       dhis-specific extension meant to differentiate between a standard Open Web App and an app that
-      can be installed in DHIS 2. The <emphasis role="italic">*</emphasis> value for <emphasis role="italic">href</emphasis> is converted to the appropriate URL when the app is uploaded
-      and installed in DHIS 2. This value can then be used by the application&apos;s JavaScript and HTML
-      files to make calls to the DHIS 2 Web API and identify the correct location of DHIS 2 server
+      can be installed in IROAD 2. The <emphasis role="italic">*</emphasis> value for <emphasis role="italic">href</emphasis> is converted to the appropriate URL when the app is uploaded
+      and installed in IROAD 2. This value can then be used by the application&apos;s JavaScript and HTML
+      files to make calls to the IROAD 2 Web API and identify the correct location of IROAD 2 server
       on which the app has been installed. To clarify, the <emphasis role="italic">activities</emphasis> part will look similar to this after the app has been
       installed:</para>
     <screen>&quot;activities&quot;: {
@@ -86,11 +86,11 @@
       the developer to organize CSS, images and Javascript files inside the app as needed.</para>
     <para>All the files in the project should be compressed into a standard zip archive. Note that
       the manifest.webapp file must be located on the root of the zip archive (do not include a
-      parent directory in the archive). The zip archive can then be installed into DHIS 2 as you
+      parent directory in the archive). The zip archive can then be installed into IROAD 2 as you
       will see in the next section.</para>
   </section>
   <section>
-    <title>Configuring DHIS 2 for Apps Installation</title>
+    <title>Configuring IROAD 2 for Apps Installation</title>
     <para>The <emphasis>App Manager</emphasis> is found under Services → Apps. If your logged in user has
       permissions to view and edit settings you will see the Settings link in the left menu.</para>
     <para><inlinegraphic fileref="resources/images/apps/app-settings.png" format="PNG" align="center" width="70%"/></para>
@@ -98,28 +98,28 @@
     <orderedlist>
       <listitem>
         <para><emphasis role="italic">App Installation Folder:</emphasis> The folder on the file
-          system where apps are unpacked. By default this is under the expanded DHIS folder suffixed
+          system where apps are unpacked. By default this is under the expanded IROAD folder suffixed
           by /apps. If you like to install your apps in another location, say <filename>www</filename> folder of Apache
           2, you can specify the absolute path to that directory on the server, making your apps to
           be unpacked at that location.</para>
       </listitem>
       <listitem>
         <para><emphasis role="italic">App Base URL:</emphasis> The URL through which the apps can be
-          found on the Web. By default this is the same as your DHIS 2 URL suffixed by /apps. If you
+          found on the Web. By default this is the same as your IROAD 2 URL suffixed by /apps. If you
           are installing apps through a different web server you need to provide the full URL for
           that web server.</para>
       </listitem>
     </orderedlist>
   </section>
   <section>
-    <title>Installing Apps into DHIS 2</title>
+    <title>Installing Apps into IROAD 2</title>
     <para>Apps can be installed by uploading zip file into the App Manager. In, Services →
       Apps, click on the <emphasis role="italic">App Store</emphasis> menu item.</para>
     <para><inlinegraphic fileref="resources/images/apps/app-management.png" format="PNG" align="center"/></para>
     <para>The app can be uploaded by pressing the Browse button and after selecting the zip package,
-      the file is uploaded automatically and installed in DHIS 2. You can also browse through apps
-      in the DHIS 2 <ulink url="https://www.dhis2.org/appstore">app store</ulink> and download apps
-      from there. The DHIS 2 app store allows for app searching, reviewing, commenting, requesting
+      the file is uploaded automatically and installed in IROAD 2. You can also browse through apps
+      in the IROAD 2 <ulink url="https://www.dhis2.org/appstore">app store</ulink> and download apps
+      from there. The IROAD 2 app store allows for app searching, reviewing, commenting, requesting
       features, rating on the apps by the community.</para>
   </section>
   <section>
@@ -145,9 +145,9 @@
       <screen>curl -X DELETE -u user:pass http://server.com/api/apps/&lt;app-key></screen></para>
     <para>To force a reload of currently installed apps, you can issue the following command. This
       is useful if you added a file manually directly to the file system, instead of uploading
-      through the DHIS 2 user interface.
+      through the IROAD 2 user interface.
       <screen>curl -X PUT -u user:pass http://server.com/api/apps</screen></para>
-    <para>To let DHIS 2 serve apps from the Web API make sure to set the "App base URL" to point to
+    <para>To let IROAD 2 serve apps from the Web API make sure to set the "App base URL" to point to
       the apps resource, i.e.:<screen>http://server.com/api/apps</screen></para>
     <para>To set the apps configuration you can make a POST request to the <emphasis role="italic"
         >config</emphasis> resourec with a JSON payload:</para>
@@ -160,14 +160,14 @@
       resource:</para>
     <screen>curl -X DELETE -u user:pass http://server.com/api/apps/config</screen>
     <para>Note that by default apps will be served through the apps Web API resource, and the file
-      system folder will be <emphasis role="italic">DHIS2_HOME/apps</emphasis>. These systems should
+      system folder will be <emphasis role="italic">IROAD2_HOME/apps</emphasis>. These systems should
       be fine for most situations.</para>
   </section>
   <section>
-    <title>Adding the DHIS 2 menu to your app</title>
-    <para>In order to maintain a uniform appearance within DHIS 2 it is possible to add your
+    <title>Adding the IROAD 2 menu to your app</title>
+    <para>In order to maintain a uniform appearance within IROAD 2 it is possible to add your
       app&apos;s icon to the top menu. To begin, we start with a screenshot of the top-menu of the
-      DHIS 2 user interface, where your app&apos;s icon will be placed. <screenshot>
+      IROAD 2 user interface, where your app&apos;s icon will be placed. <screenshot>
         <mediaobject>
           <imageobject>
             <imagedata fileref="resources/images/apps/top-menu.png" format="PNG" width="80%"/>
@@ -182,7 +182,7 @@
       <itemizedlist>
         <listitem>
           <para><filename role="italic">jquery.min.js / jqLite / angular.element</filename> : One of
-            the mentioned libraries needs to be present. DHIS 2 employs a stripped-down version of
+            the mentioned libraries needs to be present. IROAD 2 employs a stripped-down version of
               <classname>jqLite</classname> that is present in <emphasis>Angular</emphasis> for the
             menu. This makes it compatible with jqLite and jQuery. </para>
         </listitem>
@@ -211,14 +211,14 @@
         </listitem>
         <listitem>
           <para><filename role="italic">dhis2.translate.js</filename> : Translate script that
-            translates menu text to your current DHIS2 language setting</para>
+            translates menu text to your current IROAD2 language setting</para>
         </listitem>
       </itemizedlist></para>
-    <para>For a app that will run using the same URL structure as the normal DHIS2 apps, only the
+    <para>For a app that will run using the same URL structure as the normal IROAD2 apps, only the
       JavaScript files and style-sheets are required. If your app is running using a different URL
       structure than the default one, you will need to specify a <parameter>base URL </parameter>before including the menu scripts. Including the scripts and style-sheets would
       look something like the following:
-      <screen>&lt;!-- DHIS2 Settings initialization for a baseUrl that is used for the menu --&gt;
+      <screen>&lt;!-- IROAD2 Settings initialization for a baseUrl that is used for the menu --&gt;
 &lt;script&gt;
  window.dhis2 = window.dhis2 || {};
  dhis2.settings = dhis2.settings || {};
@@ -237,8 +237,8 @@
 &lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot; href=&quot;./dhis-web-commons/css/menu.css&quot;&gt;
     </screen></para>
     <para>To clarify, the following part will initialize some variables. If you do not use any other
-      DHIS2 libraries these will not be set and therefore will have to be set by you first. After
-      that the third line specifies a base URL of where your DHIS 2 instance is running on your web
+      IROAD2 libraries these will not be set and therefore will have to be set by you first. After
+      that the third line specifies a base URL of where your IROAD 2 instance is running on your web
       server. For example: <emphasis role="italic">dhis</emphasis> in this case means the server is
       running at <emphasis role="italic">http://localhost:8080/dhis/</emphasis>. Note that you will
       only have to specify the part after the web address. So if your instance is running at
@@ -280,7 +280,7 @@ var appMenu = angular.module(&apos;appMenu&apos;,
 
         &lt;div id=&quot;dhisDropDownMenu&quot;&gt;&lt;/div&gt;
 
-        &lt;!-- DHIS2 Settings initialization for a baseUrl that is used for the menu --&gt;
+        &lt;!-- IROAD2 Settings initialization for a baseUrl that is used for the menu --&gt;
         &lt;script&gt;
             window.dhis2 = window.dhis2 || {};
             dhis2.settings = dhis2.settings || {};

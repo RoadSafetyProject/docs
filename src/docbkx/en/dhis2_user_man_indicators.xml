@@ -16,7 +16,7 @@
   <section id="indicator">
     <title>Indicators</title>
     <para>Indicators are composed of multiple data elements, and typically consist of a numerator
-        and denominator. Calculated totals do not have a denominator. Indicators are never entered directly in DHIS2 through data entry, but are derived from combinations of
+        and denominator. Calculated totals do not have a denominator. Indicators are never entered directly in IROAD2 through data entry, but are derived from combinations of
         data elements and factors. Indicators are used to calculate coverage rates, incidence and
         other values are a result of data element values that have been entered into the system. </para>
     <para>To access the Indicator maintains page, press Maintenance -&gt; Data Element and Indicators  and then pressing &quot;Indicator&quot; from the left pane or the main dialog.  Similar to data elements, you can add, delete, modify and view extra information about the indicators in the system. </para>
@@ -153,7 +153,7 @@
       </mediaobject>
     </screenshot>
     <note>
-      <para>As of version 2.4 of DHIS2, the &quot;Calculated data element&quot; object has been deprecated. Instead, a calculated data element can be created by creating an indicator type with a factor of &quot;1&quot; and by setting the &quot;Number&quot; option to &quot;Yes&quot;. The effect of setting the &quot;Number&quot; option to &quot;Yes&quot; will be that the indicator will effectively not have a denominator. You will therefore only be able to define a numerator, which will serve as the formula of the calculated data element.</para>
+      <para>As of version 2.4 of IROAD2, the &quot;Calculated data element&quot; object has been deprecated. Instead, a calculated data element can be created by creating an indicator type with a factor of &quot;1&quot; and by setting the &quot;Number&quot; option to &quot;Yes&quot;. The effect of setting the &quot;Number&quot; option to &quot;Yes&quot; will be that the indicator will effectively not have a denominator. You will therefore only be able to define a numerator, which will serve as the formula of the calculated data element.</para>
     </note>
   </section>
   <section id="indicatorGroup">

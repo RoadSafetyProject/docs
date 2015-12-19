@@ -14,8 +14,8 @@
   <para>Indicador, Tipo de Indicador, Grupo de Indicadores, Editor Grupo de Indicadores, y Set Grupo de Indicadores. </para>
   <section id="indicator">
     <title>Indicadores</title>
-    <para>Los indicadores están formados por múltiples elementos de datos, y típicamente consisten son una fórmula sencilla con un numerador y un denominador. Los indicadores como tales no se introducen en DHIS 2, por el contrario se calcula su valor a partir de los datos en bruto registrados en el sistema y siguiendo la fórmula del indicador. Los indicadores se uzan para calcular por ejemplo tasas de cobertura, incidencia, ratios y otros valores calculables que son más útiles para el análisis de los datos que los propios datos en bruto definidos en los elementos de datos. </para>
-    <para>Para abrir la página principal de Indicadores, iremos desde el menú principal de DHIS 2 al menú Mantenimiento -&gt; Elemento de datos e Indicadores -&gt; Indicador. Aquí podemos añadir, modificar, borrar y ver información adicional sobre los indicadores presentes en le sistema utilizando los iconos que se encuentran junto a cada indicador en el listado.</para>
+    <para>Los indicadores están formados por múltiples elementos de datos, y típicamente consisten son una fórmula sencilla con un numerador y un denominador. Los indicadores como tales no se introducen en IROAD 2, por el contrario se calcula su valor a partir de los datos en bruto registrados en el sistema y siguiendo la fórmula del indicador. Los indicadores se uzan para calcular por ejemplo tasas de cobertura, incidencia, ratios y otros valores calculables que son más útiles para el análisis de los datos que los propios datos en bruto definidos en los elementos de datos. </para>
+    <para>Para abrir la página principal de Indicadores, iremos desde el menú principal de IROAD 2 al menú Mantenimiento -&gt; Elemento de datos e Indicadores -&gt; Indicador. Aquí podemos añadir, modificar, borrar y ver información adicional sobre los indicadores presentes en le sistema utilizando los iconos que se encuentran junto a cada indicador en el listado.</para>
     <screenshot>
       <mediaobject>
         <imageobject>

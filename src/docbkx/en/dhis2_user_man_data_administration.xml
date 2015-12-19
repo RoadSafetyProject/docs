@@ -2,10 +2,10 @@
 <!-- This document was created with Syntext Serna Free. --><!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN" "docbookV4.5/docbookx.dtd" []>
 <chapter>
   <title>Data Administration</title>
-  <para>The data administration module provides a range of functions to ensure that the data stored in the DHIS2 database is integral and that the database performance is optimised. These functions should be executed on a regular basis by a data administrator to ensure that the quality of the data stored is optimal. </para>
+  <para>The data administration module provides a range of functions to ensure that the data stored in the IROAD2 database is integral and that the database performance is optimised. These functions should be executed on a regular basis by a data administrator to ensure that the quality of the data stored is optimal. </para>
   <section id="dataBrowser">
     <title>Data browser</title>
-    <para>The data browser maintenance and analysis module which allows the user to produce a summary of the data contained in the DHIS2 database. The summary view provides a count of data elements which have been entered at the selected organisation unit as well as its descendants. Raw data for all data elements for a range of time periods and a given organisational unit can be browsed and exported to Excel, CSV, or PDF formats. There are four modes of the data browser, which determine how the data is summarized</para>
+    <para>The data browser maintenance and analysis module which allows the user to produce a summary of the data contained in the IROAD2 database. The summary view provides a count of data elements which have been entered at the selected organisation unit as well as its descendants. Raw data for all data elements for a range of time periods and a given organisational unit can be browsed and exported to Excel, CSV, or PDF formats. There are four modes of the data browser, which determine how the data is summarized</para>
     <itemizedlist>
       <listitem>
         <para>Data sets</para>
@@ -82,7 +82,7 @@
   </section>
   <section id="dataIntegrity">
     <title>Data integrity</title>
-    <para>DHIS2 can perform a wide range of data integrity checks on the data contained in the database. Identifying and correcting data integrity issues is extremely important for ensuring that the data used for analysis purposes is valid. Each of the data integrity checks that are performed by the system will be described, along with general procedures that can be performed to resolve these issues. </para>
+    <para>IROAD2 can perform a wide range of data integrity checks on the data contained in the database. Identifying and correcting data integrity issues is extremely important for ensuring that the data used for analysis purposes is valid. Each of the data integrity checks that are performed by the system will be described, along with general procedures that can be performed to resolve these issues. </para>
     <section>
       <title>Data elements without data set</title>
       <para>Each data element must be assigned to a data set. Values for data elements will not be able to be entered into the system if a data element is not assigned to a data set. Choose Maintenance-&gt;Datasets-&gt;Edit from the main menu and then add the &quot;orphaned&quot; data element to the appropriate data set. </para>
@@ -94,7 +94,7 @@
     <section>
       <title>Data elements violating exclusive group sets</title>
       <para>
-      Some data elements have been allocated to several data element groups that are members of the same data element group set. All group sets in DHIS2 are defined as exclusive, which means that a data element can <emphasis>only</emphasis> be allocated to <emphasis>one</emphasis> data element group within that group set. Go to Maintenance -&gt; Data elements and indicators -&gt;Data element groups to review each data element identified in the integrity check. Either remove the data element from all groups except the one that it should be allocated to, or see if one of the groups should be placed in a different group set.
+      Some data elements have been allocated to several data element groups that are members of the same data element group set. All group sets in IROAD2 are defined as exclusive, which means that a data element can <emphasis>only</emphasis> be allocated to <emphasis>one</emphasis> data element group within that group set. Go to Maintenance -&gt; Data elements and indicators -&gt;Data element groups to review each data element identified in the integrity check. Either remove the data element from all groups except the one that it should be allocated to, or see if one of the groups should be placed in a different group set.
       </para>
     </section>
     <section>
@@ -132,16 +132,16 @@
     <section>
       <title>Indicators violating exclusive group sets</title>
       <para>
-      Some indicators have been allocated to several indicator groups that are members of the same indicator group set. All group sets in DHIS2 are defined as exclusive, which means that an indicator can <emphasis>only</emphasis> be allocated to <emphasis>one</emphasis> indicator group within that group set. Go to Maintenance -&gt; Data elements and indicators -&gt;Indicator groups to review each indicator identified in the integrity check. Either remove the indicator from all groups except the one that it should be allocated to, or see if one of the groups should be placed in a different group set.
+      Some indicators have been allocated to several indicator groups that are members of the same indicator group set. All group sets in IROAD2 are defined as exclusive, which means that an indicator can <emphasis>only</emphasis> be allocated to <emphasis>one</emphasis> indicator group within that group set. Go to Maintenance -&gt; Data elements and indicators -&gt;Indicator groups to review each indicator identified in the integrity check. Either remove the indicator from all groups except the one that it should be allocated to, or see if one of the groups should be placed in a different group set.
       </para>
     </section>
     <section>
       <title>Duplicate periods</title>
-      <para>If periods have been imported from external applications, it may be possible that some periods will be duplicated. If you have any periods which appear to be duplicated here, you will need to resolve these directly in the DHIS2 database. All data which has been assigned to the duplicated period, should be moved to the correct period, and the duplicate period should be removed. </para>
+      <para>If periods have been imported from external applications, it may be possible that some periods will be duplicated. If you have any periods which appear to be duplicated here, you will need to resolve these directly in the IROAD2 database. All data which has been assigned to the duplicated period, should be moved to the correct period, and the duplicate period should be removed. </para>
     </section>
     <section>
       <title> Organisation units with cyclic references</title>
-      <para>Organisation units cannot be both parent and children of each other, directly nor indirectly. If this situation occurs, you will need to resolve the cyclic reference directly in the DHIS2 datrabase in the &quot;organisationunit&quot; table, by reassigning the &quot;parentid&quot; field of the organisation units. </para>
+      <para>Organisation units cannot be both parent and children of each other, directly nor indirectly. If this situation occurs, you will need to resolve the cyclic reference directly in the IROAD2 datrabase in the &quot;organisationunit&quot; table, by reassigning the &quot;parentid&quot; field of the organisation units. </para>
     </section>
     <section>
       <title>Orphaned organisation units</title>
@@ -157,7 +157,7 @@
     </section>
     <section>
       <title>Organisation units violating exclusive group sets</title>
-      <para>Some organisation units have been allocated to several organisation unit groups that are members of the same organisation unit group set. All group sets in DHIS are defined as exclusive, which means that an organisation unit can <emphasis>only</emphasis> be allocated to <emphasis>one</emphasis> organisation unit group within that Group Set. For instance, one organisation unit cannot normally belong to the both the &apos;Hospital&apos; and &apos;Clinic&apos; groups , but rather to only to one of them. Go to Organisation unit-&gt;Organisation unit groups to review each organisation unit identified in the integrity check. Remove the organisation units from all groups except the one that it should be allocated to.</para>
+      <para>Some organisation units have been allocated to several organisation unit groups that are members of the same organisation unit group set. All group sets in IROAD are defined as exclusive, which means that an organisation unit can <emphasis>only</emphasis> be allocated to <emphasis>one</emphasis> organisation unit group within that Group Set. For instance, one organisation unit cannot normally belong to the both the &apos;Hospital&apos; and &apos;Clinic&apos; groups , but rather to only to one of them. Go to Organisation unit-&gt;Organisation unit groups to review each organisation unit identified in the integrity check. Remove the organisation units from all groups except the one that it should be allocated to.</para>
     </section>
     <section>
       <title> Organisation unit groups without group sets</title>
@@ -187,7 +187,7 @@
       </listitem>
       <listitem>
         <para>Clear data mart (aggregated indicator and data value values)</para>
-        <para>The data mart is where DHIS 2 stores aggregated data produced during the export to
+        <para>The data mart is where IROAD 2 stores aggregated data produced during the export to
           data mart process. This function empties the database table which contains aggregated
           indicator and data element values.</para>
       </listitem>
@@ -230,7 +230,7 @@
     <title>Resource tables</title>
     <para>Resource tables are supporting tables that are used during analysis of data. One would
       typically join the contents of these tables with the data value table when doing queries from
-      third-party applications like Microsoft Excel. They are also used extensively by the analysis modules of DHIS2. Regeneration of the resource tables should
+      third-party applications like Microsoft Excel. They are also used extensively by the analysis modules of IROAD2. Regeneration of the resource tables should
       only be done once all data integrity issues are resolved. The resource tables are also generated automatically, every time the analytics process is run by the system. </para>
     <itemizedlist>
       <listitem>
@@ -280,7 +280,7 @@
   </section>
   <section>
     <title>Locale Management</title>
-    <para>It is possible to create custom locales in DHIS2. In addition to the locales available through the system, you might want to add a custom locale such as &quot;English&quot; and &quot;Zambia&quot; to the system. This would allow you to translate metadata objects to local languages, or to account for slight variants between countries which use a common metadata definition. </para>
+    <para>It is possible to create custom locales in IROAD2. In addition to the locales available through the system, you might want to add a custom locale such as &quot;English&quot; and &quot;Zambia&quot; to the system. This would allow you to translate metadata objects to local languages, or to account for slight variants between countries which use a common metadata definition. </para>
     <screenshot>
       <mediaobject>
         <imageobject>
@@ -292,12 +292,12 @@
   </section>
   <section id="sqlView">
     <title>SQL View</title>
-    <para>The SQL View functionality of DHIS2 will store the SQL view definition internally, and then materialize the view when requested. </para>
-    <para>Database administrators must be careful about creating database views directly in the DHIS
+    <para>The SQL View functionality of IROAD2 will store the SQL view definition internally, and then materialize the view when requested. </para>
+    <para>Database administrators must be careful about creating database views directly in the IROAD
       2 database. For instance, when the resource tables are generated, all of them will first be
       dropped and then re-created. If any SQL views depend on these tables, an integrity violation
       exception will be thrown and the process will be aborted.</para>
-    <para>The SQL views are dropped in reverse alphabetical order based on their names in DHIS 2,
+    <para>The SQL views are dropped in reverse alphabetical order based on their names in IROAD 2,
       and created in regular alphabetical order. This allows you to have dependencies between SQL
       views, given that views only depend on other views which come earlier in the alphabetical
       order. For instance, &quot;ViewB&quot; can safely depend on &quot;ViewA&quot;. Otherwise, having views depending
@@ -312,7 +312,7 @@
           </imageobject>
         </mediaobject>
       </screenshot>
-      <para>The &quot;Name&quot; attribute of the SQL view will be used to determine the name of the table that DHIS2 will create when the view is materialized by the user. The &quot;Description&quot; attribute allows one to provide some descriptive text about what the SQL view actually does. Finally, the &quot;SQL statement&quot; should contain the SQL view definition. Only SQL  &quot;SELECT&quot; statements are allowed and certain sensitive tables (i.e. user information) are not accessible Press &quot;Save&quot; to store the SQL view definition.</para>
+      <para>The &quot;Name&quot; attribute of the SQL view will be used to determine the name of the table that IROAD2 will create when the view is materialized by the user. The &quot;Description&quot; attribute allows one to provide some descriptive text about what the SQL view actually does. Finally, the &quot;SQL statement&quot; should contain the SQL view definition. Only SQL  &quot;SELECT&quot; statements are allowed and certain sensitive tables (i.e. user information) are not accessible Press &quot;Save&quot; to store the SQL view definition.</para>
     </section>
     <section>
       <title>SQL View management</title>
@@ -327,7 +327,7 @@
   </section>
   <section id="dataStatistics">
     <title>Data statistics</title>
-    <para>The data statistics module provides an overview of the number of objects stored in the DHIS2 database. </para>
+    <para>The data statistics module provides an overview of the number of objects stored in the IROAD2 database. </para>
     <screenshot>
       <mediaobject>
         <imageobject>
@@ -373,7 +373,7 @@
   </section>
   <section id="optionSet">
     <title>Option sets</title>
-    <para>Option sets provide a pre-defined dropdown (enumerated) list for use in DHIS2.  You can define any kind of options, for instance an option set
+    <para>Option sets provide a pre-defined dropdown (enumerated) list for use in IROAD2.  You can define any kind of options, for instance an option set
 called &quot;Delivery type&quot; where &quot;Normal&quot;, &quot;Breach&quot;, &quot;Caesarian&quot; and
 &quot;Assisted&quot; would be the options. To define a new option set, simply click &quot;Add new&quot;. Once you have defined the option set itself, you will need to define the options in the set, by clicking the name of the option set and selecting &quot;Option management&quot; from the context menu. </para>
     <screenshot>
@@ -425,9 +425,9 @@ called &quot;Delivery type&quot; where &quot;Normal&quot;, &quot;Breach&quot;, &
   </section>
   <section>
     <title>Data synchronization</title>
-    <para>DHIS 2 provides a feature for synchronizing data being captured on the local instance with
-      a another, remote instance of DHIS 2. This can be useful e.g. when you have deployed multiple
-      stand-alone instances of DHIS 2 which are required to submit data values to a central DHIS 2
+    <para>IROAD 2 provides a feature for synchronizing data being captured on the local instance with
+      a another, remote instance of IROAD 2. This can be useful e.g. when you have deployed multiple
+      stand-alone instances of IROAD 2 which are required to submit data values to a central IROAD 2
       instance.</para>
     <para>These are the steps to enable data synchronziation:<itemizedlist>
         <listitem>
@@ -442,7 +442,7 @@ called &quot;Delivery type&quot; where &quot;Normal&quot;, &quot;Breach&quot;, &
       </itemizedlist></para>
     <para>Some aspects of the data synchronization feature to be aware of:<itemizedlist>
         <listitem>
-          <para>The local DHIS 2 instance will store the password of the user account on the remote
+          <para>The local IROAD 2 instance will store the password of the user account on the remote
             instance encrypted in the local database. The remote account is used for authencation
             when transferring data. For security purposes make sure you set the &quot;enryption.password&quot;
             configuration parameter in hibernate.properties to a strong password.</para>
@@ -459,7 +459,7 @@ called &quot;Delivery type&quot; where &quot;Normal&quot;, &quot;Breach&quot;, &
             instance in order to work appropriately.</para>
         </listitem>
         <listitem>
-          <para>The very first time DHIS 2 attempts to synchronize data the system will include data
+          <para>The very first time IROAD 2 attempts to synchronize data the system will include data
             entered during the last three days. For the subsequent attempts the system will store
             the time of the last successful data synchronization and only include data saved or
             edited since that time. A synchronization job is considered successful only if data was

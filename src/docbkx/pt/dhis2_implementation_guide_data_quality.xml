@@ -29,7 +29,7 @@
   </section>
   <section>
     <title>Melhorar a qualidade dos dados</title>
-    <para>Melhorar a qualidade dos dados é uma tarefa de longo prazo, e muitas das medidas são de natureza organizacional. No entanto, a qualidade dos dados deve ser um problema desde o início de qualquer processo de implementação, e há algumas coisas que podem ser resolvidas de uma só vez, como cheques em DHIS2. Algumas medidas importantes de melhoria de qualidade de dados são:</para>
+    <para>Melhorar a qualidade dos dados é uma tarefa de longo prazo, e muitas das medidas são de natureza organizacional. No entanto, a qualidade dos dados deve ser um problema desde o início de qualquer processo de implementação, e há algumas coisas que podem ser resolvidas de uma só vez, como cheques em IROAD2. Algumas medidas importantes de melhoria de qualidade de dados são:</para>
     <itemizedlist>
       <listitem>
         <para>Transformações nas formas de coleta de dados, a harmonização das formas</para>
@@ -44,20 +44,20 @@
         <para>Incluir a qualidade dos dados em treinamento</para>
       </listitem>
       <listitem>
-        <para>Implementar controlos de qualidade de dados em DHIS 2</para>
+        <para>Implementar controlos de qualidade de dados em IROAD 2</para>
       </listitem>
     </itemizedlist>
   </section>
   <section>
-    <title>Usando DHIS 2 para melhorar a qualidade dos dados</title>
-    <para>DHIS a tem várias características que podem ajudar o trabalho de melhoria da qualidade de dados, validação durante a entrada de dados para certificar-se de dados são capturados no formato certo e dentro de um intervalo razoável, regras de validação definidas pelo usuário com base em relações matemáticas entre os dados que estão sendo capturados (por exemplo, subtotais vs totais), funções de análise de outlier, bem como relatórios sobre a cobertura de dados e integridade. Mais indiretamente, vários dos princípios de design dhis contribuir para a melhoria da qualidade de dados, como a ideia de harmonizar os dados em um armazém de dados integrado, apoiando o acesso nível local aos dados e ferramentas de análise, e, oferecendo uma ampla gama de ferramentas para análise de dados e disseminação. Com os processos de coleta de dados mais estruturados e harmonizadas e com o uso de informação reforçada em todos os níveis, a qualidade dos dados vai melhorar. Aqui está uma visão geral das funcionalidades mais diretamente visando a qualidade dos dados:</para>
+    <title>Usando IROAD 2 para melhorar a qualidade dos dados</title>
+    <para>IROAD a tem várias características que podem ajudar o trabalho de melhoria da qualidade de dados, validação durante a entrada de dados para certificar-se de dados são capturados no formato certo e dentro de um intervalo razoável, regras de validação definidas pelo usuário com base em relações matemáticas entre os dados que estão sendo capturados (por exemplo, subtotais vs totais), funções de análise de outlier, bem como relatórios sobre a cobertura de dados e integridade. Mais indiretamente, vários dos princípios de design dhis contribuir para a melhoria da qualidade de dados, como a ideia de harmonizar os dados em um armazém de dados integrado, apoiando o acesso nível local aos dados e ferramentas de análise, e, oferecendo uma ampla gama de ferramentas para análise de dados e disseminação. Com os processos de coleta de dados mais estruturados e harmonizadas e com o uso de informação reforçada em todos os níveis, a qualidade dos dados vai melhorar. Aqui está uma visão geral das funcionalidades mais diretamente visando a qualidade dos dados:</para>
     <section>
       <title>Validação de entrada de dados</title>
-      <para>A maneira mais básica de verificação da qualidade dos dados em DHIS 2 é ter certeza de que os dados que estão sendo capturados está no formato correto. O DHIS 2 vai dar aos usuários uma mensagem de que o valor inserido não está no formato correto e não vai salvar o valor até que tenha sido alterado para um valor aceito. Por exemplo texto não podem ser inseridos em um campo numérico. Os diferentes tipos de valores de dados suportados no DHIS 2 são explicadas no manual do usuário no capítulo sobre elementos de dados. </para>
+      <para>A maneira mais básica de verificação da qualidade dos dados em IROAD 2 é ter certeza de que os dados que estão sendo capturados está no formato correto. O IROAD 2 vai dar aos usuários uma mensagem de que o valor inserido não está no formato correto e não vai salvar o valor até que tenha sido alterado para um valor aceito. Por exemplo texto não podem ser inseridos em um campo numérico. Os diferentes tipos de valores de dados suportados no IROAD 2 são explicadas no manual do usuário no capítulo sobre elementos de dados. </para>
     </section>
     <section>
       <title>Intervalos mínimo e máximo</title>
-      <para>Para parar de erros de digitação durante a entrada de dados (por exemplo, &apos;1000 digitação &apos;em vez de &apos;100&apos;) os DHIS 2 verifica se o valor que está sendo digitado está dentro de um intervalo razoável. Esta gama é com base nos dados coletados anteriormente pela mesma unidade de saúde para o mesmo elemento de dados, e é composto por um mínimo e um valor máximo. Assim que um dos usuários entra em um valor fora o usuário será alertado de que o valor não é aceite. Para calcular os intervalos razoáveis ​​o sistema precisa de pelo menos seis meses (períodos) de dados.</para>
+      <para>Para parar de erros de digitação durante a entrada de dados (por exemplo, &apos;1000 digitação &apos;em vez de &apos;100&apos;) os IROAD 2 verifica se o valor que está sendo digitado está dentro de um intervalo razoável. Esta gama é com base nos dados coletados anteriormente pela mesma unidade de saúde para o mesmo elemento de dados, e é composto por um mínimo e um valor máximo. Assim que um dos usuários entra em um valor fora o usuário será alertado de que o valor não é aceite. Para calcular os intervalos razoáveis ​​o sistema precisa de pelo menos seis meses (períodos) de dados.</para>
     </section>
     <section>
       <title>As regras de validação</title>

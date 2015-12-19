@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN" "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd"[]>
 <chapter id="doc_guide_chapter">
-  <title>Guide de documentation du DHIS2</title>
+  <title>Guide de documentation du IROAD2</title>
   <section id="docs_1">
-    <title>Aperçu du système de documentation du DHIS 2</title>
+    <title>Aperçu du système de documentation du IROAD 2</title>
     <para remap="">
- Le DHIS 2 est un système de gestion d'informations agrégées, basé sur le web, qui bénéficie d'un développement très actif. Compte tenu de la nature modulaire de son système, sa base étendue d'utilisateurs et la nature globale de son développement, la mise en place d'une documentation complète était devenue nécessaire pour l'accompagner. C'est ainsi qu'une réflexion approfondie sur la nécessité d'une documentation du DHIS 2 a été menée au préalable, et que le choix d'utiliser DocBook pour conduire ce projet de documentation a été fait. Ce document ne va pas s'étendre sur les mérites relatifs de la plate-forme DocBook, mais veut plutôt servir de guide succinct à son emploi par les utilisateurs et développeurs de DHIS 2. 
+ Le IROAD 2 est un système de gestion d'informations agrégées, basé sur le web, qui bénéficie d'un développement très actif. Compte tenu de la nature modulaire de son système, sa base étendue d'utilisateurs et la nature globale de son développement, la mise en place d'une documentation complète était devenue nécessaire pour l'accompagner. C'est ainsi qu'une réflexion approfondie sur la nécessité d'une documentation du IROAD 2 a été menée au préalable, et que le choix d'utiliser DocBook pour conduire ce projet de documentation a été fait. Ce document ne va pas s'étendre sur les mérites relatifs de la plate-forme DocBook, mais veut plutôt servir de guide succinct à son emploi par les utilisateurs et développeurs de IROAD 2.
  <citation>Store2007</citation><ulink url="http://www.docbook.org">DocBook</ulink>
   est un système complet basé sur le XML destiné à la création de livres, documents généraux et autres documents techniques. Il est maintenu par  <ulink url=" http://www.oasis-open.org/">OASIS</ulink> . 
  </para>
@@ -13,7 +13,7 @@
   <section id="docs_2">
     <title>Introduction</title>
     <para>
- L'un des principaux avantages de DocBook est la séparation complète qu'il opère entre le contenu et la présentation. DocBook est un format XML pur, et il est bien documenté. Nous croyons qu'un très petit sous-ensemble de ses fonctionnalités est nécessaire à la réalisation d'une documentation de grande qualité du DHIS. Il contient environ 400 balises qui correspondent à quasiment tous les niveaux d'exigence des documentations techniques, mais en réalité, il n'y aura besoin que d'une petite douzaine de ces éléments pour réaliser une documentation de grande qualité du DHIS 2, aussi bien pour la production de documents destinés à l'impression que pour la production de documents consultables en ligne comme les pages HTML ou les pages d'aide intégrées à l'application elle-même. Il existe de nombreuses manières de créer des fichiers DocBook. Une liste assez exhaustive de ces possibilités est décrite  <ulink url="http://wiki.docbook.org/topic/DocBookAuthoringTools">ici</ulink> . Il est présentement recommandé d'utiliser l'éditeur WYSIWYG <ulink url="http://sourceforge.net/projects/sernafree.mirror/files/latest/download">Syntext Serna  Free</ulink> pour l'édition des fichiers sources DocBook. En principe, toutefois, n'importe quel éditeur de texte ou de fichiers XML peut être utilisé pour l'édition  de fichiers DocBook.  </para>
+ L'un des principaux avantages de DocBook est la séparation complète qu'il opère entre le contenu et la présentation. DocBook est un format XML pur, et il est bien documenté. Nous croyons qu'un très petit sous-ensemble de ses fonctionnalités est nécessaire à la réalisation d'une documentation de grande qualité du IROAD. Il contient environ 400 balises qui correspondent à quasiment tous les niveaux d'exigence des documentations techniques, mais en réalité, il n'y aura besoin que d'une petite douzaine de ces éléments pour réaliser une documentation de grande qualité du IROAD 2, aussi bien pour la production de documents destinés à l'impression que pour la production de documents consultables en ligne comme les pages HTML ou les pages d'aide intégrées à l'application elle-même. Il existe de nombreuses manières de créer des fichiers DocBook. Une liste assez exhaustive de ces possibilités est décrite  <ulink url="http://wiki.docbook.org/topic/DocBookAuthoringTools">ici</ulink> . Il est présentement recommandé d'utiliser l'éditeur WYSIWYG <ulink url="http://sourceforge.net/projects/sernafree.mirror/files/latest/download">Syntext Serna  Free</ulink> pour l'édition des fichiers sources DocBook. En principe, toutefois, n'importe quel éditeur de texte ou de fichiers XML peut être utilisé pour l'édition  de fichiers DocBook.  </para>
     <note>
       <para>Il est déconseillé d'utiliser l'éditeur XMLmind XML Editor Personal Edition (également connu sous le nom de XXE Personal), vu que cet éditeur ajoute "discrètement" des espaces inutiles et d'autres agrémentations au fichier source DocBook, rendant ainsi la création collaborative de documents fortement difficile.  </para>
     </note>
@@ -30,7 +30,7 @@
  Actuellement, le système de documentation fait partie du code source et il est hébergé chez  <ulink url="https://launchpad.net/">Launchpad</ulink> . Launchpad est une plateforme collaborative qui permet à plusieurs personnes de travailler sur des projets de logiciels de manière collaborative. Pour rendre cela possible, un système de contrôle de version est nécessaire, son rôle étant de gérer toutes les modifications que plusieurs utilisateurs pourraient effectuer. Launchpad utilise le système de contrôle de version  <emphasis>Bazaar</emphasis>  . Bien qu'il soit hors de portée de ce document de décrire les fonctionnalités de  <emphasis> Bazaar </emphasis>, les utilisateurs qui souhaitent créer des documents gagneraient à avoir au moins une compréhension de base de la façon dont ce système fonctionne. Un guide de base est fourni dans la section suivante. 
  </para>
     <para>
-  Avant de commencer à faire des ajouts ou des modifications dans la documentation, vous devrez d'abord effectuer une vérification du code source. Si vous n'avez pas déjà un identifiant sous Launchpad, vous devrez d'abord en créer un. Vous pouvez le faire sur  <ulink url="https://launchpad.net/+login">ce lien</ulink>. Une fois que vous vous serez enregistré sur Launchpad, vous devrez solliciter l'accès auprès du groupe des rédacteurs de documents du DHIS 2, le groupe baptisé  <emphasis> dhis2-documenters</emphasis>. Pour ce faire, connectez-vous à Launchpad, puis sollicitez un accès sur 
+  Avant de commencer à faire des ajouts ou des modifications dans la documentation, vous devrez d'abord effectuer une vérification du code source. Si vous n'avez pas déjà un identifiant sous Launchpad, vous devrez d'abord en créer un. Vous pouvez le faire sur  <ulink url="https://launchpad.net/+login">ce lien</ulink>. Une fois que vous vous serez enregistré sur Launchpad, vous devrez solliciter l'accès auprès du groupe des rédacteurs de documents du IROAD 2, le groupe baptisé  <emphasis> dhis2-documenters</emphasis>. Pour ce faire, connectez-vous à Launchpad, puis sollicitez un accès sur
  <ulink url="https://code.launchpad.net/~dhis2-documenters/dhis2/dhis2-docbook-docs">ce lien</ulink>. Votre demande devra d'abord être approuvée par le groupe d'administrateurs. Dès que cet accès vous sera accordé, il vous sera possible de soumettre vos modifications sur l'arbre de documentation et d'envoyer ou recevoir des messages sur les groupes de discussion. 
  </para>
   </section>
@@ -53,7 +53,7 @@ Démarrer Bazaar en faisant un clic droit sur le dossier si vous utilisez  <prod
       </listitem>
       <listitem>
         <para>
- Pour télécharger la dernière version de la documentation du projet DHIS 2, saisissez :
+ Pour télécharger la dernière version de la documentation du projet IROAD 2, saisissez :
  <command moreinfo="none">bzr checkout lp:~dhis2-documenters/dhis2/dhis2-docbook-docs</command>
 Si vous utilisez Linux, ou, également, si vous utilisez 
  <productname class="trade">Windows</productname>
@@ -81,11 +81,11 @@ Si vous utilisez Linux, ou, également, si vous utilisez
   et utilisez les pour insérer des liens à l’intérieur de votre document DocBook en utilisant un lien de fichier relatif. Lorsque le document est généré, au cours d'une étape séparée, les images seront automatiquement copiées pendant le processus de genèse.</para>
   </section>
   <section>
-    <title>Bibliographie du DHIS2</title>
+    <title>Bibliographie du IROAD2</title>
     <para>
-DHIS2 dispose d'un vaste ensemble de documentation académique qui peut servir de ressources précieuses pendant les implémentations, les propositions de projets et pour des lectures plus approfondies que ce qui est mis dans un mode d'emploi général. Une bibliographie spécialisée a été ajoutée au code source de l’application.
+IROAD2 dispose d'un vaste ensemble de documentation académique qui peut servir de ressources précieuses pendant les implémentations, les propositions de projets et pour des lectures plus approfondies que ce qui est mis dans un mode d'emploi général. Une bibliographie spécialisée a été ajoutée au code source de l’application.
  <ulink url="http://www.bibtex.org">BibTeX</ulink>
-  est un langage specialisé qui est largement utilisé dans le monde académique pour gérer les bases de données bibliographiques. Un grand nombre d’utilitaires libres et open source sont en mesure de travailler avec BibTeX. Actuellement, l’utilitaire de prédilection pour gérer la bibliographie de DHIS 2 est 
+  est un langage specialisé qui est largement utilisé dans le monde académique pour gérer les bases de données bibliographiques. Un grand nombre d’utilitaires libres et open source sont en mesure de travailler avec BibTeX. Actuellement, l’utilitaire de prédilection pour gérer la bibliographie de IROAD 2 est
  <ulink url="http://jabref.sourceforge.net/">JabRef</ulink>
  . 
  </para>
@@ -104,7 +104,7 @@ Les captures d'écran sont très utiles pour fournir des informations aux utilis
 </para>
     <programlisting format="linespecific">
       <screenshot>
-        <screeninfo>Ecran de la page de connexion à DHIS 2</screeninfo>
+        <screeninfo>Ecran de la page de connexion à IROAD 2</screeninfo>
         <mediaobject>
           <imageobject>
             <imagedata fileref="dhis2_login_screen.jpg" format="JPG" width="80%" />
@@ -124,11 +124,11 @@ DocBook offre un cadre modulaire où de nombreux documents séparés peuvent êt
 </para>
     <para>
       <programlisting format="linespecific">  &lt;section id="mod2_1"&gt;
-&lt;title&gt;Démarrer avec DHIS2&lt;/title&gt; ....</programlisting>
+&lt;title&gt;Démarrer avec IROAD2&lt;/title&gt; ....</programlisting>
     </para>
     <para>
       <programlisting format="linespecific">&lt;chapter&gt;
-&lt;title&gt;Démarrer avec DHIS2&lt;/title&gt; 
+&lt;title&gt;Démarrer avec IROAD2&lt;/title&gt;
 &lt;xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="dhis2_user_man_mod2.xml"
  xpointer="mod2_1" encoding="UTF-8"/&gt;
 ... </programlisting>
@@ -160,7 +160,7 @@ mod1.xml" encoding="UTF-8"/&gt; </programlisting>
  </para>
     <para>
  Les dernières constructions de la documentation sont disponibles sur 
- <ulink url="http://www.dhis2.org/documentation">le site web du DHIS2 </ulink>
+ <ulink url="http://www.dhis2.org/documentation">le site web du IROAD2 </ulink>
  . Les dernières versions instantanées sont disponibles à travers leur integration continue dans le serveur 
  <ulink url="http://apps.dhis2.org/ci/job/dhis-documentation/lastSuccessfulBuild/artifact/*zip*/archive.zip">ici</ulink>
  .

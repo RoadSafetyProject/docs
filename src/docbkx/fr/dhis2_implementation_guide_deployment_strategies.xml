@@ -2,7 +2,7 @@
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN" "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd"[]>
 <chapter>
   <title>Stratégies de déploiement</title>
-  <para>DHIS 2 est une application réseau qui peut être accédé par Internet, en intranet ou exécutée sur un poste local. Les solutions possibles de déploiement de DHIS 2 sont : i) Le déploiement hors ligne ii) Le déploiement en ligne et iii) Le déploiement hybride. Le sens de chacun de ces types de déploiement et leurs différences seront détaillés dans les sections suivantes.</para>
+  <para>IROAD 2 est une application réseau qui peut être accédé par Internet, en intranet ou exécutée sur un poste local. Les solutions possibles de déploiement de IROAD 2 sont : i) Le déploiement hors ligne ii) Le déploiement en ligne et iii) Le déploiement hybride. Le sens de chacun de ces types de déploiement et leurs différences seront détaillés dans les sections suivantes.</para>
   <section>
     <title>Le deployment hors ligne</title>
     <para>Un déploiement hors ligne signifie que plusieurs instances indépendantes sont installées chez les utilisateurs finaux, généralement au niveau du district. Le système est maintenu principalement par les utilisateurs finaux, typiquement des agents de santé de district, qui saisissent les données et génèrent des rapports à partir du système en cours d'exécution sur leur serveur local. Le système est généralement maintenu par une équipe nationale de super-utilisateurs qui effectuent des visites régulières au niveau des installations des districts. Les données sont remontées dans la hiérarchie par les utilisateurs finaux qui produisent des fichiers d'échange de données, lesquels sont envoyés par messagerie électronique ou physiquement par courrier ou déplacement personnel. (Notez que la brève connectivité Internet utilisée pour l'envoi de messages électroniques ne permet pas de définir que l'installation est en ligne). Ce style de déploiement a l'avantage évident de bien fonctionner lorsque la connectivité Internet nécessaire n'est pas disponible. D'un autre côté, ce modèle soulève de nombreux défis qui sont décrits dans la section suivante.</para>
@@ -39,7 +39,7 @@
         <para>Maintenance de la base de données : Comme pour le point précédent, les modifications des méta-données pourront être effectuées sur le serveur en ligne de façon centralisée et se propageront automatiquement à tous les clients lors de leur prochaine connexion au serveur. Ceci supprime toutes les questions liées au maintien de l'homogénéité des méta-données. Ceci est très pratique, par exemple, au cours de la phase initiale de conception de la base de données et au cours des processus annuels de révision puisque les utilisateurs finaux auront accès à une base cohérente et normalisée, même si des changements doivent se produire fréquemment.</para>
       </listitem>
     </itemizedlist>
-    <para>Cette approche pourrait être problématique dans le cas où la connexion Internet serait instable ou indisponible pour de longues périodes. DHIS 2 a cependant certaines fonctionnalités qui ne requièrent qu'une connexion Internet temporaire pour fonctionner correctement, comme l'outil "MyDatamart" présenté dans un chapitre séparé de ce guide.</para>
+    <para>Cette approche pourrait être problématique dans le cas où la connexion Internet serait instable ou indisponible pour de longues périodes. IROAD 2 a cependant certaines fonctionnalités qui ne requièrent qu'une connexion Internet temporaire pour fonctionner correctement, comme l'outil "MyDatamart" présenté dans un chapitre séparé de ce guide.</para>
   </section>
   <section>
     <title>Le déploiement hybride</title>
@@ -49,7 +49,7 @@
   </section>
   <section>
     <title>Hébergement du serveur</title>
-    <para>La solution de déploiement en ligne soulève la question de savoir où et  comment héberger le serveur qui exécutera l'application DHIS 2. Généralement, il existe plusieurs options :</para>
+    <para>La solution de déploiement en ligne soulève la question de savoir où et  comment héberger le serveur qui exécutera l'application IROAD 2. Généralement, il existe plusieurs options :</para>
     <orderedlist inheritnum="ignore" continuation="restarts">
       <listitem>
         <para>L’hébergement interne au sein du Ministère de la Santé</para>

@@ -2,7 +2,7 @@
 <!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN" "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd" []>
 <section id="mobile_sms_command">
   <title>SMS Command</title>
-  <para>SMS command feature helps DHIS system receiving SMS from users, patients, or even anonymous. A SMS command is an object containing the configurations for each SMS
+  <para>SMS command feature helps IROAD system receiving SMS from users, patients, or even anonymous. A SMS command is an object containing the configurations for each SMS
 form: reporting data from phones or j2me apps, alerting users, registering patient or user, etc. </para>
   <section>
     <title>Set up SMS command</title>
@@ -45,7 +45,7 @@ form: reporting data from phones or j2me apps, alerting users, registering patie
         </mediaobject>
       </screenshot>
       </para>
-    <para>With ALERT_PARSER and UNREGISTERED_PARSER, the SMS command will have user group because those are used for sending message such as SMS, DHIS conversation, email.</para>
+    <para>With ALERT_PARSER and UNREGISTERED_PARSER, the SMS command will have user group because those are used for sending message such as SMS, IROAD conversation, email.</para>
     <para>
         <screenshot>
         <mediaobject>

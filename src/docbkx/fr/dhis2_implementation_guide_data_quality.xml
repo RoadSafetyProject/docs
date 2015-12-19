@@ -13,7 +13,7 @@
   </section>
   <section>
     <title>Amélioration de la qualité des données</title>
-    <para>L'amélioration de la qualité des données est un processus de long terme, et de nombreuses mesures devant être prises dans ce sens sont de nature organisationnelle. Toutefois, la qualité des données doit être considérée comme un problème dès le début de tout processus de mise en œuvre, et  il ya il faut comprendre que certaines choses peuvent être traitées en une fois, comme les contrôles de DHIS2. Certaines importantes mesures pour améliorer la qualité des données sont :</para>
+    <para>L'amélioration de la qualité des données est un processus de long terme, et de nombreuses mesures devant être prises dans ce sens sont de nature organisationnelle. Toutefois, la qualité des données doit être considérée comme un problème dès le début de tout processus de mise en œuvre, et  il ya il faut comprendre que certaines choses peuvent être traitées en une fois, comme les contrôles de IROAD2. Certaines importantes mesures pour améliorer la qualité des données sont :</para>
     <itemizedlist>
       <listitem>
         <para>Les modifications à effectuer sur les formulaires de collecte de données, l'harmonisation des formulaires</para>
@@ -28,20 +28,20 @@
         <para>L'inclusion de cours sur la qualité des données dans la formation</para>
       </listitem>
       <listitem>
-        <para>La mise en œuvre de contrôles de qualité des données dans DHIS 2</para>
+        <para>La mise en œuvre de contrôles de qualité des données dans IROAD 2</para>
       </listitem>
     </itemizedlist>
   </section>
   <section>
-    <title>Utilisation DHIS 2 pour améliorer la qualité des données</title>
-    <para>DHIS 2 possède plusieurs fonctionnalités qui peuvent contribuer à l'amélioration de la qualité des données: la validation lors de la saisie de données pour s'assurer que les données sont saisies selon le format et dans une intervalle raisonnable, les règles de validation définies par  l'utilisateur basées sur des relations mathématiques entre les données collectées (par exemple des sous-totaux par rapport aux totaux), les fonctions d'analyse des valeurs aberrantes, ainsi que les rapports sur la couverture et la complétude des données. Plus indirectement, plusieurs des  principes de conception de DHIS 2 contribuent à l'amélioration de la qualité des données, comme l'idée de l'harmonisation des données dans un entrepôt de données intégré, le soutien à l'accès local au niveau des données et des outils d'analyse, et en offrant un large éventail d'outils pour  l'analyse des données et leur diffusion. Avec des processus de collecte de données plus structurés et harmonisés et le renforcement de l'utilisation de l'information à tous les niveaux, la qualité des données s'améliore. Voici un aperçu des fonctionnalités qui ciblent plus directement la qualité des données :</para>
+    <title>Utilisation IROAD 2 pour améliorer la qualité des données</title>
+    <para>IROAD 2 possède plusieurs fonctionnalités qui peuvent contribuer à l'amélioration de la qualité des données: la validation lors de la saisie de données pour s'assurer que les données sont saisies selon le format et dans une intervalle raisonnable, les règles de validation définies par  l'utilisateur basées sur des relations mathématiques entre les données collectées (par exemple des sous-totaux par rapport aux totaux), les fonctions d'analyse des valeurs aberrantes, ainsi que les rapports sur la couverture et la complétude des données. Plus indirectement, plusieurs des  principes de conception de IROAD 2 contribuent à l'amélioration de la qualité des données, comme l'idée de l'harmonisation des données dans un entrepôt de données intégré, le soutien à l'accès local au niveau des données et des outils d'analyse, et en offrant un large éventail d'outils pour  l'analyse des données et leur diffusion. Avec des processus de collecte de données plus structurés et harmonisés et le renforcement de l'utilisation de l'information à tous les niveaux, la qualité des données s'améliore. Voici un aperçu des fonctionnalités qui ciblent plus directement la qualité des données :</para>
     <section>
       <title>Validation des saisies de données</title>
-      <para>La façon la plus élémentaire d'effectuer un contrôle de la qualité des données dans DHIS 2 est de s'assurer que les données collectées sont au bon format. DHIS 2 donnera aux utilisateurs un message selon lequel la valeur saisie n'est pas au format correct et ne procédera pas à l'enregistrement de la valeur jusqu'à sa modification en une valeur acceptable. Par exemple un texte ne peut pas être entré dans un champ numérique. Les différents types de valeurs de données pris en charge dans DHIS 2 sont expliqués dans le manuel utilisateur dans le chapitre sur les  éléments de données.</para>
+      <para>La façon la plus élémentaire d'effectuer un contrôle de la qualité des données dans IROAD 2 est de s'assurer que les données collectées sont au bon format. IROAD 2 donnera aux utilisateurs un message selon lequel la valeur saisie n'est pas au format correct et ne procédera pas à l'enregistrement de la valeur jusqu'à sa modification en une valeur acceptable. Par exemple un texte ne peut pas être entré dans un champ numérique. Les différents types de valeurs de données pris en charge dans IROAD 2 sont expliqués dans le manuel utilisateur dans le chapitre sur les  éléments de données.</para>
     </section>
     <section>
       <title>Plages min et max</title>
-      <para>Pour éviter les erreurs de frappe lors de la saisie de données (par exemple, en tapant '1000' au lieu de '100') DHIS 2 peut vérifier que la valeur saisie est comprise dans un intervalle raisonnable. Cet intervalle est basé sur les données précédemment recueillies au sein du même établissement de santé pour le même élément de données, et se compose d'une valeur minimum et d'une valeur maximale. Dès qu'un utilisateur saisit une valeur en dehors de l'intervalle il est alerté sur le fait que la valeur n'est pas acceptée. Afin de pouvoir calculer les intervalles raisonnables le système a besoin d'avoir enregistré au moins six mois (périodes) de données.</para>
+      <para>Pour éviter les erreurs de frappe lors de la saisie de données (par exemple, en tapant '1000' au lieu de '100') IROAD 2 peut vérifier que la valeur saisie est comprise dans un intervalle raisonnable. Cet intervalle est basé sur les données précédemment recueillies au sein du même établissement de santé pour le même élément de données, et se compose d'une valeur minimum et d'une valeur maximale. Dès qu'un utilisateur saisit une valeur en dehors de l'intervalle il est alerté sur le fait que la valeur n'est pas acceptée. Afin de pouvoir calculer les intervalles raisonnables le système a besoin d'avoir enregistré au moins six mois (périodes) de données.</para>
     </section>
     <section>
       <title>Les règles de validation</title>

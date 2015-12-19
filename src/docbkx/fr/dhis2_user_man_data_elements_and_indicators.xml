@@ -1,8 +1,8 @@
 <? Xml version = '1 .0 'encoding =' UTF-8 "?> 
-<!-- Ce document a été créé avec Syntext Serna libre. --><! Chapitre DOCTYPE PUBLIC "- / / OASIS / / DTD DocBook XML V4.4 / / EN" "docbookV4.4/docbookx.dtd" [>] 
+<!-- Ce document a ï¿½tï¿½ crï¿½ï¿½ avec Syntext Serna libre. --><! Chapitre DOCTYPE PUBLIC "- / / OASIS / / DTD DocBook XML V4.4 / / EN" "docbookV4.4/docbookx.dtd" [>] 
 <chapter> 
-  <title> éléments de données et indicateurs</title> 
-  <para> Ce module est sous nécessaires à la gestion des éléments de données et les indicateurs utilisés par l'application. Lorsque le «Éléments de données et des indicateurs" options est choisi dans le menu principale de maintenance, l'écran suivant s'affiche: </para> 
+  <title> ï¿½lï¿½ments de donnï¿½es et indicateurs</title> 
+  <para> Ce module est sous nï¿½cessaires ï¿½ la gestion des ï¿½lï¿½ments de donnï¿½es et les indicateurs utilisï¿½s par l'application. Lorsque le ï¿½ï¿½lï¿½ments de donnï¿½es et des indicateurs" options est choisi dans le menu principale de maintenance, l'ï¿½cran suivant s'affiche: </para> 
   <screenshot> 
     <mediaobject> 
       <imageobject> 
@@ -10,43 +10,43 @@
       </imageobject> 
     </mediaobject> 
   </screenshot> 
-  <para> Il existe trois principales fonctions de ce module: addition et l'attribution des éléments de données et indicateurs, et la définition d'un dictionnaire de données. </para> 
+  <para> Il existe trois principales fonctions de ce module: addition et l'attribution des ï¿½lï¿½ments de donnï¿½es et indicateurs, et la dï¿½finition d'un dictionnaire de donnï¿½es. </para> 
   <section> 
-    <title> Entretien élément de données </title> 
-    <para> Chacune des options pour l'entretien des éléments de données seront décrites dans la section suivante. </para> 
+    <title> Entretien ï¿½lï¿½ment de donnï¿½es </title> 
+    <para> Chacune des options pour l'entretien des ï¿½lï¿½ments de donnï¿½es seront dï¿½crites dans la section suivante. </para> 
     <itemizedlist> 
       <listitem> 
-        <para> Élément de données par </para> 
-        <para> Créer, modifier, consulter et supprimer des éléments de données. </para> 
+        <para> ï¿½lï¿½ment de donnï¿½es par </para> 
+        <para> Crï¿½er, modifier, consulter et supprimer des ï¿½lï¿½ments de donnï¿½es. </para> 
       </listitem> 
       <listitem> 
-        <para> Données élément du groupe <para/> 
-        <para> Créer, modifier, consulter et supprimer des groupes d'éléments de données. </para> 
+        <para> Donnï¿½es ï¿½lï¿½ment du groupe <para/> 
+        <para> Crï¿½er, modifier, consulter et supprimer des groupes d'ï¿½lï¿½ments de donnï¿½es. </para> 
       </listitem> 
       <listitem> 
-    <para>Élément de données du groupe éditeur </para>
-        <para> facilement ajouter ou supprimer des éléments de données vers et à partir de groupes d'éléments de données. </para> 
+    <para>ï¿½lï¿½ment de donnï¿½es du groupe ï¿½diteur </para>
+        <para> facilement ajouter ou supprimer des ï¿½lï¿½ments de donnï¿½es vers et ï¿½ partir de groupes d'ï¿½lï¿½ments de donnï¿½es. </para> 
       </listitem> 
       <listitem> 
-        groupe <para> élément des ensembles de données éditeur </para> 
-        <para> Créer, modifier, consulter et supprimer des ensembles de données les éléments du groupe. </para> 
+        groupe <para> ï¿½lï¿½ment des ensembles de donnï¿½es ï¿½diteur </para> 
+        <para> Crï¿½er, modifier, consulter et supprimer des ensembles de donnï¿½es les ï¿½lï¿½ments du groupe. </para> 
       </listitem> 
       <listitem> 
-    <para>catégories de Éléments de données </para> 
-        <para> Créer, modifier, consulter et supprimer les catégories d'éléments de données. </para> 
+    <para>catï¿½gories de ï¿½lï¿½ments de donnï¿½es </para> 
+        <para> Crï¿½er, modifier, consulter et supprimer les catï¿½gories d'ï¿½lï¿½ments de donnï¿½es. </para> 
       </listitem> 
     </itemizedlist> 
     <section id="dataElement">  
-      <title> Éléments de données </title> 
-      <para> éléments de données constituent la base de DHIS2. Les éléments de données de définir ce qui est réellement enregistré dans le système, par exemple, nombre de vaccinations ou le nombre de cas de paludisme. La création effective et la définition des éléments de données eux-mêmes sont bien au-delà de la portée de ce manuel pour décrire, mais il est supposé que l'administrateur sera fourni avec une liste d'éléments de données normalisés pour l'inclusion dans le système DHIS2. </para> 
-      <para> Pour accéder au module de maintenance de l'élément de données, choisissez Maintenance-> Data-éléments> Élément de donnée. </para> 
-      Filtrer <para> Le 'par le nom' vous permettra de filtrer une gamme d'éléments de données si vous connaissez le nom complet de l'élément de données, ou seulement une partie de celui-ci. Tapez le nom de 
-               dans le champ de recherche et les éléments de données correspondantes sont affichées ci-dessous. 
-               Vous pouvez également choisir «Filtrer par groupe / view all 'pour affiner un ensemble de données 
-               Recherche élément au sein d'un groupe d'éléments de données particulier. En mode par défaut, ce 
-               champ affiche tous les éléments de données dans l'application. 
-               Le bouton 'Get PDF' peut être cliqué pour générer un fichier. Pdf de toutes les données 
-               éléments. Le bouton «Trier» peut être utilisée pour trier les éléments de données dans l'ordre alphabétique. </para> 
+      <title> ï¿½lï¿½ments de donnï¿½es </title> 
+      <para> ï¿½lï¿½ments de donnï¿½es constituent la base de IROAD2. Les ï¿½lï¿½ments de donnï¿½es de dï¿½finir ce qui est rï¿½ellement enregistrï¿½ dans le systï¿½me, par exemple, nombre de vaccinations ou le nombre de cas de paludisme. La crï¿½ation effective et la dï¿½finition des ï¿½lï¿½ments de donnï¿½es eux-mï¿½mes sont bien au-delï¿½ de la portï¿½e de ce manuel pour dï¿½crire, mais il est supposï¿½ que l'administrateur sera fourni avec une liste d'ï¿½lï¿½ments de donnï¿½es normalisï¿½s pour l'inclusion dans le systï¿½me IROAD2. </para>
+      <para> Pour accï¿½der au module de maintenance de l'ï¿½lï¿½ment de donnï¿½es, choisissez Maintenance-> Data-ï¿½lï¿½ments> ï¿½lï¿½ment de donnï¿½e. </para> 
+      Filtrer <para> Le 'par le nom' vous permettra de filtrer une gamme d'ï¿½lï¿½ments de donnï¿½es si vous connaissez le nom complet de l'ï¿½lï¿½ment de donnï¿½es, ou seulement une partie de celui-ci. Tapez le nom de 
+               dans le champ de recherche et les ï¿½lï¿½ments de donnï¿½es correspondantes sont affichï¿½es ci-dessous. 
+               Vous pouvez ï¿½galement choisir ï¿½Filtrer par groupe / view all 'pour affiner un ensemble de donnï¿½es 
+               Recherche ï¿½lï¿½ment au sein d'un groupe d'ï¿½lï¿½ments de donnï¿½es particulier. En mode par dï¿½faut, ce 
+               champ affiche tous les ï¿½lï¿½ments de donnï¿½es dans l'application. 
+               Le bouton 'Get PDF' peut ï¿½tre cliquï¿½ pour gï¿½nï¿½rer un fichier. Pdf de toutes les donnï¿½es 
+               ï¿½lï¿½ments. Le bouton ï¿½Trierï¿½ peut ï¿½tre utilisï¿½e pour trier les ï¿½lï¿½ments de donnï¿½es dans l'ordre alphabï¿½tique. </para> 
       <screenshot> 
         <mediaobject> 
           <imageobject> 
@@ -54,10 +54,10 @@
           </imageobject> 
         </mediaobject> 
       </screenshot> 
-      <para> Pour ajouter un nouvel élément de données, cliquez sur 'Ajouter nouveau bouton. Il ya différentes options disponibles sur cette page et qui permettent à l'utilisateur de modifier les éléments de données déjà présentes dans la base de données. Chacune des options sont décrites ci-dessous dans les «éléments de données Edition". </para> 
+      <para> Pour ajouter un nouvel ï¿½lï¿½ment de donnï¿½es, cliquez sur 'Ajouter nouveau bouton. Il ya diffï¿½rentes options disponibles sur cette page et qui permettent ï¿½ l'utilisateur de modifier les ï¿½lï¿½ments de donnï¿½es dï¿½jï¿½ prï¿½sentes dans la base de donnï¿½es. Chacune des options sont dï¿½crites ci-dessous dans les ï¿½ï¿½lï¿½ments de donnï¿½es Edition". </para> 
       <section> 
-        <title> L'édition de données des éléments </title> 
-        <para> Cliquez sur "Edit" fileref="resources/images/dhis2_images/edit.png" <inlinegraphic align="center"/> bouton pour modifier les propriétés d'un élément de données qui a été défini précédemment. </para> 
+        <title> L'ï¿½dition de donnï¿½es des ï¿½lï¿½ments </title> 
+        <para> Cliquez sur "Edit" fileref="resources/images/dhis2_images/edit.png" <inlinegraphic align="center"/> bouton pour modifier les propriï¿½tï¿½s d'un ï¿½lï¿½ment de donnï¿½es qui a ï¿½tï¿½ dï¿½fini prï¿½cï¿½demment. </para> 
         <screenshot> 
           <mediaobject> 
             <imageobject> 
@@ -67,40 +67,40 @@
         </screenshot> 
         <itemizedlist> 
           <listitem> 
-            Nom <para>: Préciser le nom précis de l'élément de données dans ce domaine. Chaque élément de données doit avoir un nom unique. </para> 
+            Nom <para>: Prï¿½ciser le nom prï¿½cis de l'ï¿½lï¿½ment de donnï¿½es dans ce domaine. Chaque ï¿½lï¿½ment de donnï¿½es doit avoir un nom unique. </para> 
           </listitem> 
           <listitem> 
-            <para> nom abrégé: En règle générale, une abréviation du nom de l'élément de données complet. Cet attribut est souvent utilisé dans les rapports pour afficher le nom de l'élément de données, où il ya peu d'espace disponible. </para> 
+            <para> nom abrï¿½gï¿½: En rï¿½gle gï¿½nï¿½rale, une abrï¿½viation du nom de l'ï¿½lï¿½ment de donnï¿½es complet. Cet attribut est souvent utilisï¿½ dans les rapports pour afficher le nom de l'ï¿½lï¿½ment de donnï¿½es, oï¿½ il ya peu d'espace disponible. </para> 
           </listitem> 
           <listitem> 
-            <para> Alternative nom: permet la définition d'un autre nom de l'élément de données. </para> 
+            <para> Alternative nom: permet la dï¿½finition d'un autre nom de l'ï¿½lï¿½ment de donnï¿½es. </para> 
           </listitem> 
           <listitem> 
-            <para> Code: Dans de nombreux pays, les éléments de données se voient attribuer un code. Ce code peut être entré dans ce domaine. </para> 
+            <para> Code: Dans de nombreux pays, les ï¿½lï¿½ments de donnï¿½es se voient attribuer un code. Ce code peut ï¿½tre entrï¿½ dans ce domaine. </para> 
           </listitem> 
           <listitem> 
-            Description <para>: permet une description textuelle complète de l'élément de données à enregistrer. L'utilisateur doit être aussi précise que possible, et fournira des informations complètes sur la façon dont l'élément de données est mesurée et ce que sa signification est. </para> 
+            Description <para>: permet une description textuelle complï¿½te de l'ï¿½lï¿½ment de donnï¿½es ï¿½ enregistrer. L'utilisateur doit ï¿½tre aussi prï¿½cise que possible, et fournira des informations complï¿½tes sur la faï¿½on dont l'ï¿½lï¿½ment de donnï¿½es est mesurï¿½e et ce que sa signification est. </para> 
           </listitem> 
           <listitem> 
-            <para> Active: Définit si un élément de données est actif ou non. Les éléments de données marqués comme inactifs, ne seront pas affichées dans les écrans de saisie des données. </para> 
+            <para> Active: Dï¿½finit si un ï¿½lï¿½ment de donnï¿½es est actif ou non. Les ï¿½lï¿½ments de donnï¿½es marquï¿½s comme inactifs, ne seront pas affichï¿½es dans les ï¿½crans de saisie des donnï¿½es. </para> 
           </listitem> 
           <listitem> 
-            <para> Type de domaine: Définit si un élément de données est un type global ou le patient de l'élément de données. </para> 
+            <para> Type de domaine: Dï¿½finit si un ï¿½lï¿½ment de donnï¿½es est un type global ou le patient de l'ï¿½lï¿½ment de donnï¿½es. </para> 
           </listitem> 
           <listitem> 
-            <para> Type de valeur: Définit le type de données cet élément de données sera utilisée pour enregistrer. Actuellement, il ya quatre options: nombre, texte, oui / non boolean (), et la date. </para> 
+            <para> Type de valeur: Dï¿½finit le type de donnï¿½es cet ï¿½lï¿½ment de donnï¿½es sera utilisï¿½e pour enregistrer. Actuellement, il ya quatre options: nombre, texte, oui / non boolean (), et la date. </para> 
           </listitem> 
           <listitem> 
-            <para> Agrégation exploitant: Définit l'opération d'agrégation par défaut qui sera utilisé sur cet élément de données. </para> 
+            <para> Agrï¿½gation exploitant: Dï¿½finit l'opï¿½ration d'agrï¿½gation par dï¿½faut qui sera utilisï¿½ sur cet ï¿½lï¿½ment de donnï¿½es. </para> 
           </listitem> 
           <listitem> 
-            <para> URL: Une URL avoir une description en profondeur de l'élément de données peuvent être entrées dans le champ "URL". Cela pourrait être par exemple, un lien vers un référentiel de métadonnées ou d'un registre qui contient des informations techniques détaillées sur la définition et la mesure de l'élément de données. </para> 
+            <para> URL: Une URL avoir une description en profondeur de l'ï¿½lï¿½ment de donnï¿½es peuvent ï¿½tre entrï¿½es dans le champ "URL". Cela pourrait ï¿½tre par exemple, un lien vers un rï¿½fï¿½rentiel de mï¿½tadonnï¿½es ou d'un registre qui contient des informations techniques dï¿½taillï¿½es sur la dï¿½finition et la mesure de l'ï¿½lï¿½ment de donnï¿½es. </para> 
           </listitem> 
           <listitem> 
-            <para> Combinaison des catégories: Définit quelle combinaison catégorie de l'élément de données doit avoir. </para> 
+            <para> Combinaison des catï¿½gories: Dï¿½finit quelle combinaison catï¿½gorie de l'ï¿½lï¿½ment de donnï¿½es doit avoir. </para> 
           </listitem> 
           <listitem> 
-            <para> ensembles de données d'éléments du groupe: Cliquez sur la case à cocher pour activer cette option poule choisir les éléments du groupe des ensembles de données de cet élément de données doit appartenir. Ensembles de données disponibles en éléments du groupe sont affichés din la fenêtre supérieure. Cliquez sur le jeu de groupe de données élément désiré, puis le <guibutton> "Ajouter la sélection" </ bouton guibutton> pour ajouter l'élément de données à l'ensemble du groupe. Pour supprimer un élément de données à partir d'un jeu de groupe, cliquez sur le groupe des éléments de données mis en bas de liste, puis cliquez sur <guibutton> "Supprimer la sélection" </> guibutton. </para> 
+            <para> ensembles de donnï¿½es d'ï¿½lï¿½ments du groupe: Cliquez sur la case ï¿½ cocher pour activer cette option poule choisir les ï¿½lï¿½ments du groupe des ensembles de donnï¿½es de cet ï¿½lï¿½ment de donnï¿½es doit appartenir. Ensembles de donnï¿½es disponibles en ï¿½lï¿½ments du groupe sont affichï¿½s din la fenï¿½tre supï¿½rieure. Cliquez sur le jeu de groupe de donnï¿½es ï¿½lï¿½ment dï¿½sirï¿½, puis le <guibutton> "Ajouter la sï¿½lection" </ bouton guibutton> pour ajouter l'ï¿½lï¿½ment de donnï¿½es ï¿½ l'ensemble du groupe. Pour supprimer un ï¿½lï¿½ment de donnï¿½es ï¿½ partir d'un jeu de groupe, cliquez sur le groupe des ï¿½lï¿½ments de donnï¿½es mis en bas de liste, puis cliquez sur <guibutton> "Supprimer la sï¿½lection" </> guibutton. </para> 
             <screenshot> 
               <mediaobject> 
                 <imageobject> 
@@ -110,8 +110,8 @@
             </screenshot> 
           </listitem> 
           <listitem> 
-            <para> Calculé: Cette option n'est disponible que si un élément de données est créée. </para> 
-            <para> Sélectionnez les éléments de données qui seront utilisés pour définir l'élément de données calculées, puis cliquez sur "Ajouter la sélection" pour les ajouter calculée liste de données composition d'éléments. Remplissez le facteur correct pour le composant de calcul d'éléments de données (par défaut 1). éléments constitutifs de l'élément de données calculées peuvent être supprimées de la définition en appuyant sur le bouton "Supprimer". <screenshot> 
+            <para> Calculï¿½: Cette option n'est disponible que si un ï¿½lï¿½ment de donnï¿½es est crï¿½ï¿½e. </para> 
+            <para> Sï¿½lectionnez les ï¿½lï¿½ments de donnï¿½es qui seront utilisï¿½s pour dï¿½finir l'ï¿½lï¿½ment de donnï¿½es calculï¿½es, puis cliquez sur "Ajouter la sï¿½lection" pour les ajouter calculï¿½e liste de donnï¿½es composition d'ï¿½lï¿½ments. Remplissez le facteur correct pour le composant de calcul d'ï¿½lï¿½ments de donnï¿½es (par dï¿½faut 1). ï¿½lï¿½ments constitutifs de l'ï¿½lï¿½ment de donnï¿½es calculï¿½es peuvent ï¿½tre supprimï¿½es de la dï¿½finition en appuyant sur le bouton "Supprimer". <screenshot> 
                 <mediaobject> 
                   <imageobject> 
                     width="60%" <imagedata align="center" fileref="resources/images/maintainence/data_element_calculated_define.png" format="PNG"/> 
@@ -120,7 +120,7 @@
               </screenshot> </para> 
           </listitem> 
           <listitem> 
-            <para> niveaux d'agrégation: L'option niveaux d'agrégation permet à l'élément de données à être agrégées à un ou plusieurs niveaux. Lorsque l'utilisateur clique sur l'agrégation des niveaux de l'option, un menu déroulant apparaît, qui affiche des niveaux d'agrégation disponibles. Le niveau d'agrégation souhaité est alors sélectionné en cliquant sur 'Ajouter la sélection' bouton. Par défaut, l'agrégation va commencer à l'unité d'organisation le plus bas attribué. <screenshot> 
+            <para> niveaux d'agrï¿½gation: L'option niveaux d'agrï¿½gation permet ï¿½ l'ï¿½lï¿½ment de donnï¿½es ï¿½ ï¿½tre agrï¿½gï¿½es ï¿½ un ou plusieurs niveaux. Lorsque l'utilisateur clique sur l'agrï¿½gation des niveaux de l'option, un menu dï¿½roulant apparaï¿½t, qui affiche des niveaux d'agrï¿½gation disponibles. Le niveau d'agrï¿½gation souhaitï¿½ est alors sï¿½lectionnï¿½ en cliquant sur 'Ajouter la sï¿½lection' bouton. Par dï¿½faut, l'agrï¿½gation va commencer ï¿½ l'unitï¿½ d'organisation le plus bas attribuï¿½. <screenshot> 
                 <mediaobject> 
                   <imageobject> 
                     width="60%" <imagedata align="center" fileref="resources/images/maintainence/data_element_aggregation_levels.png" format="PNG"/> 
@@ -129,11 +129,11 @@
               </screenshot> </para> 
           </listitem> 
         </itemizedlist> 
-        <para> Après avoir fait les changements nécessaires, cliquez sur "Enregistrer" pour les instituer. Le bouton "Annuler" annule toutes les modifications apportées. </para> 
+        <para> Aprï¿½s avoir fait les changements nï¿½cessaires, cliquez sur "Enregistrer" pour les instituer. Le bouton "Annuler" annule toutes les modifications apportï¿½es. </para> 
       </section> 
       <section> 
-        <title>Traduction de données de élément</title> 
-        <para> DHIS2 fournit des fonctionnalités de traduire les éléments de données existantes dans d'autres langues. Appuyez simplement sur le bouton de traduction fileref="resources/images/dhis2_images/i18n.png" <inlinegraphic align="center"/> pour obtenir de grands yeux. Le dialogue suivant apparaît. </para> 
+        <title>Traduction de donnï¿½es de ï¿½lï¿½ment</title> 
+        <para> IROAD2 fournit des fonctionnalitï¿½s de traduire les ï¿½lï¿½ments de donnï¿½es existantes dans d'autres langues. Appuyez simplement sur le bouton de traduction fileref="resources/images/dhis2_images/i18n.png" <inlinegraphic align="center"/> pour obtenir de grands yeux. Le dialogue suivant apparaï¿½t. </para>
         <screenshot> 
           <mediaobject> 
             <imageobject> 
@@ -141,23 +141,23 @@
             </imageobject> 
           </mediaobject> 
         </screenshot> 
-        <para> La langue de référence est affichée dans la partie supérieure droite du dialogue. Choisissez un lieu de traduire les éléments de données en en sélectionnant une option dans le menu déroulant ci-locale. Précisez le nom, court-nom et la description dans la langue cible. Appuyez sur «Enregistrer» pour enregistrer vos modifications. </para> 
-        <para> La section "Détails" de ce dialogue vous permettra d'ajouter un nouvel endroit si elle n'est pas déjà présent dans la base de données. Il ya deux options: </para> 
+        <para> La langue de rï¿½fï¿½rence est affichï¿½e dans la partie supï¿½rieure droite du dialogue. Choisissez un lieu de traduire les ï¿½lï¿½ments de donnï¿½es en en sï¿½lectionnant une option dans le menu dï¿½roulant ci-locale. Prï¿½cisez le nom, court-nom et la description dans la langue cible. Appuyez sur ï¿½Enregistrerï¿½ pour enregistrer vos modifications. </para> 
+        <para> La section "Dï¿½tails" de ce dialogue vous permettra d'ajouter un nouvel endroit si elle n'est pas dï¿½jï¿½ prï¿½sent dans la base de donnï¿½es. Il ya deux options: </para> 
         <itemizedlist> 
           <listitem> 
             <para> Codes de langue </para>
-            Désigne <para> à la norme ISO 639-1 (code à deux lettres) code de langue. Reportez-vous à ce site Web url="http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes"> <ulink page </ ulink> pour une liste détaillée des codes de langue. </para> 
+            Dï¿½signe <para> ï¿½ la norme ISO 639-1 (code ï¿½ deux lettres) code de langue. Reportez-vous ï¿½ ce site Web url="http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes"> <ulink page </ ulink> pour une liste dï¿½taillï¿½e des codes de langue. </para> 
           </listitem> 
           <listitem> 
             <para>Code du pays </para> 
-            Désigne <para> à la norme ISO 3166-1-alpha-2 code. Une liste complète est disponible <ulink url="http://www.iso.org/iso/country_codes/iso_3166_code_lists/english_country_names_and_code_elements.htm"> ici </ ulink>. </para> 
+            Dï¿½signe <para> ï¿½ la norme ISO 3166-1-alpha-2 code. Une liste complï¿½te est disponible <ulink url="http://www.iso.org/iso/country_codes/iso_3166_code_lists/english_country_names_and_code_elements.htm"> ici </ ulink>. </para> 
           </listitem> 
         </itemizedlist> 
-        <para> La combinaison de ces deux codes ensemble, forme un "locale" du code, qui est composé de la combinaison de l'emplacement et la langue. Une discussion très complète de la norme technique (RFC 3066) est disponible <ulink url="http://www.ietf.org/rfc/rfc3066.txt"> ici </ ulink>. Cette <ulink url="http://www.i18nguy.com/unicode/language-identifiers.html"> page </ ulink> fournit une liste très complète des codes de paramètres régionaux reconnus. </para> 
+        <para> La combinaison de ces deux codes ensemble, forme un "locale" du code, qui est composï¿½ de la combinaison de l'emplacement et la langue. Une discussion trï¿½s complï¿½te de la norme technique (RFC 3066) est disponible <ulink url="http://www.ietf.org/rfc/rfc3066.txt"> ici </ ulink>. Cette <ulink url="http://www.i18nguy.com/unicode/language-identifiers.html"> page </ ulink> fournit une liste trï¿½s complï¿½te des codes de paramï¿½tres rï¿½gionaux reconnus. </para> 
       </section>
       <section> 
-        <title> Suppression d'un élément de données</title> 
-        <para> suffit d'appuyer sur le bouton Supprimer fileref="resources/images/dhis2_images/delete.png" <inlinegraphic align="center"/> pour supprimer un élément de données. Notez que cette opération n'est possible que s'il n'ya pas de données attachées aux éléments de données elle-même. L'utilisateur sera invité à veiller à ce que l'élément de données devraient être supprimées. </para> 
+        <title> Suppression d'un ï¿½lï¿½ment de donnï¿½es</title> 
+        <para> suffit d'appuyer sur le bouton Supprimer fileref="resources/images/dhis2_images/delete.png" <inlinegraphic align="center"/> pour supprimer un ï¿½lï¿½ment de donnï¿½es. Notez que cette opï¿½ration n'est possible que s'il n'ya pas de donnï¿½es attachï¿½es aux ï¿½lï¿½ments de donnï¿½es elle-mï¿½me. L'utilisateur sera invitï¿½ ï¿½ veiller ï¿½ ce que l'ï¿½lï¿½ment de donnï¿½es devraient ï¿½tre supprimï¿½es. </para> 
         <screenshot> 
           <mediaobject> 
             <imageobject> 
@@ -167,13 +167,13 @@
         </screenshot> 
       </section> 
       <section> 
-        > Affichage des données <title> élément de détails </title> 
-        <para> Cette opération affiche un panneau en ligne dans le navigateur qui affiche toutes les métadonnées d'un élément de données. Appuyez sur le bouton d'information fileref="resources/images/dhis2_images/information.png" <inlinegraphic align="center"/> pour accéder à ce point de vue. </para> 
+        > Affichage des donnï¿½es <title> ï¿½lï¿½ment de dï¿½tails </title> 
+        <para> Cette opï¿½ration affiche un panneau en ligne dans le navigateur qui affiche toutes les mï¿½tadonnï¿½es d'un ï¿½lï¿½ment de donnï¿½es. Appuyez sur le bouton d'information fileref="resources/images/dhis2_images/information.png" <inlinegraphic align="center"/> pour accï¿½der ï¿½ ce point de vue. </para> 
       </section> 
     </section> 
     id="dataElementGroup"> <section 
-      <title> Élément de données des groupes </title> 
-      groupes <para> élément de données fournissent un mécanisme pour la classification des éléments connexes des données dans un thème commun. Par exemple, deux éléments de données "de vaccination contre la rougeole» et «vaccination par le BCG" pourraient être regroupés au sein d'un groupe d'éléments de données «La vaccination des enfants". Pour accéder à l'élément de données de maintenance du groupe de pages, cliquez sur Maintenance-> Les éléments de données et des indicateurs-> Data Element Group. L'écran suivant s'affiche. </para> 
+      <title> ï¿½lï¿½ment de donnï¿½es des groupes </title> 
+      groupes <para> ï¿½lï¿½ment de donnï¿½es fournissent un mï¿½canisme pour la classification des ï¿½lï¿½ments connexes des donnï¿½es dans un thï¿½me commun. Par exemple, deux ï¿½lï¿½ments de donnï¿½es "de vaccination contre la rougeoleï¿½ et ï¿½vaccination par le BCG" pourraient ï¿½tre regroupï¿½s au sein d'un groupe d'ï¿½lï¿½ments de donnï¿½es ï¿½La vaccination des enfants". Pour accï¿½der ï¿½ l'ï¿½lï¿½ment de donnï¿½es de maintenance du groupe de pages, cliquez sur Maintenance-> Les ï¿½lï¿½ments de donnï¿½es et des indicateurs-> Data Element Group. L'ï¿½cran suivant s'affiche. </para> 
       <screenshot> 
         <mediaobject> 
           <imageobject> 
@@ -181,26 +181,26 @@
           </imageobject> 
         </mediaobject> 
       </screenshot> 
-      <para> similaires à la page "éléments de données de maintenance", des éléments de données des groupes peuvent être recherchées avec en entrant une chaîne de recherche dans le filtre "par le nom" sur le terrain. </para> 
-      <para> Pour ajouter un élément nouveau groupe de données, cliquez sur le <guibutton> "Add new" </ bouton guibutton>. <screenshot> 
+      <para> similaires ï¿½ la page "ï¿½lï¿½ments de donnï¿½es de maintenance", des ï¿½lï¿½ments de donnï¿½es des groupes peuvent ï¿½tre recherchï¿½es avec en entrant une chaï¿½ne de recherche dans le filtre "par le nom" sur le terrain. </para> 
+      <para> Pour ajouter un ï¿½lï¿½ment nouveau groupe de donnï¿½es, cliquez sur le <guibutton> "Add new" </ bouton guibutton>. <screenshot> 
           <mediaobject> 
             <imageobject> 
               width="60%" <imagedata align="center" fileref="resources/images/maintainence/data_element_group_add.png" format="PNG"/> 
             </imageobject> 
           </mediaobject> 
         </screenshot> </para> 
-      <para> Remplissez le champ "Nom" puis sélectionnez tous les éléments de données qui doit appartenir au groupe à partir du panneau de gauche. Cliquez sur "Déplacer sélection" fileref="resources/images/dhis2_images/move_right.png" <inlinegraphic align="center"/> bouton pour ajouter les éléments de données sélectionnés dans le groupe des éléments de données. Cliquez sur le bouton Supprimer la sélection pour supprimer tous les éléments de données du groupe qui ont été sélectionnés dans le panneau de droite. Enfin, cliquez sur le bouton "Ajouter" pour enregistrer les modifications, ou le bouton "Annuler" pour annuler les modifications. </para> 
+      <para> Remplissez le champ "Nom" puis sï¿½lectionnez tous les ï¿½lï¿½ments de donnï¿½es qui doit appartenir au groupe ï¿½ partir du panneau de gauche. Cliquez sur "Dï¿½placer sï¿½lection" fileref="resources/images/dhis2_images/move_right.png" <inlinegraphic align="center"/> bouton pour ajouter les ï¿½lï¿½ments de donnï¿½es sï¿½lectionnï¿½s dans le groupe des ï¿½lï¿½ments de donnï¿½es. Cliquez sur le bouton Supprimer la sï¿½lection pour supprimer tous les ï¿½lï¿½ments de donnï¿½es du groupe qui ont ï¿½tï¿½ sï¿½lectionnï¿½s dans le panneau de droite. Enfin, cliquez sur le bouton "Ajouter" pour enregistrer les modifications, ou le bouton "Annuler" pour annuler les modifications. </para> 
     </section> 
     <section id="dataElementGroupEditor"> 
-      <title> Élément de données du groupe éditeur</title> 
-      <para> L'éditeur de groupe de données élément fournit des fonctionnalités avancées à l'administrateur pour permettre à plusieurs éléments de données à être ajoutés ou supprimés à partir d'un groupe. Il est également possible de créer de nouveaux groupes d'éléments de données, renommer des groupes existants, et des groupes de supprimer entièrement. Pour accéder à l'éditeur de groupe d'éléments de données, appuyez sur <guimenu> "soutiens-> Les éléments de données et des indicateurs-> Éditeur de données d'éléments du groupe" <> guimenu / à partir du menu principal DHIS2. L'écran suivant apparaît. <screenshot> 
+      <title> ï¿½lï¿½ment de donnï¿½es du groupe ï¿½diteur</title> 
+      <para> L'ï¿½diteur de groupe de donnï¿½es ï¿½lï¿½ment fournit des fonctionnalitï¿½s avancï¿½es ï¿½ l'administrateur pour permettre ï¿½ plusieurs ï¿½lï¿½ments de donnï¿½es ï¿½ ï¿½tre ajoutï¿½s ou supprimï¿½s ï¿½ partir d'un groupe. Il est ï¿½galement possible de crï¿½er de nouveaux groupes d'ï¿½lï¿½ments de donnï¿½es, renommer des groupes existants, et des groupes de supprimer entiï¿½rement. Pour accï¿½der ï¿½ l'ï¿½diteur de groupe d'ï¿½lï¿½ments de donnï¿½es, appuyez sur <guimenu> "soutiens-> Les ï¿½lï¿½ments de donnï¿½es et des indicateurs-> ï¿½diteur de donnï¿½es d'ï¿½lï¿½ments du groupe" <> guimenu / ï¿½ partir du menu principal IROAD2. L'ï¿½cran suivant apparaï¿½t. <screenshot>
           <mediaobject> 
             <imageobject> 
               width="60%" <imagedata align="center" fileref="resources/images/maintainence/data_element_group_editor_start.png" format="PNG"/> 
             </imageobject> 
           </mediaobject> 
         </screenshot> </para> 
-      <para> élément de données groupes de la région par ordre alphabétique dans le panneau de gauche. En cliquant sur un groupe d'éléments de données, les membres actuels de ce groupe (éléments de données) sont répertoriés dans le panneau central. Disponible éléments de données qui peuvent être ajoutés au groupe des éléments de données apparaissent sont classés par ordre alphabétique dans le panneau de droite. Pour supprimer un élément de données existantes dans le groupe, cliquez sur le nom de l'élément de données dans le panneau central, puis appuyez sur la "Déplacer à droite" <fileRef inlinegraphic = "resources/images/dhis2_images/move_right.png" align = "center "/> bouton. Pour ajouter des éléments de données au groupe, sélectionnez-les dans le panneau de gauche, et cliquez sur "Déplacer à gauche" bouton <inlinegraphic align="center"/> fileref="resources/images/dhis2_images/move_left.png". Appuyez sur la <guibutton> "Mise à jour des données des membres du groupe" élément </ touche guibutton> pour enregistrer vos modifications. </para> 
+      <para> ï¿½lï¿½ment de donnï¿½es groupes de la rï¿½gion par ordre alphabï¿½tique dans le panneau de gauche. En cliquant sur un groupe d'ï¿½lï¿½ments de donnï¿½es, les membres actuels de ce groupe (ï¿½lï¿½ments de donnï¿½es) sont rï¿½pertoriï¿½s dans le panneau central. Disponible ï¿½lï¿½ments de donnï¿½es qui peuvent ï¿½tre ajoutï¿½s au groupe des ï¿½lï¿½ments de donnï¿½es apparaissent sont classï¿½s par ordre alphabï¿½tique dans le panneau de droite. Pour supprimer un ï¿½lï¿½ment de donnï¿½es existantes dans le groupe, cliquez sur le nom de l'ï¿½lï¿½ment de donnï¿½es dans le panneau central, puis appuyez sur la "Dï¿½placer ï¿½ droite" <fileRef inlinegraphic = "resources/images/dhis2_images/move_right.png" align = "center "/> bouton. Pour ajouter des ï¿½lï¿½ments de donnï¿½es au groupe, sï¿½lectionnez-les dans le panneau de gauche, et cliquez sur "Dï¿½placer ï¿½ gauche" bouton <inlinegraphic align="center"/> fileref="resources/images/dhis2_images/move_left.png". Appuyez sur la <guibutton> "Mise ï¿½ jour des donnï¿½es des membres du groupe" ï¿½lï¿½ment </ touche guibutton> pour enregistrer vos modifications. </para> 
       <screenshot> 
         <mediaobject> 
           <imageobject> 
@@ -210,8 +210,8 @@
       </screenshot> 
     </section> 
     <section id="dataElementGroupSet"> 
-      <title>Groupe élément ensembles de données </title> 
-      <para> ensembles de données d'éléments du groupe permettent de multiples groupes d'éléments de données regroupées en un ensemble. Les ensembles de données d'éléments du groupe sont utilisés lors de l'analyse et les rapports de combiner les groupes de données similaires élément dans un thème commun. Pour accéder à l'élément du groupe de données mis en module de maintenance, choisissez «Entretien-> Les éléments de données et des indicateurs-> Ensemble de données d'éléments du groupe". Similaire aux autres modules d'éléments de données de maintenance, de nouveaux ensembles de données d'éléments du groupe peuvent être ajoutés en appuyant sur le "bouton Ajouter de nouvelles". D'autres opérations comprennent éditer, traduire, Supprimer et de l'information, à l'instar des autres modules de cette section. </para> 
+      <title>Groupe ï¿½lï¿½ment ensembles de donnï¿½es </title> 
+      <para> ensembles de donnï¿½es d'ï¿½lï¿½ments du groupe permettent de multiples groupes d'ï¿½lï¿½ments de donnï¿½es regroupï¿½es en un ensemble. Les ensembles de donnï¿½es d'ï¿½lï¿½ments du groupe sont utilisï¿½s lors de l'analyse et les rapports de combiner les groupes de donnï¿½es similaires ï¿½lï¿½ment dans un thï¿½me commun. Pour accï¿½der ï¿½ l'ï¿½lï¿½ment du groupe de donnï¿½es mis en module de maintenance, choisissez ï¿½Entretien-> Les ï¿½lï¿½ments de donnï¿½es et des indicateurs-> Ensemble de donnï¿½es d'ï¿½lï¿½ments du groupe". Similaire aux autres modules d'ï¿½lï¿½ments de donnï¿½es de maintenance, de nouveaux ensembles de donnï¿½es d'ï¿½lï¿½ments du groupe peuvent ï¿½tre ajoutï¿½s en appuyant sur le "bouton Ajouter de nouvelles". D'autres opï¿½rations comprennent ï¿½diter, traduire, Supprimer et de l'information, ï¿½ l'instar des autres modules de cette section. </para> 
       <screenshot> 
         <mediaobject> 
           <imageobject> 
@@ -219,34 +219,34 @@
           </imageobject> 
         </mediaobject> 
       </screenshot> 
-      membres <para> groupe existant élément ensemble de données peuvent être modifiées en cliquant sur le bouton "Modifier" fileref="resources/images/dhis2_images/edit.png" <inlinegraphic align="center"/> du groupe des éléments de données souhaité définir comme voir ci-dessous. </para> 
+      membres <para> groupe existant ï¿½lï¿½ment ensemble de donnï¿½es peuvent ï¿½tre modifiï¿½es en cliquant sur le bouton "Modifier" fileref="resources/images/dhis2_images/edit.png" <inlinegraphic align="center"/> du groupe des ï¿½lï¿½ments de donnï¿½es souhaitï¿½ dï¿½finir comme voir ci-dessous. </para> 
       <mediaobject> 
         <imageobject> 
           width="60%" <imagedata align="center" fileref="resources/images/maintainence/data_element_group_set.png" format="PNG"/> 
         </imageobject> 
       </mediaobject> 
-      <para> Disponible groupes d'éléments de données sont affichées dans le panneau de gauche. Ils peuvent être déplacés dans le groupe des éléments de données sélectionnées en appuyant sur la "Déplacer vers la droite le bouton <inlinegraphic align="center"/> fileref="resources/images/dhis2_images/move_right.png". groupes d'éléments de données qui sont actuellement membres du groupe des éléments de données de référence est affichée dans le panneau de droite. Ils peuvent être retirés du groupe des éléments de données mis en cliquant sur le groupe de données élément désiré et en appuyant sur le "Déplacer à gauche" bouton <inlinegraphic align="center"/> fileref="resources/images/dhis2_images/move_left.png". L'ordre des groupes d'éléments de données peut être réglée avec le «Move Up" align="center"/> fileref="resources/images/dhis2_images/move_up.png" <inlinegraphic et «Descendre» fileRef inlinegraphic <= " resources/images/dhis2_images/move_down.png "align =" center "/> flèches. Cette commande sera utilisée dans le datamart et des rapports à l'ordre les groupes élément de données. Appuyez sur la <guibutton> "Update" </ bouton guibutton> pour enregistrer les modifications et les <guibutton> "Annuler" </ bouton guibutton> pour annuler toutes les modifications. </para> 
+      <para> Disponible groupes d'ï¿½lï¿½ments de donnï¿½es sont affichï¿½es dans le panneau de gauche. Ils peuvent ï¿½tre dï¿½placï¿½s dans le groupe des ï¿½lï¿½ments de donnï¿½es sï¿½lectionnï¿½es en appuyant sur la "Dï¿½placer vers la droite le bouton <inlinegraphic align="center"/> fileref="resources/images/dhis2_images/move_right.png". groupes d'ï¿½lï¿½ments de donnï¿½es qui sont actuellement membres du groupe des ï¿½lï¿½ments de donnï¿½es de rï¿½fï¿½rence est affichï¿½e dans le panneau de droite. Ils peuvent ï¿½tre retirï¿½s du groupe des ï¿½lï¿½ments de donnï¿½es mis en cliquant sur le groupe de donnï¿½es ï¿½lï¿½ment dï¿½sirï¿½ et en appuyant sur le "Dï¿½placer ï¿½ gauche" bouton <inlinegraphic align="center"/> fileref="resources/images/dhis2_images/move_left.png". L'ordre des groupes d'ï¿½lï¿½ments de donnï¿½es peut ï¿½tre rï¿½glï¿½e avec le ï¿½Move Up" align="center"/> fileref="resources/images/dhis2_images/move_up.png" <inlinegraphic et ï¿½Descendreï¿½ fileRef inlinegraphic <= " resources/images/dhis2_images/move_down.png "align =" center "/> flï¿½ches. Cette commande sera utilisï¿½e dans le datamart et des rapports ï¿½ l'ordre les groupes ï¿½lï¿½ment de donnï¿½es. Appuyez sur la <guibutton> "Update" </ bouton guibutton> pour enregistrer les modifications et les <guibutton> "Annuler" </ bouton guibutton> pour annuler toutes les modifications. </para> 
     </section> 
     id="dataElementCategory"> <section 
-      <title> Élément catégories de données </title> 
-      <para> catégories d'éléments de données peuvent être utilisées pour ventiler les éléments de données dans les différents composants atomiques. catégories d'éléments de données sont typiquement un concept, comme le sexe, l'âge ou la maladie d'état. Les éléments de données tels que "Nombre de cas de paludisme confirmés» sont souvent brisés en éléments plus petits afin de déterminer, par exemple, le nombre de cas de paludisme confirmés de groupes d'âge en particulier. A titre d'exemple, trois catégories d'éléments de données: Moins de 1, 1-5 et plus de 5 pourraient être créés. Ils pourraient être attribués comme des catégories à l'élément de données, qui serait alors de créer dans les écrans de saisie de données, trois champs distincts pour cet élément de données à savoir: </para> 
+      <title> ï¿½lï¿½ment catï¿½gories de donnï¿½es </title> 
+      <para> catï¿½gories d'ï¿½lï¿½ments de donnï¿½es peuvent ï¿½tre utilisï¿½es pour ventiler les ï¿½lï¿½ments de donnï¿½es dans les diffï¿½rents composants atomiques. catï¿½gories d'ï¿½lï¿½ments de donnï¿½es sont typiquement un concept, comme le sexe, l'ï¿½ge ou la maladie d'ï¿½tat. Les ï¿½lï¿½ments de donnï¿½es tels que "Nombre de cas de paludisme confirmï¿½sï¿½ sont souvent brisï¿½s en ï¿½lï¿½ments plus petits afin de dï¿½terminer, par exemple, le nombre de cas de paludisme confirmï¿½s de groupes d'ï¿½ge en particulier. A titre d'exemple, trois catï¿½gories d'ï¿½lï¿½ments de donnï¿½es: Moins de 1, 1-5 et plus de 5 pourraient ï¿½tre crï¿½ï¿½s. Ils pourraient ï¿½tre attribuï¿½s comme des catï¿½gories ï¿½ l'ï¿½lï¿½ment de donnï¿½es, qui serait alors de crï¿½er dans les ï¿½crans de saisie de donnï¿½es, trois champs distincts pour cet ï¿½lï¿½ment de donnï¿½es ï¿½ savoir: </para> 
       <itemizedlist> 
         <listitem> 
-          <para> Nombre de cas confirmés de paludisme (sous 1) </para> 
+          <para> Nombre de cas confirmï¿½s de paludisme (sous 1) </para> 
         </listitem> 
         <listitem> 
-          <para> Nombre de cas confirmés de paludisme (1-5) </para> 
+          <para> Nombre de cas confirmï¿½s de paludisme (1-5) </para> 
         </listitem> 
         <listitem> 
-          <para> Nombre de cas confirmés de paludisme (plus de 5) </para> 
+          <para> Nombre de cas confirmï¿½s de paludisme (plus de 5) </para> 
         </listitem> 
       </itemizedlist>
-      <para> L'utilisation efficace des catégories d'éléments de données simplifie grandement le processus de mise en place du système DHIS2, que les catégories d'éléments de données peuvent être réutilisées pour ventiler les nombreux éléments de données. Dans le cas contraire, chacun des éléments de données énumérés ci-dessus, devront être créés séparément. L'utilisation judicieuse des catégories d'éléments de données simplifiera grandement la mise en œuvre DHIS2, et de permettre une analyse avancées ultérieures. </para> 
-      <para> catégories d'éléments de données sont composés d'options catégorie. Catégorie options doivent être définies lors de catégorie d'élément de données est créée pour la première fois. Les changements apportés ultérieurement à la catégorie d'élément de données, à savoir l'ajout ou la suppression des options nouvelle catégorie, ne sont pas autorisés une fois que la catégorie d'élément de données a été créée. </para> 
+      <para> L'utilisation efficace des catï¿½gories d'ï¿½lï¿½ments de donnï¿½es simplifie grandement le processus de mise en place du systï¿½me IROAD2, que les catï¿½gories d'ï¿½lï¿½ments de donnï¿½es peuvent ï¿½tre rï¿½utilisï¿½es pour ventiler les nombreux ï¿½lï¿½ments de donnï¿½es. Dans le cas contraire, chacun des ï¿½lï¿½ments de donnï¿½es ï¿½numï¿½rï¿½s ci-dessus, devront ï¿½tre crï¿½ï¿½s sï¿½parï¿½ment. L'utilisation judicieuse des catï¿½gories d'ï¿½lï¿½ments de donnï¿½es simplifiera grandement la mise en ï¿½uvre IROAD2, et de permettre une analyse avancï¿½es ultï¿½rieures. </para>
+      <para> catï¿½gories d'ï¿½lï¿½ments de donnï¿½es sont composï¿½s d'options catï¿½gorie. Catï¿½gorie options doivent ï¿½tre dï¿½finies lors de catï¿½gorie d'ï¿½lï¿½ment de donnï¿½es est crï¿½ï¿½e pour la premiï¿½re fois. Les changements apportï¿½s ultï¿½rieurement ï¿½ la catï¿½gorie d'ï¿½lï¿½ment de donnï¿½es, ï¿½ savoir l'ajout ou la suppression des options nouvelle catï¿½gorie, ne sont pas autorisï¿½s une fois que la catï¿½gorie d'ï¿½lï¿½ment de donnï¿½es a ï¿½tï¿½ crï¿½ï¿½e. </para> 
       <caution> 
-        <para> Il est essentiel que les catégories appropriées et des options de la catégorie sont définis dans l'étape de définition initiale, alors que d'autres modifications à la catégorie et de ses options ne sont pas possibles. </para> 
+        <para> Il est essentiel que les catï¿½gories appropriï¿½es et des options de la catï¿½gorie sont dï¿½finis dans l'ï¿½tape de dï¿½finition initiale, alors que d'autres modifications ï¿½ la catï¿½gorie et de ses options ne sont pas possibles. </para> 
       </caution>
-      <para> Pour accéder à l'élément de données de maintenance catégorie module, appuyez sur "Entretien-> Éléments de données et des indicateurs de la catégorie-> élément de données". L'écran suivant s'affiche. </para> 
+      <para> Pour accï¿½der ï¿½ l'ï¿½lï¿½ment de donnï¿½es de maintenance catï¿½gorie module, appuyez sur "Entretien-> ï¿½lï¿½ments de donnï¿½es et des indicateurs de la catï¿½gorie-> ï¿½lï¿½ment de donnï¿½es". L'ï¿½cran suivant s'affiche. </para> 
       <screenshot> 
         <mediaobject> 
           <imageobject> 
@@ -254,7 +254,7 @@
           </imageobject> 
         </mediaobject> 
       </screenshot> 
-      <para> similaire à l'élément de données d'autres modules maintient, catégories de données élément peut être filtré en tapant le nom de la catégorie d'élément de données (ou une partie de celui-ci) dans le filtre "par le nom" sur le terrain. Pour ajouter une nouvelle catégorie de données élément, appuyez sur la touche "Add new" bouton qui affichera alors l'écran suivant. </para> 
+      <para> similaire ï¿½ l'ï¿½lï¿½ment de donnï¿½es d'autres modules maintient, catï¿½gories de donnï¿½es ï¿½lï¿½ment peut ï¿½tre filtrï¿½ en tapant le nom de la catï¿½gorie d'ï¿½lï¿½ment de donnï¿½es (ou une partie de celui-ci) dans le filtre "par le nom" sur le terrain. Pour ajouter une nouvelle catï¿½gorie de donnï¿½es ï¿½lï¿½ment, appuyez sur la touche "Add new" bouton qui affichera alors l'ï¿½cran suivant. </para> 
       <screenshot> 
         <mediaobject> 
           <imageobject> 
@@ -262,24 +262,24 @@
           </imageobject> 
         </mediaobject> 
       </screenshot> 
-      <para> Tapez le nom de la catégorie nouvel élément de données dans le champ "Nom" dans les détails "région". Catégorie options peuvent être ajoutées en tapant le nom de l'option de catégorie dans l'option "catégorie" région et en appuyant sur la <guibutton> "Ajouter l'option la catégorie« </ bouton guibutton>. Catégorie options peuvent être commandées en utilisant le "Move Up" align="center"/> fileref="resources/images/dhis2_images/move_up.png" <inlinegraphic et «Descendre» fileRef inlinegraphic <= "resources/images/dhis2_images / move_down.png "align =" center "/> Boutons. Catégories options peuvent être supprimés en sélectionnant l'option catégorie d'éléments de données et en appuyant sur "Supprimer" fileref="resources/images/dhis2_images/delete.png" <inlinegraphic bouton align="center"/>. Une fois toutes les catégories de données élément options ont été ajoutées à la catégorie d'élément de données, appuyez sur la <guibutton> "Ajouter" </ bouton guibutton> pour enregistrer toutes les modifications ou les <guibutton> "Annuler" </ bouton guibutton> pour annuler tout changements. <caution> 
-          <para> Toutes les options d'éléments de données catégorie doit être ajoutée et définie correctement dans cette étape. modifications apportées ultérieurement à la catégorie d'élément de données (autres que des options de réorganisation catégorie eux-mêmes) n'est pas possible. </para> 
+      <para> Tapez le nom de la catï¿½gorie nouvel ï¿½lï¿½ment de donnï¿½es dans le champ "Nom" dans les dï¿½tails "rï¿½gion". Catï¿½gorie options peuvent ï¿½tre ajoutï¿½es en tapant le nom de l'option de catï¿½gorie dans l'option "catï¿½gorie" rï¿½gion et en appuyant sur la <guibutton> "Ajouter l'option la catï¿½gorieï¿½ </ bouton guibutton>. Catï¿½gorie options peuvent ï¿½tre commandï¿½es en utilisant le "Move Up" align="center"/> fileref="resources/images/dhis2_images/move_up.png" <inlinegraphic et ï¿½Descendreï¿½ fileRef inlinegraphic <= "resources/images/dhis2_images / move_down.png "align =" center "/> Boutons. Catï¿½gories options peuvent ï¿½tre supprimï¿½s en sï¿½lectionnant l'option catï¿½gorie d'ï¿½lï¿½ments de donnï¿½es et en appuyant sur "Supprimer" fileref="resources/images/dhis2_images/delete.png" <inlinegraphic bouton align="center"/>. Une fois toutes les catï¿½gories de donnï¿½es ï¿½lï¿½ment options ont ï¿½tï¿½ ajoutï¿½es ï¿½ la catï¿½gorie d'ï¿½lï¿½ment de donnï¿½es, appuyez sur la <guibutton> "Ajouter" </ bouton guibutton> pour enregistrer toutes les modifications ou les <guibutton> "Annuler" </ bouton guibutton> pour annuler tout changements. <caution> 
+          <para> Toutes les options d'ï¿½lï¿½ments de donnï¿½es catï¿½gorie doit ï¿½tre ajoutï¿½e et dï¿½finie correctement dans cette ï¿½tape. modifications apportï¿½es ultï¿½rieurement ï¿½ la catï¿½gorie d'ï¿½lï¿½ment de donnï¿½es (autres que des options de rï¿½organisation catï¿½gorie eux-mï¿½mes) n'est pas possible. </para> 
         </> Attention </para> 
     </section> 
 	<section  id="dataElementCategoryCombo"> 
-      <title> Élément de données Catégorie combinaisons </title> 
-      <para> combinaisons de données catégorie d'élément permettant de multiples catégories d'éléments de données regroupées en un ensemble lié. A titre d'exemple, un élément de données "Nombre de nouvelles infections à VIH" pourrait être ventilées selon les catégories suivantes. </para> 
+      <title> ï¿½lï¿½ment de donnï¿½es Catï¿½gorie combinaisons </title> 
+      <para> combinaisons de donnï¿½es catï¿½gorie d'ï¿½lï¿½ment permettant de multiples catï¿½gories d'ï¿½lï¿½ments de donnï¿½es regroupï¿½es en un ensemble liï¿½. A titre d'exemple, un ï¿½lï¿½ment de donnï¿½es "Nombre de nouvelles infections ï¿½ VIH" pourrait ï¿½tre ventilï¿½es selon les catï¿½gories suivantes. </para> 
       <itemizedlist> 
         <listitem> 
-          <para> Âge: «Moins de 5", "15/05", "15-24", "24 et plus"> </para>
+          <para> ï¿½ge: ï¿½Moins de 5", "15/05", "15-24", "24 et plus"> </para>
         </listitem> 
         <listitem> 
           <para> Genre: Homme,> Femme </para> 
         </listitem> 
       </itemizedlist>
-      <para> Dans cet exemple, il y aura deux niveaux de désagrégation, composé de deux catégories distinctes d'éléments de données, comprenant chacun plusieurs options de données catégorie d'élément. Dans la plupart des systèmes HMIS, différents éléments de données sont ventilées selon un ensemble commun de catégories. En combinant ces différentes catégories en une combinaison catégorie d'éléments de données et l'attribution de ces combinaisons à des éléments de données, les niveaux de catégorisation appropriée peut être appliquée efficacement et rapidement à un grand nombre d'éléments de données. </para> 
-      <para> Pour accéder à l'élément catégorie de données de maintenance module combinaison, sélectionnez «Entretien-> Élément de donnée et les indicateurs-> combinaisons catégorie d'élément de données" dans le menu principal DHIS2. Comme pour les autres modules maintient, vous pouvez filtrer les combinaisons des catégories énumérées en entrant le nom (ou une partie) de la combinaison catégorie. D'autres opérations telles que "Edit", "Supprimer" et "information" doit être familiers au lecteur. </para> 
-      <para> Pour ajouter une combinaison nouvelle catégorie, cliquez sur "Ajouter un nouveau bouton. Le dialogue suivant s'affiche. </para> 
+      <para> Dans cet exemple, il y aura deux niveaux de dï¿½sagrï¿½gation, composï¿½ de deux catï¿½gories distinctes d'ï¿½lï¿½ments de donnï¿½es, comprenant chacun plusieurs options de donnï¿½es catï¿½gorie d'ï¿½lï¿½ment. Dans la plupart des systï¿½mes HMIS, diffï¿½rents ï¿½lï¿½ments de donnï¿½es sont ventilï¿½es selon un ensemble commun de catï¿½gories. En combinant ces diffï¿½rentes catï¿½gories en une combinaison catï¿½gorie d'ï¿½lï¿½ments de donnï¿½es et l'attribution de ces combinaisons ï¿½ des ï¿½lï¿½ments de donnï¿½es, les niveaux de catï¿½gorisation appropriï¿½e peut ï¿½tre appliquï¿½e efficacement et rapidement ï¿½ un grand nombre d'ï¿½lï¿½ments de donnï¿½es. </para> 
+      <para> Pour accï¿½der ï¿½ l'ï¿½lï¿½ment catï¿½gorie de donnï¿½es de maintenance module combinaison, sï¿½lectionnez ï¿½Entretien-> ï¿½lï¿½ment de donnï¿½e et les indicateurs-> combinaisons catï¿½gorie d'ï¿½lï¿½ment de donnï¿½es" dans le menu principal IROAD2. Comme pour les autres modules maintient, vous pouvez filtrer les combinaisons des catï¿½gories ï¿½numï¿½rï¿½es en entrant le nom (ou une partie) de la combinaison catï¿½gorie. D'autres opï¿½rations telles que "Edit", "Supprimer" et "information" doit ï¿½tre familiers au lecteur. </para>
+      <para> Pour ajouter une combinaison nouvelle catï¿½gorie, cliquez sur "Ajouter un nouveau bouton. Le dialogue suivant s'affiche. </para> 
       <screenshot> 
         <mediaobject> 
           <imageobject> 
@@ -287,19 +287,19 @@
           </imageobject> 
         </mediaobject> 
       </screenshot> 
-      <para> Tapez le nom de l'association dans la catégorie champ "Nom", puis sélectionnez la catégorie souhaitée dans le panneau de gauche. Appuyez sur la touche "Déplacer à droite" pour ajouter les catégories sélectionnées pour la combinaison catégorie. Appuyez sur "Déplacer à gauche" pour supprimer des catégories qui ne devraient pas faire partie de la combinaison catégorie. </para> 
+      <para> Tapez le nom de l'association dans la catï¿½gorie champ "Nom", puis sï¿½lectionnez la catï¿½gorie souhaitï¿½e dans le panneau de gauche. Appuyez sur la touche "Dï¿½placer ï¿½ droite" pour ajouter les catï¿½gories sï¿½lectionnï¿½es pour la combinaison catï¿½gorie. Appuyez sur "Dï¿½placer ï¿½ gauche" pour supprimer des catï¿½gories qui ne devraient pas faire partie de la combinaison catï¿½gorie. </para> 
       <caution> 
-        Catégories <para> ne peut être ajoutée à une combinaison catégorie à cette étape. Les catégories peuvent être retirés de la catégorie des combinaisons plus tard, en modifiant la combinaison catégorie, toutefois, il n'est pas autorisé à ajouter des catégories supplémentaires une fois la combinaison a été créé. Veiller à ce que la combinaison catégorie et ses catégories respectives est définitive avant de créer la combinaison la catégorie et l'affecter à un élément de données. </para> 
+        Catï¿½gories <para> ne peut ï¿½tre ajoutï¿½e ï¿½ une combinaison catï¿½gorie ï¿½ cette ï¿½tape. Les catï¿½gories peuvent ï¿½tre retirï¿½s de la catï¿½gorie des combinaisons plus tard, en modifiant la combinaison catï¿½gorie, toutefois, il n'est pas autorisï¿½ ï¿½ ajouter des catï¿½gories supplï¿½mentaires une fois la combinaison a ï¿½tï¿½ crï¿½ï¿½. Veiller ï¿½ ce que la combinaison catï¿½gorie et ses catï¿½gories respectives est dï¿½finitive avant de crï¿½er la combinaison la catï¿½gorie et l'affecter ï¿½ un ï¿½lï¿½ment de donnï¿½es. </para> 
       </Caution>
     </section> 
   </section> 
   <section> 
     <title> Entretien Indicateur</title> 
-    Indicateur de maintenance fonctions <para> essentiellement les mêmes que chacune des sections respectives dans la section précédente sur les éléments de données. Les opérations de base seront décrits dans cette section, mais le lecteur doit se référer aux sections correspondantes ci-dessus pour des instructions détaillées. </para> 
+    Indicateur de maintenance fonctions <para> essentiellement les mï¿½mes que chacune des sections respectives dans la section prï¿½cï¿½dente sur les ï¿½lï¿½ments de donnï¿½es. Les opï¿½rations de base seront dï¿½crits dans cette section, mais le lecteur doit se rï¿½fï¿½rer aux sections correspondantes ci-dessus pour des instructions dï¿½taillï¿½es. </para> 
     id="indicator"> <section 
       > Indicateurs <title> </title> 
-      Indicateurs <para> sont composées d'éléments de données multiples, et sont généralement constitués d'un numérateur et le dénominateur. Les indicateurs ne sont jamais entrés dans DHIS2, mais proviennent de la combinaison d'éléments de données et les facteurs. Les indicateurs sont utilisés pour calculer les taux de couverture, l'incidence et les autres valeurs sont sont le résultat de valeurs des éléments de données qui ont été introduites dans le système. </para> 
-      <para> Pour accéder à l'indicateur maintient page, appuyez sur Maintenance-> Élément de donnée et les indicateurs-> Les indicateurs à partir du menu principal DHIS2. Semblables à des éléments de données, vous pouvez ajouter, supprimer, modifier et afficher des informations supplémentaires sur les indicateurs dans le système. </para> 
+      Indicateurs <para> sont composï¿½es d'ï¿½lï¿½ments de donnï¿½es multiples, et sont gï¿½nï¿½ralement constituï¿½s d'un numï¿½rateur et le dï¿½nominateur. Les indicateurs ne sont jamais entrï¿½s dans IROAD2, mais proviennent de la combinaison d'ï¿½lï¿½ments de donnï¿½es et les facteurs. Les indicateurs sont utilisï¿½s pour calculer les taux de couverture, l'incidence et les autres valeurs sont sont le rï¿½sultat de valeurs des ï¿½lï¿½ments de donnï¿½es qui ont ï¿½tï¿½ introduites dans le systï¿½me. </para>
+      <para> Pour accï¿½der ï¿½ l'indicateur maintient page, appuyez sur Maintenance-> ï¿½lï¿½ment de donnï¿½e et les indicateurs-> Les indicateurs ï¿½ partir du menu principal IROAD2. Semblables ï¿½ des ï¿½lï¿½ments de donnï¿½es, vous pouvez ajouter, supprimer, modifier et afficher des informations supplï¿½mentaires sur les indicateurs dans le systï¿½me. </para>
       <screenshot> 
         <mediaobject> 
           <imageobject> 
@@ -307,10 +307,10 @@
           </imageobject> 
         </mediaobject> 
       </screenshot> 
-      Indicateurs <para> peuvent être filtrés en entrant le nom ou une partie du nom de l'indicateur dans le filtre "par le nom" sur le terrain. Semblables à des éléments de données, des indicateurs peuvent être ajoutés en appuyant sur le "Add new" bouton. Autres opérations, disponible à partir de ce menu sont les suivantes. </para> 
+      Indicateurs <para> peuvent ï¿½tre filtrï¿½s en entrant le nom ou une partie du nom de l'indicateur dans le filtre "par le nom" sur le terrain. Semblables ï¿½ des ï¿½lï¿½ments de donnï¿½es, des indicateurs peuvent ï¿½tre ajoutï¿½s en appuyant sur le "Add new" bouton. Autres opï¿½rations, disponible ï¿½ partir de ce menu sont les suivantes. </para> 
       <itemizedlist> 
         <listitem> 
-          <para> <inlinegraphic fileref="resources/images/dhis2_images/edit.png"/> indicateurs existants peuvent être édités. </para> 
+          <para> <inlinegraphic fileref="resources/images/dhis2_images/edit.png"/> indicateurs existants peuvent ï¿½tre ï¿½ditï¿½s. </para> 
         </listitem> 
         <listitem> 
           <para> <inlinegraphic fileref="resources/images/dhis2_images/i18n.png"/> Traduire un indicateur existant. </para> 
@@ -322,7 +322,7 @@
           <para> <inlinegraphic fileref="resources/images/dhis2_images/information.png"/> de plus amples informations sur cet indicateur. </para> 
         </listitem> 
       </itemizedlist>
-      <para> Pour ajouter un nouvel indicateur, cliquez sur "Ajouter un nouveau bouton. L'écran suivant s'affiche. </para> 
+      <para> Pour ajouter un nouvel indicateur, cliquez sur "Ajouter un nouveau bouton. L'ï¿½cran suivant s'affiche. </para> 
       <screenshot> 
         <mediaobject> 
           <imageobject> 
@@ -330,34 +330,34 @@
           </imageobject> 
         </mediaobject> 
       </screenshot> 
-      <para> Chacun des champs marqués d'un astérisque sont obligatoires. Une description de chaque champ est fourni ci-dessous. </para> 
+      <para> Chacun des champs marquï¿½s d'un astï¿½risque sont obligatoires. Une description de chaque champ est fourni ci-dessous. </para> 
       <itemizedlist> 
         <listitem> 
-          Nom <para>: Le nom complet de l'indicateur, tel que «l'incidence des cas confirmés de paludisme pour 1000 habitants" </para> 
+          Nom <para>: Le nom complet de l'indicateur, tel que ï¿½l'incidence des cas confirmï¿½s de paludisme pour 1000 habitants" </para> 
         </listitem> 
         <listitem> 
-          <para> nom abrégé: un nom abrégé de l'indicateur tel que "conf Inc. le paludisme pour 1000 "</para> 
+          <para> nom abrï¿½gï¿½: un nom abrï¿½gï¿½ de l'indicateur tel que "conf Inc. le paludisme pour 1000 "</para> 
         </listitem> 
         <listitem> 
-          <para> Alternative nom: un champ supplémentaire pour un autre nom possible de l'indicateur. </para> 
+          <para> Alternative nom: un champ supplï¿½mentaire pour un autre nom possible de l'indicateur. </para> 
         </listitem> 
         <listitem> 
-          <para> Code: Dans de nombreux pays, l'indicateur sont souvent attribué un code particulier. Ce code peut être entré ici. </para> 
+          <para> Code: Dans de nombreux pays, l'indicateur sont souvent attribuï¿½ un code particulier. Ce code peut ï¿½tre entrï¿½ ici. </para> 
         </listitem> 
         <listitem> 
-          Description <para>: une brève description informative de l'indicateur et comment il est calculé peut être entré ici. </para> 
+          Description <para>: une brï¿½ve description informative de l'indicateur et comment il est calculï¿½ peut ï¿½tre entrï¿½ ici. </para> 
         </listitem> 
         <listitem> 
-          <para> annualisé: Détermine si oui ou non un facteur d'annualisation est appliqué lors du calcul de l'indicateur. En règle générale, le numérateur indicateur annualisé est multiplié par un facteur de 12, et le dénominateur est par exemple un chiffre de la population chaque année. Cela permet pour les valeurs de couverture mensuelle sera calculée en prenant les chiffres de population chaque année. </para> 
+          <para> annualisï¿½: Dï¿½termine si oui ou non un facteur d'annualisation est appliquï¿½ lors du calcul de l'indicateur. En rï¿½gle gï¿½nï¿½rale, le numï¿½rateur indicateur annualisï¿½ est multipliï¿½ par un facteur de 12, et le dï¿½nominateur est par exemple un chiffre de la population chaque annï¿½e. Cela permet pour les valeurs de couverture mensuelle sera calculï¿½e en prenant les chiffres de population chaque annï¿½e. </para> 
         </listitem> 
         <listitem> 
-          <para> Type: ce champ sera de déterminer un facteur qui sera automatiquement appliqué lors du calcul de l'indicateur. Les choix possibles sont déterminés par les types d'indicateurs (décrites ci-dessous). Par exemple, un pourcentage "indicateur" sera automatiquement multiplié par un facteur de 100 sont exportées vers l'entrepôt de données, de sorte qu'il affiche sous forme de pourcentage. </para> 
+          <para> Type: ce champ sera de dï¿½terminer un facteur qui sera automatiquement appliquï¿½ lors du calcul de l'indicateur. Les choix possibles sont dï¿½terminï¿½s par les types d'indicateurs (dï¿½crites ci-dessous). Par exemple, un pourcentage "indicateur" sera automatiquement multipliï¿½ par un facteur de 100 sont exportï¿½es vers l'entrepï¿½t de donnï¿½es, de sorte qu'il affiche sous forme de pourcentage. </para> 
         </listitem> 
         <listitem> 
-          <para> URL: Peut être utilisé comme un lien vers un registre indicateur, où une description complète des métadonnées de l'indicateur peut être mis à disposition. </para> 
+          <para> URL: Peut ï¿½tre utilisï¿½ comme un lien vers un registre indicateur, oï¿½ une description complï¿½te des mï¿½tadonnï¿½es de l'indicateur peut ï¿½tre mis ï¿½ disposition. </para> 
         </listitem> 
       </itemizedlist>
-      <para> Pour définir le numérateur et le dénominateur, appuyez simplement sur le bouton correspondant, et le dialogue suivant s'affiche. </para> 
+      <para> Pour dï¿½finir le numï¿½rateur et le dï¿½nominateur, appuyez simplement sur le bouton correspondant, et le dialogue suivant s'affiche. </para> 
       <screenshot> 
         <mediaobject> 
           <imageobject> 
@@ -365,30 +365,30 @@
           </imageobject> 
         </mediaobject> 
       </screenshot> 
-      <para> Essentiellement, un indicateur est une formule qui peut être composé de l'élément de données multiples, les facteurs constants, et les opérateurs mathématiques. Afin de définir un nouvel indicateur procéder aux étapes suivantes. </para> 
+      <para> Essentiellement, un indicateur est une formule qui peut ï¿½tre composï¿½ de l'ï¿½lï¿½ment de donnï¿½es multiples, les facteurs constants, et les opï¿½rateurs mathï¿½matiques. Afin de dï¿½finir un nouvel indicateur procï¿½der aux ï¿½tapes suivantes. </para> 
       <orderedlist> 
         <listitem> 
-          <para> Fournir une description du numérateur peuvent être fournis dans le domaine «Description». </para> 
+          <para> Fournir une description du numï¿½rateur peuvent ï¿½tre fournis dans le domaine ï¿½Descriptionï¿½. </para> 
         </listitem> 
         <listitem> 
-          <para> Choisissez l'opérateur d'agrégation, soit comme une somme ou COUNT. </para> 
+          <para> Choisissez l'opï¿½rateur d'agrï¿½gation, soit comme une somme ou COUNT. </para> 
         </listitem> 
         <listitem> 
-          <para> définir la formule de l'indicateur en sélectionnant les éléments de données qui devraient composer le numérateur à partir des éléments de données "sur le terrain. Il suffit de sélectionner l'élément de données, et double cliquez dessus. Il apparaît maintenant dans la formule. Vous formule doit être mathématiquement valides, y compris la bonne utilisation des parenthèses si nécessaire. Vous pouvez double-cliquer sur chacun des boutons ci-dessous opérateur mathématique de la définition formule indicateur pour les ajouter à votre formule. </para> 
+          <para> dï¿½finir la formule de l'indicateur en sï¿½lectionnant les ï¿½lï¿½ments de donnï¿½es qui devraient composer le numï¿½rateur ï¿½ partir des ï¿½lï¿½ments de donnï¿½es "sur le terrain. Il suffit de sï¿½lectionner l'ï¿½lï¿½ment de donnï¿½es, et double cliquez dessus. Il apparaï¿½t maintenant dans la formule. Vous formule doit ï¿½tre mathï¿½matiquement valides, y compris la bonne utilisation des parenthï¿½ses si nï¿½cessaire. Vous pouvez double-cliquer sur chacun des boutons ci-dessous opï¿½rateur mathï¿½matique de la dï¿½finition formule indicateur pour les ajouter ï¿½ votre formule. </para> 
         </listitem> 
         <listitem> 
-          <para> Cliquez sur le bouton Enregistrer pour enregistrer toutes les modifications au numérateur. Cliquez sur Annuler pour annuler toutes les modifications que vous avez fait. </para> 
+          <para> Cliquez sur le bouton Enregistrer pour enregistrer toutes les modifications au numï¿½rateur. Cliquez sur Annuler pour annuler toutes les modifications que vous avez fait. </para> 
         </listitem> 
         <listitem> 
-          <para> Suivez la même procédure en vue de définir le dénominateur. </para> 
+          <para> Suivez la mï¿½me procï¿½dure en vue de dï¿½finir le dï¿½nominateur. </para> 
         </listitem> 
       </> Orderedlist 
     </section> 
     <section id="indicatorType"> 
       <title> Indicateur types </title> 
-      <para> types d'indicateurs tout simplement définir un facteur qui seront appliquées lors de l'agrégation. Les valeurs des indicateurs qui sont calculer à l'exportation au cours d'un data mart ou processus de génération de rapport de tableau s'affiche correctement mis en forme, et ne sera donc pas besoin d'un multiplicateur supplémentaire (par exemple 100 dans le cas des pourcentages) pour les valeurs s'affichent correctement formaté. </para> 
-      <para> Le panneau indicateur de maintenance type a tous les mêmes fonctions (Ajouter nouvelle, éditer, traduire, Supprimer, et de l'information) que la section de maintenance d'indicateur. </para> 
-      <para> Il n'ya que deux domaines qui doivent être remplis à créer un type d'indicateur, le nom et le facteur, comme on le voit ci-dessous. Nom fait référence au type d'indicateurs (par exemple pourcentage, par mille, dix pour mille, etc.) Le facteur est le facteur numérique qui sera appliqué lors du calcul de l'indicateur. </para> 
+      <para> types d'indicateurs tout simplement dï¿½finir un facteur qui seront appliquï¿½es lors de l'agrï¿½gation. Les valeurs des indicateurs qui sont calculer ï¿½ l'exportation au cours d'un data mart ou processus de gï¿½nï¿½ration de rapport de tableau s'affiche correctement mis en forme, et ne sera donc pas besoin d'un multiplicateur supplï¿½mentaire (par exemple 100 dans le cas des pourcentages) pour les valeurs s'affichent correctement formatï¿½. </para> 
+      <para> Le panneau indicateur de maintenance type a tous les mï¿½mes fonctions (Ajouter nouvelle, ï¿½diter, traduire, Supprimer, et de l'information) que la section de maintenance d'indicateur. </para> 
+      <para> Il n'ya que deux domaines qui doivent ï¿½tre remplis ï¿½ crï¿½er un type d'indicateur, le nom et le facteur, comme on le voit ci-dessous. Nom fait rï¿½fï¿½rence au type d'indicateurs (par exemple pourcentage, par mille, dix pour mille, etc.) Le facteur est le facteur numï¿½rique qui sera appliquï¿½ lors du calcul de l'indicateur. </para> 
       <screenshot> 
         <mediaobject> 
           <imageobject> 
@@ -400,15 +400,15 @@
     </section> 
     <section id="indicatorGroup">  
       <title> Indicateur groupes </title> 
-      <para> groupes d'indicateurs de la fonction essentiellement les mêmes que les groupes d'éléments de données. indicateurs multiples peuvent être assignés à un groupe pour faciliter le filtrage et l'analyse. Pour attribuer à des groupes d'indicateurs, simples d'entretien de presse> Les éléments de données et des indicateurs-> groupes d'indicateurs. Voir la section sur les groupes d'éléments de données pour obtenir des instructions détaillées d'utilisation de ce module. </para> 
+      <para> groupes d'indicateurs de la fonction essentiellement les mï¿½mes que les groupes d'ï¿½lï¿½ments de donnï¿½es. indicateurs multiples peuvent ï¿½tre assignï¿½s ï¿½ un groupe pour faciliter le filtrage et l'analyse. Pour attribuer ï¿½ des groupes d'indicateurs, simples d'entretien de presse> Les ï¿½lï¿½ments de donnï¿½es et des indicateurs-> groupes d'indicateurs. Voir la section sur les groupes d'ï¿½lï¿½ments de donnï¿½es pour obtenir des instructions dï¿½taillï¿½es d'utilisation de ce module. </para> 
     </section> 
     <section id="indicatorGroupEditor">  
       <title> Indicateur Sous la direction de groupe</title> 
-      <para> Les fonctions du module indicateur groupe éditeur essentiellement le même que le module de l'élément de données éditeur de groupe, sauf sur les indicateurs. Vous pouvez facilement réorganiser les groupes qui appartiennent à des indicateurs de ce module. Pour y accéder, choisir d'affecter à des groupes d'indicateurs, simples d'entretien de presse-> Éléments de données et des indicateurs de l'éditeur-> Groupe Indicateur partir du menu principal. Voir la section sur l'éditeur de données d'éléments du groupe pour d'autres instructions. </para> 
+      <para> Les fonctions du module indicateur groupe ï¿½diteur essentiellement le mï¿½me que le module de l'ï¿½lï¿½ment de donnï¿½es ï¿½diteur de groupe, sauf sur les indicateurs. Vous pouvez facilement rï¿½organiser les groupes qui appartiennent ï¿½ des indicateurs de ce module. Pour y accï¿½der, choisir d'affecter ï¿½ des groupes d'indicateurs, simples d'entretien de presse-> ï¿½lï¿½ments de donnï¿½es et des indicateurs de l'ï¿½diteur-> Groupe Indicateur partir du menu principal. Voir la section sur l'ï¿½diteur de donnï¿½es d'ï¿½lï¿½ments du groupe pour d'autres instructions. </para> 
     </section> 
     <section id="indicatorGroupSet">  
       <title> Indicateur groupe ensembles </title> 
-      <para> semblables à des ensembles de données d'éléments du groupe, jeux de groupe témoin servent à créer des groupes combinés d'indicateurs similaires. Par exemple, vous pourriez avoir un groupe d'indicateurs appelé «paludisme» et «La leishmaniose. Ces deux groupes pourraient être combinés en un groupe ensemble appelé «maladies à transmission vectorielle". groupes de séries d'indicateurs sont utilisés lors de l'analyse des données de combiner les thèmes d'indicateurs similaires. Pour accéder à ce module de choisir d'entretien-> Les éléments de données et des indicateurs-> Indicateur groupe définit à partir du menu principal. Le dialogue suivant apparaît. </para> 
+      <para> semblables ï¿½ des ensembles de donnï¿½es d'ï¿½lï¿½ments du groupe, jeux de groupe tï¿½moin servent ï¿½ crï¿½er des groupes combinï¿½s d'indicateurs similaires. Par exemple, vous pourriez avoir un groupe d'indicateurs appelï¿½ ï¿½paludismeï¿½ et ï¿½La leishmaniose. Ces deux groupes pourraient ï¿½tre combinï¿½s en un groupe ensemble appelï¿½ ï¿½maladies ï¿½ transmission vectorielle". groupes de sï¿½ries d'indicateurs sont utilisï¿½s lors de l'analyse des donnï¿½es de combiner les thï¿½mes d'indicateurs similaires. Pour accï¿½der ï¿½ ce module de choisir d'entretien-> Les ï¿½lï¿½ments de donnï¿½es et des indicateurs-> Indicateur groupe dï¿½finit ï¿½ partir du menu principal. Le dialogue suivant apparaï¿½t. </para> 
       <screenshot> 
         <mediaobject> 
           <imageobject> 
@@ -416,12 +416,12 @@
           </imageobject> 
         </mediaobject> 
       </screenshot> 
-      <para> Indiquez un nom pour le groupe ensemble d'indicateurs, puis déplacez les membres souhaités par les groupes "indicateur disponible" pour les membres "Groupe". Cliquez sur "Ajouter" pour enregistrer vos modifications et "Annuler" pour annuler les modifications. </para> 
+      <para> Indiquez un nom pour le groupe ensemble d'indicateurs, puis dï¿½placez les membres souhaitï¿½s par les groupes "indicateur disponible" pour les membres "Groupe". Cliquez sur "Ajouter" pour enregistrer vos modifications et "Annuler" pour annuler les modifications. </para> 
     </section> 
   </section> 
   <section id="dataDictionary">  
-    <title> Dictionnaires de données </title> 
-    <para> dictionnaires de données sont utilisés pour regrouper les données des éléments et des indicateurs au cours des opérations de filtrage. Ils sont utiles pour combiner les autres groupes d'éléments de données et des indicateurs en fonction des programmes auxquels ils appartiennent. Par exemple, un dictionnaire de données appelée «MCH» pourraient être créés, et tous maternelle et infantile et de données sur la santé des éléments indicateurs pourrait être ajouté au dictionnaire. Le dictionnaire de données peut être l'accès en choisissant d'entretien-> Les éléments de données et des indicateurs-> Dictionnaire de données. L'écran suivant s'affiche dans le navigateur. </para> 
+    <title> Dictionnaires de donnï¿½es </title> 
+    <para> dictionnaires de donnï¿½es sont utilisï¿½s pour regrouper les donnï¿½es des ï¿½lï¿½ments et des indicateurs au cours des opï¿½rations de filtrage. Ils sont utiles pour combiner les autres groupes d'ï¿½lï¿½ments de donnï¿½es et des indicateurs en fonction des programmes auxquels ils appartiennent. Par exemple, un dictionnaire de donnï¿½es appelï¿½e ï¿½MCHï¿½ pourraient ï¿½tre crï¿½ï¿½s, et tous maternelle et infantile et de donnï¿½es sur la santï¿½ des ï¿½lï¿½ments indicateurs pourrait ï¿½tre ajoutï¿½ au dictionnaire. Le dictionnaire de donnï¿½es peut ï¿½tre l'accï¿½s en choisissant d'entretien-> Les ï¿½lï¿½ments de donnï¿½es et des indicateurs-> Dictionnaire de donnï¿½es. L'ï¿½cran suivant s'affiche dans le navigateur. </para> 
     <screenshot> 
       <mediaobject> 
         <imageobject> 
@@ -429,11 +429,11 @@
         </imageobject> 
       </mediaobject> 
     </screenshot> 
-    <para> Donner un nom pour le dictionnaire de données dans le champ "Nom" et une description de son contenu. Les éléments de données et indicateurs peuvent être ajoutés ou supprimés à partir du dictionnaire. Cliquez sur "Enregistrer" si vous créez un nouveau dictionnaire de données ou "Ajouter" si vous modifiez le contenu d'un dictionnaire de données existantes. </para> 
+    <para> Donner un nom pour le dictionnaire de donnï¿½es dans le champ "Nom" et une description de son contenu. Les ï¿½lï¿½ments de donnï¿½es et indicateurs peuvent ï¿½tre ajoutï¿½s ou supprimï¿½s ï¿½ partir du dictionnaire. Cliquez sur "Enregistrer" si vous crï¿½ez un nouveau dictionnaire de donnï¿½es ou "Ajouter" si vous modifiez le contenu d'un dictionnaire de donnï¿½es existantes. </para> 
   </section> 
   <section id="translation"> 
     <title>Traductions</title> 
-    <para> DHIS 2 fournit la fonctionnalité de traduction de l'élément de données, le groupe des éléments de données, des indicateurs, le groupe témoin, et les noms de catégorie de données élément. Ces éléments peuvent être convertis en un nombre d'endroits. Une locale représente un secteur géographique, la région politique ou culturelle. </ Para>
-    <para> Pour ajouter une traduction, cliquez sur l'icône Traduire côté de l'élément que vous souhaitez traduire. Commencez par sélectionner la locale souhaitée de la zone de sélection de paramètres régionaux. Si vos paramètres régionaux ne sont pas dans la liste, vous devez l'ajouter en premier. Remplissez la langue locale et le code du pays locale. La langue locale est minuscule, à deux lettres ISO Langue Code valide. Les paramètres régionaux de pays est une majuscule, deux lettres valables Code ISO du pays. Puis dans la section Traduire, sélectionnez vos paramètres régionaux, puis entrez les valeurs des propriétés des éléments disponibles. Vous pouvez sélectionner les paramètres régionaux de référence, c'est la localisation de l'élément courant est affiché dans, à partir de la zone de sélection vers la droite. Les traductions peuvent être activés en sélectionnant les paramètres régionaux souhaités dans la base de données linguistiques en vertu des paramètres utilisateur dans les paramètres du module. </para>
+    <para> IROAD 2 fournit la fonctionnalitï¿½ de traduction de l'ï¿½lï¿½ment de donnï¿½es, le groupe des ï¿½lï¿½ments de donnï¿½es, des indicateurs, le groupe tï¿½moin, et les noms de catï¿½gorie de donnï¿½es ï¿½lï¿½ment. Ces ï¿½lï¿½ments peuvent ï¿½tre convertis en un nombre d'endroits. Une locale reprï¿½sente un secteur gï¿½ographique, la rï¿½gion politique ou culturelle. </ Para>
+    <para> Pour ajouter une traduction, cliquez sur l'icï¿½ne Traduire cï¿½tï¿½ de l'ï¿½lï¿½ment que vous souhaitez traduire. Commencez par sï¿½lectionner la locale souhaitï¿½e de la zone de sï¿½lection de paramï¿½tres rï¿½gionaux. Si vos paramï¿½tres rï¿½gionaux ne sont pas dans la liste, vous devez l'ajouter en premier. Remplissez la langue locale et le code du pays locale. La langue locale est minuscule, ï¿½ deux lettres ISO Langue Code valide. Les paramï¿½tres rï¿½gionaux de pays est une majuscule, deux lettres valables Code ISO du pays. Puis dans la section Traduire, sï¿½lectionnez vos paramï¿½tres rï¿½gionaux, puis entrez les valeurs des propriï¿½tï¿½s des ï¿½lï¿½ments disponibles. Vous pouvez sï¿½lectionner les paramï¿½tres rï¿½gionaux de rï¿½fï¿½rence, c'est la localisation de l'ï¿½lï¿½ment courant est affichï¿½ dans, ï¿½ partir de la zone de sï¿½lection vers la droite. Les traductions peuvent ï¿½tre activï¿½s en sï¿½lectionnant les paramï¿½tres rï¿½gionaux souhaitï¿½s dans la base de donnï¿½es linguistiques en vertu des paramï¿½tres utilisateur dans les paramï¿½tres du module. </para>
    </section>
 </chapter>

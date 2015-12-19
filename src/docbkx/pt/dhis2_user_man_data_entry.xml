@@ -3,9 +3,9 @@
 <chapter>
   <title>Entrada de Dados </title>
   <section id="dataEntry">
-    <title>Entrada de Dados usando DHIS 2</title>
-    <para>Para abrir a tela de entrada de dados, posicione o cursor do rato na aba serviços  no menu principal. Um menu suspenso aparecerá listando os serviços prestados pela DHIS 2. Clique na opção de entrada de dados.</para>
-    <para>O módulo de entrada de dados é onde os dados são registados  manualmente na base de dados do DHIS 2. Os dados são registrados para uma unidade organizacional, um período, e um conjunto de elementos de dados (conjunto de dados) de cada vez. Um conjunto de dados, muitas vezes corresponde a um instrumento de coleta de dados em papel. </para>
+    <title>Entrada de Dados usando IROAD 2</title>
+    <para>Para abrir a tela de entrada de dados, posicione o cursor do rato na aba serviços  no menu principal. Um menu suspenso aparecerá listando os serviços prestados pela IROAD 2. Clique na opção de entrada de dados.</para>
+    <para>O módulo de entrada de dados é onde os dados são registados  manualmente na base de dados do IROAD 2. Os dados são registrados para uma unidade organizacional, um período, e um conjunto de elementos de dados (conjunto de dados) de cada vez. Um conjunto de dados, muitas vezes corresponde a um instrumento de coleta de dados em papel. </para>
     <section>
       <title>Selecionando o formulário de entrada de dados</title>
       <para>Para iniciar a introdução de dados o primeiro passa é abrir o formulário correcto. seguindo estas etapas:</para>

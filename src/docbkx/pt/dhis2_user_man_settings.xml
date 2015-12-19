@@ -59,7 +59,7 @@
            SMS.</para>
         </listitem>
         <listitem>
-          <para>Google Analytics (Universal Analytics) Chave: Defina a sua chave Google UA aqui para fornecer análises para a instância DHIS 2. A maioria dos lugares estão cobertos, mas não será fornecido para aplicativos personalizados. Leia mais sobre o Google Analytics em<ulink url="http://google.com/analytics">http://google.com/analytics</ulink>
+          <para>Google Analytics (Universal Analytics) Chave: Defina a sua chave Google UA aqui para fornecer análises para a instância IROAD 2. A maioria dos lugares estão cobertos, mas não será fornecido para aplicativos personalizados. Leia mais sobre o Google Analytics em<ulink url="http://google.com/analytics">http://google.com/analytics</ulink>
               .</para>
         </listitem>
         <listitem>
@@ -191,17 +191,17 @@
       <title>Configurações de sincronização</title>
       <itemizedlist>
         <listitem>
-          <para>URL do servidor remoto: A URL do servidor remoto executando o DHIS 2 para carregar valores 
+          <para>URL do servidor remoto: A URL do servidor remoto executando o IROAD 2 para carregar valores
             de dados. O uso de SSL / HTTPS é recomendável, pois o nome do usuário e a senha são enviados com 
             o pedido (usando a autenticação básica). O sistema irá tentar sincronizar dados uma vez a cada minuto. 
             Note que  deve activar a sincronização de dados de administração de dados> agendamento.</para>
         </listitem>
         <listitem>
-          <para>Nome de usuário do servidor remoto: O nome de usuário da conta de usuário DHIS 2 no servidor remoto
+          <para>Nome de usuário do servidor remoto: O nome de usuário da conta de usuário IROAD 2 no servidor remoto
              a ser usado para sincronização de dados.</para>
         </listitem>
         <listitem>
-          <para>Senha do servidor remoto: A senha da conta de usuário DHIS 2 no servidor remoto.
+          <para>Senha do servidor remoto: A senha da conta de usuário IROAD 2 no servidor remoto.
            A senha será armazenada criptografada.</para>
         </listitem>
       </itemizedlist>

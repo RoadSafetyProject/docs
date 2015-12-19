@@ -5,11 +5,11 @@
   <section>
     <title>Getting started with mobile browser data entry</title>
     <para>This approach is for data-entry on a smart phone with a mobile browser by navigating to
-      the URL of the DHIS2 instance, for example: the full URL link for demo on <ulink
+      the URL of the IROAD2 instance, for example: the full URL link for demo on <ulink
         url="dhis2.org">dhis2.org</ulink>
       <ulink url="http://play.dhis2.org/dev/mobile/index.action"
         >http://play.dhis2.org/dev/mobile/index.action</ulink> . And your mobile browser will
-      automatically detect the DHIS2 application where the server URL is given (e.g.: <ulink
+      automatically detect the IROAD2 application where the server URL is given (e.g.: <ulink
         url="http://play.dhis2.org/dev">http://play.dhis2.org/dev</ulink>). Here is the login form
       to access the application with user-name and password. Click on &quot;Login&quot; to continue
       or &quot;Reset&quot; to reset:</para>
@@ -54,7 +54,7 @@
     <para>- <emphasis role="bold">Settings:</emphasis> User-information (e.g.: First-name, Surname,
       Phone number, E-mail) and the Interface language.</para>
     <para><emphasis role="bold">- Logout:</emphasis> to log out the application.</para>
-    <para><emphasis role="bold">- Desktop version</emphasis>: navigate to the desktop version of DHIS2 for administration. This require a lot of resources from the client mobile, for example: the sufficient memory to load the pages. Not recommended for the normal GPRS/3G/... phones.</para>
+    <para><emphasis role="bold">- Desktop version</emphasis>: navigate to the desktop version of IROAD2 for administration. This require a lot of resources from the client mobile, for example: the sufficient memory to load the pages. Not recommended for the normal GPRS/3G/... phones.</para>
     <para>The list above will be explained in details:</para>
     <orderedlist>
       <listitem>
@@ -338,7 +338,7 @@
         <para/>
       </listitem>
       <listitem>
-        <para><emphasis role="bold">Desktop version</emphasis>: navigate to the desktop version of DHIS2 for administration.</para>
+        <para><emphasis role="bold">Desktop version</emphasis>: navigate to the desktop version of IROAD2 for administration.</para>
         <para><screenshot>
             <mediaobject>
               <imageobject>
@@ -346,7 +346,7 @@
               </imageobject>
             </mediaobject>
           </screenshot></para>
-        <para>Here is the GUI of the desktop version (which require much memory for loading), not recommended for normal mobile. The example with DHIS2 Demo (from <ulink url="dhis2.org">dhis2.org</ulink>)</para>
+        <para>Here is the GUI of the desktop version (which require much memory for loading), not recommended for normal mobile. The example with IROAD2 Demo (from <ulink url="dhis2.org">dhis2.org</ulink>)</para>
         <para><screenshot>
             <mediaobject>
               <imageobject>
@@ -616,7 +616,7 @@
         <para/>
       </listitem>
       <listitem>
-        <para><emphasis role="bold">Desktop version</emphasis>: navigate to the desktop version of DHIS2 for administration.</para>
+        <para><emphasis role="bold">Desktop version</emphasis>: navigate to the desktop version of IROAD2 for administration.</para>
         <para><screenshot>
             <mediaobject>
               <imageobject>
@@ -624,7 +624,7 @@
               </imageobject>
             </mediaobject>
           </screenshot></para>
-        <para>Here is the GUI of the desktop version (which require much memory for loading), not recommended for normal mobile. The example with DHIS2 Demo (from <ulink url="dhis2.org">dhis2.org</ulink>)</para>
+        <para>Here is the GUI of the desktop version (which require much memory for loading), not recommended for normal mobile. The example with IROAD2 Demo (from <ulink url="dhis2.org">dhis2.org</ulink>)</para>
         <para><screenshot>
             <mediaobject>
               <imageobject>

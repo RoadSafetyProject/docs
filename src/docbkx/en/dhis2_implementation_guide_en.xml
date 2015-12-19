@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!-- This document was created with Syntext Serna Free. -->
 <!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN" "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd" [
-    <!ENTITY title 'DHIS2 Implementation Guide'>
+    <!ENTITY title 'IROAD2 Implementation Guide'>
  ]>
 <book>
   <title>&title;</title>
@@ -27,7 +27,7 @@
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="dhis2_localization_guide.xml" encoding="UTF-8"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="dhis2tools/docs/manual.xml" encoding="UTF-8"/>
     <appendix>
-    <title>DHIS 2 Documentation Guide</title>
+    <title>IROAD 2 Documentation Guide</title>
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="dhis2_documentation_guide.xml" encoding="UTF-8" xpointer="docs_1"/>
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="dhis2_documentation_guide.xml" encoding="UTF-8" xpointer="docs_2"/>
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="dhis2_documentation_guide.xml" encoding="UTF-8" xpointer="docs_3"/>

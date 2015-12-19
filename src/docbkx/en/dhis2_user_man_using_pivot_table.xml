@@ -5,12 +5,12 @@
   <section>
     <title>Pivot Table overview</title>
     <para>The pivot table app enables users to create pivot tables, using all available data
-        dimensions in DHIS 2. A pivot table is a dynamic tool for
+        dimensions in IROAD 2. A pivot table is a dynamic tool for
       data analysis which lets you quickly summarize and arrange data according to its dimensions.
-      Examples of data dimensions in DHIS 2 are data dimension itself (e.g data elements, indicators and events ),
+      Examples of data dimensions in IROAD 2 are data dimension itself (e.g data elements, indicators and events ),
       periods (representing the time period for which the data represents) and the organisational hierarchy (representing the
       geographical location of the data). From these dimensions you can freely select dimension
-        <emphasis role="italic">items</emphasis> to include in the pivot table. Additional dimensions can be created in DHIS2, using the group set functionality, to allow for different aggregation pathways, such as aggregation by &quot;Partner&quot; or facility type. </para>
+        <emphasis role="italic">items</emphasis> to include in the pivot table. Additional dimensions can be created in IROAD2, using the group set functionality, to allow for different aggregation pathways, such as aggregation by &quot;Partner&quot; or facility type. </para>
     <para>A pivot table can arrange data dimensions on <emphasis role="italic">columns</emphasis>,
         <emphasis role="italic">rows</emphasis>, and as <emphasis role="italic">filters</emphasis>.
       When you place a data dimension on columns, the pivot table will display one column per
@@ -225,7 +225,7 @@
       <itemizedlist>
         <listitem>
           <para role=""><emphasis role="bold">Write interpretation:</emphasis> Allows you to create an interpretation of the pivot table and share it with all users of the system.</para>
-          <para role="">For certain analysis-related resources in DHIS, like pivot tables, charts and maps, one can
+          <para role="">For certain analysis-related resources in IROAD, like pivot tables, charts and maps, one can
       share a data interpretation. An interpretation is simply a link to the relevant resource
       together with a text expressing some insight about the data. If you want to share a pivot table
       interpretation you need to first save the table you want to share as a favorite. Then, without
@@ -237,20 +237,20 @@
         </listitem>
         <listitem>
           <para><emphasis role="bold">Embed in web page:</emphasis> This option will generate a HTML fragment which can be used to display the pivot table in an external web page. </para>
-          <para>Certain analysis-related resources in DHIS, like pivot tables, charts and maps, can be embedded in any web page by using a plugin. If you have created a table in the Pivot Table app you will get the plug-in configuration for this table by clicking the &quot;Share&quot; button the tool bar and then &quot;Embed as webpage&quot;. You will find more information about the plugins in the web api chapter.</para>
+          <para>Certain analysis-related resources in IROAD, like pivot tables, charts and maps, can be embedded in any web page by using a plugin. If you have created a table in the Pivot Table app you will get the plug-in configuration for this table by clicking the &quot;Share&quot; button the tool bar and then &quot;Embed as webpage&quot;. You will find more information about the plugins in the web api chapter.</para>
         </listitem>
         <listitem>
           <para><emphasis role="bold">Favorite link:</emphasis> Provides a URL for the favorite. This can then be easily shared with other users or colleagues via email or chat.</para>
         </listitem>
         <listitem>
-          <para><emphasis role="bold">API Link:</emphasis>Provides a URL of the API resource. By default this is a HTML resource, but by modifying the suffix of &quot;.html&quot; to &quot;.json&quot; or &quot;.csv&quot;, other data types are available. This option is most useful when you need an API link to the pivot table resource. Consult the DHIS2 developers guide for details about the different types which are available. </para>
+          <para><emphasis role="bold">API Link:</emphasis>Provides a URL of the API resource. By default this is a HTML resource, but by modifying the suffix of &quot;.html&quot; to &quot;.json&quot; or &quot;.csv&quot;, other data types are available. This option is most useful when you need an API link to the pivot table resource. Consult the IROAD2 developers guide for details about the different types which are available. </para>
         </listitem>
       </itemizedlist>
     </section>
   </section>
   <section>
     <title>Analysis integration</title>
-    <para>The analysis apps in DHIS 2 are completely integrated, so you can easily switch
+    <para>The analysis apps in IROAD 2 are completely integrated, so you can easily switch
    between pivot table, chart and map visualization of your data. When you have made a pivot table
    you can click e.g. &quot;Chart&quot; in the top right corner and then select &quot;Open this table as chart&quot;.</para>
     <screenshot>
@@ -284,8 +284,8 @@
     <para>Data can also be downloaded in JSON, XML, Excel, and CSV as plain data formats with different identification schemes (ID, Code, and Name).   The data document will use identifiers of the
       dimension items and will be opened in a new browser window in order to reveal the URL of the
       request to the Web API in the address bar. This will be useful for developers of apps and 
-      other client modules based on the DHIS 2 Web API or for those who require a plan data source, for instance for import into statistical packages.</para>
-    <para>For advanced users, two additional options are available under &quot;Advanced&quot;. JXRML will produce a template of a Jasper Report which can be further customized based on your exact needs and used as the basis for a standard report in DHIS2. The &quot;Raw data SQL&quot; will provide the actual SQL statement used to generate the pivot table. This could then be used as a data source in a Jasper report, or as the basis for an SQL view. </para>
+      other client modules based on the IROAD 2 Web API or for those who require a plan data source, for instance for import into statistical packages.</para>
+    <para>For advanced users, two additional options are available under &quot;Advanced&quot;. JXRML will produce a template of a Jasper Report which can be further customized based on your exact needs and used as the basis for a standard report in IROAD2. The &quot;Raw data SQL&quot; will provide the actual SQL statement used to generate the pivot table. This could then be used as a data source in a Jasper report, or as the basis for an SQL view. </para>
     <para>Lastly, the pivot table app allows you to download data in CSV format directly without first rendering the data in the Web Browser. This will help overcome any constraint in the system settings  that has been set in regards to the maximum number of analytic recrods. This allows for much larger batches of data to be downloaded and used for later offline analysis. This can be done by clicking on the arrow beside the update button.</para>
     <mediaobject>
       <imageobject>
@@ -314,7 +314,7 @@
       </listitem>
     </itemizedlist>
     <tip>
-      <para>Pivot tables in DHIS2 are limited to a system set paramater, which controls the number of data values which can be returned. The reason for this is two fold. First, it would be easy to overwhelm the server with a very complicated request for a large pivot table. Second, the amount of data which is able to be rendered in a browser is fairly limited. If you are having problems with very large or complex tables, consider to try and reduce the number of items. It is usually more useful to have smaller, concise tables which are easier to understand and which address a particular analysis. </para>
+      <para>Pivot tables in IROAD2 are limited to a system set paramater, which controls the number of data values which can be returned. The reason for this is two fold. First, it would be easy to overwhelm the server with a very complicated request for a large pivot table. Second, the amount of data which is able to be rendered in a browser is fairly limited. If you are having problems with very large or complex tables, consider to try and reduce the number of items. It is usually more useful to have smaller, concise tables which are easier to understand and which address a particular analysis. </para>
     </tip>
   </section>
 </chapter>

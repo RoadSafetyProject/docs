@@ -5,19 +5,19 @@
   <section>
     <title>Overview</title>
     <para>The event capture Android app allows you capture, modify and list events. The event
-      capture app works with event-based programs in DHIS 2, which handles anonymous events not
+      capture app works with event-based programs in IROAD 2, which handles anonymous events not
       linked to registered entities. These programs are suitable for handling scenarios such as
       facility surveys, hospital registry summaries and training events. However the app is not tied
       to any specific domain and can potentially be utilized for any scenario of event-based
       information.</para>
     <para>The event capture app allows you to capture events offline, i.e. without Internet
-      connectivity. The app will automatically synchronize events with the online DHIS 2 server
+      connectivity. The app will automatically synchronize events with the online IROAD 2 server
       automatically when connectivity is present. This makes the app suitable for environments where
       Internet connectivity is scarce or unstable.</para>
   </section>
   <section>
     <title>Installing and logging in</title>
-    <para>The event capture add can be found on Google Play under the name "Event Capture for DHIS
+    <para>The event capture add can be found on Google Play under the name "Event Capture for IROAD
       2".</para>
     <para><ulink url="https://play.google.com/store/apps/details?id=org.hisp.dhis.android.eventcapture">Event Capture on Google Play</ulink></para>
     <para>You can download the APK file directly from the GitHub release page.</para>
@@ -32,13 +32,13 @@
         </imageobject>
       </mediaobject>
     </screenshot>
-    <para>In the <emphasis role="italic">URL</emphasis> field, enter the full URL to the DHIS 2
+    <para>In the <emphasis role="italic">URL</emphasis> field, enter the full URL to the IROAD 2
       instance (server) for which you want to capture and manage events for. Be careful to enter the
         <emphasis role="italic">http://</emphasis> or <emphasis role="italic">https://</emphasis>
       part of the URL as well. In the <emphasis role="italic">username</emphasis> and <emphasis
         role="italic">password</emphasis> field, enter the username and password for your account at
-      the given DHIS 2 instance. Note that you can use this login on the online DHIS 2 server as
-      well, i.e. you will be using the same account as you will use when logging into DHIS 2 using a
+      the given IROAD 2 instance. Note that you can use this login on the online IROAD 2 server as
+      well, i.e. you will be using the same account as you will use when logging into IROAD 2 using a
       Web browser. After logging in the first time, the app will download meta-data from the online
       instance. This could take a few minutes so please be patient.</para>
   </section>
@@ -138,7 +138,7 @@
       battery usage and bandwith consumption. The default of one hour is a sensible choice.</para>
     <para>The <emphasis role="italic">log out</emphasis> button will log you out of the app, and
       request you to enter the login information again. You are not intended to log out of the
-      application between each session. This is mostly useful when you want to log into another DHIS
+      application between each session. This is mostly useful when you want to log into another IROAD
       2 online instance.</para>
   </section>
 </chapter>

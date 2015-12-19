@@ -182,15 +182,15 @@
   </section>
   <section id="dvInterpretations">
     <title>Partage des interprétations</title>
-    <para>Il est possible, pour certaines ressources associées à l'analyse sous DHIS 2, de faire une interprétation des données et de partager celle-ci ; sont concernées par cette possibilité les ressources suivantes : les tableaux croisés dynamiques, les graphiques et les cartes. Une interprétation est tout simplement un lien vers la ressource avec un texte exprimant une idée sur les données. Si vous voulez partager une interprétation graphique vous devez d'abord enregistrer le graphique que vous souhaitez partager en tant que favori. Puis, sans apporter de modifications à la carte, cliquez sur le bouton "Partager" la barre d'outils. Une fenêtre s'ouvre vous donnant la possibilité de rédiger votre interprétation. Lorsque vous avez terminé, cliquez sur le bouton de partage dans le coin inférieur droit de la fenêtre. La fenêtre se ferme automatiquement ; et si l'interprétation a été correctement partagée, vous verrez une notification sur la barre d'outils en bas.</para>
+    <para>Il est possible, pour certaines ressources associées à l'analyse sous IROAD 2, de faire une interprétation des données et de partager celle-ci ; sont concernées par cette possibilité les ressources suivantes : les tableaux croisés dynamiques, les graphiques et les cartes. Une interprétation est tout simplement un lien vers la ressource avec un texte exprimant une idée sur les données. Si vous voulez partager une interprétation graphique vous devez d'abord enregistrer le graphique que vous souhaitez partager en tant que favori. Puis, sans apporter de modifications à la carte, cliquez sur le bouton "Partager" la barre d'outils. Une fenêtre s'ouvre vous donnant la possibilité de rédiger votre interprétation. Lorsque vous avez terminé, cliquez sur le bouton de partage dans le coin inférieur droit de la fenêtre. La fenêtre se ferme automatiquement ; et si l'interprétation a été correctement partagée, vous verrez une notification sur la barre d'outils en bas.</para>
   </section>
   <section id="dvEmbed">
     <title>Insérer des graphiques dans une page web</title>
-    <para>Certaines ressources liées à l'analyse de DHIS 2, comme des tableaux croisés dynamiques, des graphiques et des cartes, peuvent être insérées dans une page Web à l'aide d'un plugin. Si vous avez créé un graphique avec le visualiseur de données, vous obtiendrez la configuration du plug-in pour ce graphique en cliquant sur le bouton "Partager" dans la barre d'outils, puis "Insérer comme plug-in". Vous trouverez plus d'informations sur les plugins dans le chapitre traitant de l’API web.</para>
+    <para>Certaines ressources liées à l'analyse de IROAD 2, comme des tableaux croisés dynamiques, des graphiques et des cartes, peuvent être insérées dans une page Web à l'aide d'un plugin. Si vous avez créé un graphique avec le visualiseur de données, vous obtiendrez la configuration du plug-in pour ce graphique en cliquant sur le bouton "Partager" dans la barre d'outils, puis "Insérer comme plug-in". Vous trouverez plus d'informations sur les plugins dans le chapitre traitant de l’API web.</para>
   </section>
   <section>
     <title>Intégration de l’analyse</title>
-    <para>Les applications d'analyse en DHIS 2 sont complètement intégrés, de sorte que vous pouvez facilement basculer entre les tableaux croisés dynamiques, les graphiques et les visualisations des données à travers des cartes. Une fois que vous avez conçu un graphique, vous pouvez cliquer par exemple sur "Carte" dans le coin supérieur droit, puis sélectionner "Ouvrir ce graphique comme carte" pour l’analyser à l’aide du module SIG.</para>
+    <para>Les applications d'analyse en IROAD 2 sont complètement intégrés, de sorte que vous pouvez facilement basculer entre les tableaux croisés dynamiques, les graphiques et les visualisations des données à travers des cartes. Une fois que vous avez conçu un graphique, vous pouvez cliquer par exemple sur "Carte" dans le coin supérieur droit, puis sélectionner "Ouvrir ce graphique comme carte" pour l’analyser à l’aide du module SIG.</para>
     <screenshot>
       <screeninfo>Intégration de l'analyse</screeninfo>
       <mediaobject>
@@ -202,6 +202,6 @@
   </section>
   <section>
     <title>Quitter le module visualiseur de données</title>
-    <para>Si vous voulez quitter le module et revenir à la page d'accueil de DHIS 2 vous pouvez cliquer sur le bouton "Accueil" sur le côté droit du menu en haut au centre.</para>
+    <para>Si vous voulez quitter le module et revenir à la page d'accueil de IROAD 2 vous pouvez cliquer sur le bouton "Accueil" sur le côté droit du menu en haut au centre.</para>
   </section>
 </chapter>

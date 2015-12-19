@@ -1,268 +1,268 @@
 <? Xml version = '1 .0 'encoding =' UTF-8 "?>
-<!-- Ce document a été créé avec Syntext Serna libre. -->
+<!-- Ce document a ï¿½tï¿½ crï¿½ï¿½ avec Syntext Serna libre. -->
 <! Chapitre DOCTYPE PUBLIC "- / / OASIS / / DTD DocBook XML V4.4 / / EN" "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd" [] >
 <chapter>
   <title> Rapports </title>
   <section>
     <title> Reporting options </title>
-    Le module de rapports <para> dans DHIS 2 prévoit une série de rapports des solutions de rechange, y compris les rapports conserve en utilisant soit JasperReports ou BIRT, ensemble de données de rapports, graphiques, tableaux croisés dynamiques et les tableaux du rapport. </para>
+    Le module de rapports <para> dans IROAD 2 prï¿½voit une sï¿½rie de rapports des solutions de rechange, y compris les rapports conserve en utilisant soit JasperReports ou BIRT, ensemble de donnï¿½es de rapports, graphiques, tableaux croisï¿½s dynamiques et les tableaux du rapport. </para>
   </section>
   <section>
-    <title> sources de données pour les rapports </title>
+    <title> sources de donnï¿½es pour les rapports </title>
     <section>
-      <title> Types de données et agrégation </title>
+      <title> Types de donnï¿½es et agrï¿½gation </title>
       <para>
-Dans le tableau d'ensemble de sa terminologie toutes les données dans DHIS sont généralement appelés agrégées car ils sont les agrégats (par exemple, des résumés mensuels) des dossiers médicaux ou certains types de registres de service signalés par les établissements de santé. Agrégation DHIS l'intérieur cependant, qui est le sujet ici, est préoccupé par la façon dont les données brutes capturées dans DHIS (par saisie de données ou d'importation) sont en outre agrégés au fil du temps (par exemple, de mensuelle à trimestrielle des valeurs) ou la hiérarchie de l'organisation (par exemple de l'installation aux valeurs de district).
+Dans le tableau d'ensemble de sa terminologie toutes les donnï¿½es dans IROAD sont gï¿½nï¿½ralement appelï¿½s agrï¿½gï¿½es car ils sont les agrï¿½gats (par exemple, des rï¿½sumï¿½s mensuels) des dossiers mï¿½dicaux ou certains types de registres de service signalï¿½s par les ï¿½tablissements de santï¿½. Agrï¿½gation IROAD l'intï¿½rieur cependant, qui est le sujet ici, est prï¿½occupï¿½ par la faï¿½on dont les donnï¿½es brutes capturï¿½es dans IROAD (par saisie de donnï¿½es ou d'importation) sont en outre agrï¿½gï¿½s au fil du temps (par exemple, de mensuelle ï¿½ trimestrielle des valeurs) ou la hiï¿½rarchie de l'organisation (par exemple de l'installation aux valeurs de district).
 </para>
       <section>
         <title> Terminologie </title>
         <itemizedlist>
           <listitem>
-            <para> Premières <emphasis> de données </emphasis> se réfère aux données qui sont enregistrées dans le 2, soit par le biais DHIS saisie de données ou importer des données, et n'a pas été manipulé par le processus d'agrégation DHIS. Toutes ces données sont stockées dans la table (ou objet Java si vous préférez) a appelé DataValue.
+            <para> Premiï¿½res <emphasis> de donnï¿½es </emphasis> se rï¿½fï¿½re aux donnï¿½es qui sont enregistrï¿½es dans le 2, soit par le biais IROAD saisie de donnï¿½es ou importer des donnï¿½es, et n'a pas ï¿½tï¿½ manipulï¿½ par le processus d'agrï¿½gation IROAD. Toutes ces donnï¿½es sont stockï¿½es dans la table (ou objet Java si vous prï¿½fï¿½rez) a appelï¿½ DataValue.
  </para>
           </listitem>
           <listitem>
-            <para> <emphasis> Agrégées les données </emphasis> se réfère aux données qui ont été rassemblées par l'DHIS2, ce qui signifie qu'il n'est plus des données brutes, mais une sorte d'agrégat des données brutes. </para>
+            <para> <emphasis> Agrï¿½gï¿½es les donnï¿½es </emphasis> se rï¿½fï¿½re aux donnï¿½es qui ont ï¿½tï¿½ rassemblï¿½es par l'IROAD2, ce qui signifie qu'il n'est plus des donnï¿½es brutes, mais une sorte d'agrï¿½gat des donnï¿½es brutes. </para>
           </listitem>
           <listitem>
-            <para> <emphasis> Indicateur des valeurs </emphasis>> peut aussi être compris comme des données agrégées, mais ils sont spéciaux dans la façon dont ils sont calculés sur la base des formules définies par l'utilisateur (numérateur * facteur / dénominateur). Les valeurs des indicateurs sont donc des données traitées et non des données brutes, et sont situés dans le tableau aggregatedindicatorvalue / objet. Les indicateurs sont calculés à tous les niveaux de la hiérarchie de l'organisation et ces calculs sont ensuite fondée sur les valeurs des données agrégées disponibles à chaque niveau. Un attribut de niveau dans le tableau aggregateddatavalue se réfère au niveau de l'organisation de la orgunit la valeur a été calculée pour.
+            <para> <emphasis> Indicateur des valeurs </emphasis>> peut aussi ï¿½tre compris comme des donnï¿½es agrï¿½gï¿½es, mais ils sont spï¿½ciaux dans la faï¿½on dont ils sont calculï¿½s sur la base des formules dï¿½finies par l'utilisateur (numï¿½rateur * facteur / dï¿½nominateur). Les valeurs des indicateurs sont donc des donnï¿½es traitï¿½es et non des donnï¿½es brutes, et sont situï¿½s dans le tableau aggregatedindicatorvalue / objet. Les indicateurs sont calculï¿½s ï¿½ tous les niveaux de la hiï¿½rarchie de l'organisation et ces calculs sont ensuite fondï¿½e sur les valeurs des donnï¿½es agrï¿½gï¿½es disponibles ï¿½ chaque niveau. Un attribut de niveau dans le tableau aggregateddatavalue se rï¿½fï¿½re au niveau de l'organisation de la orgunit la valeur a ï¿½tï¿½ calculï¿½e pour.
     </para>
           </listitem>
           <listitem>
             <para>
-    <emphasis> Période et type Période</emphasis> sont utilisés pour spécifier la dimension temporelle de la valeur brute ou agrégées, et les données peuvent être agrégées à partir d'un type période à l'autre, par exemple, de mensuelle à trimestrielle, ou à la journée de mois. Chaque valeur de données est une période et cette période a un genre de période. données, par exemple les valeurs pour les périodes de janvier, février et mars 2009, tous les genre de période mensuelle peuvent être agrégés ensemble pour une valeur de données agrégées de la période de «Q1 2009" et la période de type «trimestriel».
+    <emphasis> Pï¿½riode et type Pï¿½riode</emphasis> sont utilisï¿½s pour spï¿½cifier la dimension temporelle de la valeur brute ou agrï¿½gï¿½es, et les donnï¿½es peuvent ï¿½tre agrï¿½gï¿½es ï¿½ partir d'un type pï¿½riode ï¿½ l'autre, par exemple, de mensuelle ï¿½ trimestrielle, ou ï¿½ la journï¿½e de mois. Chaque valeur de donnï¿½es est une pï¿½riode et cette pï¿½riode a un genre de pï¿½riode. donnï¿½es, par exemple les valeurs pour les pï¿½riodes de janvier, fï¿½vrier et mars 2009, tous les genre de pï¿½riode mensuelle peuvent ï¿½tre agrï¿½gï¿½s ensemble pour une valeur de donnï¿½es agrï¿½gï¿½es de la pï¿½riode de ï¿½Q1 2009" et la pï¿½riode de type ï¿½trimestrielï¿½.
    </para>
           </listitem>
         </Itemizedlist>
       </section>
       <section>
-        <title> règles de base de agrégation</title>
+        <title> rï¿½gles de base de agrï¿½gation</title>
         <section>
-          Qu'est-ce que <title> additionnés </title>
-          <para> données (données brutes) peuvent être enregistrés à tout niveau de l'organisation, par exemple, à à l'hôpital national de niveau 2, un établissement de santé au niveau 5, ou à une plus grande soins de santé primaires au niveau 4. Cela varie un pays à un, mais DHIS est souple en permettant l'importation de saisie de données ou de données doit avoir lieu à n'importe quel niveau. Cela signifie que orgunits qui ont eux-mêmes les enfants peuvent enregistrer des données, parfois les mêmes données que leurs unités enfants. La règle de base de l'agrégation dans DHIS 2 est que <emphasis> toutes les données brutes sont rassemblées ensemble </emphasis>>, ce qui signifie les données enregistrées dans une installation sur le niveau 5 est ajouté aux données enregistrées pour un SSP au niveau 4. </para>
+          Qu'est-ce que <title> additionnï¿½s </title>
+          <para> donnï¿½es (donnï¿½es brutes) peuvent ï¿½tre enregistrï¿½s ï¿½ tout niveau de l'organisation, par exemple, ï¿½ ï¿½ l'hï¿½pital national de niveau 2, un ï¿½tablissement de santï¿½ au niveau 5, ou ï¿½ une plus grande soins de santï¿½ primaires au niveau 4. Cela varie un pays ï¿½ un, mais IROAD est souple en permettant l'importation de saisie de donnï¿½es ou de donnï¿½es doit avoir lieu ï¿½ n'importe quel niveau. Cela signifie que orgunits qui ont eux-mï¿½mes les enfants peuvent enregistrer des donnï¿½es, parfois les mï¿½mes donnï¿½es que leurs unitï¿½s enfants. La rï¿½gle de base de l'agrï¿½gation dans IROAD 2 est que <emphasis> toutes les donnï¿½es brutes sont rassemblï¿½es ensemble </emphasis>>, ce qui signifie les donnï¿½es enregistrï¿½es dans une installation sur le niveau 5 est ajoutï¿½ aux donnï¿½es enregistrï¿½es pour un SSP au niveau 4. </para>
           <para>
-Il appartient à l'utilisateur de l'administrateur système / / designer pour s'assurer qu'aucun double saisie des données est en cours et que, par exemple données saisies au niveau 4 ne sont pas près les mêmes services / visites qui sont signalés par les enfants orgunit au niveau 5. Notez que dans certains cas, vous voulez avoir la «duplication» des données dans le système, mais d'une manière contrôlée. Par exemple, lorsque vous avez deux sources de données différentes pour les estimations de la population, tant au niveau 5 les données de population des bassins versants et une autre source de données démographiques pour le niveau 4 sur la base des données du recensement (parce que somme de niveau 5 bassins versants n'est pas toujours le même niveau de données 4 de recensement). Ensuite, vous pouvez spécifier en utilisant les paramètres de l'agrégation de pointe (voir plus bas) que le système devrait par exemple pas ajouter des données au niveau 5 Population au niveau de données 4 de la population, et que le niveau 3,2,1 données sur la population agrégats ne sont fondées sur des données de niveau 4 et n'inclut pas les données de niveau 5 pop. </para>
+Il appartient ï¿½ l'utilisateur de l'administrateur systï¿½me / / designer pour s'assurer qu'aucun double saisie des donnï¿½es est en cours et que, par exemple donnï¿½es saisies au niveau 4 ne sont pas prï¿½s les mï¿½mes services / visites qui sont signalï¿½s par les enfants orgunit au niveau 5. Notez que dans certains cas, vous voulez avoir la ï¿½duplicationï¿½ des donnï¿½es dans le systï¿½me, mais d'une maniï¿½re contrï¿½lï¿½e. Par exemple, lorsque vous avez deux sources de donnï¿½es diffï¿½rentes pour les estimations de la population, tant au niveau 5 les donnï¿½es de population des bassins versants et une autre source de donnï¿½es dï¿½mographiques pour le niveau 4 sur la base des donnï¿½es du recensement (parce que somme de niveau 5 bassins versants n'est pas toujours le mï¿½me niveau de donnï¿½es 4 de recensement). Ensuite, vous pouvez spï¿½cifier en utilisant les paramï¿½tres de l'agrï¿½gation de pointe (voir plus bas) que le systï¿½me devrait par exemple pas ajouter des donnï¿½es au niveau 5 Population au niveau de donnï¿½es 4 de la population, et que le niveau 3,2,1 donnï¿½es sur la population agrï¿½gats ne sont fondï¿½es sur des donnï¿½es de niveau 4 et n'inclut pas les donnï¿½es de niveau 5 pop. </para>
         </section>
         <section>
-          Comment se <title> données additionnées </title>
-          <para> Comment les données sont agrégées dépend de la dimension d'agrégation (voir plus bas). </para>
-          <para> long de la dimension des données orgunit niveau est toujours résumer, simplement additionnés. Notez que les données brutes ne sont jamais des pourcentages, et ne peut donc se résumer ainsi. Les valeurs des indicateurs qui peuvent être pourcentages sont traités différemment (recalculé à chaque niveau, ne résume). </para>
+          Comment se <title> donnï¿½es additionnï¿½es </title>
+          <para> Comment les donnï¿½es sont agrï¿½gï¿½es dï¿½pend de la dimension d'agrï¿½gation (voir plus bas). </para>
+          <para> long de la dimension des donnï¿½es orgunit niveau est toujours rï¿½sumer, simplement additionnï¿½s. Notez que les donnï¿½es brutes ne sont jamais des pourcentages, et ne peut donc se rï¿½sumer ainsi. Les valeurs des indicateurs qui peuvent ï¿½tre pourcentages sont traitï¿½s diffï¿½remment (recalculï¿½ ï¿½ chaque niveau, ne rï¿½sume). </para>
           <para>
-Le long de la dimension de temps il ya plusieurs possibilités, les deux façons les plus courantes sont la somme d'agréger et de la moyenne. L'utilisateur peut spécifier pour chaque élément de données la méthode à utiliser par la mise à l'opérateur d'agrégation (voir plus bas). les données mensuelles sont normalement additionnées au fil du temps, par exemple, le nombre de vaccins administrés dans une année est la somme des vaccins donnés pour chaque mois de cette année. Pour la population, de l'équipement, le personnel et les autres formes de ce qu'on appelle souvent les données semi-permanentes de la méthode de la moyenne est souvent celui d'utiliser, comme, par exemple, "Nombre d'infirmières« travailler dans une usine de un an ne serait pas la somme des deux nombres rapportés dans le rapport de la dotation de six mois, mais plutôt la moyenne des deux nombres. Plus de détails plus bas dans les opérateurs d'agrégation ".
+Le long de la dimension de temps il ya plusieurs possibilitï¿½s, les deux faï¿½ons les plus courantes sont la somme d'agrï¿½ger et de la moyenne. L'utilisateur peut spï¿½cifier pour chaque ï¿½lï¿½ment de donnï¿½es la mï¿½thode ï¿½ utiliser par la mise ï¿½ l'opï¿½rateur d'agrï¿½gation (voir plus bas). les donnï¿½es mensuelles sont normalement additionnï¿½es au fil du temps, par exemple, le nombre de vaccins administrï¿½s dans une annï¿½e est la somme des vaccins donnï¿½s pour chaque mois de cette annï¿½e. Pour la population, de l'ï¿½quipement, le personnel et les autres formes de ce qu'on appelle souvent les donnï¿½es semi-permanentes de la mï¿½thode de la moyenne est souvent celui d'utiliser, comme, par exemple, "Nombre d'infirmiï¿½resï¿½ travailler dans une usine de un an ne serait pas la somme des deux nombres rapportï¿½s dans le rapport de la dotation de six mois, mais plutï¿½t la moyenne des deux nombres. Plus de dï¿½tails plus bas dans les opï¿½rateurs d'agrï¿½gation ".
 </para>
         </section>
       </section>
       <section>
-        Dimensions <title> de agrégation</title>
+        Dimensions <title> de agrï¿½gation</title>
         <section>
-          <title> unités organisationnelles et niveaux</title>
-          <para> unités organisationnelles sont utilisées pour représenter le "où" la dimension associée à des valeurs données. En DHIS2, les unités organisationnelles sont organisées dans une hiérarchie, ce qui correspond généralement à la nature hiérarchique de l'organisation ou le pays. au niveau des unités d'organisation correspondent aux différents niveaux dans la hiérarchie. Par exemple, un pays peut être divisé en provinces, districts, puis, puis des installations, puis sous-centres. Cette hiérarchie de l'organisation aurait cinq niveaux. Dans chaque niveau, un certain nombre d'unités d'organisation ne pourrait exister. Pendant le processus d'agrégation, les données sont agrégées à partir des niveaux inférieurs unité d'organisation à des niveaux plus élevés. Selon l'opérateur d'agrégation, les données peuvent être ", résume» ou «moyenne» au niveau de l'unité d'organisation donnée, pour obtenir le total global pour toutes les unités organisationnelles qui sont contenus dans un niveau supérieur au niveau des unités organisationnelles. Par exemple, si il ya dix districts contenues dans une province et l'opérateur d'agrégation pour un élément de données a été définie comme «SUM», la somme totale pour la province serait calculé comme la somme des valeurs individuelles des dix distrincts contenues dans cette province. </para>
+          <title> unitï¿½s organisationnelles et niveaux</title>
+          <para> unitï¿½s organisationnelles sont utilisï¿½es pour reprï¿½senter le "oï¿½" la dimension associï¿½e ï¿½ des valeurs donnï¿½es. En IROAD2, les unitï¿½s organisationnelles sont organisï¿½es dans une hiï¿½rarchie, ce qui correspond gï¿½nï¿½ralement ï¿½ la nature hiï¿½rarchique de l'organisation ou le pays. au niveau des unitï¿½s d'organisation correspondent aux diffï¿½rents niveaux dans la hiï¿½rarchie. Par exemple, un pays peut ï¿½tre divisï¿½ en provinces, districts, puis, puis des installations, puis sous-centres. Cette hiï¿½rarchie de l'organisation aurait cinq niveaux. Dans chaque niveau, un certain nombre d'unitï¿½s d'organisation ne pourrait exister. Pendant le processus d'agrï¿½gation, les donnï¿½es sont agrï¿½gï¿½es ï¿½ partir des niveaux infï¿½rieurs unitï¿½ d'organisation ï¿½ des niveaux plus ï¿½levï¿½s. Selon l'opï¿½rateur d'agrï¿½gation, les donnï¿½es peuvent ï¿½tre ", rï¿½sumeï¿½ ou ï¿½moyenneï¿½ au niveau de l'unitï¿½ d'organisation donnï¿½e, pour obtenir le total global pour toutes les unitï¿½s organisationnelles qui sont contenus dans un niveau supï¿½rieur au niveau des unitï¿½s organisationnelles. Par exemple, si il ya dix districts contenues dans une province et l'opï¿½rateur d'agrï¿½gation pour un ï¿½lï¿½ment de donnï¿½es a ï¿½tï¿½ dï¿½finie comme ï¿½SUMï¿½, la somme totale pour la province serait calculï¿½ comme la somme des valeurs individuelles des dix distrincts contenues dans cette province. </para>
         </section>
         <section>
-          <title> Période </title>
-          Périodes <para> sont utilisés pour représenter le «quand» la dimension associée à des valeurs données. Les données peuvent facilement être agrégés à partir de quelques semaines ou mois, de quelques mois à trimestres et des trimestres à quelques années. DHIS2 utilisations connues des règles de la façon dont ces différents intervalles sont contenus dans des intervalles d'autres (par exemple, 1 er trimestre 2010 est connu pour contenir Janvier 2010, Février 2010, un Mars 2010) pour les données agrégées à partir des intervalles de temps plus petits, par exemple, semaines, dans des intervalles de temps plus longue, par exemple, mois. </para>
+          <title> Pï¿½riode </title>
+          Pï¿½riodes <para> sont utilisï¿½s pour reprï¿½senter le ï¿½quandï¿½ la dimension associï¿½e ï¿½ des valeurs donnï¿½es. Les donnï¿½es peuvent facilement ï¿½tre agrï¿½gï¿½s ï¿½ partir de quelques semaines ou mois, de quelques mois ï¿½ trimestres et des trimestres ï¿½ quelques annï¿½es. IROAD2 utilisations connues des rï¿½gles de la faï¿½on dont ces diffï¿½rents intervalles sont contenus dans des intervalles d'autres (par exemple, 1 er trimestre 2010 est connu pour contenir Janvier 2010, Fï¿½vrier 2010, un Mars 2010) pour les donnï¿½es agrï¿½gï¿½es ï¿½ partir des intervalles de temps plus petits, par exemple, semaines, dans des intervalles de temps plus longue, par exemple, mois. </para>
         </section>
         <section>
-          <title> Éléments de données et> Catégories </title>
-          <para> La dimension des éléments de données précise «quoi» est enregistré par une valeur de données particulier. catégories d'éléments de données sont en fait des dimensions dégénérées de la dimension des éléments de données, et sont utilisés pour ventiler la dimension des éléments de données dans des catégories plus fines. catégories d'éléments de données, telles que "Age" et "Sexe", sont utilisés pour enregistrer un élément de données particulier, généralement pour des groupes de population différenciation. Ces catégories peuvent ensuite être utilisées pour calculer le montant global pour la catégorie et le total de toutes les catégories. </para>
+          <title> ï¿½lï¿½ments de donnï¿½es et> Catï¿½gories </title>
+          <para> La dimension des ï¿½lï¿½ments de donnï¿½es prï¿½cise ï¿½quoiï¿½ est enregistrï¿½ par une valeur de donnï¿½es particulier. catï¿½gories d'ï¿½lï¿½ments de donnï¿½es sont en fait des dimensions dï¿½gï¿½nï¿½rï¿½es de la dimension des ï¿½lï¿½ments de donnï¿½es, et sont utilisï¿½s pour ventiler la dimension des ï¿½lï¿½ments de donnï¿½es dans des catï¿½gories plus fines. catï¿½gories d'ï¿½lï¿½ments de donnï¿½es, telles que "Age" et "Sexe", sont utilisï¿½s pour enregistrer un ï¿½lï¿½ment de donnï¿½es particulier, gï¿½nï¿½ralement pour des groupes de population diffï¿½renciation. Ces catï¿½gories peuvent ensuite ï¿½tre utilisï¿½es pour calculer le montant global pour la catï¿½gorie et le total de toutes les catï¿½gories. </para>
         </section>
       </section>
       <section>
-        <title> opérateurs d'agrégation, les méthodes d'agrégation</title>
+        <title> opï¿½rateurs d'agrï¿½gation, les mï¿½thodes d'agrï¿½gation</title>
         <section>
           <title> Somme </title>
-          <para> Le "sum" opérateur calcuates simplement la somme de toutes les valeurs des données qui sont contenues dans une agrégation particulière de la matrice. Par exemple, si les données sont enregistrées sur une base mensuelle au niveau du district et provinciaux totaux agrégés pour chaque trimestre, toutes les données contenues dans tous les districts d'une province donnée et toutes les semaines pour le trimestre donné seront additionnés pour obtenir le total global. </para>
+          <para> Le "sum" opï¿½rateur calcuates simplement la somme de toutes les valeurs des donnï¿½es qui sont contenues dans une agrï¿½gation particuliï¿½re de la matrice. Par exemple, si les donnï¿½es sont enregistrï¿½es sur une base mensuelle au niveau du district et provinciaux totaux agrï¿½gï¿½s pour chaque trimestre, toutes les donnï¿½es contenues dans tous les districts d'une province donnï¿½e et toutes les semaines pour le trimestre donnï¿½ seront additionnï¿½s pour obtenir le total global. </para>
         </section>
         <section>
           <title> Moyen </title>
-          <para> Lorsque l'opérateur d'agrégation moyen est sélectionnée, la moyenne non pondérée de toutes les valeurs données dans une agrégation matrice donnée. </para>
-          <para> Il est important de comprendre comment DHIS2 traite les valeurs null dans le cadre de l'exploitant moyen. Il est assez commun pour certaines unités organisationnelles de ne pas soumettre de données pour certains éléments de données. Dans le cadre de l'exploitant moyen, les résultats moyens du nombre de elemements données qui sont effectivement présents (donc NOT NULL) au sein d'une agrégation de données de la matrice. Si il ya 12 districts dans une province donnée, mais seulement 10 d'entre eux ont présenté des données, la moyenne aggreate résultera de ces dix valeurs qui sont réellement présentes dans la base de données, et ne prendra pas en compte les valeurs manquantes. </para>
+          <para> Lorsque l'opï¿½rateur d'agrï¿½gation moyen est sï¿½lectionnï¿½e, la moyenne non pondï¿½rï¿½e de toutes les valeurs donnï¿½es dans une agrï¿½gation matrice donnï¿½e. </para>
+          <para> Il est important de comprendre comment IROAD2 traite les valeurs null dans le cadre de l'exploitant moyen. Il est assez commun pour certaines unitï¿½s organisationnelles de ne pas soumettre de donnï¿½es pour certains ï¿½lï¿½ments de donnï¿½es. Dans le cadre de l'exploitant moyen, les rï¿½sultats moyens du nombre de elemements donnï¿½es qui sont effectivement prï¿½sents (donc NOT NULL) au sein d'une agrï¿½gation de donnï¿½es de la matrice. Si il ya 12 districts dans une province donnï¿½e, mais seulement 10 d'entre eux ont prï¿½sentï¿½ des donnï¿½es, la moyenne aggreate rï¿½sultera de ces dix valeurs qui sont rï¿½ellement prï¿½sentes dans la base de donnï¿½es, et ne prendra pas en compte les valeurs manquantes. </para>
         </section>
         <section>
           <title> Comte </title>
           <para/>
         </section>
         <section>
-          <title> Où préciser </title>
+          <title> Oï¿½ prï¿½ciser </title>
           <para/>
         </section>
       </section>
       <section>
-        paramètres <title> agrégation avancée (niveaux d'agrégation) </title>
+        paramï¿½tres <title> agrï¿½gation avancï¿½e (niveaux d'agrï¿½gation) </title>
         <section>
-          <title> Niveaux d'agrégation </title>
-          <para> La règle normale du système est de regrouper toutes les données brutes ainsi que lors du déplacement dans la hiérarchie de l'organisation et le système suppose que l'entrée de données ne sont pas en double en entrant "les mêmes services aux mêmes clients» au niveau de l'installation à la fois et aussi l'introduction d'un "agrégée" (somme de toutes les installations) nombre à un niveau supérieur. Il s'agit de faciliter l'agrégation plus facilement lorsque les mêmes services sont fournis, mais à différents clients / populations dans les installations de captage au niveau 5 et une SSP (le parent des mêmes installations) au niveau 4. De cette façon, une installation de niveau 5 et une SSP au niveau 4 peuvent partager les mêmes données et simplement additionner les chiffres pour donner le total des services fournis dans l'aire géographique. </para>
-          <para> Parfois une telle agrégation n'est pas désiré, tout simplement parce que cela signifierait la duplication des données sur la même population. C'est le cas lorsque vous avez deux sources de données différentes pour les deux niveaux orgunit différents. Par exemple, bassin de population pour les installations peuvent provenir d'une source différente de celle des populations des districts et donc la somme de l'installation de captage des populations ne correspondent pas à la population du district fournies par exemple les données du recensement. Si tel est le cas, nous voulons effectivement «en double» des données dans le système de sorte que chaque niveau peut avoir des chiffres précis que possible, mais alors nous ne voulons regrouper ces sources de données ensemble.
+          <title> Niveaux d'agrï¿½gation </title>
+          <para> La rï¿½gle normale du systï¿½me est de regrouper toutes les donnï¿½es brutes ainsi que lors du dï¿½placement dans la hiï¿½rarchie de l'organisation et le systï¿½me suppose que l'entrï¿½e de donnï¿½es ne sont pas en double en entrant "les mï¿½mes services aux mï¿½mes clientsï¿½ au niveau de l'installation ï¿½ la fois et aussi l'introduction d'un "agrï¿½gï¿½e" (somme de toutes les installations) nombre ï¿½ un niveau supï¿½rieur. Il s'agit de faciliter l'agrï¿½gation plus facilement lorsque les mï¿½mes services sont fournis, mais ï¿½ diffï¿½rents clients / populations dans les installations de captage au niveau 5 et une SSP (le parent des mï¿½mes installations) au niveau 4. De cette faï¿½on, une installation de niveau 5 et une SSP au niveau 4 peuvent partager les mï¿½mes donnï¿½es et simplement additionner les chiffres pour donner le total des services fournis dans l'aire gï¿½ographique. </para>
+          <para> Parfois une telle agrï¿½gation n'est pas dï¿½sirï¿½, tout simplement parce que cela signifierait la duplication des donnï¿½es sur la mï¿½me population. C'est le cas lorsque vous avez deux sources de donnï¿½es diffï¿½rentes pour les deux niveaux orgunit diffï¿½rents. Par exemple, bassin de population pour les installations peuvent provenir d'une source diffï¿½rente de celle des populations des districts et donc la somme de l'installation de captage des populations ne correspondent pas ï¿½ la population du district fournies par exemple les donnï¿½es du recensement. Si tel est le cas, nous voulons effectivement ï¿½en doubleï¿½ des donnï¿½es dans le systï¿½me de sorte que chaque niveau peut avoir des chiffres prï¿½cis que possible, mais alors nous ne voulons regrouper ces sources de donnï¿½es ensemble.
 </para>
-          <para> Dans la section des éléments de données, vous pouvez modifier les éléments de données et pour chacun d'eux préciser comment l'agrégation se fait à chaque niveau. Dans le cas décrit ci-dessus que nous devons dire NON au système pour y inclure les données des établissements sur la population dans l'une des agrégations dessus de ce niveau, comme le niveau au-dessus, dans ce cas, les districts ont enregistré leur population directement en tant que données brutes. La population du district de données devraient ensuite être utilisées à tous les niveaux au-dessus et y compris au niveau du district, tandis que le niveau de services devrait utiliser ses propres données. </para>
+          <para> Dans la section des ï¿½lï¿½ments de donnï¿½es, vous pouvez modifier les ï¿½lï¿½ments de donnï¿½es et pour chacun d'eux prï¿½ciser comment l'agrï¿½gation se fait ï¿½ chaque niveau. Dans le cas dï¿½crit ci-dessus que nous devons dire NON au systï¿½me pour y inclure les donnï¿½es des ï¿½tablissements sur la population dans l'une des agrï¿½gations dessus de ce niveau, comme le niveau au-dessus, dans ce cas, les districts ont enregistrï¿½ leur population directement en tant que donnï¿½es brutes. La population du district de donnï¿½es devraient ensuite ï¿½tre utilisï¿½es ï¿½ tous les niveaux au-dessus et y compris au niveau du district, tandis que le niveau de services devrait utiliser ses propres donnï¿½es. </para>
         </section>
         <section>
-          <title> Comment modifier élément d'agrégation des données</title>
-          <para> est contrôlée par ce qu'on appelle les niveaux d'agrégation et à la fin de l'écran d'édition des éléments de données il ya une case à cocher appelée niveaux d'agrégation. Si vous cochez que l'on vous verrez une liste de niveaux d'agrégation, disponibles et sélectionnés. Par défaut est de n'avoir pas défini les niveaux d'agrégation, puis toutes les données brutes dans la hiérarchie seront additionnés. Pour spécifier la règle décrite ci-dessus, et compte tenu de la hiérarchie des pays, province, district, l'installation: sélectionnez l'installation et de district en tant que votre niveau d'agrégation. Fondamentalement, vous choisissez où vous avez des données. Sélection des moyens installation que les installations utiliseront les données provenant des installations (compte tenu puisque c'est le niveau le plus bas). Sélection District signifie que les données au niveau du District premières seront utilisés lors de l'agrégation des données pour le niveau de district (donc pas de l'agrégation aura lieu à ce niveau), et les données de l'installation ne sera pas partie des valeurs agrégées de district. Lorsque l'agrégation des données au niveau de la province de niveau district de données brutes sera utilisé car c'est le plus haut niveau d'agrégation choisi disponibles. Aussi pour les agrégats au niveau des pays les données brutes de district seront utilisés. Juste pour le répète, si nous n'avions pas précisé que le niveau de district est un niveau d'agrégation, les données sur les installations et les données de district aurait été additionnées et ont causé en double (double) les données de population des districts et tous les niveaux ci-dessus. </para>
+          <title> Comment modifier ï¿½lï¿½ment d'agrï¿½gation des donnï¿½es</title>
+          <para> est contrï¿½lï¿½e par ce qu'on appelle les niveaux d'agrï¿½gation et ï¿½ la fin de l'ï¿½cran d'ï¿½dition des ï¿½lï¿½ments de donnï¿½es il ya une case ï¿½ cocher appelï¿½e niveaux d'agrï¿½gation. Si vous cochez que l'on vous verrez une liste de niveaux d'agrï¿½gation, disponibles et sï¿½lectionnï¿½s. Par dï¿½faut est de n'avoir pas dï¿½fini les niveaux d'agrï¿½gation, puis toutes les donnï¿½es brutes dans la hiï¿½rarchie seront additionnï¿½s. Pour spï¿½cifier la rï¿½gle dï¿½crite ci-dessus, et compte tenu de la hiï¿½rarchie des pays, province, district, l'installation: sï¿½lectionnez l'installation et de district en tant que votre niveau d'agrï¿½gation. Fondamentalement, vous choisissez oï¿½ vous avez des donnï¿½es. Sï¿½lection des moyens installation que les installations utiliseront les donnï¿½es provenant des installations (compte tenu puisque c'est le niveau le plus bas). Sï¿½lection District signifie que les donnï¿½es au niveau du District premiï¿½res seront utilisï¿½s lors de l'agrï¿½gation des donnï¿½es pour le niveau de district (donc pas de l'agrï¿½gation aura lieu ï¿½ ce niveau), et les donnï¿½es de l'installation ne sera pas partie des valeurs agrï¿½gï¿½es de district. Lorsque l'agrï¿½gation des donnï¿½es au niveau de la province de niveau district de donnï¿½es brutes sera utilisï¿½ car c'est le plus haut niveau d'agrï¿½gation choisi disponibles. Aussi pour les agrï¿½gats au niveau des pays les donnï¿½es brutes de district seront utilisï¿½s. Juste pour le rï¿½pï¿½te, si nous n'avions pas prï¿½cisï¿½ que le niveau de district est un niveau d'agrï¿½gation, les donnï¿½es sur les installations et les donnï¿½es de district aurait ï¿½tï¿½ additionnï¿½es et ont causï¿½ en double (double) les donnï¿½es de population des districts et tous les niveaux ci-dessus. </para>
         </section>
       </section>
     </section>
     <section>
       <title> Data Mart </title>
-      <para> Le but de la datamart est de fournir des données pré-traitées à l'analyse de données externes et des outils de reporting. Le datamart est composé de deux tables, et aggregateddatavalues aggregatedindicatorvalues dans la base de données DHIS2. Les valeurs dans le datamart sont des versions agrégées les données brutes figurent dans le tableau dataValue ainsi que les valeurs calculées indicateur .. Agrégation peut avoir lieu au cours du temps (par exemple, à partir des données mensuelles agrégées à des valeurs trimestrielles), ou le lieu (par exemple, à partir des données PHU aux totaux district agrégées) et le datamart peut stocker toutes sortes de ces valeurs agrégées. Le datamart est en tant que tels qu'un traitement «copie» des valeurs de données et il peut être vidée et régénérée à tout moment, et les tables sont en lecture seule des tables. Les métadonnées dans les deux tableaux Mart données sont référencées par les identifiants internes, tels que dataelementid, organisationunitid qui se réfèrent à des tableaux comme dataelement et organisationunit, voir «Comment faire pour utiliser les dépôts de données dans des outils externes pour plus de détails. Comment les données sont agrégées et ce qui finit dans ces deux tableaux est contrôlé à partir de l'interface utilisateur Data Mart à l'exportation dans le cadre du sous-menu Services. </para>
+      <para> Le but de la datamart est de fournir des donnï¿½es prï¿½-traitï¿½es ï¿½ l'analyse de donnï¿½es externes et des outils de reporting. Le datamart est composï¿½ de deux tables, et aggregateddatavalues aggregatedindicatorvalues dans la base de donnï¿½es IROAD2. Les valeurs dans le datamart sont des versions agrï¿½gï¿½es les donnï¿½es brutes figurent dans le tableau dataValue ainsi que les valeurs calculï¿½es indicateur .. Agrï¿½gation peut avoir lieu au cours du temps (par exemple, ï¿½ partir des donnï¿½es mensuelles agrï¿½gï¿½es ï¿½ des valeurs trimestrielles), ou le lieu (par exemple, ï¿½ partir des donnï¿½es PHU aux totaux district agrï¿½gï¿½es) et le datamart peut stocker toutes sortes de ces valeurs agrï¿½gï¿½es. Le datamart est en tant que tels qu'un traitement ï¿½copieï¿½ des valeurs de donnï¿½es et il peut ï¿½tre vidï¿½e et rï¿½gï¿½nï¿½rï¿½e ï¿½ tout moment, et les tables sont en lecture seule des tables. Les mï¿½tadonnï¿½es dans les deux tableaux Mart donnï¿½es sont rï¿½fï¿½rencï¿½es par les identifiants internes, tels que dataelementid, organisationunitid qui se rï¿½fï¿½rent ï¿½ des tableaux comme dataelement et organisationunit, voir ï¿½Comment faire pour utiliser les dï¿½pï¿½ts de donnï¿½es dans des outils externes pour plus de dï¿½tails. Comment les donnï¿½es sont agrï¿½gï¿½es et ce qui finit dans ces deux tableaux est contrï¿½lï¿½ ï¿½ partir de l'interface utilisateur Data Mart ï¿½ l'exportation dans le cadre du sous-menu Services. </para>
       <section>
         <title> Le data mart processus d'exportation </title>
         <section>
-          <title> Comment créer un exporter des données Mart</title>
-          <para> Dans la fenêtre de gestion de Datamart cliquez sur le bouton Ajouter un nouveau et une fenêtre de données Générer Mart ouvrira. Il ya 4 cases de sélection, les éléments de données, les indicateurs, les unités de l'Organisation, et les périodes. Pour chacune des boîtes de sélectionner ce que vous voulez exporter, note si vous ne voulez pas les éléments de données et des indicateurs, vous pouvez laisser un de ces vides, mais au moins le besoin de ces quelques éléments sélectionnés avec orgunits sélectionnés et les périodes. La liste disponible sur le côté gauche peut être filtré par les données d'éléments du groupe, le groupe témoin, le niveau de l'unité d'organisation, et le type de période en conséquence. Vous pouvez déplacer des éléments dans la liste sélectionnée en double-cliquant sur un élément dans la liste disponible ou en sélectionnant un élément et utilisez les touches de déplacement (voir explications bouton de sélection ci-dessous).
+          <title> Comment crï¿½er un exporter des donnï¿½es Mart</title>
+          <para> Dans la fenï¿½tre de gestion de Datamart cliquez sur le bouton Ajouter un nouveau et une fenï¿½tre de donnï¿½es Gï¿½nï¿½rer Mart ouvrira. Il ya 4 cases de sï¿½lection, les ï¿½lï¿½ments de donnï¿½es, les indicateurs, les unitï¿½s de l'Organisation, et les pï¿½riodes. Pour chacune des boï¿½tes de sï¿½lectionner ce que vous voulez exporter, note si vous ne voulez pas les ï¿½lï¿½ments de donnï¿½es et des indicateurs, vous pouvez laisser un de ces vides, mais au moins le besoin de ces quelques ï¿½lï¿½ments sï¿½lectionnï¿½s avec orgunits sï¿½lectionnï¿½s et les pï¿½riodes. La liste disponible sur le cï¿½tï¿½ gauche peut ï¿½tre filtrï¿½ par les donnï¿½es d'ï¿½lï¿½ments du groupe, le groupe tï¿½moin, le niveau de l'unitï¿½ d'organisation, et le type de pï¿½riode en consï¿½quence. Vous pouvez dï¿½placer des ï¿½lï¿½ments dans la liste sï¿½lectionnï¿½e en double-cliquant sur un ï¿½lï¿½ment dans la liste disponible ou en sï¿½lectionnant un ï¿½lï¿½ment et utilisez les touches de dï¿½placement (voir explications bouton de sï¿½lection ci-dessous).
 
 </para>
-          <para> Lorsque vous avez sélectionné, vous pouvez exporter des données Mart en cliquant sur le bouton Exporter. Si vous souhaitez conserver vos sélections de côté, vous pouvez lui donner un nom dans la zone de texte Nom au bas de la fenêtre et cliquez sur Enregistrer. En savoir plus sur les exportations enregistrées Data Mart ci-dessous.
+          <para> Lorsque vous avez sï¿½lectionnï¿½, vous pouvez exporter des donnï¿½es Mart en cliquant sur le bouton Exporter. Si vous souhaitez conserver vos sï¿½lections de cï¿½tï¿½, vous pouvez lui donner un nom dans la zone de texte Nom au bas de la fenï¿½tre et cliquez sur Enregistrer. En savoir plus sur les exportations enregistrï¿½es Data Mart ci-dessous.
 
 </para>
-          <para> boutons de sélection
+          <para> boutons de sï¿½lection
 </para>
-          <para>> se déplace l'élément sélectionné dans la liste sous forme disponibles sur la gauche à la liste sélectionnée sur la droite
+          <para>> se dï¿½place l'ï¿½lï¿½ment sï¿½lectionnï¿½ dans la liste sous forme disponibles sur la gauche ï¿½ la liste sï¿½lectionnï¿½e sur la droite
 
 </para>
-          <para>>> se déplace tous les éléments de la liste disponible à travers à la liste sélectionnée
+          <para>>> se dï¿½place tous les ï¿½lï¿½ments de la liste disponible ï¿½ travers ï¿½ la liste sï¿½lectionnï¿½e
 
 </para>
-          <para>>>> s'applique uniquement aux orgunits et déplacer les enfants de la orgunit sélectionnés dans la liste sélectionnée
+          <para>>>> s'applique uniquement aux orgunits et dï¿½placer les enfants de la orgunit sï¿½lectionnï¿½s dans la liste sï¿½lectionnï¿½e
 </para>
         </section>
         <section>
           <title> Orgunit niveaux </title>
-          <para> le datamart peut inclure des valeurs agrégées à différents niveaux dans la même table et exactement à quel niveau une valeur appartient à est décrite par le «niveau» de la colonne. Lorsque des données en tirant de mettre le datamart dans des outils externes, il est important d'être conscient de ce niveau que la combinaison de données pour les différents niveaux se traduira par des chevauchements.
+          <para> le datamart peut inclure des valeurs agrï¿½gï¿½es ï¿½ diffï¿½rents niveaux dans la mï¿½me table et exactement ï¿½ quel niveau une valeur appartient ï¿½ est dï¿½crite par le ï¿½niveauï¿½ de la colonne. Lorsque des donnï¿½es en tirant de mettre le datamart dans des outils externes, il est important d'ï¿½tre conscient de ce niveau que la combinaison de donnï¿½es pour les diffï¿½rents niveaux se traduira par des chevauchements.
 
-Pour DHIS 1,4 utilisateurs, cela signifie que il n'y a plus un tableau distinct par niveau, mais à la place sur la table commune et une colonne de niveau qui sépare les niveaux. Notez également que si, en 1.4, vous spécifiez dans l'élément de données individuelles et les définitions des indicateurs de niveaux qui orgunit le datamart devraient être exportés, en DHIS2 ce n'est que définis dans la fenêtre d'exportation datamart. Donc, dans ce DHIS2 est complètement dissociée de l'élément de données et définitions des indicateurs et à n'importe quel utilisateur de définir les orgunits (à n'importe quel niveau), ils veulent voir des données agrégées pour.
+Pour IROAD 1,4 utilisateurs, cela signifie que il n'y a plus un tableau distinct par niveau, mais ï¿½ la place sur la table commune et une colonne de niveau qui sï¿½pare les niveaux. Notez ï¿½galement que si, en 1.4, vous spï¿½cifiez dans l'ï¿½lï¿½ment de donnï¿½es individuelles et les dï¿½finitions des indicateurs de niveaux qui orgunit le datamart devraient ï¿½tre exportï¿½s, en IROAD2 ce n'est que dï¿½finis dans la fenï¿½tre d'exportation datamart. Donc, dans ce IROAD2 est complï¿½tement dissociï¿½e de l'ï¿½lï¿½ment de donnï¿½es et dï¿½finitions des indicateurs et ï¿½ n'importe quel utilisateur de dï¿½finir les orgunits (ï¿½ n'importe quel niveau), ils veulent voir des donnï¿½es agrï¿½gï¿½es pour.
 </para>
         </section>
         <section>
-          <title> types Période / données des fréquences </title>
-          <para> le datamart peut contenir des valeurs agrégées à des types de période différente ou des fréquences, par exemple, données mensuelles, trimestrielles ou annuelles. Le periodtypeid »fait référence à la fréquence de la valeur appartient à, et la colonne periodis se réfère à la période exacte, par exemple, l'periodtype peut être «mensuelle» et la période est «Jan-2010». Encore une fois être prudent dans la combinaison de valeurs avec periodtypes différents car cela entraînerait la duplication.
+          <title> types Pï¿½riode / donnï¿½es des frï¿½quences </title>
+          <para> le datamart peut contenir des valeurs agrï¿½gï¿½es ï¿½ des types de pï¿½riode diffï¿½rente ou des frï¿½quences, par exemple, donnï¿½es mensuelles, trimestrielles ou annuelles. Le periodtypeid ï¿½fait rï¿½fï¿½rence ï¿½ la frï¿½quence de la valeur appartient ï¿½, et la colonne periodis se rï¿½fï¿½re ï¿½ la pï¿½riode exacte, par exemple, l'periodtype peut ï¿½tre ï¿½mensuelleï¿½ et la pï¿½riode est ï¿½Jan-2010ï¿½. Encore une fois ï¿½tre prudent dans la combinaison de valeurs avec periodtypes diffï¿½rents car cela entraï¿½nerait la duplication.
 
 
 </para>
-          Quel que <para> orgunits obtenir exportés vers datamart (le agggregateddatavalue deux tables et aggregatedindicatorvalue) ne sont contrôlées par la fenêtre d'exportation datamart, et là vous définir ce par orgunit, et non par niveau orgunit. Il ya un filtre utilisant le niveau de orgunit, mais le orgunits qui sont sélectionnés sont les seuls qui se retrouvent dans le datamart. Idem pour les éléments de données et d'indicateurs.
+          Quel que <para> orgunits obtenir exportï¿½s vers datamart (le agggregateddatavalue deux tables et aggregatedindicatorvalue) ne sont contrï¿½lï¿½es par la fenï¿½tre d'exportation datamart, et lï¿½ vous dï¿½finir ce par orgunit, et non par niveau orgunit. Il ya un filtre utilisant le niveau de orgunit, mais le orgunits qui sont sï¿½lectionnï¿½s sont les seuls qui se retrouvent dans le datamart. Idem pour les ï¿½lï¿½ments de donnï¿½es et d'indicateurs.
 
 </para>
-          <para> Chaque fois que vous faire un datamart, vous pouvez changer ce qui orgunits pour exporter les données pour. Les valeurs données seront automatiquement regroupés à la orgunit qui est sélectionné, quel que soit le niveau.
+          <para> Chaque fois que vous faire un datamart, vous pouvez changer ce qui orgunits pour exporter les donnï¿½es pour. Les valeurs donnï¿½es seront automatiquement regroupï¿½s ï¿½ la orgunit qui est sï¿½lectionnï¿½, quel que soit le niveau.
 </para>
         </section>
         <section>
-          <title> catégories d'éléments de données dans le datamart</title>
-          <para> Chaque valeur de données pour un élément de données est une référence à un combo option catégorie, qui est une combinaison de la ventilation de la valeur des données, par exemple, (Homme, <5a) ou (PHU, <1a). Ces ventilations sont exportés comme ils sont à l'entrepôt de données, et pas de l'agrégation se fait sur cette dimension. Voir la section des données pour plus d'éléments sur les catégories d'éléments de données et la section des ressources tableaux pour plus d'informations sur la façon de faire l'agrégation de ces catégories. </para>
+          <title> catï¿½gories d'ï¿½lï¿½ments de donnï¿½es dans le datamart</title>
+          <para> Chaque valeur de donnï¿½es pour un ï¿½lï¿½ment de donnï¿½es est une rï¿½fï¿½rence ï¿½ un combo option catï¿½gorie, qui est une combinaison de la ventilation de la valeur des donnï¿½es, par exemple, (Homme, <5a) ou (PHU, <1a). Ces ventilations sont exportï¿½s comme ils sont ï¿½ l'entrepï¿½t de donnï¿½es, et pas de l'agrï¿½gation se fait sur cette dimension. Voir la section des donnï¿½es pour plus d'ï¿½lï¿½ments sur les catï¿½gories d'ï¿½lï¿½ments de donnï¿½es et la section des ressources tableaux pour plus d'informations sur la faï¿½on de faire l'agrï¿½gation de ces catï¿½gories. </para>
         </section>
         <section>
-          <title> ajout de nouvelles données à un Mart données existantes</title>
-          <para> Lorsque vous ajoutez de nouvelles données à un entrepôt de données existantes que les nouvelles valeurs seront ajoutées à l'existant de sorte que le data mart croît pour chaque nouveau processus, si de nouvelles sélections (tels que les nouvelles périodes) ont été faites. Si l'une des valeurs sélectionnées sont déjà dans les dépôts de données, puis les anciens seront remplacés par les valeurs nouvellement créées. </para>
+          <title> ajout de nouvelles donnï¿½es ï¿½ un Mart donnï¿½es existantes</title>
+          <para> Lorsque vous ajoutez de nouvelles donnï¿½es ï¿½ un entrepï¿½t de donnï¿½es existantes que les nouvelles valeurs seront ajoutï¿½es ï¿½ l'existant de sorte que le data mart croï¿½t pour chaque nouveau processus, si de nouvelles sï¿½lections (tels que les nouvelles pï¿½riodes) ont ï¿½tï¿½ faites. Si l'une des valeurs sï¿½lectionnï¿½es sont dï¿½jï¿½ dans les dï¿½pï¿½ts de donnï¿½es, puis les anciens seront remplacï¿½s par les valeurs nouvellement crï¿½ï¿½es. </para>
         </section>
       </section>
       <section>
-        <title> Données sauvegardées Mart exportations </title>
-        <para> Pour simplifier ce processus de sélection, vous pouvez enregistrer un datamart l'exportation, qui, essentiellement, c'est sauver les éléments sélectionnés (pas les données), de sorte que vous pouvez exécuter la même à un stade ultérieur, sans re-sélectionner tout. > Mois Nouveau doivent être ajoutés si, tandis que orgunits, les éléments de données et les indicateurs restent le plus souvent la même chose. </para>
-        <para> périodes relatives DANS DataMart-NOUVEAU!! </para>
+        <title> Donnï¿½es sauvegardï¿½es Mart exportations </title>
+        <para> Pour simplifier ce processus de sï¿½lection, vous pouvez enregistrer un datamart l'exportation, qui, essentiellement, c'est sauver les ï¿½lï¿½ments sï¿½lectionnï¿½s (pas les donnï¿½es), de sorte que vous pouvez exï¿½cuter la mï¿½me ï¿½ un stade ultï¿½rieur, sans re-sï¿½lectionner tout. > Mois Nouveau doivent ï¿½tre ajoutï¿½s si, tandis que orgunits, les ï¿½lï¿½ments de donnï¿½es et les indicateurs restent le plus souvent la mï¿½me chose. </para>
+        <para> pï¿½riodes relatives DANS DataMart-NOUVEAU!! </para>
       </section>
       <section>
-        <title> Régulièrement les procédures d'exportation des données Mart </title>
-        <para> périodes relatives DANS DataMart-NOUVEAU!! </para>
-        <para> Dans un cycle de saisie des données mensuelles de la routine de travail typique serait de lancer toutes les exportations de datamart après le processus de saisie des données a été finalisé. Pour chacune des datamarts sauvé vous généralement de sélectionner le mois de déclaration en cours et à l'exportation que pour la période d'ajouter les valeurs nouvellement immatriculés (et les agrégats à partir de ces) à l'entrepôt de données existantes. Si toutes les données retard a été pris ou des valeurs pour la période précédente ont été corrigés depuis la dernière Mart exporter des données, puis ces périodes doivent également être ajouté.
+        <title> Rï¿½guliï¿½rement les procï¿½dures d'exportation des donnï¿½es Mart </title>
+        <para> pï¿½riodes relatives DANS DataMart-NOUVEAU!! </para>
+        <para> Dans un cycle de saisie des donnï¿½es mensuelles de la routine de travail typique serait de lancer toutes les exportations de datamart aprï¿½s le processus de saisie des donnï¿½es a ï¿½tï¿½ finalisï¿½. Pour chacune des datamarts sauvï¿½ vous gï¿½nï¿½ralement de sï¿½lectionner le mois de dï¿½claration en cours et ï¿½ l'exportation que pour la pï¿½riode d'ajouter les valeurs nouvellement immatriculï¿½s (et les agrï¿½gats ï¿½ partir de ces) ï¿½ l'entrepï¿½t de donnï¿½es existantes. Si toutes les donnï¿½es retard a ï¿½tï¿½ pris ou des valeurs pour la pï¿½riode prï¿½cï¿½dente ont ï¿½tï¿½ corrigï¿½s depuis la derniï¿½re Mart exporter des donnï¿½es, puis ces pï¿½riodes doivent ï¿½galement ï¿½tre ajoutï¿½.
 
-Par exemple, en Sierra Leone, ils ont mis en place une série de données enregistrées exportations Mart:
+Par exemple, en Sierra Leone, ils ont mis en place une sï¿½rie de donnï¿½es enregistrï¿½es exportations Mart:
 - PHU tous les indicateurs
 - Chefferie (sous-district) de tous les indicateurs
 - District de tous les indicateurs
-données - la morbidité et la mortalité PHU premières
-données - PHU PEV et de la nutrition premières
-- PHU données sur le VIH
-- PHU données RCH
-données - chefferie morbidité et la mortalité
+donnï¿½es - la morbiditï¿½ et la mortalitï¿½ PHU premiï¿½res
+donnï¿½es - PHU PEV et de la nutrition premiï¿½res
+- PHU donnï¿½es sur le VIH
+- PHU donnï¿½es RCH
+donnï¿½es - chefferie morbiditï¿½ et la mortalitï¿½
 - Etc
 
-Ces exportations sont ensuite exécuter tous les mois quand il ya de nouvelles données. Chaque exportation enregistré est ouvert, un par un, la nouvelle période ajoutée et la course à l'exportation.
+Ces exportations sont ensuite exï¿½cuter tous les mois quand il ya de nouvelles donnï¿½es. Chaque exportation enregistrï¿½ est ouvert, un par un, la nouvelle pï¿½riode ajoutï¿½e et la course ï¿½ l'exportation.
 </para>
       </section>
     </section>
     <section>
       <title> Ressources tables </title>
-      <para> tables de ressources fournissent des informations supplémentaires sur les dimensions des données dans un format qui est bien adapté pour des outils externes à combiner avec les tables de data mart. En rejoignant le datamart avec ces tableaux des ressources, on peut facilement le long de la dimension globale catégorie de données élément ou l'élément de données / indicateurs / organisation des groupes de base dimensions. Par exemple, par le marquage de toutes les valeurs de données avec l'option catégorie masculin ou féminin et fournir ce dans une colonne séparée "genre" on peut obtenir des sous-totaux des hommes et des femmes fondée sur les valeurs des données qui sont recueillies pour les combinaisons de catégorie comme option (de sexe masculin, moins de 5 ) et (de sexe masculin,> 5). Voir la section Pivot Tables pour d'autres exemples de la façon dont elles peuvent être utilisées.
+      <para> tables de ressources fournissent des informations supplï¿½mentaires sur les dimensions des donnï¿½es dans un format qui est bien adaptï¿½ pour des outils externes ï¿½ combiner avec les tables de data mart. En rejoignant le datamart avec ces tableaux des ressources, on peut facilement le long de la dimension globale catï¿½gorie de donnï¿½es ï¿½lï¿½ment ou l'ï¿½lï¿½ment de donnï¿½es / indicateurs / organisation des groupes de base dimensions. Par exemple, par le marquage de toutes les valeurs de donnï¿½es avec l'option catï¿½gorie masculin ou fï¿½minin et fournir ce dans une colonne sï¿½parï¿½e "genre" on peut obtenir des sous-totaux des hommes et des femmes fondï¿½e sur les valeurs des donnï¿½es qui sont recueillies pour les combinaisons de catï¿½gorie comme option (de sexe masculin, moins de 5 ) et (de sexe masculin,> 5). Voir la section Pivot Tables pour d'autres exemples de la faï¿½on dont elles peuvent ï¿½tre utilisï¿½es.
 
-orgunitstructure est un autre tableau important dans la base de données qui contribue à la hiérarchie des orgunits avec les données. En adhérant à la table avec les tables orgunitstructure Mart données que vous pouvez obtenir des lignes de valeurs de données à la hiérarchie complète, par exemple, sur le formulaire:
-UO1, OU2, OU3, OU4, DataElement, période, la valeur
+orgunitstructure est un autre tableau important dans la base de donnï¿½es qui contribue ï¿½ la hiï¿½rarchie des orgunits avec les donnï¿½es. En adhï¿½rant ï¿½ la table avec les tables orgunitstructure Mart donnï¿½es que vous pouvez obtenir des lignes de valeurs de donnï¿½es ï¿½ la hiï¿½rarchie complï¿½te, par exemple, sur le formulaire:
+UO1, OU2, OU3, OU4, DataElement, pï¿½riode, la valeur
 (Sierra Leone, Bo, Badija, CHC Ngelehun, BCG &lt; 1, Jan-10, 32)
 
-Ce format rend beaucoup plus facile pour par exemple tableaux croisés dynamiques ou d'autres outils OLAP pour les données agrégées dans la hiérarchie.
+Ce format rend beaucoup plus facile pour par exemple tableaux croisï¿½s dynamiques ou d'autres outils OLAP pour les donnï¿½es agrï¿½gï¿½es dans la hiï¿½rarchie.
 </para>
     </section>
     <section id="reportTable"> 
       <title> Rapport tables </title>
-      Rapport <para> tables sont censés être les tables des bases de données répondant aux besoins spécifiques d'un rapport, graphique, tableau croisé dynamique ou de format de sortie. Il peut être comprise comme un datamart mini qui contient uniquement les données nécessaires à son objet (le rapport). La raison derrière ce concept est de fournir automatiquement les sources de données pour les rapports sans se soucier des usagers à chaque fois, comme un datamart normale, et d'accélérer le traitement des données et l'agrégation (petites datamarts ciblées sont évidemment plus vite que les gros).
+      Rapport <para> tables sont censï¿½s ï¿½tre les tables des bases de donnï¿½es rï¿½pondant aux besoins spï¿½cifiques d'un rapport, graphique, tableau croisï¿½ dynamique ou de format de sortie. Il peut ï¿½tre comprise comme un datamart mini qui contient uniquement les donnï¿½es nï¿½cessaires ï¿½ son objet (le rapport). La raison derriï¿½re ce concept est de fournir automatiquement les sources de donnï¿½es pour les rapports sans se soucier des usagers ï¿½ chaque fois, comme un datamart normale, et d'accï¿½lï¿½rer le traitement des donnï¿½es et l'agrï¿½gation (petites datamarts ciblï¿½es sont ï¿½videmment plus vite que les gros).
 
-Lors de sa création et a généré un rapport de tableau apparaît dans la DHIS 2 bases de données comme un tableau normal, mais toujours avec le préfixe _report. Ce tableau ne doit pas être modifié manuellement, comme il est contrôlé par le système. Ces tables sont constamment supprimés et recréés en tant que l'utilisateur veut de nouvelles données mises à jour dans la même structure de table. Ces tableaux peuvent ensuite être utilisés et l'accès depuis n'importe quel outil tiers pour afficher des données. En DHIS 2, nous avons intégré avec le concepteur de rapport BIRT de la plate-forme Eclipse et rendu particulièrement facile de lier des rapports BIRT de faire rapport des tableaux et d'exécuter ces rapports au sein de DHIS 2.
+Lors de sa crï¿½ation et a gï¿½nï¿½rï¿½ un rapport de tableau apparaï¿½t dans la IROAD 2 bases de donnï¿½es comme un tableau normal, mais toujours avec le prï¿½fixe _report. Ce tableau ne doit pas ï¿½tre modifiï¿½ manuellement, comme il est contrï¿½lï¿½ par le systï¿½me. Ces tables sont constamment supprimï¿½s et recrï¿½ï¿½s en tant que l'utilisateur veut de nouvelles donnï¿½es mises ï¿½ jour dans la mï¿½me structure de table. Ces tableaux peuvent ensuite ï¿½tre utilisï¿½s et l'accï¿½s depuis n'importe quel outil tiers pour afficher des donnï¿½es. En IROAD 2, nous avons intï¿½grï¿½ avec le concepteur de rapport BIRT de la plate-forme Eclipse et rendu particuliï¿½rement facile de lier des rapports BIRT de faire rapport des tableaux et d'exï¿½cuter ces rapports au sein de IROAD 2.
 
-Cependant, nous voyons les tableaux du rapport comme un outil beaucoup plus large et un concept que de simplement appuyer les rapports BIRT. Il peut et doit (pour le gain de performance et d'automatisation) peuvent être utilisées pour le plus grand nombre de données fins de sortie possible. par exemple, comme sources de données pour la base de vues utilisées pour les tableaux croisés dynamiques Excel. </para>
+Cependant, nous voyons les tableaux du rapport comme un outil beaucoup plus large et un concept que de simplement appuyer les rapports BIRT. Il peut et doit (pour le gain de performance et d'automatisation) peuvent ï¿½tre utilisï¿½es pour le plus grand nombre de donnï¿½es fins de sortie possible. par exemple, comme sources de donnï¿½es pour la base de vues utilisï¿½es pour les tableaux croisï¿½s dynamiques Excel. </para>
       <para>
-Un tables rapport est une source de données qui peuvent être définies une fois, puis exécuter automatiquement en arrière-plan, un rapport aux nouveaux besoins et des données actualisées. tables rapports standard (BIRT ou Jasper) sont directement liées à un ou plusieurs de ces rapport et sont ensuite traitées automatiquement en arrière-plan lorsque le rapport est exécuté. Les paramètres du rapport sont ajoutées aux tableaux rapport à rendre ces génériques et réutilisables dans le temps ou dans orgunits différents. </para>
+Un tables rapport est une source de donnï¿½es qui peuvent ï¿½tre dï¿½finies une fois, puis exï¿½cuter automatiquement en arriï¿½re-plan, un rapport aux nouveaux besoins et des donnï¿½es actualisï¿½es. tables rapports standard (BIRT ou Jasper) sont directement liï¿½es ï¿½ un ou plusieurs de ces rapport et sont ensuite traitï¿½es automatiquement en arriï¿½re-plan lorsque le rapport est exï¿½cutï¿½. Les paramï¿½tres du rapport sont ajoutï¿½es aux tableaux rapport ï¿½ rendre ces gï¿½nï¿½riques et rï¿½utilisables dans le temps ou dans orgunits diffï¿½rents. </para>
       <section>
-        <title> Comment faire pour créer des tableaux rapport </title>
-        <para> Pour créer un nouveau rapport sur table sur l'un des 4 boutons Ajouter dans le coin en haut à droite. </para>
+        <title> Comment faire pour crï¿½er des tableaux rapport </title>
+        <para> Pour crï¿½er un nouveau rapport sur table sur l'un des 4 boutons Ajouter dans le coin en haut ï¿½ droite. </para>
         <section>
-          <title> Des éléments de données et d'indicateurs de tableaux </title>
-          <para> Ces deux types tableaux sont très semblables avec la seule différence étant que l'on a les valeurs des éléments de données et les valeurs des indicateurs d'autres. </para>
+          <title> Des ï¿½lï¿½ments de donnï¿½es et d'indicateurs de tableaux </title>
+          <para> Ces deux types tableaux sont trï¿½s semblables avec la seule diffï¿½rence ï¿½tant que l'on a les valeurs des ï¿½lï¿½ments de donnï¿½es et les valeurs des indicateurs d'autres. </para>
           <para> <emphasis role="bold"> onglet Croix dimensions </emphasis>> </para>
-          Vous pouvez <para> croisé une ou plusieurs des dimensions suivantes: élément de données / indicateur, orgunit, et la période, ce qui signifie que les colonnes seront créés en fonction des valeurs des dimensions choisies, par exemple, si les indicateurs est sélectionnée, vous obtiendrez les noms de colonnes dans le tableau reflétant les noms des indicateurs sélectionnés. Vous devez sélectionner au moins 1 dimension de la table pour être valide. Sélection de l'ensemble des 3 est possible, mais n'a guère de sens. </para>
-          <para> <emphasis role="bold"> régression Inclure</emphasis> </para>
-          <para> Cela ajoute des colonnes supplémentaires de régression avec des valeurs qui peuvent être inclus dans la conception du rapport, par exemple, dans les graphiques en ligne. </para>
-          <para> <emphasis role="bold"> Indicateurs / éléments de données </emphasis>> </para>
-          <para> Ici vous sélectionnez les éléments de données / indicateurs que vous souhaitez inclure dans le rapport. Utilisez le filtre du groupe de trouver plus facilement ce que vous cherchez et double-cliquez sur les articles que vous souhaitez inclure. </para>
-          <para> <emphasis role="bold"> Organisation unités </emphasis>> </para>
-          <para> Ici, vous pouvez soit opter pour la sélection de certaines fixe / statique orgunits de toujours inclure dans le rapport, ou de garder cette section vide et laisser les utilisateurs choisir orgunits lors de l'exécution du rapport par l'utilisation de paramètres de rapport (voir plus bas). </para>
-          <para> <emphasis role="bold"> Périodes </emphasis>> </para>
-          <para> Ici vous pouvez choisir des périodes fixes que vous voulez toujours d'inclure dans le rapport ou laisser cette section vide et opter pour des périodes relative à la place. </para>
-          <para> <emphasis role="bold"> périodes relative </emphasis>> </para>
-          <para> Au lieu de l'aide fixe / périodes statiques comme «Jan-2010» ou «Q1-2010« les périodes plus générique peut être utilisée pour créer des tableaux rapport réutilisables, p.ex. pour les rapports mensuels mois de référence de la période "tout simplement choisir le mois de référence en cours de sélection par l'utilisateur lors de l'exécution du rapport. Voici une description des périodes de relative possible:
+          Vous pouvez <para> croisï¿½ une ou plusieurs des dimensions suivantes: ï¿½lï¿½ment de donnï¿½es / indicateur, orgunit, et la pï¿½riode, ce qui signifie que les colonnes seront crï¿½ï¿½s en fonction des valeurs des dimensions choisies, par exemple, si les indicateurs est sï¿½lectionnï¿½e, vous obtiendrez les noms de colonnes dans le tableau reflï¿½tant les noms des indicateurs sï¿½lectionnï¿½s. Vous devez sï¿½lectionner au moins 1 dimension de la table pour ï¿½tre valide. Sï¿½lection de l'ensemble des 3 est possible, mais n'a guï¿½re de sens. </para>
+          <para> <emphasis role="bold"> rï¿½gression Inclure</emphasis> </para>
+          <para> Cela ajoute des colonnes supplï¿½mentaires de rï¿½gression avec des valeurs qui peuvent ï¿½tre inclus dans la conception du rapport, par exemple, dans les graphiques en ligne. </para>
+          <para> <emphasis role="bold"> Indicateurs / ï¿½lï¿½ments de donnï¿½es </emphasis>> </para>
+          <para> Ici vous sï¿½lectionnez les ï¿½lï¿½ments de donnï¿½es / indicateurs que vous souhaitez inclure dans le rapport. Utilisez le filtre du groupe de trouver plus facilement ce que vous cherchez et double-cliquez sur les articles que vous souhaitez inclure. </para>
+          <para> <emphasis role="bold"> Organisation unitï¿½s </emphasis>> </para>
+          <para> Ici, vous pouvez soit opter pour la sï¿½lection de certaines fixe / statique orgunits de toujours inclure dans le rapport, ou de garder cette section vide et laisser les utilisateurs choisir orgunits lors de l'exï¿½cution du rapport par l'utilisation de paramï¿½tres de rapport (voir plus bas). </para>
+          <para> <emphasis role="bold"> Pï¿½riodes </emphasis>> </para>
+          <para> Ici vous pouvez choisir des pï¿½riodes fixes que vous voulez toujours d'inclure dans le rapport ou laisser cette section vide et opter pour des pï¿½riodes relative ï¿½ la place. </para>
+          <para> <emphasis role="bold"> pï¿½riodes relative </emphasis>> </para>
+          <para> Au lieu de l'aide fixe / pï¿½riodes statiques comme ï¿½Jan-2010ï¿½ ou ï¿½Q1-2010ï¿½ les pï¿½riodes plus gï¿½nï¿½rique peut ï¿½tre utilisï¿½e pour crï¿½er des tableaux rapport rï¿½utilisables, p.ex. pour les rapports mensuels mois de rï¿½fï¿½rence de la pï¿½riode "tout simplement choisir le mois de rï¿½fï¿½rence en cours de sï¿½lection par l'utilisateur lors de l'exï¿½cution du rapport. Voici une description des pï¿½riodes de relative possible:
 
 </para>
-          <para> <emphasis role="italic"> rapports mois: </emphasis>> Utilisez cette option pour les rapports mensuels. Le mois sélectionné dans le paramètre mois de référence sera utilisé dans le rapport.
+          <para> <emphasis role="italic"> rapports mois: </emphasis>> Utilisez cette option pour les rapports mensuels. Le mois sï¿½lectionnï¿½ dans le paramï¿½tre mois de rï¿½fï¿½rence sera utilisï¿½ dans le rapport.
 
 </para>
-          <para> <emphasis role="italic"> Dernière 3/6/9/12 mois:> </emphasis> par rapport au mois de déclaration choisi la valeur agrégée de la précédente 3,6,9 ou 12 mois seront utilisés.
+          <para> <emphasis role="italic"> Derniï¿½re 3/6/9/12 mois:> </emphasis> par rapport au mois de dï¿½claration choisi la valeur agrï¿½gï¿½e de la prï¿½cï¿½dente 3,6,9 ou 12 mois seront utilisï¿½s.
 
 </para>
-          <para> <emphasis role="italic"> 3-6 Dernière, 6-9, 9-12 mois: </emphasis>> Utilisé pour les trimestres glissants "rapports. Agrégées des valeurs 3 mois sera utilisée, basée sur le mois de déclaration choisi. E.. G de Juillet 2010 est sélectionnée la dernière période de trois à six aura une période agrégées de février-avril 2010.
+          <para> <emphasis role="italic"> 3-6 Derniï¿½re, 6-9, 9-12 mois: </emphasis>> Utilisï¿½ pour les trimestres glissants "rapports. Agrï¿½gï¿½es des valeurs 3 mois sera utilisï¿½e, basï¿½e sur le mois de dï¿½claration choisi. E.. G de Juillet 2010 est sï¿½lectionnï¿½e la derniï¿½re pï¿½riode de trois ï¿½ six aura une pï¿½riode agrï¿½gï¿½es de fï¿½vrier-avril 2010.
 
 </para>
-          <para> <emphasis role="italic"> 12 derniers mois individuelle: </emphasis>> Utilisez-le pour l'analyse des tendances par mois. Cela donnera à 12 valeurs, une pour chacun des 12 mois précédents par rapport au mois de déclaration choisi.
+          <para> <emphasis role="italic"> 12 derniers mois individuelle: </emphasis>> Utilisez-le pour l'analyse des tendances par mois. Cela donnera ï¿½ 12 valeurs, une pour chacun des 12 mois prï¿½cï¿½dents par rapport au mois de dï¿½claration choisi.
 
 </para>
-          <para> <emphasis role="italic"> Jusqu'à présent cette année:> </emphasis> C'est le cumulatif à ce jour dans l'année, l'agrégation des mois après le début de l'année jusqu'à et y compris le mois de déclaration choisi.
+          <para> <emphasis role="italic"> Jusqu'ï¿½ prï¿½sent cette annï¿½e:> </emphasis> C'est le cumulatif ï¿½ ce jour dans l'annï¿½e, l'agrï¿½gation des mois aprï¿½s le dï¿½but de l'annï¿½e jusqu'ï¿½ et y compris le mois de dï¿½claration choisi.
 
 </para>
-          <para> <emphasis role="italic"> Jusqu'à présent cette année financière:> </emphasis> semblable à la précédente, mais une valeur cumulative par rapport au début de l'année financière pour le mois de déclaration choisi.
+          <para> <emphasis role="italic"> Jusqu'ï¿½ prï¿½sent cette annï¿½e financiï¿½re:> </emphasis> semblable ï¿½ la prï¿½cï¿½dente, mais une valeur cumulative par rapport au dï¿½but de l'annï¿½e financiï¿½re pour le mois de dï¿½claration choisi.
 
 </para>
-          <para> <emphasis role="italic"> différents mois / trimestre de cette année </emphasis>>: Ce sera une valeur par mois ou trimestre de l'année. Ce qui est bien adapté à la norme des rapports mensuels ou trimestriels, où tous les mois / trimestres doivent être inscrits. Les périodes qui n'ont toujours pas de données sera vide, mais toujours garder le même nom de colonne. </para>
-          <para> <emphasis role="bold"> rapports paramètres </emphasis>> </para>
-          <para> paramètres Rapport de rendre les rapports plus génériques et réutilisables dans le temps et pour orgunits différents. Ces paramètres s'affiche lors de la génération de la table ou de rapport en cours d'exécution un rapport basé sur la table le rapport et les utilisateurs choisiront ce qu'ils veulent voir dans le rapport. Il ya trois paramètres de rapport possible, et vous pouvez choisir d'utiliser aucun, 1, 2 ou 3 paramètres.
+          <para> <emphasis role="italic"> diffï¿½rents mois / trimestre de cette annï¿½e </emphasis>>: Ce sera une valeur par mois ou trimestre de l'annï¿½e. Ce qui est bien adaptï¿½ ï¿½ la norme des rapports mensuels ou trimestriels, oï¿½ tous les mois / trimestres doivent ï¿½tre inscrits. Les pï¿½riodes qui n'ont toujours pas de donnï¿½es sera vide, mais toujours garder le mï¿½me nom de colonne. </para>
+          <para> <emphasis role="bold"> rapports paramï¿½tres </emphasis>> </para>
+          <para> paramï¿½tres Rapport de rendre les rapports plus gï¿½nï¿½riques et rï¿½utilisables dans le temps et pour orgunits diffï¿½rents. Ces paramï¿½tres s'affiche lors de la gï¿½nï¿½ration de la table ou de rapport en cours d'exï¿½cution un rapport basï¿½ sur la table le rapport et les utilisateurs choisiront ce qu'ils veulent voir dans le rapport. Il ya trois paramï¿½tres de rapport possible, et vous pouvez choisir d'utiliser aucun, 1, 2 ou 3 paramï¿½tres.
 
 </para>
-          <para> <emphasis role="italic"> rapports mois:> </emphasis> Cette décide qui a fixé les périodes qui seront récupérés pour les périodes choisies relative.
+          <para> <emphasis role="italic"> rapports mois:> </emphasis> Cette dï¿½cide qui a fixï¿½ les pï¿½riodes qui seront rï¿½cupï¿½rï¿½s pour les pï¿½riodes choisies relative.
 </para>
-          <para> <emphasis unité role="italic"> organisation-mère: </emphasis>> Sélectionnez le parent de tous les enfants orgunit vous voulez énumérés dans le rapport. Par exemple, un quartier sélectionné déclencher l'utilisation de tous les sous-districts dans cette région sélectionnée.
+          <para> <emphasis unitï¿½ role="italic"> organisation-mï¿½re: </emphasis>> Sï¿½lectionnez le parent de tous les enfants orgunit vous voulez ï¿½numï¿½rï¿½s dans le rapport. Par exemple, un quartier sï¿½lectionnï¿½ dï¿½clencher l'utilisation de tous les sous-districts dans cette rï¿½gion sï¿½lectionnï¿½e.
 </para>
-          <para> <emphasis role="italic"> Organisation unité:> </emphasis> Cela déclenche l'utilisation de ce orgunit dans le rapport. Pas d'enfants sont inscrits.
+          <para> <emphasis role="italic"> Organisation unitï¿½:> </emphasis> Cela dï¿½clenche l'utilisation de ce orgunit dans le rapport. Pas d'enfants sont inscrits.
 
 </para>
         </section>
         <section>
-          <title> Élément Dimension Data tables </title>
-          <para> Ces tableaux permettent l'utilisation de catégories d'éléments de données dans les tableaux du rapport. Une combinaison de catégorie par rapport. Sous-totaux et le total sera également inclus dans le tableau, par exemple, un genre (masculin, féminin) du PEV âge (<1,> 1 combo catégorie donnerait les colonnes suivantes:
+          <title> ï¿½lï¿½ment Dimension Data tables </title>
+          <para> Ces tableaux permettent l'utilisation de catï¿½gories d'ï¿½lï¿½ments de donnï¿½es dans les tableaux du rapport. Une combinaison de catï¿½gorie par rapport. Sous-totaux et le total sera ï¿½galement inclus dans le tableau, par exemple, un genre (masculin, fï¿½minin) du PEV ï¿½ge (<1,> 1 combo catï¿½gorie donnerait les colonnes suivantes:
 Homme &lt; 1, Homme &gt; 1, Femme &lt; 1, Femme &gt; 1, hommes, femmes, &lt;1, &gt;1, total.
 
 </para>
-          éléments <para> Seules les données de la combinaison même catégorie peuvent être inclus.
+          ï¿½lï¿½ments <para> Seules les donnï¿½es de la combinaison mï¿½me catï¿½gorie peuvent ï¿½tre inclus.
 
 </para>
-          <para> Toutes les dimensions de la Croix-onglet sont désactivées depuis les colonnes sont les ventilations de la combinaison de diverses catégories.
+          <para> Toutes les dimensions de la Croix-onglet sont dï¿½sactivï¿½es depuis les colonnes sont les ventilations de la combinaison de diverses catï¿½gories.
 
 </para>
-          <para> Orgunit, les périodes et les paramètres que dans l'élément de données des tableaux d'indicateurs /.
+          <para> Orgunit, les pï¿½riodes et les paramï¿½tres que dans l'ï¿½lï¿½ment de donnï¿½es des tableaux d'indicateurs /.
 </para>
         </section>
         <section>
@@ -270,7 +270,7 @@ Homme &lt; 1, Homme &gt; 1, Femme &lt; 1, Femme &gt; 1, hommes, femmes, &lt;1, &
         </section>
       </section>
       <section>
-        <title> Rapport à l'aide tables</title>
-        <para> Pour les tableaux rapport réutilisables dans le temps et dans l'ensemble orgunits ils peuvent avoir des paramètres \. Trois types de paramètres sont autorisés; orgunit orgunit parent, (pour la liste des orgunits dans un domaine) et des rapports par mois. En marge, note, je peux citer que nous sommes à la recherche en expansion afin d'inclure cette déclaration trimestre et l'exercice, ou de faire ce paramètre période plus génériques en ce qui concerne le type de période en quelque sorte. Etre capable d'utiliser la période en tant que paramètre rend le tableau rapport réutilisables dans le temps et que de tels accès joliment avec le rapport des besoins tels que mensuels, trimestriels ou annuels. Quand un rapport est généré par l'utilisateur dans le DHIS 2 L'utilisateur doit préciser les valeurs pour les tableaux du rapport qui sont liés au rapport, et le premier rapport de la table est re-généré (supprimé et recréé avec des données actualisées), puis le rapport est exécuté (dans le moteur de rapport BIRT).
+        <title> Rapport ï¿½ l'aide tables</title>
+        <para> Pour les tableaux rapport rï¿½utilisables dans le temps et dans l'ensemble orgunits ils peuvent avoir des paramï¿½tres \. Trois types de paramï¿½tres sont autorisï¿½s; orgunit orgunit parent, (pour la liste des orgunits dans un domaine) et des rapports par mois. En marge, note, je peux citer que nous sommes ï¿½ la recherche en expansion afin d'inclure cette dï¿½claration trimestre et l'exercice, ou de faire ce paramï¿½tre pï¿½riode plus gï¿½nï¿½riques en ce qui concerne le type de pï¿½riode en quelque sorte. Etre capable d'utiliser la pï¿½riode en tant que paramï¿½tre rend le tableau rapport rï¿½utilisables dans le temps et que de tels accï¿½s joliment avec le rapport des besoins tels que mensuels, trimestriels ou annuels. Quand un rapport est gï¿½nï¿½rï¿½ par l'utilisateur dans le IROAD 2 L'utilisateur doit prï¿½ciser les valeurs pour les tableaux du rapport qui sont liï¿½s au rapport, et le premier rapport de la table est re-gï¿½nï¿½rï¿½ (supprimï¿½ et recrï¿½ï¿½ avec des donnï¿½es actualisï¿½es), puis le rapport est exï¿½cutï¿½ (dans le moteur de rapport BIRT).
 
 </para>

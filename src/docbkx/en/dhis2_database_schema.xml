@@ -2,7 +2,7 @@
 <!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN"
                "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd" []>
 <book id="database.dhis" xreflabel="dhis database schema">
-	<title>DHIS2 Database Schema</title>
+	<title>IROAD2 Database Schema</title>
 	<chapter id="public.schema"
            xreflabel="public">
 		<title>Schema public</title>

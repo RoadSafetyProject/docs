@@ -4,9 +4,9 @@
   <title>Data sets and data entry forms</title>
   <section id="datasets">
     <title>Data sets</title>
-    <para>All data entry in DHIS2 is organised through the use of data sets. You can add and edit
+    <para>All data entry in IROAD2 is organised through the use of data sets. You can add and edit
       data sets by selecting the Data Sets App. A data set is a collection of data elements grouped
-      together for data collection and data export between instances of DHIS2 (e.g. from a district
+      together for data collection and data export between instances of IROAD2 (e.g. from a district
       office local installation to a national server). </para>
     <para>A data set has a data collection frequency which can be set through the period type
       property. The frequency can be daily, weekly, monthly, quarterly, six-monthly, or yearly.
@@ -52,10 +52,10 @@
         <para>Complete notification recipients: Sets which users should receive a message with a
           notification about this data set being marked as complete in data entry. In this list you
           can select a user group, and all members in this group will receive a notification. The
-          message will be delivered through the DHIS messaging system.</para>
+          message will be delivered through the IROAD messaging system.</para>
       </listitem>
       <listitem>
-        <para>Send notification to completing user: Sets whether a notification that the dataset is marked as complete in data entry is sent to the user who has entered the data. This message is also delivered through the DHIS messaging system.</para>
+        <para>Send notification to completing user: Sets whether a notification that the dataset is marked as complete in data entry is sent to the user who has entered the data. This message is also delivered through the IROAD messaging system.</para>
       </listitem>
       <listitem>
         <para>Approve data: Define whether data for this data set should be Approved. (See the Data
@@ -68,7 +68,7 @@
           experimental data sets.</para>
       </listitem>
       <listitem>
-        <para>Enable for Java mobile client: Sets whether or not the dataset can be used within the Java mobile DHIS2 application. </para>
+        <para>Enable for Java mobile client: Sets whether or not the dataset can be used within the Java mobile IROAD2 application. </para>
       </listitem>
       <listitem>
         <para>All fields for data elements required: Defines whether it is mandatory to fill all
@@ -281,7 +281,7 @@ Show details: Display some informative information about the data set, including
     </section>
     <section id="customDataEntryForm">
       <title>Custom Forms</title>
-      <para>When the form you want to design is to complicated for the default or section forms then your last option is to use a custom form. This takes more time, but gives you full flexibility in term of the design. DHIS2 uses a built-in HTML editor (FcK Editor) for the form designer and you can either design the form in the UI or paste in your HTML directly (using the Source window in the editor). A complete reference for use of the editor can be found <ulink url="http://docs.cksource.com/CKEditor_3.x/Users_Guide">here</ulink>.</para>
+      <para>When the form you want to design is to complicated for the default or section forms then your last option is to use a custom form. This takes more time, but gives you full flexibility in term of the design. IROAD2 uses a built-in HTML editor (FcK Editor) for the form designer and you can either design the form in the UI or paste in your HTML directly (using the Source window in the editor). A complete reference for use of the editor can be found <ulink url="http://docs.cksource.com/CKEditor_3.x/Users_Guide">here</ulink>.</para>
       <para>One of the big advantages of custom forms, is that they can be created to mimic existing paper aggregation forms. This makes data entry much easier for users, and should reduce the number of data elements which are incorrectly entered, as they are more easily identifiable when entering data from a paper form. </para>
       <para>Once a custom form has been added to a data set it will be available in data entry and
         used automatically. </para>
@@ -309,7 +309,7 @@ Show details: Display some informative information about the data set, including
     <section>
       <title>Scripting in custom forms</title>
       <para>In custom data entry form you can use javascript to create dynamic behavior and
-        customziations. The DHIS 2 data entry module provides a range of events which you can
+        customziations. The IROAD 2 data entry module provides a range of events which you can
         register for and use to perform actions at certain times. The events are registered on the
         document element. The jQuery event object and the data set identifier are always the first
         two arguments provided to the callback functions. The table below provides an overview of

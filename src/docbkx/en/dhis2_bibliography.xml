@@ -131,7 +131,7 @@
    <authorgroup>
        <author><firstname>Petter</firstname><surname>Jacobsen</surname></author> 
    </authorgroup>
-   <citetitle pubwork="manuscript">Design and development of a global reporting solution for DHIS</citetitle>
+   <citetitle pubwork="manuscript">Design and development of a global reporting solution for IROAD</citetitle>
    <publisher>
       <publishername>The University of Oslo</publishername>
    </publisher>
@@ -185,7 +185,7 @@
    <authorgroup>
        <author><firstname>Lars</firstname><surname>Mangset</surname></author> 
    </authorgroup>
-   <citetitle pubwork="manuscript">DHIS&#45;2 &#45; A Globally Distributed Development Process</citetitle>
+   <citetitle pubwork="manuscript">IROAD&#45;2 &#45; A Globally Distributed Development Process</citetitle>
    <publisher>
       <publishername>The University of Oslo</publishername>
    </publisher>

@@ -40,7 +40,7 @@
             instances. Run reinit-dhis-instance to make the changes take effect.</para>
         </listitem>
         <listitem>
-          <para>Create a new DHIS 2 Live package on dhis2.org and place it in download/live
+          <para>Create a new IROAD 2 Live package on dhis2.org and place it in download/live
             directory. Only the WAR file must be updated. An uncompressed Live package is located on
             the demo server at:<screen>/home/dhis/dhis-live-package</screen></para>
           <para>Replace the uncompressed WAR file with the new release. Make a compressed Live

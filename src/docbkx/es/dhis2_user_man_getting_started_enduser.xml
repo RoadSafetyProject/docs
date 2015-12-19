@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!-- This document was created with Syntext Serna Free. --><!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN" "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd" []>
 <chapter>
-  <title>Comenzando con DHIS 2 como usuario</title>
+  <title>Comenzando con IROAD 2 como usuario</title>
   <section>
-    <title>Comenzando con DHIS 2</title>
+    <title>Comenzando con IROAD 2</title>
     <para>Después de leer este capítulo sabremos:</para>
     <itemizedlist>
       <listitem>
-        <para>Cómo abrir la aplicación DHIS 2</para>
+        <para>Cómo abrir la aplicación IROAD 2</para>
       </listitem>
       <listitem>
         <para>Cómo entrar y cómo salir de la aplicación de forma segura</para>
@@ -18,15 +18,15 @@
     </itemizedlist>
   </section>
   <section>
-    <title>Abrir DHIS 2</title>
-    <para>DHIS 2 es una aplicación web, y por lo tanto, podremos acceder a ella desde un navegador web mientras dispongamos de conexión a Internet en nuestra computadora. Recomendamos utilizar Google Chrome (que puedes descargar en este enlace: http://www.google.com/chrome). </para>
-    <para>Abre el navegador web e introduce la dirección URL de la aplicación DHIS 2 en la barra de direcciones (pregunta a tu equipo de soporte cuál es la dirección que te corresponde).</para>
-    <para>A continuación aparecerá la pantalla de acceso de DHIS 2 donde podrás entrar con tu nombre de usuario y contraseña.</para>
+    <title>Abrir IROAD 2</title>
+    <para>IROAD 2 es una aplicación web, y por lo tanto, podremos acceder a ella desde un navegador web mientras dispongamos de conexión a Internet en nuestra computadora. Recomendamos utilizar Google Chrome (que puedes descargar en este enlace: http://www.google.com/chrome). </para>
+    <para>Abre el navegador web e introduce la dirección URL de la aplicación IROAD 2 en la barra de direcciones (pregunta a tu equipo de soporte cuál es la dirección que te corresponde).</para>
+    <para>A continuación aparecerá la pantalla de acceso de IROAD 2 donde podrás entrar con tu nombre de usuario y contraseña.</para>
   </section>
   <section>
     <title>Entrar y salir de la aplicación</title>
-    <para>Cuando aparece la pantalla azul de logueo en tu navegador, deberás introducir el nombre de usuario y contraseña que te han proporcionado. Si el logueo no prospera, verás un mensaje de error que indica que el nombre de usuario o la contraseña introducida son incorrectos, y se te pedirá que vuelvas a escribir las credenciales. Una vez te hayas logueado correctamente, aparecerá en la pantalla el DHIS Dashboard (o Panel de Control) donde podrás comenzar inmediatamente a monitorear los datos más recientes en las gráficas preconfiguradas y podrás acceder a tus sitios DHIS favoritos (reportes, mapas, etc).</para>
-    <para>Cuando finalices tu sesión en DHIS 2 recomendamos que salgas de forma segura deslogueándote, antes de cerrar el navegador. Para ello, utiliza el enlace que dice "Salir" en la esquina superior derecha y entonces el navegador volverá a mostrarte la pantalla azul de logueo.</para>
+    <para>Cuando aparece la pantalla azul de logueo en tu navegador, deberás introducir el nombre de usuario y contraseña que te han proporcionado. Si el logueo no prospera, verás un mensaje de error que indica que el nombre de usuario o la contraseña introducida son incorrectos, y se te pedirá que vuelvas a escribir las credenciales. Una vez te hayas logueado correctamente, aparecerá en la pantalla el IROAD Dashboard (o Panel de Control) donde podrás comenzar inmediatamente a monitorear los datos más recientes en las gráficas preconfiguradas y podrás acceder a tus sitios IROAD favoritos (reportes, mapas, etc).</para>
+    <para>Cuando finalices tu sesión en IROAD 2 recomendamos que salgas de forma segura deslogueándote, antes de cerrar el navegador. Para ello, utiliza el enlace que dice "Salir" en la esquina superior derecha y entonces el navegador volverá a mostrarte la pantalla azul de logueo.</para>
     <screenshot>
       <screeninfo>Pantalla de logueo</screeninfo>
       <mediaobject>
@@ -38,12 +38,12 @@
   </section>
   <section>
     <title>Explorando la aplicación</title>
-    <para>La aplicación DHIS2 tiene dos menús: una barra de menú superior que enlaza con los diversos módulos, y un menú lateral (en el lado izquierdo) en la mayoría de los módulos qeu permite explorar las diferentes características dentro de cada módulo.</para>
-    <para>El símbolo DHIS 2 que aparece en la esquina superior izquierda es un enlace directo a la página de inicio predefinida por el usuario. Generalmente se configura como página de inicio el módulo de Dashboard (panel de control).</para>
+    <para>La aplicación IROAD2 tiene dos menús: una barra de menú superior que enlaza con los diversos módulos, y un menú lateral (en el lado izquierdo) en la mayoría de los módulos qeu permite explorar las diferentes características dentro de cada módulo.</para>
+    <para>El símbolo IROAD 2 que aparece en la esquina superior izquierda es un enlace directo a la página de inicio predefinida por el usuario. Generalmente se configura como página de inicio el módulo de Dashboard (panel de control).</para>
     <para>En la esquina superior derecha, en el extremo del menú superior, encontramos el botón de "Salir" para salir de la aplicación de forma segura.</para>
     <section>
       <title>Menú Superior - Acceso a los módulos</title>
-      <para>DHIS está formado por varios módulos (componentes principales), cada uno de ellos con características específicas tales como entrada de datos, reporte, panel de control. Podemos acceder a estos módulos en el Menú Superior, bien desde la pestaña de Mantenimiento o la de Servicios. Mantenimiento es la pestaña utilizada generalmente por los administradores del sistema, que mantienen y dan soporte técnico a la aplicación, razón por la cual puede no ser visible si eres un usuario convencional. Servicios es donde podemos encontrar la mayoría de características operativas como entrada de datos, calidad de los datos y reporte. En la pestaña Ayuda del menú superior podemos acceder al manual de usuario, actualizar tus datos de usuario, o ver información sobre la aplicación DHIS en funcionamiento.</para>
+      <para>IROAD está formado por varios módulos (componentes principales), cada uno de ellos con características específicas tales como entrada de datos, reporte, panel de control. Podemos acceder a estos módulos en el Menú Superior, bien desde la pestaña de Mantenimiento o la de Servicios. Mantenimiento es la pestaña utilizada generalmente por los administradores del sistema, que mantienen y dan soporte técnico a la aplicación, razón por la cual puede no ser visible si eres un usuario convencional. Servicios es donde podemos encontrar la mayoría de características operativas como entrada de datos, calidad de los datos y reporte. En la pestaña Ayuda del menú superior podemos acceder al manual de usuario, actualizar tus datos de usuario, o ver información sobre la aplicación IROAD en funcionamiento.</para>
       <para>Para explorar un nuevo módulo moveremos el puntero del mouse a uno de los elementos del menú superior: Mantenimiento, Servicios o Ayuda. Al pasar sobre uno de esos elementos, se despliega un submenú con más módulos. Pincha en el módulo que deseas abrir.</para>
     </section>
     <section>

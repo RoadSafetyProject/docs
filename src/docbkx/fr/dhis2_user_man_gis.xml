@@ -1,42 +1,42 @@
 <? Xml version = '1 .0 'encoding =' UTF-8 "?> 
-<! - Ce document a été créé avec Syntext Serna libre. -> 
+<! - Ce document a ï¿½tï¿½ crï¿½ï¿½ avec Syntext Serna libre. -> 
 <! DOCTYPE chapitre PUBLIC "- / / OASIS / / DTD DocBook XML V4.4 / / EN" "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd" [>] 
 <chapter> 
   <title> SIG </title> 
   <section> 
     <title> OpenHealthMapper </title> 
-    <para>  Le module DHIS2 du SIG est inspiré par l'application de l'OMS HealthMapper. </para> 
+    <para>  Le module IROAD2 du SIG est inspirï¿½ par l'application de l'OMS HealthMapper. </para>
   </section>
   <section> 
-    <title> Carte identifiant données <title/> 
-    <para> données géographiques peuvent être divisés en deux groupes - matricielles et vectorielles. </Para> 
+    <title> Carte identifiant donnï¿½es <title/> 
+    <para> donnï¿½es gï¿½ographiques peuvent ï¿½tre divisï¿½s en deux groupes - matricielles et vectorielles. </Para> 
     <section> 
       <title> Raster images </title> 
-      <para> matricielles peuvent être considérées comme des images telles que des images satellite. Les images peuvent être utilisées comme base pour les cartes, et de l'ohm peut les retirer à partir de n'importe conforme aux standards 
-      <ulink url="http://en.wikipedia.org/wiki/Web_Map_Service"> Web Map Service (WMS) </ulink>. Il est également un grand intérêt pour 
-      combiner l'installation d'un DHIS2 <ulink url="http://geoserver.org/display/GEOS/Welcome"> GeoServer instance</ulink>, 
-      qui peut être téléchargé au format. guerre fichier et lancez dans le même conteneur de servlets (par exemple, Tomcat, Jetty, résine). GeoServer peut fournir 
-      les deux couches de fond telles que les routes, lacs, etc ou encore afficher les données thématiques comme une alternative au navigateur-rendu 
+      <para> matricielles peuvent ï¿½tre considï¿½rï¿½es comme des images telles que des images satellite. Les images peuvent ï¿½tre utilisï¿½es comme base pour les cartes, et de l'ohm peut les retirer ï¿½ partir de n'importe conforme aux standards 
+      <ulink url="http://en.wikipedia.org/wiki/Web_Map_Service"> Web Map Service (WMS) </ulink>. Il est ï¿½galement un grand intï¿½rï¿½t pour 
+      combiner l'installation d'un IROAD2 <ulink url="http://geoserver.org/display/GEOS/Welcome"> GeoServer instance</ulink>,
+      qui peut ï¿½tre tï¿½lï¿½chargï¿½ au format. guerre fichier et lancez dans le mï¿½me conteneur de servlets (par exemple, Tomcat, Jetty, rï¿½sine). GeoServer peut fournir 
+      les deux couches de fond telles que les routes, lacs, etc ou encore afficher les donnï¿½es thï¿½matiques comme une alternative au navigateur-rendu 
       mode principal qui utilise> GeoJSON. </para> 
 </section> 
     <section> 
-      <title> Vecteur de données </title> 
-      <para> Afin de créer des cartes thématiques (également connu sous le nom <ulink url="http://en.wikipedia.org/wiki/Choropleth_map"> choroplèthe </maps / ulink>) 
-    Nous avons besoin de polygones vecteur (par exemple pour les bassins versants installation ou régions administratives). En outre, les fichiers vectoriels sont nécessaires pour 
-    points (par exemple l'emplacement des installations de santé ou même de différents services au sein d'un hôpital). Ces fichiers vectoriels compose d'une collection de (x, y) 
-    coordonnées avec un certain nombre d'attributs associés (au moins un nom). Les données vectorielles peuvent venir dans un grand nombre de formats, tels que le GPS 
-    coordonnées pour les installations. Le plus commun est le <ulink url="http://en.wikipedia.org/wiki/Shapefile"> ESRI format shapefile </ulink>. 
-    Afin de rendre les cartes Web interactives, DHIS 2 utilise le javascript <ulink url="http://en.wikipedia.org/wiki/GeoJSON"> format GeoJSON </ulink>. </Para> 
+      <title> Vecteur de donnï¿½es </title> 
+      <para> Afin de crï¿½er des cartes thï¿½matiques (ï¿½galement connu sous le nom <ulink url="http://en.wikipedia.org/wiki/Choropleth_map"> choroplï¿½the </maps / ulink>) 
+    Nous avons besoin de polygones vecteur (par exemple pour les bassins versants installation ou rï¿½gions administratives). En outre, les fichiers vectoriels sont nï¿½cessaires pour 
+    points (par exemple l'emplacement des installations de santï¿½ ou mï¿½me de diffï¿½rents services au sein d'un hï¿½pital). Ces fichiers vectoriels compose d'une collection de (x, y) 
+    coordonnï¿½es avec un certain nombre d'attributs associï¿½s (au moins un nom). Les donnï¿½es vectorielles peuvent venir dans un grand nombre de formats, tels que le GPS 
+    coordonnï¿½es pour les installations. Le plus commun est le <ulink url="http://en.wikipedia.org/wiki/Shapefile"> ESRI format shapefile </ulink>. 
+    Afin de rendre les cartes Web interactives, IROAD 2 utilise le javascript <ulink url="http://en.wikipedia.org/wiki/GeoJSON"> format GeoJSON </ulink>. </Para>
 </section> 
     <section> 
-      <title> L'obtention de données / title> 
+      <title> L'obtention de donnï¿½es / title> 
       <para> 
-        Pour utiliser l'OHM avec DHIS2, il est nécessaire de disposer de données vectorielles pour chaque niveau orgunit l'on veut voir dans la carte. 
-        Dans de nombreux pays, le ministère de la Santé ont shapefiles pour les divisions administratives liées à la santé. Dans d'autres cas, 
-        de tels fichiers peut être acheté auprès d'un ministère de l'aménagement du territoire ou auprès de fournisseurs privés. Installation de coordonnées peuvent être facilement 
-        assemblés en une couche (fichier) pour les installations - et si elles ne sont pas disponibles, elles peuvent être collectées par GPS à bas prix (de plus en plus 
-        disponibles également dans les téléphones mobiles). En outre, beaucoup de données sont disponibles librement sur le web - en particulier des couches et des bacground 
-        superpositions, mais aussi l'installation des postes et les frontières administratives. Voici une liste des sources de ces données: </para> 
+        Pour utiliser l'OHM avec IROAD2, il est nï¿½cessaire de disposer de donnï¿½es vectorielles pour chaque niveau orgunit l'on veut voir dans la carte.
+        Dans de nombreux pays, le ministï¿½re de la Santï¿½ ont shapefiles pour les divisions administratives liï¿½es ï¿½ la santï¿½. Dans d'autres cas, 
+        de tels fichiers peut ï¿½tre achetï¿½ auprï¿½s d'un ministï¿½re de l'amï¿½nagement du territoire ou auprï¿½s de fournisseurs privï¿½s. Installation de coordonnï¿½es peuvent ï¿½tre facilement 
+        assemblï¿½s en une couche (fichier) pour les installations - et si elles ne sont pas disponibles, elles peuvent ï¿½tre collectï¿½es par GPS ï¿½ bas prix (de plus en plus 
+        disponibles ï¿½galement dans les tï¿½lï¿½phones mobiles). En outre, beaucoup de donnï¿½es sont disponibles librement sur le web - en particulier des couches et des bacground 
+        superpositions, mais aussi l'installation des postes et les frontiï¿½res administratives. Voici une liste des sources de ces donnï¿½es: </para> 
       <itemizedlist> 
         <listitem> 
           <para> <ulink url="http://www.openstreetmap.org"> OpenStreetMap </ulink> </para> 
@@ -48,88 +48,88 @@
           <para> <ulink url="http://www.maplibrary.org/stacks/africa"> Maplibrary </ulink> </para> 
         </Listitem> 
         <listitem> 
-           <para><ulink url="http://www.gadm.org/country"> Global régions administratives </ulink> </para> 
+           <para><ulink url="http://www.gadm.org/country"> Global rï¿½gions administratives </ulink> </para> 
         </Listitem> 
         <listitem> 
-          <para> <ulink url="http://www.unsalb.org"> organisations des Nations Unies, en particulier l'OMS et la FAO, ont administrative <frontières / ulink> </para> 
+          <para> <ulink url="http://www.unsalb.org"> organisations des Nations Unies, en particulier l'OMS et la FAO, ont administrative <frontiï¿½res / ulink> </para> 
         </Listitem> 
       </Itemizedlist> 
 </section> 
     <section> 
       <title> Projections</title> 
-      <para> DHIS 2 utilise la latitude / longitude (Lat / Lon) les coordonnées dans la norme EPSG: 4326 de projection, qui est 
-        très répandue. Mais il est également fréquent d'obtenir des données dans des formats UTM [http://en.wikipedia.org/wiki/ 
-        Universal_Transverse_Mercator_coordinate_system]. Par exemple, les données pour le Malawi est souvent distribué UTM 36S 
-        projection, ce qui correspond à EPSG: 2736. La conversion peut se faire par être fait en utilisant soit GeoServer ou ogr2ogr 
-        qui fait partie de GDAL et est livré avec Ubuntu. Pour Windows, il s'inscrit dans le cadre de <ulink> url="http://www.bostongis.com/ PrinterFriendly.aspx?content_name=ogr_cheatsheet"> FW Outils </ulink>. Par exemple, la ligne suivante vous permet de convertir un shapefile 
-        inputfile.shp appelé en UTM 36S projection d'un fichier GeoJSON en latitude / longitude: 
+      <para> IROAD 2 utilise la latitude / longitude (Lat / Lon) les coordonnï¿½es dans la norme EPSG: 4326 de projection, qui est
+        trï¿½s rï¿½pandue. Mais il est ï¿½galement frï¿½quent d'obtenir des donnï¿½es dans des formats UTM [http://en.wikipedia.org/wiki/ 
+        Universal_Transverse_Mercator_coordinate_system]. Par exemple, les donnï¿½es pour le Malawi est souvent distribuï¿½ UTM 36S 
+        projection, ce qui correspond ï¿½ EPSG: 2736. La conversion peut se faire par ï¿½tre fait en utilisant soit GeoServer ou ogr2ogr 
+        qui fait partie de GDAL et est livrï¿½ avec Ubuntu. Pour Windows, il s'inscrit dans le cadre de <ulink> url="http://www.bostongis.com/ PrinterFriendly.aspx?content_name=ogr_cheatsheet"> FW Outils </ulink>. Par exemple, la ligne suivante vous permet de convertir un shapefile 
+        inputfile.shp appelï¿½ en UTM 36S projection d'un fichier GeoJSON en latitude / longitude: 
         <programlisting><userinput>s_srs ogr2ogr EPSG: 2736 a_srs EPSG: 4326-f "GeoJSON" inputfile.shp outputfile.json </userinput> </programlisting> 
       </Para> 
 </section> 
     <section> 
-      <title> logiciel SIG pour afficher et manipuler des données cartographiques </title> 
-      <para> Il ya beaucoup de puissants libre et open source de SIG paquets. Ceux-ci peuvent être proposés: </para> 
+      <title> logiciel SIG pour afficher et manipuler des donnï¿½es cartographiques </title> 
+      <para> Il ya beaucoup de puissants libre et open source de SIG paquets. Ceux-ci peuvent ï¿½tre proposï¿½s: </para> 
       <itemizedlist> 
           <listitem> <para> <ulink url="http://www.qgis.org/"> Quantum GIS </ulink> </para> </listitem> 
           <listitem> <para> <ulink url="http://www.openjump.org/"> openjump </ulink> </para> </listitem> 
-          <listitem> <para> <ulink url="http://udig.refractions.net/"> uDig </ulink>, qui fait également fonction de <ulink url = "http://udig.refractions.net/gallery / GCRAI / "> DIVA-GIS </ulink> </para> </listitem> 
+          <listitem> <para> <ulink url="http://udig.refractions.net/"> uDig </ulink>, qui fait ï¿½galement fonction de <ulink url = "http://udig.refractions.net/gallery / GCRAI / "> DIVA-GIS </ulink> </para> </listitem> 
           <listitem> <para> <ulink url="http://www.gvsig.gva.es/eng/inicio-gvsig/"> gvSIG </ulink> </para> </listitem> 
         </Itemizedlist> 
-        <para> Ces outils peuvent par exemple être utilisé pour fusionner les polygones limites du village en polygones de district (à condition que le quartier que chaque village appartient à est répertorié comme un attribut), et 
-        on peut éditer des fichiers afin de refléter de nouvelles divisions ou de corriger les erreurs. 
-        Un autre outil pour travailler avec des données SIG est> <ulink url="http://postgis.refractions.net/"> PostGIS </ulink>, qui peut être utilisé sur elle-même ou en conjonction 
+        <para> Ces outils peuvent par exemple ï¿½tre utilisï¿½ pour fusionner les polygones limites du village en polygones de district (ï¿½ condition que le quartier que chaque village appartient ï¿½ est rï¿½pertoriï¿½ comme un attribut), et 
+        on peut ï¿½diter des fichiers afin de reflï¿½ter de nouvelles divisions ou de corriger les erreurs. 
+        Un autre outil pour travailler avec des donnï¿½es SIG est> <ulink url="http://postgis.refractions.net/"> PostGIS </ulink>, qui peut ï¿½tre utilisï¿½ sur elle-mï¿½me ou en conjonction 
           avec les applications ci-dessus. 
         </Para> 
 </section> 
   </section>
   <section> 
-    <title> De conversion des données géographiques à format GeoJSON </title> 
-    <para> Le client cartographie DHIS2 repose sur des fichiers GeoJSON pour afficher 
-    une carte dans la fenêtre du navigateur. Souvent, les données géographiques est reçu dans 
-    de nombreux formats différents, mais le format de fichier de la forme ESRI est l'un des plus 
-    commune. Plusieurs procédures sont décrites ci-dessous. Il est important, mais 
-    pas nécessaire, que les noms de vos données géographiques correspondent à ceux du 
-    DHIS2 hiérarchie organisationnelle. S'ils ne le font pas, vous devrez manuellement 
-    les faire correspondre à un étape ultérieure </para> 
+    <title> De conversion des donnï¿½es gï¿½ographiques ï¿½ format GeoJSON </title> 
+    <para> Le client cartographie IROAD2 repose sur des fichiers GeoJSON pour afficher
+    une carte dans la fenï¿½tre du navigateur. Souvent, les donnï¿½es gï¿½ographiques est reï¿½u dans 
+    de nombreux formats diffï¿½rents, mais le format de fichier de la forme ESRI est l'un des plus 
+    commune. Plusieurs procï¿½dures sont dï¿½crites ci-dessous. Il est important, mais 
+    pas nï¿½cessaire, que les noms de vos donnï¿½es gï¿½ographiques correspondent ï¿½ ceux du 
+    IROAD2 hiï¿½rarchie organisationnelle. S'ils ne le font pas, vous devrez manuellement
+    les faire correspondre ï¿½ un ï¿½tape ultï¿½rieure </para> 
     <section> 
       <title> production de fichiers avec GeoJSON> GeoServer </title> 
       <para> GeoServer est capable de produire des formats GeoJSON. Si vous avez 
-      GeoServer courir quelque part, vous pouvez exécuter la requête suivante. </para> 
+      GeoServer courir quelque part, vous pouvez exï¿½cuter la requï¿½te suivante. </para> 
       url <para> ulink <= "http://localhost:8080/geoserver/ows?service=WFS&version=1.0.0&request=GetFeature&typename=topp:states&outputformat=json&srs_name=EPSG:4326" > http://localhost:8080/geoserver/ows?service=WFS&version=1.0.0&request=GetFeature&typename=topp:states&outputformat=json&srs_name=EPSG:4326 </ulink> </para> 
-      <para> Prenez note que vous avez besoin de spécifier le système de coordonnées spatiales. Par défaut, GeoServer reviendra fichiers GeoJSON avec le format "long / lat», tandis que 
-le client s'attend à ce que la cartographie DHIS l'ordre des coordonnées "lat / long format". La déclaration explicite du système de référence spatiale fera en sorte que les coordonnées sont retournés dans le bon ordre. Au moment de la rédaction, le client cartographie DHIS ne supporte pas les systèmes de référence spatiale autre que EPSG 4326. Si vous utilisez GeoServer, l'application se chargera de la reprojection du format natif des données géographiques à EPSG 4326. Si vous utilisez d'autres méthodes décrites ci-dessous pour générer le fichier GeoJSON, vous devrez veiller à ce que la sortie est fixé à GeoJSON EPSG 4326 (géographique lat / long). </Para> 
+      <para> Prenez note que vous avez besoin de spï¿½cifier le systï¿½me de coordonnï¿½es spatiales. Par dï¿½faut, GeoServer reviendra fichiers GeoJSON avec le format "long / latï¿½, tandis que 
+le client s'attend ï¿½ ce que la cartographie IROAD l'ordre des coordonnï¿½es "lat / long format". La dï¿½claration explicite du systï¿½me de rï¿½fï¿½rence spatiale fera en sorte que les coordonnï¿½es sont retournï¿½s dans le bon ordre. Au moment de la rï¿½daction, le client cartographie IROAD ne supporte pas les systï¿½mes de rï¿½fï¿½rence spatiale autre que EPSG 4326. Si vous utilisez GeoServer, l'application se chargera de la reprojection du format natif des donnï¿½es gï¿½ographiques ï¿½ EPSG 4326. Si vous utilisez d'autres mï¿½thodes dï¿½crites ci-dessous pour gï¿½nï¿½rer le fichier GeoJSON, vous devrez veiller ï¿½ ce que la sortie est fixï¿½ ï¿½ GeoJSON EPSG 4326 (gï¿½ographique lat / long). </Para>
       <para> Vous aurez besoin d'ajuster la destination d'accueil, si la machine n'est pas 
-      votre machine locale ainsi que la définition de la couche réelle dans GeoServer 
-      qui devrait être sortie à GeoJSON (dans ce cas 
+      votre machine locale ainsi que la dï¿½finition de la couche rï¿½elle dans GeoServer 
+      qui devrait ï¿½tre sortie ï¿½ GeoJSON (dans ce cas 
       Topp <parameter>: Etats </parameter>).</para> 
-      <para> Lors de l'exécution de l'URL, GeoServer va produire un fichier GeoJSON, 
-      et il vous sera demandé pour l'enregistrer. Une fois qu'il a fini le téléchargement, 
-      renommez le fichier suivant la convention de nommage proposé: </para> 
+      <para> Lors de l'exï¿½cution de l'URL, GeoServer va produire un fichier GeoJSON, 
+      et il vous sera demandï¿½ pour l'enregistrer. Une fois qu'il a fini le tï¿½lï¿½chargement, 
+      renommez le fichier suivant la convention de nommage proposï¿½: </para> 
       <para> ISO2CountryCode suivie d'un trait de soulignement, suivie par la couche 
-      type (par exemple, "admin" pour les niveaux administratifs, la «santé» pour la santé 
-      les limites administratives). Par exemple, la première couche administrative 
-      pour la Zambie serait nommé> "zm_admin1". </para> 
+      type (par exemple, "admin" pour les niveaux administratifs, la ï¿½santï¿½ pour la santï¿½ 
+      les limites administratives). Par exemple, la premiï¿½re couche administrative 
+      pour la Zambie serait nommï¿½> "zm_admin1". </para> 
 </section> 
     <section> 
       <title> production de fichiers avec GeoJSON> GDAL </title> 
-      <para> GDAL est une boîte à outils multi-plate-forme pour la manipulation de 
-      données géographiques. Il est librement disponible pour un large éventail de plates-formes 
-      à url="http://gdal.org"> <ulink> http://gdal.org </ulink> </para> 
+      <para> GDAL est une boï¿½te ï¿½ outils multi-plate-forme pour la manipulation de 
+      donnï¿½es gï¿½ographiques. Il est librement disponible pour un large ï¿½ventail de plates-formes 
+      ï¿½ url="http://gdal.org"> <ulink> http://gdal.org </ulink> </para> 
       <para> production de fichiers GeoJSON sont simples avec GDAL. Juste 
       execute (sur Windows) </para> 
       <programlisting> <userinput> ogr2ogr.exe-f "GeoJSON" src_datasource_name dst_datasource_name </userinput> </programlisting> 
       <para> ou sur Linux <programlisting> <userinput> ogr2ogr-f "GeoJSON" src_datasource_name dst_datasource_name  </userinput> </programlisting> </para> 
       <para> Remplacez <parameter>dst_datasource_name  </parameter> par le chemin 
-      à la destination du fichier de données géographiques (ci-après la nomination 
-      Convention décrit ci-dessus) et   <parameter> Src_datasource_name </parameter> avec l'origine géographique 
-      fichier de données. Prenez note que vous pourriez avoir besoin de préciser d'entrée et de sortie des systèmes de coordonnées tel que décrit ci-dessus. </Para> 
+      ï¿½ la destination du fichier de donnï¿½es gï¿½ographiques (ci-aprï¿½s la nomination 
+      Convention dï¿½crit ci-dessus) et   <parameter> Src_datasource_name </parameter> avec l'origine gï¿½ographique 
+      fichier de donnï¿½es. Prenez note que vous pourriez avoir besoin de prï¿½ciser d'entrï¿½e et de sortie des systï¿½mes de coordonnï¿½es tel que dï¿½crit ci-dessus. </Para> 
 </section> 
     <section>
-      <title> Copie de fichiers sur l'application DHIS </title> 
-      <para> Actuellement, vos fichiers GeoJSON doivent être placés dans le 
-      DHIS_HOME / geoson de votre demande DHIS d'être accessible à la SIG 
-      module. Si le répertoire GeoJSON n'existe pas, vous aurez besoin pour créer 
-      manuellement et copier vos fichiers GeoJSON là. </para> 
+      <title> Copie de fichiers sur l'application IROAD </title>
+      <para> Actuellement, vos fichiers GeoJSON doivent ï¿½tre placï¿½s dans le 
+      IROAD_HOME / geoson de votre demande IROAD d'ï¿½tre accessible ï¿½ la SIG
+      module. Si le rï¿½pertoire GeoJSON n'existe pas, vous aurez besoin pour crï¿½er 
+      manuellement et copier vos fichiers GeoJSON lï¿½. </para> 
 </section> 
   </section>
   <section id="gisAdministration">
@@ -141,34 +141,34 @@ le client s'attend à ce que la cartographie DHIS l'ordre des coordonnées "lat / 
       <listitem> 
         <para> Carte source </para> 
         <para> <guilabel> fichiers GeoJSON: </> guilabel vous trouverez votre propre 
-                cartes enregistrées dans la feuille de zone de liste déroulante dans le panneau de la carte thématique. 
-                > La boîte à cocher Admin panneaux seront visibles. </Para> 
-        <para> <guilabel> Shapefiles: </> guilabel même que les fichiers GeoJSON, sauf que les fichiers sont générés à partir des fichiers de formes installées sur votre exécutant la version de GeoServer à la volée. </para> 
-        <para> <guilabel> DHIS base de données: </guilabel> Carte de la zone de liste déroulante sera 
-                simplement être rempli par l'unité d'organisation existants et les niveaux 
-                GeoJSON fichiers seront créés par l'application automatiquement 
-                Organisation des unités doivent avoir les coordonnées stockées dans la base de données 
-                Afin d'être affichés dans la carte. Cette fonction est principalement destiné 
-                pour le niveau de l'installation car il est facile à maintenir et va donc 
-                shapefiles offrir une mise à jour. </para> 
+                cartes enregistrï¿½es dans la feuille de zone de liste dï¿½roulante dans le panneau de la carte thï¿½matique. 
+                > La boï¿½te ï¿½ cocher Admin panneaux seront visibles. </Para> 
+        <para> <guilabel> Shapefiles: </> guilabel mï¿½me que les fichiers GeoJSON, sauf que les fichiers sont gï¿½nï¿½rï¿½s ï¿½ partir des fichiers de formes installï¿½es sur votre exï¿½cutant la version de GeoServer ï¿½ la volï¿½e. </para> 
+        <para> <guilabel> IROAD base de donnï¿½es: </guilabel> Carte de la zone de liste dï¿½roulante sera
+                simplement ï¿½tre rempli par l'unitï¿½ d'organisation existants et les niveaux 
+                GeoJSON fichiers seront crï¿½ï¿½s par l'application automatiquement 
+                Organisation des unitï¿½s doivent avoir les coordonnï¿½es stockï¿½es dans la base de donnï¿½es 
+                Afin d'ï¿½tre affichï¿½s dans la carte. Cette fonction est principalement destinï¿½ 
+                pour le niveau de l'installation car il est facile ï¿½ maintenir et va donc 
+                shapefiles offrir une mise ï¿½ jour. </para> 
       </Listitem> 
       <listitem> 
         <para> panneaux Admin: afficher / masquer les panneaux de gestion shapefile. </para> 
       </Listitem> 
       <listitem> 
-        <para> longitude / latitude: La base de la coordination pour le pays actuellement. Cette coordination apparaît par défaut lorsque> Cartes enregistrement et de superpositions. </Para> 
+        <para> longitude / latitude: La base de la coordination pour le pays actuellement. Cette coordination apparaï¿½t par dï¿½faut lorsque> Cartes enregistrement et de superpositions. </Para> 
       </Listitem> 
     </Itemizedlist> 
   </section>
 <section id="gisMap">
-    <title> Enregistrement d'information géographique </title> 
-    <para> Afin de visualiser les données dans le module SIG, vous devez importer votre 
-    données géographiques dans votre installation DHIS. Une fois que vous avez produit 
-    GeoJSON fichiers selon la procédure ci-dessus, et les a importés dans la 
-    système, vous devrez établir une correspondance entre les 
-    l'information dans la base de données DHIS, et le fichier GeoJSON. </para> 
+    <title> Enregistrement d'information gï¿½ographique </title> 
+    <para> Afin de visualiser les donnï¿½es dans le module SIG, vous devez importer votre 
+    donnï¿½es gï¿½ographiques dans votre installation IROAD. Une fois que vous avez produit
+    GeoJSON fichiers selon la procï¿½dure ci-dessus, et les a importï¿½s dans la 
+    systï¿½me, vous devrez ï¿½tablir une correspondance entre les 
+    l'information dans la base de donnï¿½es IROAD, et le fichier GeoJSON. </para>
     <screenshot> 
-      Inscrivez-<screeninfo> géodonnées de configuration </screeninfo> 
+      Inscrivez-<screeninfo> gï¿½odonnï¿½es de configuration </screeninfo> 
       <mediaobject> 
         <imageobject> 
           width="60%" <imagedata align="center" fileref="resources/images/GIS/register_geodata.png"/> 
@@ -177,24 +177,24 @@ le client s'attend à ce que la cartographie DHIS l'ordre des coordonnées "lat / 
     <screenshot/> 
     <itemizedlist> 
       <listitem> 
-        <para> <guilabel> Nom d'affichage: </guilabel> Représente votre carte dans la zone de liste déroulante Carte dans le panneau de la carte thématique. </para> 
+        <para> <guilabel> Nom d'affichage: </guilabel> Reprï¿½sente votre carte dans la zone de liste dï¿½roulante Carte dans le panneau de la carte thï¿½matique. </para> 
       </Listitem> 
       <listitem> 
-        <para> <guilabel> niveau de l'unité d'organisation: </guilabel> Le niveau des unités d'organisation affiché dans le fichier GeoJSON. </para> 
+        <para> <guilabel> niveau de l'unitï¿½ d'organisation: </guilabel> Le niveau des unitï¿½s d'organisation affichï¿½ dans le fichier GeoJSON. </para> 
       </Listitem> 
       <listitem> 
-        <para> <guilabel> Carte du fichier source: </guilabel> Le nom du fichier GeoJSON. Ces fichiers doivent être placés dans le 
-          dossier GeoJSON / cartographie. Utilisez par exemple GeoServer 2.0 (actuellement en RC1) à 
+        <para> <guilabel> Carte du fichier source: </guilabel> Le nom du fichier GeoJSON. Ces fichiers doivent ï¿½tre placï¿½s dans le 
+          dossier GeoJSON / cartographie. Utilisez par exemple GeoServer 2.0 (actuellement en RC1) ï¿½ 
           facilement produire GeoJSON de votre shapefiles. </para> 
       </Listitem> 
       <listitem> 
-        <para><guilabel>la colonne Nom: </guilabel> La colonne de données shapefile (sensible à la casse!) qui seront 
-          comparées DHIS noms unité d'organisation. Si vous avez un 
-          instance de GeoServer installé, vous pouvez afficher la couche à travers le 
-          intégré dans le client OpenLayers. Cliquez sur un domaine particulier, et le 
-          domaines possibles sera affichée. </para> 
+        <para><guilabel>la colonne Nom: </guilabel> La colonne de donnï¿½es shapefile (sensible ï¿½ la casse!) qui seront 
+          comparï¿½es IROAD noms unitï¿½ d'organisation. Si vous avez un
+          instance de GeoServer installï¿½, vous pouvez afficher la couche ï¿½ travers le 
+          intï¿½grï¿½ dans le client OpenLayers. Cliquez sur un domaine particulier, et le 
+          domaines possibles sera affichï¿½e. </para> 
         <screenshot> 
-          <screeninfo> d'identification de la colonne de nom avec GeoServer OpenLayers la clientèle </screeninfo>
+          <screeninfo> d'identification de la colonne de nom avec GeoServer OpenLayers la clientï¿½le </screeninfo>
           <mediaobject> 
             <imageobject> 
               width="583px" <imagedata align="center" fileref="resources/images/GIS/get_name_geoserver.png"/> 
@@ -212,11 +212,11 @@ le client s'attend à ce que la cartographie DHIS l'ordre des coordonnées "lat / 
       </Listitem> 
       <listitem> 
         <para> <guilabel> longitude / latitude: </guilabel> La longitude et la latitude par rapport au point approximative 
-          où la carte sera centrée après avoir rendu. Si vous avez 
-          GeoServer cours d'exécution, vous pouvez afficher la couche par l'intégration 
-          OpenLayers client et de déterminer un point central bon pour votre carte. 
-          Vous pouvez également utiliser le fond de carte du module DHIS SIG, et 
-          déterminer un emplacement approximatif. Vous pouvez essayer un peu 
+          oï¿½ la carte sera centrï¿½e aprï¿½s avoir rendu. Si vous avez 
+          GeoServer cours d'exï¿½cution, vous pouvez afficher la couche par l'intï¿½gration 
+          OpenLayers client et de dï¿½terminer un point central bon pour votre carte. 
+          Vous pouvez ï¿½galement utiliser le fond de carte du module IROAD SIG, et
+          dï¿½terminer un emplacement approximatif. Vous pouvez essayer un peu 
           avec le point central et le niveau de zoom afin de l'obtenir 
           correct. </para> 
         <screenshot> 
@@ -228,7 +228,7 @@ le client s'attend à ce que la cartographie DHIS l'ordre des coordonnées "lat / 
           </mediaobject>
         </screenshot> 
         <screenshot> 
-          <screeninfo> Utilisation DHIS module SIG pour obtenir le point central de la carte </screeninfo>
+          <screeninfo> Utilisation IROAD module SIG pour obtenir le point central de la carte </screeninfo>
           <mediaobject> 
             <imageobject> 
               width="124px" <imagedata align="center" fileref="resources/images/GIS/dhis_gis_center_point.png"/> 
@@ -237,66 +237,66 @@ le client s'attend à ce que la cartographie DHIS l'ordre des coordonnées "lat / 
         </screenshot> 
       </Listitem> 
       <listitem> 
-        <para> <guilabel> Zoom: </guilabel> Le niveau de zoom dans la mesure où les contrôles de la carte. Certains 
-          essais seront nécessaires pour obtenir le zoom niveau correct. 
+        <para> <guilabel> Zoom: </guilabel> Le niveau de zoom dans la mesure oï¿½ les contrï¿½les de la carte. Certains 
+          essais seront nï¿½cessaires pour obtenir le zoom niveau correct. 
           Commencez avec une valeur de "7" et augmenter ou diminuer le niveau de zoom 
-          en fonction de l'étendue de la carte qui doit être affiché. </para> 
+          en fonction de l'ï¿½tendue de la carte qui doit ï¿½tre affichï¿½. </para> 
       </Listitem> 
     </Itemizedlist> 
   </section>
  <section id="gisMapOrganisationUnitRelation">
-  <title> Attribuer à carte unités organisation</title> 
-    <para> Sélectionnez une carte enregistrée et attendre qu'il se charge. L'organisation 
-    unités (UO) dans votre base de données à ce niveau apparaîtra dans la liste et 
-    couleurs apparaissent dans la carte. Ce que nous voulons faire ici, c'est la création 
-    les relations entre les unités d'organisation dans la base de données et les unités d'organisation correspondante dans le 
-    shapefile. Cela est souvent nécessaire en raison d'incohérences dans le 
-    nommer dans les données géographiques, et ce qui est présent dans la base de données DHIS. 
-    Premièrement, essayez d'auto-affectation à la barre d'outils en bas de laisser le lien vers une application 
-    les unités d'organisation avec un nom correspondant à OU dans le shapefile. Les polygones qui restent 
-    blanc, vous aurez pour relier manuellement en sélectionnant d'abord une unité d'organisation dans le blanc 
-    cliquez sur la liste, puis l'unité d'organisation correspondante dans la carte. </para> 
+  <title> Attribuer ï¿½ carte unitï¿½s organisation</title> 
+    <para> Sï¿½lectionnez une carte enregistrï¿½e et attendre qu'il se charge. L'organisation 
+    unitï¿½s (UO) dans votre base de donnï¿½es ï¿½ ce niveau apparaï¿½tra dans la liste et 
+    couleurs apparaissent dans la carte. Ce que nous voulons faire ici, c'est la crï¿½ation 
+    les relations entre les unitï¿½s d'organisation dans la base de donnï¿½es et les unitï¿½s d'organisation correspondante dans le 
+    shapefile. Cela est souvent nï¿½cessaire en raison d'incohï¿½rences dans le 
+    nommer dans les donnï¿½es gï¿½ographiques, et ce qui est prï¿½sent dans la base de donnï¿½es IROAD.
+    Premiï¿½rement, essayez d'auto-affectation ï¿½ la barre d'outils en bas de laisser le lien vers une application 
+    les unitï¿½s d'organisation avec un nom correspondant ï¿½ OU dans le shapefile. Les polygones qui restent 
+    blanc, vous aurez pour relier manuellement en sï¿½lectionnant d'abord une unitï¿½ d'organisation dans le blanc 
+    cliquez sur la liste, puis l'unitï¿½ d'organisation correspondante dans la carte. </para> 
     <screenshot> 
-      <screeninfo> Attribution des unités d'organisation à la carte </screeninfo> 
+      <screeninfo> Attribution des unitï¿½s d'organisation ï¿½ la carte </screeninfo> 
       <mediaobject> 
         <imageobject> 
           <imagedata width="80%" align="center" fileref="resources/images/GIS/assign_org_units.png"/> 
         <imageobject/> 
       <mediaobject/>
     <screenshot/> 
-    <para> Le bouton "Supprimer" à la barre d'outils bouton supprime le sélectionnés OU's 
-    lien. Le bouton Supprimer tout supprime tous les liens pour l'unité sélectionnée 
+    <para> Le bouton "Supprimer" ï¿½ la barre d'outils bouton supprime le sï¿½lectionnï¿½s OU's 
+    lien. Le bouton Supprimer tout supprime tous les liens pour l'unitï¿½ sï¿½lectionnï¿½e 
     carte. </para> 
   </section>
   <section id="gisOverlay"> 
     <title> Inscrivez-superpositions </title> 
-    Superpositions <para> sont des couches géographiques qui n'ont pas de lien direct 
-    des données dans la base de données. Exemple comprennent les routes, les rivières, les aéroports, les ports, 
-    et d'autres informations géographiques que vous pouvez afficher sur votre 
-    la carte, mais ce n'est pas lié neccsarily données contenues dans les OT DHIS 
-    base de données. Le registre <guimenu> Overlay </configuration> guimenu vous permettra de 
-    Ajouter de nouvelles couches et de déterminer comment ils seront représentés visuellement sur le 
+    Superpositions <para> sont des couches gï¿½ographiques qui n'ont pas de lien direct 
+    des donnï¿½es dans la base de donnï¿½es. Exemple comprennent les routes, les riviï¿½res, les aï¿½roports, les ports, 
+    et d'autres informations gï¿½ographiques que vous pouvez afficher sur votre 
+    la carte, mais ce n'est pas liï¿½ neccsarily donnï¿½es contenues dans les OT IROAD
+    base de donnï¿½es. Le registre <guimenu> Overlay </configuration> guimenu vous permettra de 
+    Ajouter de nouvelles couches et de dï¿½terminer comment ils seront reprï¿½sentï¿½s visuellement sur le 
     carte. </Para> 
     <itemizedlist> 
       <listitem> 
-        <para> <guilabel> Nom d'affichage: </guilabel> Représentez votre superposition de 
-        l'arbre couche dans le coin supérieur droit. </para> 
+        <para> <guilabel> Nom d'affichage: </guilabel> Reprï¿½sentez votre superposition de 
+        l'arbre couche dans le coin supï¿½rieur droit. </para> 
       </Listitem> 
       <listitem> 
         <para> <guilabel> Carte du fichier source: </guilabel> Le fichier GeoJSON 
         nom. </para> 
       </Listitem> 
       <listitem> 
-        <para> <guilabel> couleur de remplissage: </guilabel> Décide la couleur de remplissage si le 
+        <para> <guilabel> couleur de remplissage: </guilabel> Dï¿½cide la couleur de remplissage si le 
         couche est une couche de polygones. </Para> 
       </Listitem> 
       <listitem> 
-        <para> <guilabel> l'opacité: </guilabel> Sélectionnez un niveau d'opacité 
+        <para> <guilabel> l'opacitï¿½: </guilabel> Sï¿½lectionnez un niveau d'opacitï¿½ 
         entre 0 (invisible) et> 1 (solide). </para> 
       </Listitem> 
       <listitem> 
         <para> <guilabel> maladies couleur: </guilabel> La couleur du trait sur les lignes 
-        et les frontières des polygones. </para> 
+        et les frontiï¿½res des polygones. </para> 
       </Listitem> 
       <listitem> 
         <para> <guilabel> maladies largeur: </guilabel> Choisissez une largeur de trait entre 
@@ -304,33 +304,33 @@ le client s'attend à ce que la cartographie DHIS l'ordre des coordonnées "lat / 
       </Listitem> 
     </Itemizedlist> 
   </section>
-  <section id="gisThematicMap">  <title> Carte thématique </title> 
-    <para> Ce panneau vous permet d'utiliser vos cartes enregistrées pour la cartographie thématique. Tout ce que vous devez faire est de sélectionner la combinaison souhaitée indicateur-période-carte dans le menu de gauche. </Para> 
-    <para> Méthode de calcul 
-    fait allusion à la taille des classes légende. Réglez <guimenuitem> égalité des intervalles </guimenuitem> elles seront «plus haute valeur la carte - la carte la plus faible valeur 
-    / Nombre de classes ». Réglez <guimenuitem> égalité count groupe </guimenuitem> le créateur légende vais essayer de répartir les unités d'organisation uniforme. Choisir <guimenuitem> Fixe des limites </guimenuitem> et 
-    Vous pouvez définir vos propres valeurs du seuil de classe, par exemple, "20,40,60" utilisant une virgule pour séparés chacun d'eux. </para> 
-    <para> La vue sur la carte fenêtre liste toutes vues carte (favoris) enregistré par l'utilisateur. Les paramètres sont stockés dans la vue sur la carte sera automatiquement appliqué sur le panneau de cartes thématiques. </Para> 
+  <section id="gisThematicMap">  <title> Carte thï¿½matique </title> 
+    <para> Ce panneau vous permet d'utiliser vos cartes enregistrï¿½es pour la cartographie thï¿½matique. Tout ce que vous devez faire est de sï¿½lectionner la combinaison souhaitï¿½e indicateur-pï¿½riode-carte dans le menu de gauche. </Para> 
+    <para> Mï¿½thode de calcul 
+    fait allusion ï¿½ la taille des classes lï¿½gende. Rï¿½glez <guimenuitem> ï¿½galitï¿½ des intervalles </guimenuitem> elles seront ï¿½plus haute valeur la carte - la carte la plus faible valeur 
+    / Nombre de classes ï¿½. Rï¿½glez <guimenuitem> ï¿½galitï¿½ count groupe </guimenuitem> le crï¿½ateur lï¿½gende vais essayer de rï¿½partir les unitï¿½s d'organisation uniforme. Choisir <guimenuitem> Fixe des limites </guimenuitem> et 
+    Vous pouvez dï¿½finir vos propres valeurs du seuil de classe, par exemple, "20,40,60" utilisant une virgule pour sï¿½parï¿½s chacun d'eux. </para> 
+    <para> La vue sur la carte fenï¿½tre liste toutes vues carte (favoris) enregistrï¿½ par l'utilisateur. Les paramï¿½tres sont stockï¿½s dans la vue sur la carte sera automatiquement appliquï¿½ sur le panneau de cartes thï¿½matiques. </Para> 
   </section>
   <section id="gisFavoriteMapView"> 
-    <title> Registre préférés vues de la carte </title> 
-    <para> Cette fenêtre va enregistrer la vue actuelle de la carte thématique afin de 
-    le restaurer quand vous le souhaitez via le Voir la carte <guimenuitem> boîte </guimenuitem> combo dans le carte thématique <guimenu> Panneau de configuration </guimenu>. Par 
-    ajouter votre point de vue à dhis 2 tableau de bord vous pouvez y accéder par là 
-    insérant <guimenuitem> vues carte dans l'un des liens </guimenuitem>
+    <title> Registre prï¿½fï¿½rï¿½s vues de la carte </title> 
+    <para> Cette fenï¿½tre va enregistrer la vue actuelle de la carte thï¿½matique afin de 
+    le restaurer quand vous le souhaitez via le Voir la carte <guimenuitem> boï¿½te </guimenuitem> combo dans le carte thï¿½matique <guimenu> Panneau de configuration </guimenu>. Par 
+    ajouter votre point de vue ï¿½ dhis 2 tableau de bord vous pouvez y accï¿½der par lï¿½ 
+    insï¿½rant <guimenuitem> vues carte dans l'un des liens </guimenuitem>
     domaines. </para> 
   </section>
 <section id="gisLegendSet"> 
-    Inscrivez-ensembles <title> légende </title> 
-    <para> Un ensemble légende peut être relié à de nombreux indicateurs, mais un indicateur 
-    ne peut avoir un jeu de légende. Ainsi, vous pouvez sélectionner de nombreux indicateurs lorsque 
-    vous créez une légende indiquée. Quand un indicateur qui a un ensemble légende 
-    sélectionné dans la carte thématiques <guimenu> Panneau de configuration </guimenu>, le nombre de 
-    classes, couleurs atténuées et la couleur élevée est réglée automatiquement. </para> 
+    Inscrivez-ensembles <title> lï¿½gende </title> 
+    <para> Un ensemble lï¿½gende peut ï¿½tre reliï¿½ ï¿½ de nombreux indicateurs, mais un indicateur 
+    ne peut avoir un jeu de lï¿½gende. Ainsi, vous pouvez sï¿½lectionner de nombreux indicateurs lorsque 
+    vous crï¿½ez une lï¿½gende indiquï¿½e. Quand un indicateur qui a un ensemble lï¿½gende 
+    sï¿½lectionnï¿½ dans la carte thï¿½matiques <guimenu> Panneau de configuration </guimenu>, le nombre de 
+    classes, couleurs attï¿½nuï¿½es et la couleur ï¿½levï¿½e est rï¿½glï¿½e automatiquement. </para> 
   </section>
 <section id="gisPdfPrint">  
     <title> Imprimer carte en PDF> </title> 
-    <para> Cliquez sur l'icône PDF sur la barre d'outils et de la carte du panneau latéral gauche d'impression s'ouvre. Vous pouvez ajouter plusieurs pages à votre document PDF en cliquant sur "ajouter une page" sur la barre d'outils inférieure. Modifier la taille du rectangle de focus dans la «grande échelle» de la colonne. Le rectangle peut être tourné par l'insertion, un certain nombre (en degrés) "rotation" colonne ou en faisant glisser le bouton de rotation. Votre titre de la carte »et« commentaire »apparaîtra au-dessus et en dessous de l'image dans le document PDF, respectivement. Le plus "dots per inch" valeur que vous choisissez, la meilleure qualité de l'image et la taille du fichier du document. </para> 
-    <para> Pour sortir du mode d'impression, vous pouvez simplement étendre une formation différente ou masquer le panneau d'impression en cliquant sur l'icône PDF dans la barre la carte à nouveau. </para> 
+    <para> Cliquez sur l'icï¿½ne PDF sur la barre d'outils et de la carte du panneau latï¿½ral gauche d'impression s'ouvre. Vous pouvez ajouter plusieurs pages ï¿½ votre document PDF en cliquant sur "ajouter une page" sur la barre d'outils infï¿½rieure. Modifier la taille du rectangle de focus dans la ï¿½grande ï¿½chelleï¿½ de la colonne. Le rectangle peut ï¿½tre tournï¿½ par l'insertion, un certain nombre (en degrï¿½s) "rotation" colonne ou en faisant glisser le bouton de rotation. Votre titre de la carte ï¿½etï¿½ commentaire ï¿½apparaï¿½tra au-dessus et en dessous de l'image dans le document PDF, respectivement. Le plus "dots per inch" valeur que vous choisissez, la meilleure qualitï¿½ de l'image et la taille du fichier du document. </para> 
+    <para> Pour sortir du mode d'impression, vous pouvez simplement ï¿½tendre une formation diffï¿½rente ou masquer le panneau d'impression en cliquant sur l'icï¿½ne PDF dans la barre la carte ï¿½ nouveau. </para> 
   </section>
 </Chapitre>

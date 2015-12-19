@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!-- This document was created with Syntext Serna Free. --><!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN" "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd" []>
 <chapter>
-  <title>DHIS 2 Spreadsheet Reporting</title>
+  <title>IROAD 2 Spreadsheet Reporting</title>
   <para>The information  in the system is available in many different formats, such as:  .xls, .doc, .pdf, .csv., etc. which are familiar to different end-users. In this sense, a sustainable information system with an extended support for .xls (tables, sheets, and expressions) is a prerequisite while in the developing countries like Vietnam, India, Sri Lanka, etc use spreadsheet application (from Microsoft Office and Open Office) for their routine documents and reports. At the same time, this also supports efficiently for implementation processes by reducing time and effort for training and maintenance because of its friendliness and powerfulness of availability and flexibility.</para>
-  <para>The end-users, especially health workers with an average knowledge of computing, can use DHIS 2 easily with the new spreadsheet reporting tool (or probably called  as Spreadsheet reporting) developed by the Vietnam developer  team.  This module has been  based on HISP India team’s ideas and technologies.  The module has subsequently been merged into the main DHIS2 application under the Vietnam (vn) local branch for available usage. There will be a session for instructing &quot;how to include the Spreadsheet reporting module into DHIS2&quot;.  This reporting tool with spreadsheet output files uses less memory and it is comparatively faster when compared to other reporting platforms. The spreadsheet reporting module provides a flexible reporting framework, which should be immediately intuitively useful for many users who are familiar with this.  </para>
+  <para>The end-users, especially health workers with an average knowledge of computing, can use IROAD 2 easily with the new spreadsheet reporting tool (or probably called  as Spreadsheet reporting) developed by the Vietnam developer  team.  This module has been  based on HISP India team’s ideas and technologies.  The module has subsequently been merged into the main IROAD2 application under the Vietnam (vn) local branch for available usage. There will be a session for instructing &quot;how to include the Spreadsheet reporting module into IROAD2&quot;.  This reporting tool with spreadsheet output files uses less memory and it is comparatively faster when compared to other reporting platforms. The spreadsheet reporting module provides a flexible reporting framework, which should be immediately intuitively useful for many users who are familiar with this.  </para>
   <screenshot>
     <mediaobject>
       <imageobject>
@@ -13,15 +13,15 @@
   </screenshot>
   <para><emphasis role="italic">Figure 1: Administration sections</emphasis></para>
   <section>
-    <title>Include &apos;Spreadsheet reports&apos; module into DHIS2</title>
-    <para>The following is the steps of building/developing an DHIS2 package with spreadsheet report module.</para>
-    <para><emphasis role="bold">Step 1: Download DHIS2 source-code and some other necessary tools</emphasis></para>
+    <title>Include &apos;Spreadsheet reports&apos; module into IROAD2</title>
+    <para>The following is the steps of building/developing an IROAD2 package with spreadsheet report module.</para>
+    <para><emphasis role="bold">Step 1: Download IROAD2 source-code and some other necessary tools</emphasis></para>
     <para>See the instructions from here: <ulink url="http://dhis2.org/development#quickstart">http://dhis2.org/development#quickstart</ulink></para>
     <para>esp. the first 3 points.</para>
     <para><emphasis role="bold">Step 2: Build the source-code at first without the Spreadsheet module</emphasis></para>
     <para>See the instructions from here: <ulink url="http://dhis2.org/development#quickstart">http://dhis2.org/development#quickstart</ulink></para>
     <para>esp. the fourth point with 2 build commands with maven.</para>
-    <para><emphasis role="bold">Step 3: Build the Spreadsheet module and then rebuild the DHIS2 package including it</emphasis></para>
+    <para><emphasis role="bold">Step 3: Build the Spreadsheet module and then rebuild the IROAD2 package including it</emphasis></para>
     <para>Go to the spreadsheet module and execute the building commands: <emphasis role="italic">mvn clean install -Dmaven.test.skip=true</emphasis></para>
     <para>Normally, the spreadsheet module is  located at: &lt;dhis2_source_folder&gt;\dhis2\local\vn:</para>
     <para>3.1: Run the mvn command under &quot;dhis-service-excel-reporting&quot; folder.</para>
@@ -56,13 +56,13 @@
     <para>After successfully build the package, the dhis.war in the target folder of dhis-web-portal module will be produced.</para>
     <para>Copy this war file to the webapps folder of your tomcat folder.</para>
     <para>In order to make a fresh update for your new dhis2, before starting tomcat, delete the old dhis.war file and &quot;dhis&quot; folder under webapps.</para>
-    <para><emphasis role="bold">Step 4: Run the DHIS2 built package with Spreadsheet module</emphasis></para>
+    <para><emphasis role="bold">Step 4: Run the IROAD2 built package with Spreadsheet module</emphasis></para>
     <para>Run tomcat (execute the bath file under &lt;tomcat_folder&gt;\bin\startup.bat (for Windows) or ...\startup.sh (for Linux).</para>
-    <para>Then wait until the start-up finishes and open a web browser (Firefox recommended) to run the DHIS2 application with the local url or your IP address:</para>
+    <para>Then wait until the start-up finishes and open a web browser (Firefox recommended) to run the IROAD2 application with the local url or your IP address:</para>
     <para><ulink url="http://localhost:8080/dhis">http://localhost:8080/dhis</ulink></para>
     <para>So good-luck to you for further exploration/hacking with dhis2.</para>
     <para>For further support, please send an email to the developer mailing list: </para>
-    <para>&quot;DHIS 2 developers&quot; &lt;<ulink url="dhis2-devs@lists.launchpad.net">dhis2-devs@lists.launchpad.net</ulink>&gt;</para>
+    <para>&quot;IROAD 2 developers&quot; &lt;<ulink url="dhis2-devs@lists.launchpad.net">dhis2-devs@lists.launchpad.net</ulink>&gt;</para>
     <para/>
   </section>
   <section>
@@ -70,7 +70,7 @@
     <para>There are 6 sections for the &quot;Administration&quot; of this reporting tool.</para>
     <orderedlist>
       <listitem>
-        <para><emphasis role="italic">Configuration</emphasis>: Set a path to the directory where the spreadsheet template files are stored. This file path should be a relative directory on your system. For instance, if the home directory of DHIS 2  (by setting the absolute path with the DHIS2_HOME environmental variable) is &quot;C:\dhis2&quot; and you want to name the template folder &quot;templates&quot;, just set: &quot;templates&quot; for Windows or &quot;templates&quot; for Linux, then the absolute path of your template folder will be: &quot;C:\dhis2\spreadsheet_template\templates&quot; (Windows).</para>
+        <para><emphasis role="italic">Configuration</emphasis>: Set a path to the directory where the spreadsheet template files are stored. This file path should be a relative directory on your system. For instance, if the home directory of IROAD 2  (by setting the absolute path with the IROAD2_HOME environmental variable) is &quot;C:\dhis2&quot; and you want to name the template folder &quot;templates&quot;, just set: &quot;templates&quot; for Windows or &quot;templates&quot; for Linux, then the absolute path of your template folder will be: &quot;C:\dhis2\spreadsheet_template\templates&quot; (Windows).</para>
         <para><screenshot>
             <mediaobject>
               <imageobject>
@@ -96,7 +96,7 @@
         <para><emphasis role="italic">Data Entry Status</emphasis> (or view the status of the data entry): View the data entry status to know about data  entered, reports finished or not finished yet with data entry. In order to view the data entry status, adding data sets which is equivalent to the data entry is mandatory.</para>
       </listitem>
       <listitem>
-        <para><emphasis role="italic">Import Reports items</emphasis>: In many situations, health workers in the field may not have good Internet access, and will therefore need to enter data offline and to transmit this data via email or other means, for subsequent importation into the DHIS database.  The spreadsheet Report data import feature allows users to import data from a pre-designed spreadsheet templates directly into the DHIS database automatically. Users enter data into a predefined spreadsheet template, send via email or other means for importation into DHIS2. It is also possible to import selected elements. This module supports three types of reports namely a report containing standard data elements,  a report listing organisation unit groups as rows, a report generating data elements combined with categories.</para>
+        <para><emphasis role="italic">Import Reports items</emphasis>: In many situations, health workers in the field may not have good Internet access, and will therefore need to enter data offline and to transmit this data via email or other means, for subsequent importation into the IROAD database.  The spreadsheet Report data import feature allows users to import data from a pre-designed spreadsheet templates directly into the IROAD database automatically. Users enter data into a predefined spreadsheet template, send via email or other means for importation into IROAD2. It is also possible to import selected elements. This module supports three types of reports namely a report containing standard data elements,  a report listing organisation unit groups as rows, a report generating data elements combined with categories.</para>
       </listitem>
       <listitem>
         <para><emphasis role="italic">Excel /Spreadsheet Template Management</emphasis>: Manage the Template spreadsheet files which are used to export reports, includes upload, download, delete and rename files.</para>
@@ -126,7 +126,7 @@
         </listitem>
         <listitem>
           <para>Set a relative path to the folder containing spreadsheet file </para>
-          <para>An spreadsheet template directory is simply a directory that will be used to contain all the necessary files. It is automatically created the folder under <envar>DHIS2_HOME</envar> folder. </para>
+          <para>An spreadsheet template directory is simply a directory that will be used to contain all the necessary files. It is automatically created the folder under <envar>IROAD2_HOME</envar> folder. </para>
           <screenshot>
             <mediaobject>
               <imageobject>
@@ -197,7 +197,7 @@
         </orderedlist>
       </section>
       <section>
-        <title>Create a new report in DHIS2 with spreadsheet report template file</title>
+        <title>Create a new report in IROAD2 with spreadsheet report template file</title>
         <para>When the spreadsheet report template file is available, creating a new report and the relevant report items are required. A step-by-step procedure is provided below.</para>
         <orderedlist>
           <listitem>
@@ -629,7 +629,7 @@
     </section>
     <section id="excelReportingExcelItems">
       <title>Spreadsheet/Import items</title>
-      <para>The function allows users to import data from a pre-designed spreadsheet templates directly into the DHIS database automatically. Alternatively, selected elements may be imported. This is a particularly useful feature for importing data from other users that may not have DHIS2 installed on their computers. For instance, it may be more feasible to have users at a primary  care health facility enter their values in spreadsheet directly. Users may be immediately familiar with spreadsheet, and can easily enter data into a pre-defined template. Installation of DHIS2 on their computers may complicate a particular implementation, and require additional resources in terms of training. By using pre-defined templates for importation into the DHIS2 database, users that do  not have DHIS2 can easily transmit data to users that do, for instance from the primary health care facility to the district level. </para>
+      <para>The function allows users to import data from a pre-designed spreadsheet templates directly into the IROAD database automatically. Alternatively, selected elements may be imported. This is a particularly useful feature for importing data from other users that may not have IROAD2 installed on their computers. For instance, it may be more feasible to have users at a primary  care health facility enter their values in spreadsheet directly. Users may be immediately familiar with spreadsheet, and can easily enter data into a pre-defined template. Installation of IROAD2 on their computers may complicate a particular implementation, and require additional resources in terms of training. By using pre-defined templates for importation into the IROAD2 database, users that do  not have IROAD2 can easily transmit data to users that do, for instance from the primary health care facility to the district level. </para>
       <screenshot>
         <mediaobject>
           <imageobject>
@@ -837,7 +837,7 @@
         <para><emphasis role="italic">Generate Report</emphasis>: Allow users to generate reports according to parameters such as time period, organisation unit, organisation unit group  and to generate group of reports to many sheets of a single  spreadsheet file.</para>
       </listitem>
       <listitem>
-        <para><emphasis role="italic">Import spreadsheet files</emphasis>: Imports data values from an spreadsheet file to the DHIS2 system.</para>
+        <para><emphasis role="italic">Import spreadsheet files</emphasis>: Imports data values from an spreadsheet file to the IROAD2 system.</para>
       </listitem>
       <listitem>
         <para><emphasis role="italic">Data entry Status</emphasis>: View data entry status.</para>
@@ -873,7 +873,7 @@
           </screenshot>
         </listitem>
       </orderedlist>
-      <para>With &quot;Preview Report&quot; function, you can preview the report with DHIS2 before download the equivalent spreadsheet report.</para>
+      <para>With &quot;Preview Report&quot; function, you can preview the report with IROAD2 before download the equivalent spreadsheet report.</para>
       <para>With &quot;Print Preview&quot; (or maybe labelled as &quot;Print Draft&quot;), you can download/print out the current preview report directly without generating a spreadsheet file and this will reduce time-consuming.</para>
     </section>
     <section id="excelReportingDataEntryStatusReport">

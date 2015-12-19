@@ -37,7 +37,7 @@
   </itemizedlist>
   <section id="dataElement">
     <title>Data elements</title>
-    <para><?inline true?>Data elements form the basis of DHIS2. Data elements define what is actually recorded in system, e.g. number of immunisations or number of cases of malaria. The actual creation and definition of the data elements themselves are far beyond the scope of this manual to describe, but it is assumed that an administrator will be provided with a list of standardised data elements for inclusion into the DHIS2 system. </para>
+    <para><?inline true?>Data elements form the basis of IROAD2. Data elements define what is actually recorded in system, e.g. number of immunisations or number of cases of malaria. The actual creation and definition of the data elements themselves are far beyond the scope of this manual to describe, but it is assumed that an administrator will be provided with a list of standardised data elements for inclusion into the IROAD2 system. </para>
     <para>To access the data element maintenance module, choose Maintenance -&gt; Data elements and Indicators -&gt; Data element. </para>
     <para>The &apos;Filter by name&apos; will allow you to filter a range of data elements if you know either the full name of the data element, or just a part of it. Type the name
                into the search field and any matching data elements are displayed below.
@@ -166,7 +166,7 @@
           </itemizedlist>
         </listitem>
         <listitem>
-          <para><emphasis role="bold">Store zero data values</emphasis>: By default, DHIS2 will not
+          <para><emphasis role="bold">Store zero data values</emphasis>: By default, IROAD2 will not
             store zeros which are entered in the data entry module. If zeros need to be saved for a
             particular reason, this option can be set to &quot;Yes&quot;. </para>
         </listitem>
@@ -261,7 +261,7 @@
         <para>Number of confirmed malaria cases (Over 5)</para>
       </listitem>
     </itemizedlist>
-    <para>Effective use of data element categories greatly simplifies the process of setting up the DHIS2 system, as the data element categories can be reused to disaggregate many different data elements. Otherwise, each of the data elements listed above, would need to be created separately. Judicious use of data element categories will greatly simplify the DHIS2 implementation, and allow for subsequent advanced analysis. </para>
+    <para>Effective use of data element categories greatly simplifies the process of setting up the IROAD2 system, as the data element categories can be reused to disaggregate many different data elements. Otherwise, each of the data elements listed above, would need to be created separately. Judicious use of data element categories will greatly simplify the IROAD2 implementation, and allow for subsequent advanced analysis. </para>
     <para>Where possible, category options should be recycled. For instance, there might be two categories which might share a particular category option (e.g. &lt;1 year of age). When creating the  categories, this category option could be reused. This is important if particular category options (or category option combinations) need to be analyzed together. </para>
     <orderedlist>
       <listitem>
@@ -310,7 +310,7 @@
       </listitem>
     </itemizedlist>
     <para> In this example, there would be two levels of disaggregation, consisting of two separate data element categories, each consisting of several data element category options. In most HMIS systems, different data elements are disaggregated according to a common set of categories. By combining these different categories into a category combination and assigning these combinations to data elements, the appropriate disaggregation levels can be applied efficiently and quickly to a large number of data elements. </para>
-    <para>To access the  category combination maintenance module, select &quot;Maintenance-&gt;Data element and indicators-&gt;Data element category combinations&quot; from the main DHIS2 menu. As with the  other maintains modules, you can filter the listed category combinations by entering the name (or portion thereof) of the category combination. Other operations such as &quot;Edit&quot;, &quot;Delete&quot; and &quot;Information&quot; should be familiar to the reader. </para>
+    <para>To access the  category combination maintenance module, select &quot;Maintenance-&gt;Data element and indicators-&gt;Data element category combinations&quot; from the main IROAD2 menu. As with the  other maintains modules, you can filter the listed category combinations by entering the name (or portion thereof) of the category combination. Other operations such as &quot;Edit&quot;, &quot;Delete&quot; and &quot;Information&quot; should be familiar to the reader. </para>
     <para>To add a new category combination, click the &quot;Add new&quot; button. The following dialogue will be displayed. </para>
     <screenshot>
       <mediaobject>
@@ -324,7 +324,7 @@
   </section>
   <section>
     <title>Using category combinations as attributes</title>
-    <para>In some deployments of DHIS2, information on attributes such as &quot;Implementing partner&quot; and &quot;Project&quot; are important to record as an attribute of each data value. To provide an example, let us suppose that an NGO is providing ART services in a given facility. They would need to report each month on the &quot;ART monthly summary&quot;, which would be reported monthly and contain a number of data elements.  The NGO and project could potentially change over time. In order to be able to effectively attribute data to a given NGO and project at any point in time, this information would need to be recorded along with each data value at the time of data entry. </para>
+    <para>In some deployments of IROAD2, information on attributes such as &quot;Implementing partner&quot; and &quot;Project&quot; are important to record as an attribute of each data value. To provide an example, let us suppose that an NGO is providing ART services in a given facility. They would need to report each month on the &quot;ART monthly summary&quot;, which would be reported monthly and contain a number of data elements.  The NGO and project could potentially change over time. In order to be able to effectively attribute data to a given NGO and project at any point in time, this information would need to be recorded along with each data value at the time of data entry. </para>
     <para>When categories and category combinations have a type of &quot;Attribute&quot;, they can serve as a means of applying a common set of attributes (e.g. Implementing partner and project) to a related set of data values contained in a dataset. Let us suppose we create two categories called &quot;Implementing partner&quot; and &quot;Projects&quot;. Each of these categories would be created with a dimension type of &quot;Attribute.&quot;   Finally, a category combination called &quot;Implementing partners and projects&quot; would be created with these two categories and assigned a dimension type of &quot;Attribute&quot;. Finally, we can use this dimension to apply an attribute to the dataset &quot;ART monthly summary&quot;, by choosing  the &quot;Implementing partners and projects&quot; as the &quot;Combination of categories&quot;. </para>
     <para>The following screen shot of an example data entry screen illustrates all of these concepts. </para>
     <screenshot>
@@ -338,7 +338,7 @@
   </section>
   <section>
     <title>Category option combination maintenance</title>
-    <para>Category option combinations can be assigned a code, which allows for easier data exchange between DHIS2 and external systems. Simply select the category option combination from the list, and provide the code. Note that all codes of category option combinations must be unique. </para>
+    <para>Category option combinations can be assigned a code, which allows for easier data exchange between IROAD2 and external systems. Simply select the category option combination from the list, and provide the code. Note that all codes of category option combinations must be unique. </para>
   </section>
   <section>
     <title>Category option groups and group sets</title>
@@ -360,12 +360,12 @@
   </section>
   <section id="translation">
     <title>Translations of data elements and other objects</title>
-    <para>DHIS 2 provides functionality for translations of database content like data elements, data element groups, indicators, indicator groups, validation rules and more.  These elements can be translated to any number of locales. A locale  represents a specific geographical, political, or cultural region. </para>
+    <para>IROAD 2 provides functionality for translations of database content like data elements, data element groups, indicators, indicator groups, validation rules and more.  These elements can be translated to any number of locales. A locale  represents a specific geographical, political, or cultural region. </para>
     <para>To add a translation click the Translate icon next to the element you would like to translate. Start by selecting the desired locale from the Locale select box. In the Translate screen, select your locale and enter values for the available element properties. The reference property values are shown on the right. These values are the values which have been entered in the regular add or update user interface for the current object.</para>
     <para>Translations can be enabled by selecting the desired locale under Database Language under User General Settings in the Settings module.</para>
     <section>
       <title>Data element translation</title>
-      <para>DHIS2 provides functionality to translate existing data elements into other languages. Click the name of the data element you wish to translate, and select &quot;Translate&quot; from the context menu which will appear.. The following dialogue will be displayed.</para>
+      <para>IROAD2 provides functionality to translate existing data elements into other languages. Click the name of the data element you wish to translate, and select &quot;Translate&quot; from the context menu which will appear.. The following dialogue will be displayed.</para>
       <screenshot>
         <mediaobject>
           <imageobject>

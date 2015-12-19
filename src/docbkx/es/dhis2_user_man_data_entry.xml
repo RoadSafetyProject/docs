@@ -20,12 +20,12 @@
     </itemizedlist>
   </section>
   <section id="dataEntry">
-    <title>Entrada de datos con DHIS 2</title>
-    <para>Para abrir la ventana de entrada de datos, pinchamos en la pestaña de Servicios del menú principal. A continuación se despliega un menú con un listado de los servicios ofrecidos por DHIS 2. Pincha en la opción <guibutton>Entrada de Datos</guibutton>.</para>
-    <para>El módulo de entrada de datos as donde podemos insertar datos manualmente en la base de datos DHIS 2. Los datos son registrados para una determinada unidad organizativa, un periodo, y un set de elementos de datos (set de datos) al mismo tiempo. Un set de datos corresponde normalmente a una herramienta de recogida de datos en formato papel, es decir, a un formulario tradicional.</para>
+    <title>Entrada de datos con IROAD 2</title>
+    <para>Para abrir la ventana de entrada de datos, pinchamos en la pestaña de Servicios del menú principal. A continuación se despliega un menú con un listado de los servicios ofrecidos por IROAD 2. Pincha en la opción <guibutton>Entrada de Datos</guibutton>.</para>
+    <para>El módulo de entrada de datos as donde podemos insertar datos manualmente en la base de datos IROAD 2. Los datos son registrados para una determinada unidad organizativa, un periodo, y un set de elementos de datos (set de datos) al mismo tiempo. Un set de datos corresponde normalmente a una herramienta de recogida de datos en formato papel, es decir, a un formulario tradicional.</para>
     <section>
       <title>Selección del formulario de entrada de datos</title>
-      <para>El primer paso para introducir datos en DHIS 2 es abrir el formulario correcto. Recomendamos que sigas los siguientes pasos sencillos:</para>
+      <para>El primer paso para introducir datos en IROAD 2 es abrir el formulario correcto. Recomendamos que sigas los siguientes pasos sencillos:</para>
       <orderedlist>
         <listitem>
           <para> Busca la unidad organizativa donde quieres registrar los datos en el menú árbol que aparece en el lado izquierdo. Pliega y despliega la jerarquía de unidades pinchando en los símbolos -/+. Una forma sencilla de encontrar una unidad organizativa es utilizar el cuadro de búsqueda situado directamente encima del árbol (identificado con un síbmolo verde), donde tendrás que escribir el nombre completo, sí :S, el nombre completo de la unidad que buscas.</para>
@@ -79,7 +79,7 @@
     </section>
     <section>
       <title>Entrada de datos en desconexión (offline)</title>
-      <para> El módulo de entrada de datos funciona siempre incluso si durante la introducción de datos la conexión a Internet no es estable. Para utilizar esta funcionalidad, deberemos entrar (login) en DHIS 2 en el servidor mientras la conexión a Internet está activa, pero si durante la introducción de datos el enlace de comunicaciones entre tu computadora y el servidor se torna inestable, no hay problema en continuar con la entrada de datos al formulario, ya que son guardados localmente en tu computadora, y luego serán enviados al servidor cuando la conexión a Internet haya mejorado. Es decir, los datos pueden introducirse y almacenarse localmente cuando estamos offline y luego ser cargados al servidor central cuando estamos online. Esto significa que la estrategia de despliegue de DHIS 2 online se hace más viable en aquellas zonas con un acceso a Internet poco estable. Así, la utilización total de ancho de banda se reduce enormemente ya que los formularios no se cargan del servidor en cada renderización.</para>
+      <para> El módulo de entrada de datos funciona siempre incluso si durante la introducción de datos la conexión a Internet no es estable. Para utilizar esta funcionalidad, deberemos entrar (login) en IROAD 2 en el servidor mientras la conexión a Internet está activa, pero si durante la introducción de datos el enlace de comunicaciones entre tu computadora y el servidor se torna inestable, no hay problema en continuar con la entrada de datos al formulario, ya que son guardados localmente en tu computadora, y luego serán enviados al servidor cuando la conexión a Internet haya mejorado. Es decir, los datos pueden introducirse y almacenarse localmente cuando estamos offline y luego ser cargados al servidor central cuando estamos online. Esto significa que la estrategia de despliegue de IROAD 2 online se hace más viable en aquellas zonas con un acceso a Internet poco estable. Así, la utilización total de ancho de banda se reduce enormemente ya que los formularios no se cargan del servidor en cada renderización.</para>
       <para>Cuando recuperamos la conexión con el servidor a través de Internet, se muestra un mensaje en la parte superior de la pantalla de entrada de datos. </para>
       <screenshot>
         <mediaobject>
@@ -88,7 +88,7 @@
           </imageobject>
         </mediaobject>
       </screenshot>
-      <para>Cuando la conexión a Internet falla por alguna razón durante el proceso de entrada de datos, la aplicación DHIS 2 lo detecta y nos avisará de que los datos serán guardados localmente. </para>
+      <para>Cuando la conexión a Internet falla por alguna razón durante el proceso de entrada de datos, la aplicación IROAD 2 lo detecta y nos avisará de que los datos serán guardados localmente. </para>
       <screenshot>
         <mediaobject>
           <imageobject>

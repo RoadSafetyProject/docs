@@ -2,7 +2,7 @@
 <!-- This document was created with Syntext Serna Free. --><!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN" "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd" []>
 <chapter>
   <title>Data approval</title>
-  <para>DHIS 2 has an optional feature that allows authorized users to approve data that has been entered. It allows data to be reviewed and approved at selected levels in the organisation unit hierarchy, so the approval follows the structure of the hierarchy from lower levels to higher levels.</para>
+  <para>IROAD 2 has an optional feature that allows authorized users to approve data that has been entered. It allows data to be reviewed and approved at selected levels in the organisation unit hierarchy, so the approval follows the structure of the hierarchy from lower levels to higher levels.</para>
   <para>Data is approved for a combination of (a) data set, (b) period and (c) organisation unit. Data may be approved for the organisation unit for which it is entered, as well as for higher-level organisation units to which the data is aggregated. As part of system settings, you can choose the organisation unit level(s) at which data is approved. It can be approved at higher levels only after it has been approved for all that organisation unit&apos;s descendants at lower levels for the same data set and period.</para>
   <para>After a data set, period and organisation unit combination has been approved, the form will
     be locked and any further data entry or modification will be prohibited, unless it is later
@@ -18,7 +18,7 @@
   </figure>
   <section>
     <title>Approving and accepting</title>
-    <para>DHIS2 supports two different types of approval processes: either a one-step process where the data is approved at each level, or a two-step process where data is first approved and then accepted at each level. This is illustrated in the following diagram:</para>
+    <para>IROAD2 supports two different types of approval processes: either a one-step process where the data is approved at each level, or a two-step process where data is first approved and then accepted at each level. This is illustrated in the following diagram:</para>
     <figure>
       <title>Approving and accepting</title>
       <mediaobject>
@@ -29,7 +29,7 @@
     </figure>
     <para>In the one-step process, data is approved at one level, and then approved at the next higher level. Until it is approved at the next higher level, it may be unapproved at the first level. (For example, if the data was approved my mistake, this allows the  approver to undo their mistake.) Once the data is approved at the next higher level, it may not be unapproved at the lower level unless it is first unapproved at the higher level. </para>
     <para>In the two-step process, data is approved at one level, and then the approval is accepted at the same level. This acceptance is done by a user who is authorized to approve data at the next higher level. Once the data is accepted, it may not be changed or unapproved  unless it is first <emphasis role="italic">unaccepted</emphasis>.</para>
-    <para>The two-step process is not required by DHIS2. It is an optional step for a user reviewing data at the next higher level. It has the benefit of locking the acceptance from the level below, so reviewer does not have to worry that the data could be changing from below while it is being reviewed. It can also be used by the higher-level user to keep track of which lower-level data has already been reviewed.</para>
+    <para>The two-step process is not required by IROAD2. It is an optional step for a user reviewing data at the next higher level. It has the benefit of locking the acceptance from the level below, so reviewer does not have to worry that the data could be changing from below while it is being reviewed. It can also be used by the higher-level user to keep track of which lower-level data has already been reviewed.</para>
   </section>
   <section>
     <title>Authorities for approving data</title>

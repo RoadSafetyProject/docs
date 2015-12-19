@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!-- This document was created with Syntext Serna Free. --><!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN" "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd" []>
 <chapter id="doc_guide_chapter">
-  <title>DHIS2 Documentation Guide</title>
+  <title>IROAD2 Documentation Guide</title>
   <section id="docs_1">
-    <title>DHIS 2 Documentation System Overview</title>
-    <para remap="">DHIS 2 is a web-based aggregate information management system under very active development. Given the modular nature of the system, its wide user base and distributed, global nature of development, a comprehensive documentation system is required. An in-depth discussion of the need for documentation of DHIS 2 has been considered previously.<citation>Store2007</citation>  <ulink url="http://www.docbook.org">DocBook</ulink> is a comprehensive XML based system for creation of books, papers and other technical documents maintained by <ulink url=" http://www.oasis-open.org/">OASIS</ulink> . </para>
+    <title>IROAD 2 Documentation System Overview</title>
+    <para remap="">IROAD 2 is a web-based aggregate information management system under very active development. Given the modular nature of the system, its wide user base and distributed, global nature of development, a comprehensive documentation system is required. An in-depth discussion of the need for documentation of IROAD 2 has been considered previously.<citation>Store2007</citation>  <ulink url="http://www.docbook.org">DocBook</ulink> is a comprehensive XML based system for creation of books, papers and other technical documents maintained by <ulink url=" http://www.oasis-open.org/">OASIS</ulink> . </para>
   </section>
   <section id="docs_2">
     <title>Introduction</title>
     <para>One of the main advantages of DocBook is that there is complete separation between the
-content and presentation. DocBook is a pure XML format, and is well documented. It is believed that only a very small subset of its features will be required in order to achieve much higher quality documentation for DHIS. There are some 400 separate mark-up elements that cater to almost any level of technical documentation needs, but in reality, only a few dozen of these element will probably need to be employed to achieve high-quality documentation for DHIS 2, both for printed as well as on-line formats such as HTML or integrated help systems within the application itself. Therefore, there are wide range of possibilities in terms of which editor can be used for the creation of DocBook files. A fairly complete list of possibilities is located <ulink url="http://wiki.docbook.org/topic/DocBookAuthoringTools">here</ulink>. It is currently recommended to use  WYSIWYG  <ulink url="http://sourceforge.net/projects/sernafree.mirror/files/latest/download">Syntext Serna Free</ulink>   editor for editing DocBook source files. In principle, any text editing program or XML editor can be used to author DocBook files.</para>
+content and presentation. DocBook is a pure XML format, and is well documented. It is believed that only a very small subset of its features will be required in order to achieve much higher quality documentation for IROAD. There are some 400 separate mark-up elements that cater to almost any level of technical documentation needs, but in reality, only a few dozen of these element will probably need to be employed to achieve high-quality documentation for IROAD 2, both for printed as well as on-line formats such as HTML or integrated help systems within the application itself. Therefore, there are wide range of possibilities in terms of which editor can be used for the creation of DocBook files. A fairly complete list of possibilities is located <ulink url="http://wiki.docbook.org/topic/DocBookAuthoringTools">here</ulink>. It is currently recommended to use  WYSIWYG  <ulink url="http://sourceforge.net/projects/sernafree.mirror/files/latest/download">Syntext Serna Free</ulink>   editor for editing DocBook source files. In principle, any text editing program or XML editor can be used to author DocBook files.</para>
     <note>
       <para>It is not recommended to use the editor XMLmind XML Editor Personal Edition (also known as XXE Personal), as the editor &quot;silently&quot; places unneeded whitespace and other ornamentation to the DocBook source which makes collaborative editing of documents very difficult. </para>
     </note>
@@ -45,7 +45,7 @@ Just follow this procedure:</para>
 downloaded to the folder that you specified.</para>
       </listitem>
       <listitem>
-        <para>The DHIS2 documents depend on other branches for their documentation. Be sure to keep these these up to date as well. When you build the documentation, the necessary submodules will be downloaded automatically as part of the build process ,if you have not already done so. </para>
+        <para>The IROAD2 documents depend on other branches for their documentation. Be sure to keep these these up to date as well. When you build the documentation, the necessary submodules will be downloaded automatically as part of the build process ,if you have not already done so. </para>
       </listitem>
     </orderedlist>
   </section>
@@ -55,8 +55,8 @@ downloaded to the folder that you specified.</para>
 dhis2docs directory. All documents should be placed in the <filename>dhis2docs/src/docbkx/XX</filename> folder. Note that the <filename>XX</filename> represents the ISO 639-1 (two-letter) language code of the documentation. If you are developing English language documentation, place it inside the <filename>/dhis2docs/src/docbkx/en/</filename> folder. Place any image files that may be linked to your document in the <filename>/dhis2docs/src/docbkx/XX/resources/images</filename> folder and link these inside your DocBook document using a relative file link. When the documentation is built, in a separate step, the images will be automatically copied over to the correct directory during the build process.</para>
   </section>
   <section>
-    <title>DHIS2 Bibliography</title>
-    <para>DHIS2 has a rich set of academic literature which can serve as invaluable resources during implementations, project proposals and more detailed reading than what is appropriate for a general user manual. A specialized bibliography has been added to the source code of the application. <ulink url="http://www.bibtex.org">BibTeX</ulink> is a specialized language which is widely used in the academic world to handle bibliographic databases. A large number of free and open source tools are capable of working with BibTeX. Currently, the recommended tool of choice for manipulating the DHIS2 bibliography is <ulink url="http://jabref.sourceforge.net/">JabRef</ulink>. </para>
+    <title>IROAD2 Bibliography</title>
+    <para>IROAD2 has a rich set of academic literature which can serve as invaluable resources during implementations, project proposals and more detailed reading than what is appropriate for a general user manual. A specialized bibliography has been added to the source code of the application. <ulink url="http://www.bibtex.org">BibTeX</ulink> is a specialized language which is widely used in the academic world to handle bibliographic databases. A large number of free and open source tools are capable of working with BibTeX. Currently, the recommended tool of choice for manipulating the IROAD2 bibliography is <ulink url="http://jabref.sourceforge.net/">JabRef</ulink>. </para>
     <para>To get started with the bibliography, download a copy of JabRef and open the <filename>/src/bibliography/dhis2_bibliography.bib file</filename>. . Add some new references, then export the bibliography back to the <filename>/src/docbkx/en/dhis2_bibliography.xml</filename> file, using the DocBook 4.4 export format. The updated bibliography will automatically be included in the documentation after you commit your changes.</para>
   </section>
   <section id="docs_6">
@@ -64,7 +64,7 @@ dhis2docs directory. All documents should be placed in the <filename>dhis2docs/s
     <para>Screen shots are very useful for providing information to users on how particular actions
 should be performed. DocBook has no intrinsic mechanisms to know exactly how an image should be rendered in the final document. Therefore, it is necessary to provide instructions through element attributes. The following XML code fragment demonstrates how an image can be specified to occupy 80% of the available page width. For screen shots in landscape format, this seems to be an appropriate amount. You may need to experiment a bit to obtain a proper width for your image. Alternatively, you can edit the resolution of the image itself, in order to obtain a proper size during rendering. </para>
     <programlisting>&lt;screenshot&gt;
- &lt;screeninfo&gt;DHIS2 Login screen&lt;/screeninfo&gt;
+ &lt;screeninfo&gt;IROAD2 Login screen&lt;/screeninfo&gt;
   &lt;mediaobject&gt;
    &lt;imageobject&gt; 
     &lt;imagedata fileref=&quot;dhis2_login_screen.jpg&quot; format=&quot;JPG&quot; width=&quot;80%&quot;/&gt;
@@ -82,12 +82,12 @@ into a master document. Fragments from different documents can also be reused in
 mechanism to assign an id to a section. In the example below, a section has been assigned an id. This id must be unique within the document. </para>
     <para>
 <programlisting>  &lt;section id=&quot;mod2_1&quot;&gt;
-&lt;title&gt;Getting started with DHIS2&lt;/title&gt; ....</programlisting> </para>
+&lt;title&gt;Getting started with IROAD2&lt;/title&gt; ....</programlisting> </para>
     <para>In order to include an article into a book, an Xinclude statement must be used. The
 following example shows how. </para>
     <para>
 <programlisting>&lt;chapter&gt;
-&lt;title&gt;Getting started with DHIS2&lt;/title&gt; 
+&lt;title&gt;Getting started with IROAD2&lt;/title&gt;
 &lt;xi:include xmlns:xi=&quot;http://www.w3.org/2001/XInclude&quot; href=&quot;dhis2_user_man_mod2.xml&quot;
  xpointer=&quot;mod2_1&quot; encoding=&quot;UTF-8&quot;/&gt;
 ... </programlisting>
@@ -111,7 +111,7 @@ images in a sub-directory , replacing XX with the actual ISO 639-1 code for the 
     <title>Building the documentation</title>
     <para>One of the key advantages of the DocBook format is that the source documentation can be
 transformed into a wide variety of formats, including HTML, chunked HTML, XHTML, PDF, and a number of other formats. There are a wide variety of tools that are capable of performing this task. Basically the XML source of the document is transformed using the standard DocBook XSL style sheets into the desired format. The complete list of tools capable of transforming DocBook will not be listed here, but a few examples are provided below. </para>
-    <para>Latest builds of the documentation are available from the <ulink url="http://www.dhis2.org/documentation">DHIS2 website</ulink>. The latest snapshot builds are available through the continuous integration server located <ulink url="http://play.dhis2.org/ci/job/dhis-documentation/lastSuccessfulBuild/artifact/*zip*/archive.zip">here</ulink>.</para>
+    <para>Latest builds of the documentation are available from the <ulink url="http://www.dhis2.org/documentation">IROAD2 website</ulink>. The latest snapshot builds are available through the continuous integration server located <ulink url="http://play.dhis2.org/ci/job/dhis-documentation/lastSuccessfulBuild/artifact/*zip*/archive.zip">here</ulink>.</para>
     <section>
       <title>Building the documentation with Apache maven</title>
       <para>In order to transform the documentation source files to different formats, such as HTML
