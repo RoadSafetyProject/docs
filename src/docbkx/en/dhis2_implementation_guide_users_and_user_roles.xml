@@ -25,29 +25,27 @@
   <section>
     <title>User Roles</title>
     <para>A user role in the IROAD 2 context is a group of authorities. An authority in this regard means the permission to perform one or more specific tasks. For instance, a user role may contain authorities to create a new data element, update an organisation unit or view a report. Such a group of authorities constitutes a user role.</para>
-    <para>In a health system the users are logically grouped with respect to the task they perform and the position they occupy. Examples of commonly found positions are:</para>
+    <para>In a road safety system the users are logically grouped with respect to the task they perform and the position they occupy. Examples of commonly found positions are:</para>
     <orderedlist>
+
       <listitem>
-        <para>National health managers</para>
+        <para>Traffic/Police Officers</para>
       </listitem>
       <listitem>
-        <para>National health information system division officers (HISO)</para>
+        <para>Vehicle Registration Records</para>
       </listitem>
       <listitem>
-        <para>Province health managers</para>
-      </listitem>
-      <listitem>
-        <para>District health records and information officers (DHRIO)</para>
-      </listitem>
-      <listitem>
-        <para>Facility health records and information officers (HRIO)</para>
+        <para>Insurance Companies</para>
       </listitem>
       <listitem>
         <para>Data entry clerks</para>
       </listitem>
+      <listitem>
+        <para>Facilities (Hospital, Fire Stations and Police Stations)</para>
+      </listitem>
     </orderedlist>
     <para>When creating user roles such positions within the health system should be kept in mind and it is often sensible to create a user role dedicated for each of those positions. The process of creating user roles should be aligned with the process of deciding which users are doing what tasks in the system.</para>
-    <para>First it should be defined which users should fulfill the role as system administrators. This will often a part of the members of the national HIS division and should have full authority in the system. Second a user role should be created roughly for each position. A sensible consideration of what authorities should be given each role must be done. An important rule is that each role should only be given the authorities which are needed to perform the job well - not more. When operating a large, centralized information system there is a need to coordinate the work between the people involved. This is made easier if only those who are supposed to perform a task have the authorities to perform it. </para>
+    <para>First it should be defined which users should fulfill the role as system administrators. This will often a part of the members of the national Road Safety division and should have full authority in the system. Second a user role should be created roughly for each position. A sensible consideration of what authorities should be given each role must be done. An important rule is that each role should only be given the authorities which are needed to perform the job well - not more. When operating a large, centralized information system there is a need to coordinate the work between the people involved. This is made easier if only those who are supposed to perform a task have the authorities to perform it. </para>
     <para>An example might highlight this issue: The task of setting up the basic structure (meta-data) of the system is critical to the system and should only be performed by the administrators of system. This means that the system administrator user role should have the authority to add, update and delete the core elements of the system such as data elements, indicators and data sets. Allowing users outside the team of system administrators to modify these elements might lead to problems with coordination.</para>
     <para>National and provincial health managers are often concerned with data analysis and monitoring. Hence this group of users should be authorized to access and use the reports module, GIS module, data quality module and dashboard. However they would not need authority to enter data or update data elements and data sets. District information officers are often tasked with both entering data into the system coming from facilities which are not able to do so directly as well as monitoring, evaluation and analysis of data. This means that they will need access to all of the analysis and validation modules mentioned above in addition to the authority to access and use the data entry module.</para>
     <para>In addition, a user role is associated with a collection of data sets. This affects the data entry module in that the user is only allowed to enter data for the data sets registered for her user role. This is often useful in situations where one wants to allow officers from health programs to enter data for their relevant data entry forms only.</para>

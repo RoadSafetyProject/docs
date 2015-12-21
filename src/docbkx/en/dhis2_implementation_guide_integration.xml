@@ -15,13 +15,13 @@
       <para>What facilitates integration and interoperability</para>
     </listitem>
     <listitem>
-      <para>Architecture of  interoperable HIS</para>
+      <para>Architecture of  interoperable IROAD</para>
     </listitem>
   </itemizedlist>
   <para>In the following each topic will be discussed in greater detail.</para>
   <section>
     <title>Integration and interoperability</title>
-    <para>In a country there will usually be many different, isolated health information systems. The reasons for this are many, both technical and organizational. Here the focus will be on what benefits integration of these systems will bring, and why it should be a priority. First, a couple of clarifications:</para>
+    <para>In a country there will usually be many different, isolated Road Safety Management Sstem. The reasons for this are many, both technical and organizational. Here the focus will be on what benefits integration of these systems will bring, and why it should be a priority. First, a couple of clarifications:</para>
     <itemizedlist>
       <listitem>
         <para>When talking about integration, we think about the process of making different information systems appear as one, i.e. data from them to be available to all relevant users as well as the harmonization of definitions and dimensions so that it is possible to combine the data in useful ways.</para>
@@ -66,7 +66,7 @@
     <para>In addition to uniform definitions across the various sub-systems, data exchange standards must be adopted if data is to be shared electronically. The various software applications would need this to be able to understand each other. IROAD2 is supporting several data formats for import and export, but one standard format now supported by WHO is called SDMX-HD (Statistical Data and Metadata Exchange - Health Domain). Other software applications are also supporting this, and it allows the sharing of data definitions and aggregate data between them. For IROAD2, this means it supports import of aggregate data that are supplied by other applications, such as OpenMRS (for patient management), iHRIS (for human resources management)</para>
   </section>
   <section>
-    <title>Architecture of interoperable HIS</title>
+    <title>Architecture of interoperable IROAD</title>
     <para>Since there are many different use-cases for health information, such as monitoring and evaluation, budgeting, patient management and tracking, logistics management, insurance, human resource management, etc, there will be many different types of software applications functioning within the health sector. Above the issue of interoperability has been addressed, and a plan or overview of the various interoperable software applications and their specific uses, along with what data should be shared between them, is termed an architecture for health information. </para>
     <para>The role of the architecture is to function as a plan to coordinate the development and interoperability of various sub-systems within the larger health information system. It is advisable to develop a plan for the various components even if they are not currently running any software, to be able to adequately see the requirements in terms of data sharing. These requirements should then be part of any specification for the software when such is developed or procured.</para>
     <para>Below is a simple illustration of an architecture, with a focus on the data warehouse for aggregate data. The various boxes represent use cases, such as managing logistics, tracking TB patients, general patient management, etc. All of these will share aggregate data with IROAD2. Note that the arrows are two-way, because there is also a synchronization of meta-data (definitions) involved, to make sure that the right data is shared. Also, an example of the logistics and financial data applications sharing data is also shown, as there are strong links between procuring drugs and handling the budget for this. There will be many such instances of sharing data; the architecture helps us to plan better for this being implemented as the ecosystem of software applications grow.</para>

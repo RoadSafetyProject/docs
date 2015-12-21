@@ -6,7 +6,7 @@
     <title>Data sources for reporting</title>
     <section>
       <title>Types of data and aggregation</title>
-      <para>In the bigger picture of HIS terminology all data in IROAD are usually called aggregated as they are aggregates (e.g. monthly summaries) of medical records or some kind of service registers reported from the health facilities. Aggregation inside IROAD however, which is the topic here, is concerned with how the raw data captured in IROAD (through data entry or import)are further aggregated over time (e.g. from monthly to quarterly values) or up the organisational hierarchy (e.g. from facility to district values).
+      <para>In the bigger picture of Road Safety terminology all data in IROAD are usually called aggregated as they are aggregates (e.g. monthly summaries) of medical records or some kind of service registers reported from the health facilities. Aggregation inside IROAD however, which is the topic here, is concerned with how the raw data captured in IROAD (through data entry or import)are further aggregated over time (e.g. from monthly to quarterly values) or up the organisational hierarchy (e.g. from facility to district values).
 </para>
       <section>
         <title>Terminology</title>

@@ -7,7 +7,7 @@
     <itemizedlist>
       <listitem>
         <para>What is IROAD 2 and what purpose it serves with respect to
-          health information systems (HIS)?</para>
+          Road Safety Management System (RSMS)?</para>
       </listitem>
       <listitem>
         <para>What are the major technological considerations when it comes to deploying IROAD 2, and what are the options are for extending IROAD 2 with new modules?</para>
@@ -24,8 +24,8 @@
     <title>IROAD 2 Background</title>
     <para>IROAD 2 is a tool for collection, validation, analysis, and presentation of aggregate and patient-based statistical data, tailored (but not limited) to integrated health information management activities. It is a generic tool rather than a pre-configured database application, with an open meta-data model and a flexible user interface that allows the user to design the contents of a specific information system without the need for programming. IROAD2 and upwards is a modular web-based software package built with free and open source Java frameworks.</para>
     <para>IROAD2 is open source software released under the BSD license and can be used at no cost. It runs on any platform with a Java Runtime Environment (JRE 6 or higher) installed. </para>
-    <para>IROAD 2 is developed by the Health Information Systems Programme (HISP) as an open and globally distributed process with developers currently in India, Vietnam, Tanzania, Ireland, and Norway. The development is coordinated by the University of Oslo with core support from NORAD. </para>
-    <para>The IROAD 2 software is used in more than 40  countries in Africa, Asia, and Latin America, and countries that have adopted IROAD 2 as their nation-wide HIS software include Kenya, Tanzania, Uganda, Rwanda, Ghana, Liberia, and Bangladesh. A rapidly increasing number of countries and organisations are starting up new deployments.</para>
+    <para>IROAD 2 is developed by the University of Dar es Salaam (UDSM) as an open and globally distributed process with developers currently in India, Vietnam, Tanzania, Ireland, and Norway. The development is coordinated by the University of Oslo with core support from NORAD. </para>
+    <para>The IROAD 2 software is used in more than 40  countries in Africa, Asia, and Latin America, and countries that have adopted IROAD 2 as their nation-wide Road Safety software include Tanzania. A rapidly increasing number of countries and organisations are starting up new deployments.</para>
     <para>The documentation provided herewith, will attempt to provide a comprehensive overview of the application. Given the abstract nature of the application, this manual will not serve as a complete step-by-step guide of how to use the application in each and every circumstance, but rather will seek to provide illustrations and examples of how IROAD2 can be implemented in a variety of situations through generalized examples.</para>
     <para>Before implementing IROAD 2 in a new setting, we highly recommend reading the IROAD 2 Implementation Guide (a separate manual from this one), also available at the main IROAD2 <ulink url="http://dhis2.org/documentation/">website</ulink>.</para>
   </section>
@@ -34,9 +34,9 @@
     <para>The key features and purpose of IROAD 2 can be summarised as follows:</para>
     <itemizedlist>
       <listitem>
-        <para>Provide a comprehensive HIS solution based on data
+        <para>Provide a comprehensive solution based on data
           warehousing principles and a modular structure which can easily be
-          customised to the different needs of the health systems - and supports the idea of an integrated HIS at all levels of the health hierarchy.</para>
+          customised to the different needs of the health systems - and supports the idea of an integrated Road Safety at all levels of the road safety hierarchy.</para>
       </listitem>
       <listitem>
         <para>Customisation and local adaptation through the user interface. No programming required to start using IROAD 2 in a new setting (country, region, district etc.).</para>
@@ -86,12 +86,12 @@
           developed  and integrated as per user needs, either as part of the IROAD 2 portal user interface or a  more loosely-coupled external application  interacting through the IROAD 2 Web-API.</para>
       </listitem>
     </itemizedlist>
-    <para>In summary, IROAD2 provides a comprehensive HIS solution for the
+    <para>In summary, IROAD2 provides a comprehensive solution for the
       reporting and analysis needs of health information users at any level.</para>
   </section>
   <section>
-    <title>Use of IROAD 2 in HIS: data collection, processing, interpretation, and analysis.</title>
-    <para>The wider context of HIS can be comprehensively described through
+    <title>Use of IROAD 2 in Road Safety: data collection, processing, interpretation, and analysis.</title>
+    <para>The wider context of Road Safety can be comprehensively described through
       the information cycle presented in Figure 1.1 below. The information
       cycle pictorially depicts the different components, stages and processes
       through which the data is collected, checked for quality, processed,
@@ -298,7 +298,7 @@
     </section>
   </section>
   <section>
-    <title>Difference between Aggregated and Patient data in a HIS</title>
+    <title>Difference between Aggregated and Patient data in a Road Safety</title>
     <para>
       <emphasis>Patient data</emphasis> is data relating to a single patient, such as his/her
       diagnosis, name, age, earlier medical history etc. This data is typically based on a single
