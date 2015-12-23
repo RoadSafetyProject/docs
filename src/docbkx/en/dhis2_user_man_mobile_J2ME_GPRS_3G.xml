@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!-- This document was created with Syntext Serna Free. --><!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN" "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd" []>
 <section id="mobile_j2me_gprs_3g">
-  <title>J2ME GPRS/3G Client</title>
-  <para>The IROAD2 GPRS/3G mobile module provides a mechanism for remote clients using mobile phones to enter data directly into the IROAD2 system. There are two functions of the client, namely:</para>
+  <title>Mobile Client</title>
+  <para>The IROAD2 mobile module provides a mechanism for remote clients using mobile phones to enter data directly into the IROAD2 system. There are two functions of the client, namely:</para>
   <para>The solution relies on the mobile phone having a data connection available (i.e.
     GPRS, Edge, 3G), over which it communicates with a IROAD2 instance which must be publicly
     available on the internet, as any other web server. The client application on the phone downloads the data entry forms to the phone from the
@@ -19,17 +19,6 @@
     activity reporting with the Community module.</para>
     </listitem>
   </itemizedlist>
-  <section>
-    <title>Data connection availability</title>
-    <para>Data connection availability can be a problem in many of the contexts where IROAD2 mobile
-      reporting would otherwise be a good solution for getting data directly into IROAD2. If that is
-      the case for you, you might want to consider trying the SMS based solution described in a
-      separate document. Keep in mind that even though a data connection is currently required for
-      communication between the server and the mobile phone, it is only required when initializing
-      or updating the mobile application and when sending reports to the server. The phone stores
-      all entered data locally, so it can work fine with only temporary access to a data connection
-      on a regular basis. </para>
-  </section>
   <section id="mobile_j2me_gprs_3g_facility_reporting">
     <title>J2ME GPRS 3G facility reporting client</title>
     <para>The server side component of the web based solution  is included in the general build of IROAD2.</para>

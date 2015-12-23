@@ -13,15 +13,8 @@
  It does not require a new application installation on the phone to support new features, but does require a stable data connection for use. This solution is described in <xref linkend="mobile_web_based"/></para>
     </listitem>
     <listitem>
-      <para>IROAD 2 Smartphone client: A mobile browser optimized data entry module for Smartphone devices</para>
-      <para>This module allows for data entry directly with the browser of a Smartphone. Offline data entry is supported and it does not require any installation of a special client on the phone itself.</para>
-    </listitem>
-    <listitem>
-      <para>J2ME GPRS/3G client</para>
-      <para>IROAD-mobile includes two separate J2ME clients supporting GPRS/EDGE/3G as a transport mechanism. One clients supports facility aggregate reporting and the second client supports name-based program tracking. These clients are split into separate applications to make deployment easier. Some health workers may have both applications installed on their phone. Both of these clients support offline-storage of data and work on J2ME enabled devices (feature phones). This solution is described in <xref linkend="mobile_j2me_gprs_3g"/>.</para>
-      <para>An active GPRS/3G connection is required in order to send data to the IROAD 2 database, but data can be entered offline and transmitted when a connection is present. This client is intended primarily for low-end devices which support J2ME applications, although the offline-supports adds some memory requirements which limits the handset selection. While the solution is primarily tested on Nokia phones, it also works on several other J2ME capable handsets.</para>
-      <para>The facility reporting J2ME client is described in <xref linkend="mobile_j2me_gprs_3g_facility_reporting"/></para>
-      <para>The name-based program tracking J2ME client is described in  <xref linkend="mobile_j2me_gprs_3g_activity_reporting"/></para>
+      <para>Mobile Apps</para>
+      <para>IROAD-mobile includes two separate apps which are made for traffic officers and for the community <xref linkend="mobile_j2me_gprs_3g"/>.</para>
     </listitem>
   </itemizedlist>
 </section>
